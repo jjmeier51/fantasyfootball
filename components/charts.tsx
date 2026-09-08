@@ -3,11 +3,11 @@
 import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import type { Finish } from "@/lib/types";
 
-const GOLD = "#a8861a";
-const COOL = "#4a80d0";
-const GRID = "rgba(126,135,155,0.18)";
+const GOLD = "#27a865";
+const COOL = "#4f86e8";
+const GRID = "rgba(127,138,153,0.18)";
 const TICK = { fill: "#7e879b", fontSize: 11 };
-const TIP = { background: "#151b2b", border: "1px solid #263049", borderRadius: 8, fontSize: 12 };
+const TIP = { background: "#101a2e", border: "1px solid #22314f", borderRadius: 8, fontSize: 12 };
 
 export function FinishChart({ finishes, teamCount }: { finishes: Finish[]; teamCount: number }) {
   const data = finishes.filter((f) => f.rank).map((f) => ({ year: f.year, rank: f.rank, team: f.teamName, champion: f.champion }));
@@ -24,7 +24,7 @@ export function FinishChart({ finishes, teamCount }: { finishes: Finish[]; teamC
           labelFormatter={(l, p) => `${l} · ${(p?.[0]?.payload as { team?: string })?.team ?? ""}`}
         />
         <ReferenceLine y={1} stroke={GOLD} strokeDasharray="3 3" />
-        <Line type="monotone" dataKey="rank" stroke={GOLD} strokeWidth={2} dot={{ r: 4, fill: GOLD, stroke: "#151b2b", strokeWidth: 2 }} activeDot={{ r: 6 }} />
+        <Line type="monotone" dataKey="rank" stroke={GOLD} strokeWidth={2} dot={{ r: 4, fill: GOLD, stroke: "#101a2e", strokeWidth: 2 }} activeDot={{ r: 6 }} />
       </LineChart>
     </ResponsiveContainer>
   );

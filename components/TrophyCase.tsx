@@ -48,7 +48,7 @@ export default function TrophyCase({ trophies, owners, order }: { trophies: Trop
         })}
       </div>
 
-      <div className="rounded-2xl border border-gold/20 bg-linear-to-b from-[#141a2b] to-[#0a0d16] p-4 sm:p-8 shadow-[inset_0_0_80px_rgba(212,175,55,0.06)]">
+      <div className="rounded-2xl border border-gold/20 bg-linear-to-b from-[#101a2e] to-[#07090d] p-4 sm:p-8 shadow-[inset_0_0_80px_rgba(52,211,153,0.06)]">
         {shelves.map((row, si) => (
           <div key={si} className="relative">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-4 items-end pb-3">
@@ -84,7 +84,7 @@ export default function TrophyCase({ trophies, owners, order }: { trophies: Trop
               })}
             </div>
             {/* glass shelf */}
-            <div className="h-2 rounded-full bg-linear-to-r from-transparent via-gold/40 to-transparent shadow-[0_6px_18px_rgba(212,175,55,0.25)]" />
+            <div className="h-2 rounded-full bg-linear-to-r from-transparent via-gold/40 to-transparent shadow-[0_6px_18px_rgba(52,211,153,0.25)]" />
             <div className="h-6 bg-linear-to-b from-gold/8 to-transparent" />
           </div>
         ))}

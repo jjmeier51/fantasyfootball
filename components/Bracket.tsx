@@ -31,7 +31,7 @@ export default function Bracket({ season, nameOf }: { season: Season; nameOf: (k
           <div key={w} className="flex flex-col justify-around gap-4 w-60">
             <div className="text-[10px] uppercase tracking-widest text-muted text-center">{roundName(i)} · Week {w}</div>
             {games.filter((m) => m.week === w).map((m) => (
-              <div key={m.id} className={clsx("card overflow-hidden divide-y divide-border", i === weeks.length - 1 && "border-gold/50 shadow-[0_0_30px_-10px_rgba(212,175,55,0.5)]")}>
+              <div key={m.id} className={clsx("card overflow-hidden divide-y divide-border", i === weeks.length - 1 && "border-gold/50 shadow-[0_0_30px_-10px_rgba(52,211,153,0.5)]")}>
                 <Team m={m} side="home" />
                 <Team m={m} side="away" />
               </div>

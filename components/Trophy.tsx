@@ -53,8 +53,8 @@ export default function Trophy({ year, line1, line2, size = 220, glow, dim, clas
           <stop offset="1" stopColor="#7a5c16" />
         </linearGradient>
         <linearGradient id={`${id}-plate`} x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#1f2637" />
-          <stop offset="1" stopColor="#0b0f18" />
+          <stop offset="0" stopColor="#162238" />
+          <stop offset="1" stopColor="#07090d" />
         </linearGradient>
         <radialGradient id={`${id}-spec`} cx="0.35" cy="0.3" r="0.6">
           <stop offset="0" stopColor="#ffffff" stopOpacity="0.9" />
@@ -62,8 +62,8 @@ export default function Trophy({ year, line1, line2, size = 220, glow, dim, clas
           <stop offset="1" stopColor="#ffffff" stopOpacity="0" />
         </radialGradient>
         <radialGradient id={`${id}-halo`} cx="0.5" cy="0.4" r="0.5">
-          <stop offset="0" stopColor="#f1d67a" stopOpacity="0.45" />
-          <stop offset="1" stopColor="#f1d67a" stopOpacity="0" />
+          <stop offset="0" stopColor="#34d399" stopOpacity="0.40" />
+          <stop offset="1" stopColor="#34d399" stopOpacity="0" />
         </radialGradient>
         <filter id={`${id}-shadow`} x="-20%" y="-10%" width="140%" height="130%">
           <feDropShadow dx="0" dy="6" stdDeviation="6" floodColor="#000" floodOpacity="0.55" />
@@ -108,7 +108,7 @@ export default function Trophy({ year, line1, line2, size = 220, glow, dim, clas
       </g>
 
       {/* engraving */}
-      <text x="100" y="226" textAnchor="middle" fontSize="9.5" fontWeight="700" fill="#f1d67a" fontFamily="var(--font-inter), system-ui, sans-serif" letterSpacing="0.3">
+      <text x="100" y="226" textAnchor="middle" fontSize="9.5" fontWeight="700" fill="#a7f3d0" fontFamily="var(--font-inter), system-ui, sans-serif" letterSpacing="0.3">
         {year} CHAMPION
       </text>
       <text x="100" y="237" textAnchor="middle" fontSize="7.5" fill="#e6e9f0" fontFamily="var(--font-inter), system-ui, sans-serif">

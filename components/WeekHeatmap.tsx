@@ -20,7 +20,7 @@ export default function WeekHeatmap({ season, nameOf }: { season: Season; nameOf
   const owners = [...season.teams].sort((a, b) => (a.finalRank || 99) - (b.finalRank || 99) || a.seed - b.seed).map((t) => t.ownerKey);
   const shade = (v: number) => {
     const k = max > min ? (v - min) / (max - min) : 0.5;
-    return `rgba(212,175,55,${0.08 + k * 0.72})`;
+    return `rgba(52,211,153,${0.08 + k * 0.7})`;
   };
   return (
     <div className="overflow-x-auto scrollbar-thin">
@@ -53,7 +53,7 @@ export default function WeekHeatmap({ season, nameOf }: { season: Season; nameOf
           ))}
         </tbody>
       </table>
-      <div className="text-[11px] text-muted mt-2">Darker gold = more points. Outlined cells are wins; P = playoff week.</div>
+      <div className="text-[11px] text-muted mt-2">Brighter green = more points. Outlined cells are wins; P = playoff week.</div>
     </div>
   );
 }

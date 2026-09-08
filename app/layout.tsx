@@ -5,6 +5,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ThemePlayer from "@/components/ThemePlayer";
 import CommandPalette from "@/components/CommandPalette";
+import PageShimmer from "@/components/PageShimmer";
 import { meta, ownersLite, seasons } from "@/lib/data";
 
 // One typeface everywhere: Inter for body text and, in heavier weights, for headlines and numbers.
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <ThemePlayer>
+          <PageShimmer />
           <Nav leagueName={meta.leagueName} isSample={meta.isSample} />
           <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">{children}</main>
           <Footer />

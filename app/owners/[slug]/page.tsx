@@ -181,7 +181,7 @@ export default async function OwnerPage({ params }: { params: Promise<{ slug: st
                   <div className="text-[10px] uppercase tracking-widest text-muted mb-1">Rounds 1–3 position mix</div>
                   <div className="flex h-3 rounded overflow-hidden gap-px">
                     {Object.entries(draft.earlyRoundMix).map(([pos, p]) => (
-                      <span key={pos} title={`${pos} ${p}%`} style={{ width: `${p}%`, background: { RB: "#a8861a", WR: "#4a80d0", QB: "#7c5cd6", TE: "#3ecf8e", K: "#7e879b", "D/ST": "#c2410c" }[pos] ?? "#374151" }} />
+                      <span key={pos} title={`${pos} ${p}%`} style={{ width: `${p}%`, background: { RB: "#27a865", WR: "#4f86e8", QB: "#7c5cd6", TE: "#b8c2cf", K: "#7f8a99", "D/ST": "#c2410c" }[pos] ?? "#374151" }} />
                     ))}
                   </div>
                   <div className="flex flex-wrap gap-3 mt-1 text-[11px] text-muted">

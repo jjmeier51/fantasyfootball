@@ -29,18 +29,18 @@ export default async function OpenGraphImage() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: 64,
-          background: "linear-gradient(160deg, #0f1420 0%, #090c14 60%, #141a2b 100%)",
-          color: "#f2f4f8",
+          background: "linear-gradient(180deg, #050608 0%, #101a2e 55%, #2b3038 100%)",
+          color: "#f1f5f9",
           fontFamily: displayFont ? "Display" : "sans-serif",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 18, fontSize: 22, letterSpacing: 6, color: "#d4af37", textTransform: "uppercase" }}>
-          <div style={{ width: 54, height: 32, borderRadius: 27, background: "#7a4319", border: "2px solid #d4af37", transform: "rotate(-30deg)" }} />
+        <div style={{ display: "flex", alignItems: "center", gap: 18, fontSize: 22, letterSpacing: 6, color: "#34d399", textTransform: "uppercase" }}>
+          <div style={{ width: 54, height: 32, borderRadius: 27, background: "#162238", border: "2px solid #34d399", transform: "rotate(-30deg)" }} />
           Est. {meta.firstSeason} · Fantasy Football
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 92, fontWeight: 800, lineHeight: 1.05, letterSpacing: -4, color: "#e9c766" }}>{meta.leagueName}</div>
-          <div style={{ fontSize: 30, color: "#b6bdcc", marginTop: 18, fontFamily: "Helvetica, Arial, sans-serif" }}>
+          <div style={{ fontSize: 92, fontWeight: 800, lineHeight: 1.05, letterSpacing: -4, color: "#6ee7b7" }}>{meta.leagueName}</div>
+          <div style={{ fontSize: 30, color: "#b8c2cf", marginTop: 18, fontFamily: "Helvetica, Arial, sans-serif" }}>
             Every championship, every blowout, every embarrassing week. Preserved forever.
           </div>
         </div>
@@ -52,8 +52,8 @@ export default async function OpenGraphImage() {
             [reigningTrophy?.champion?.name ?? "—", "reigning champ"],
           ].map(([v, l]) => (
             <div key={l} style={{ display: "flex", flexDirection: "column" }}>
-              <div style={{ fontSize: 44, fontWeight: 700, color: "#f2f4f8" }}>{v}</div>
-              <div style={{ fontSize: 18, letterSpacing: 3, color: "#7e879b", textTransform: "uppercase" }}>{l}</div>
+              <div style={{ fontSize: 44, fontWeight: 700, color: "#f1f5f9" }}>{v}</div>
+              <div style={{ fontSize: 18, letterSpacing: 3, color: "#7f8a99", textTransform: "uppercase" }}>{l}</div>
             </div>
           ))}
         </div>

@@ -2,7 +2,7 @@
  "year": 2021,
  "leagueId": 477497,
  "source": "espn",
- "fetchedAt": "2026-09-08T04:18:04.258830+00:00",
+ "fetchedAt": "2026-09-08T13:17:20.446681+00:00",
  "settings": {
   "name": "League of Gangstars Season 7",
   "teamCount": 12,
@@ -87,7 +87,8 @@
    15,
    16,
    17
-  ]
+  ],
+  "weekStarts": {}
  },
  "members": [
   {
@@ -186,147 +187,168 @@
      "name": "Aaron Jones",
      "position": "RB",
      "proTeam": "GB",
-     "seasonPoints": 203.0
+     "seasonPoints": 203.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4047650,
      "name": "DK Metcalf",
      "position": "WR",
      "proTeam": "SEA",
-     "seasonPoints": 206.8
+     "seasonPoints": 206.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3139477,
      "name": "Patrick Mahomes",
      "position": "QB",
      "proTeam": "KC",
-     "seasonPoints": 435.66
+     "seasonPoints": 435.66,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3051926,
      "name": "Gus Edwards",
      "position": "RB",
      "proTeam": "BAL",
-     "seasonPoints": 0
+     "seasonPoints": 0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3128429,
      "name": "Courtland Sutton",
      "position": "WR",
      "proTeam": "DEN",
-     "seasonPoints": 121.24
+     "seasonPoints": 121.24,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4241478,
      "name": "DeVonta Smith",
      "position": "WR",
      "proTeam": "PHI",
-     "seasonPoints": 153.6
+     "seasonPoints": 153.6,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3115364,
      "name": "Leonard Fournette",
      "position": "RB",
      "proTeam": "TB",
-     "seasonPoints": 221.1
+     "seasonPoints": 221.1,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 2576434,
      "name": "Melvin Gordon III",
      "position": "RB",
      "proTeam": "DEN",
-     "seasonPoints": 181.1
+     "seasonPoints": 181.1,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 2573401,
      "name": "Tyler Higbee",
      "position": "TE",
      "proTeam": "LAR",
-     "seasonPoints": 116.5
+     "seasonPoints": 116.5,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3916148,
      "name": "Tony Pollard",
      "position": "RB",
      "proTeam": "DAL",
-     "seasonPoints": 143.1
+     "seasonPoints": 143.1,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": -16002,
      "name": "Bills D/ST",
      "position": "D/ST",
      "proTeam": "BUF",
-     "seasonPoints": 154.0
+     "seasonPoints": 154.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3121422,
      "name": "Terry McLaurin",
      "position": "WR",
      "proTeam": "WSH",
-     "seasonPoints": 175.0
+     "seasonPoints": 175.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4040980,
      "name": "Irv Smith Jr.",
      "position": "TE",
      "proTeam": "MIN",
-     "seasonPoints": 0
+     "seasonPoints": 0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": -16018,
      "name": "Saints D/ST",
      "position": "D/ST",
      "proTeam": "NO",
-     "seasonPoints": 133.0
+     "seasonPoints": 133.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3975763,
      "name": "Greg Joseph",
      "position": "K",
      "proTeam": "MIN",
-     "seasonPoints": 151.0
+     "seasonPoints": 151.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 2468609,
      "name": "Taysom Hill",
      "position": "QB",
      "proTeam": "NO",
-     "seasonPoints": 127.72
+     "seasonPoints": 127.72,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 2576336,
      "name": "Ameer Abdullah",
      "position": "RB",
      "proTeam": "CAR",
-     "seasonPoints": 70.5
+     "seasonPoints": 70.5,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3123076,
      "name": "David Njoku",
      "position": "TE",
      "proTeam": "CLE",
-     "seasonPoints": 89.6
+     "seasonPoints": 89.6,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 2969962,
      "name": "Duke Johnson",
      "position": "RB",
      "proTeam": "MIA",
-     "seasonPoints": 57.1
+     "seasonPoints": 57.1,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 4421446,
      "name": "Craig Reynolds",
      "position": "RB",
      "proTeam": "DET",
-     "seasonPoints": 31.7
+     "seasonPoints": 31.7,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": -16021,
      "name": "Eagles D/ST",
      "position": "D/ST",
      "proTeam": "PHI",
-     "seasonPoints": 99.0
+     "seasonPoints": 99.0,
+     "acquisitionType": "ADD"
     }
    ]
   },
@@ -352,126 +374,144 @@
      "name": "Davante Adams",
      "position": "WR",
      "proTeam": "GB",
-     "seasonPoints": 282.8
+     "seasonPoints": 282.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4262921,
      "name": "Justin Jefferson",
      "position": "WR",
      "proTeam": "MIN",
-     "seasonPoints": 276.4
+     "seasonPoints": 276.4,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4047365,
      "name": "Josh Jacobs",
      "position": "RB",
      "proTeam": "LV",
-     "seasonPoints": 199.0
+     "seasonPoints": 199.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4360438,
      "name": "Brandon Aiyuk",
      "position": "WR",
      "proTeam": "SF",
-     "seasonPoints": 142.3
+     "seasonPoints": 142.3,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3059915,
      "name": "Kareem Hunt",
      "position": "RB",
      "proTeam": "CLE",
-     "seasonPoints": 99.0
+     "seasonPoints": 99.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4360294,
      "name": "Antonio Gibson",
      "position": "RB",
      "proTeam": "WSH",
-     "seasonPoints": 208.1
+     "seasonPoints": 208.1,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4243160,
      "name": "Laviska Shenault Jr.",
      "position": "WR",
      "proTeam": "JAX",
-     "seasonPoints": 95.5
+     "seasonPoints": 95.5,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3121023,
      "name": "Dallas Goedert",
      "position": "TE",
      "proTeam": "PHI",
-     "seasonPoints": 137.0
+     "seasonPoints": 137.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 2980453,
      "name": "Jamaal Williams",
      "position": "RB",
      "proTeam": "DET",
-     "seasonPoints": 106.8
+     "seasonPoints": 106.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4040715,
      "name": "Jalen Hurts",
      "position": "QB",
      "proTeam": "PHI",
-     "seasonPoints": 344.16
+     "seasonPoints": 344.16,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3895856,
      "name": "Christian Kirk",
      "position": "WR",
      "proTeam": "ARI",
-     "seasonPoints": 169.12
+     "seasonPoints": 169.12,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4240600,
      "name": "Kadarius Toney",
      "position": "WR",
      "proTeam": "NYG",
-     "seasonPoints": 62.86
+     "seasonPoints": 62.86,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 11237,
      "name": "Matt Ryan",
      "position": "QB",
      "proTeam": "ATL",
-     "seasonPoints": 262.92
+     "seasonPoints": 262.92,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": -16029,
      "name": "Panthers D/ST",
      "position": "D/ST",
      "proTeam": "CAR",
-     "seasonPoints": 88.0
+     "seasonPoints": 88.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 2574576,
      "name": "C.J. Uzomah",
      "position": "TE",
      "proTeam": "CIN",
-     "seasonPoints": 103.8
+     "seasonPoints": 103.8,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 16339,
      "name": "Brandon McManus",
      "position": "K",
      "proTeam": "DEN",
-     "seasonPoints": 124.0
+     "seasonPoints": 124.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": -16016,
      "name": "Vikings D/ST",
      "position": "D/ST",
      "proTeam": "MIN",
-     "seasonPoints": 91.0
+     "seasonPoints": 91.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3052587,
      "name": "Baker Mayfield",
      "position": "QB",
      "proTeam": "CLE",
-     "seasonPoints": 214.9
+     "seasonPoints": 214.9,
+     "acquisitionType": "ADD"
     }
    ]
   },
@@ -497,126 +537,144 @@
      "name": "Christian McCaffrey",
      "position": "RB",
      "proTeam": "CAR",
-     "seasonPoints": 109.0
+     "seasonPoints": 109.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3040151,
      "name": "George Kittle",
      "position": "TE",
      "proTeam": "SF",
-     "seasonPoints": 162.5
+     "seasonPoints": 162.5,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 16737,
      "name": "Mike Evans",
      "position": "WR",
      "proTeam": "TB",
-     "seasonPoints": 225.5
+     "seasonPoints": 225.5,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4362628,
      "name": "Ja'Marr Chase",
      "position": "WR",
      "proTeam": "CIN",
-     "seasonPoints": 264.1
+     "seasonPoints": 264.1,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3932905,
      "name": "Diontae Johnson",
      "position": "WR",
      "proTeam": "PIT",
-     "seasonPoints": 220.9
+     "seasonPoints": 220.9,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4038941,
      "name": "Justin Herbert",
      "position": "QB",
      "proTeam": "LAC",
-     "seasonPoints": 456.76
+     "seasonPoints": 456.76,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4241401,
      "name": "Trey Sermon",
      "position": "RB",
      "proTeam": "SF",
-     "seasonPoints": 26.8
+     "seasonPoints": 26.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4241802,
      "name": "Jalen Reagor",
      "position": "WR",
      "proTeam": "PHI",
-     "seasonPoints": 61.6
+     "seasonPoints": 61.6,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3045138,
      "name": "Mike Williams",
      "position": "WR",
      "proTeam": "LAC",
-     "seasonPoints": 208.6
+     "seasonPoints": 208.6,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": -16025,
      "name": "49ers D/ST",
      "position": "D/ST",
      "proTeam": "SF",
-     "seasonPoints": 120.0
+     "seasonPoints": 120.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3049899,
      "name": "Younghoe Koo",
      "position": "K",
      "proTeam": "ATL",
-     "seasonPoints": 123.0
+     "seasonPoints": 123.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3127586,
      "name": "Jeremy McNichols",
      "position": "RB",
      "proTeam": "TEN",
-     "seasonPoints": 59.6
+     "seasonPoints": 59.6,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 4045163,
      "name": "Miles Sanders",
      "position": "RB",
      "proTeam": "PHI",
-     "seasonPoints": 104.2
+     "seasonPoints": 104.2,
+     "acquisitionType": "TRADE"
     },
     {
      "playerId": 4241416,
      "name": "Chuba Hubbard",
      "position": "RB",
      "proTeam": "CAR",
-     "seasonPoints": 125.1
+     "seasonPoints": 125.1,
+     "acquisitionType": "TRADE"
     },
     {
      "playerId": 14876,
      "name": "Ryan Tannehill",
      "position": "QB",
      "proTeam": "TEN",
-     "seasonPoints": 310.36
+     "seasonPoints": 310.36,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3116389,
      "name": "Samaje Perine",
      "position": "RB",
      "proTeam": "CIN",
-     "seasonPoints": 69.7
+     "seasonPoints": 69.7,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": -16010,
      "name": "Titans D/ST",
      "position": "D/ST",
      "proTeam": "TEN",
-     "seasonPoints": 108.0
+     "seasonPoints": 108.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 4362452,
      "name": "Jaret Patterson",
      "position": "RB",
      "proTeam": "WSH",
-     "seasonPoints": 50.9
+     "seasonPoints": 50.9,
+     "acquisitionType": "ADD"
     }
    ]
   },
@@ -642,133 +700,152 @@
      "name": "Saquon Barkley",
      "position": "RB",
      "proTeam": "NYG",
-     "seasonPoints": 128.1
+     "seasonPoints": 128.1,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 15795,
      "name": "DeAndre Hopkins",
      "position": "WR",
      "proTeam": "ARI",
-     "seasonPoints": 126.2
+     "seasonPoints": 126.2,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3025433,
      "name": "Mike Davis",
      "position": "RB",
      "proTeam": "ATL",
-     "seasonPoints": 116.2
+     "seasonPoints": 116.2,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4360248,
      "name": "Kyle Pitts",
      "position": "TE",
      "proTeam": "ATL",
-     "seasonPoints": 142.6
+     "seasonPoints": 142.6,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 13934,
      "name": "Antonio Brown",
      "position": "WR",
      "proTeam": "None",
-     "seasonPoints": 100.1
+     "seasonPoints": 100.1,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4372016,
      "name": "Jaylen Waddle",
      "position": "WR",
      "proTeam": "MIA",
-     "seasonPoints": 193.8
+     "seasonPoints": 193.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4240657,
      "name": "Michael Carter",
      "position": "RB",
      "proTeam": "NYJ",
-     "seasonPoints": 136.4
+     "seasonPoints": 136.4,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3916387,
      "name": "Lamar Jackson",
      "position": "QB",
      "proTeam": "BAL",
-     "seasonPoints": 271.98
+     "seasonPoints": 271.98,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4360939,
      "name": "Rashod Bateman",
      "position": "WR",
      "proTeam": "BAL",
-     "seasonPoints": 80.5
+     "seasonPoints": 80.5,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": -16005,
      "name": "Browns D/ST",
      "position": "D/ST",
      "proTeam": "CLE",
-     "seasonPoints": 101.0
+     "seasonPoints": 101.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 15835,
      "name": "Zach Ertz",
      "position": "TE",
      "proTeam": "ARI",
-     "seasonPoints": 143.7
+     "seasonPoints": 143.7,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3051738,
      "name": "Marquez Valdes-Scantling",
      "position": "WR",
      "proTeam": "GB",
-     "seasonPoints": 74.0
+     "seasonPoints": 74.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 10636,
      "name": "Mason Crosby",
      "position": "K",
      "proTeam": "GB",
-     "seasonPoints": 125.0
+     "seasonPoints": 125.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 4036348,
      "name": "Michael Gallup",
      "position": "WR",
      "proTeam": "DAL",
-     "seasonPoints": 74.0
+     "seasonPoints": 74.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 15072,
      "name": "Marvin Jones Jr.",
      "position": "WR",
      "proTeam": "JAX",
-     "seasonPoints": 143.7
+     "seasonPoints": 143.7,
+     "acquisitionType": "TRADE"
     },
     {
      "playerId": 3116385,
      "name": "Joe Mixon",
      "position": "RB",
      "proTeam": "CIN",
-     "seasonPoints": 266.9
+     "seasonPoints": 266.9,
+     "acquisitionType": "TRADE"
     },
     {
      "playerId": 3060022,
      "name": "Jordan Howard",
      "position": "RB",
      "proTeam": "PHI",
-     "seasonPoints": 61.5
+     "seasonPoints": 61.5,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 4249087,
      "name": "Matt Gay",
      "position": "K",
      "proTeam": "LAR",
-     "seasonPoints": 157.0
+     "seasonPoints": 157.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": -16026,
      "name": "Seahawks D/ST",
      "position": "D/ST",
      "proTeam": "SEA",
-     "seasonPoints": 60.0
+     "seasonPoints": 60.0,
+     "acquisitionType": "ADD"
     }
    ]
   },
@@ -794,147 +871,168 @@
      "name": "Tyreek Hill",
      "position": "WR",
      "proTeam": "KC",
-     "seasonPoints": 241.0
+     "seasonPoints": 241.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4259545,
      "name": "D'Andre Swift",
      "position": "RB",
      "proTeam": "DET",
-     "seasonPoints": 177.9
+     "seasonPoints": 177.9,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 13982,
      "name": "Julio Jones",
      "position": "WR",
      "proTeam": "TEN",
-     "seasonPoints": 64.9
+     "seasonPoints": 64.9,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 16813,
      "name": "Logan Thomas",
      "position": "TE",
      "proTeam": "WSH",
-     "seasonPoints": 44.6
+     "seasonPoints": 44.6,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 2974858,
      "name": "Kenny Golladay",
      "position": "WR",
      "proTeam": "NYG",
-     "seasonPoints": 70.6
+     "seasonPoints": 70.6,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3052876,
      "name": "William Fuller V",
      "position": "WR",
      "proTeam": "MIA",
-     "seasonPoints": 6.6
+     "seasonPoints": 6.6,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 12483,
      "name": "Matthew Stafford",
      "position": "QB",
      "proTeam": "LAR",
-     "seasonPoints": 411.74
+     "seasonPoints": 411.74,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4035676,
      "name": "Zack Moss",
      "position": "RB",
      "proTeam": "BUF",
-     "seasonPoints": 93.7
+     "seasonPoints": 93.7,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4052042,
      "name": "James Robinson",
      "position": "RB",
      "proTeam": "JAX",
-     "seasonPoints": 158.4
+     "seasonPoints": 158.4,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4360310,
      "name": "Trevor Lawrence",
      "position": "QB",
      "proTeam": "JAX",
-     "seasonPoints": 223.04
+     "seasonPoints": 223.04,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 16777,
      "name": "Carlos Hyde",
      "position": "RB",
      "proTeam": "JAX",
-     "seasonPoints": 39.8
+     "seasonPoints": 39.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3066158,
      "name": "Tarik Cohen",
      "position": "RB",
      "proTeam": "CHI",
-     "seasonPoints": 0
+     "seasonPoints": 0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3117256,
      "name": "Dalton Schultz",
      "position": "TE",
      "proTeam": "DAL",
-     "seasonPoints": 169.8
+     "seasonPoints": 169.8,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": -16011,
      "name": "Colts D/ST",
      "position": "D/ST",
      "proTeam": "IND",
-     "seasonPoints": 119.0
+     "seasonPoints": 119.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 4040655,
      "name": "Darnell Mooney",
      "position": "WR",
      "proTeam": "CHI",
-     "seasonPoints": 179.2
+     "seasonPoints": 179.2,
+     "acquisitionType": "TRADE"
     },
     {
      "playerId": 2976499,
      "name": "Amari Cooper",
      "position": "WR",
      "proTeam": "DAL",
-     "seasonPoints": 168.5
+     "seasonPoints": 168.5,
+     "acquisitionType": "TRADE"
     },
     {
      "playerId": 4569173,
      "name": "Rhamondre Stevenson",
      "position": "RB",
      "proTeam": "NE",
-     "seasonPoints": 107.9
+     "seasonPoints": 107.9,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 13994,
      "name": "Cam Newton",
      "position": "QB",
      "proTeam": "CAR",
-     "seasonPoints": 94.36
+     "seasonPoints": 94.36,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 17372,
      "name": "Chris Boswell",
      "position": "K",
      "proTeam": "PIT",
-     "seasonPoints": 158.0
+     "seasonPoints": 158.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": -16007,
      "name": "Broncos D/ST",
      "position": "D/ST",
      "proTeam": "DEN",
-     "seasonPoints": 110.0
+     "seasonPoints": 110.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3139925,
      "name": "Rashaad Penny",
      "position": "RB",
      "proTeam": "SEA",
-     "seasonPoints": 118.7
+     "seasonPoints": 118.7,
+     "acquisitionType": "ADD"
     }
    ]
   },
@@ -960,147 +1058,168 @@
      "name": "Dalvin Cook",
      "position": "RB",
      "proTeam": "MIN",
-     "seasonPoints": 189.3
+     "seasonPoints": 189.3,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 15818,
      "name": "Keenan Allen",
      "position": "WR",
      "proTeam": "LAC",
-     "seasonPoints": 204.8
+     "seasonPoints": 204.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4046692,
      "name": "Chase Claypool",
      "position": "WR",
      "proTeam": "PIT",
-     "seasonPoints": 137.1
+     "seasonPoints": 137.1,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 2976316,
      "name": "Michael Thomas",
      "position": "WR",
      "proTeam": "NO",
-     "seasonPoints": 0
+     "seasonPoints": 0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4035687,
      "name": "Michael Pittman Jr.",
      "position": "WR",
      "proTeam": "IND",
-     "seasonPoints": 194.6
+     "seasonPoints": 194.6,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3925347,
      "name": "Damien Harris",
      "position": "RB",
      "proTeam": "NE",
-     "seasonPoints": 201.1
+     "seasonPoints": 201.1,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3122840,
      "name": "Deshaun Watson",
      "position": "QB",
      "proTeam": "HOU",
-     "seasonPoints": 0
+     "seasonPoints": 0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4239996,
      "name": "Travis Etienne Jr.",
      "position": "RB",
      "proTeam": "JAX",
-     "seasonPoints": 0
+     "seasonPoints": 0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4241555,
      "name": "Elijah Mitchell",
      "position": "RB",
      "proTeam": "SF",
-     "seasonPoints": 155.5
+     "seasonPoints": 155.5,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 14880,
      "name": "Kirk Cousins",
      "position": "QB",
      "proTeam": "MIN",
-     "seasonPoints": 366.34
+     "seasonPoints": 366.34,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3930086,
      "name": "Dawson Knox",
      "position": "TE",
      "proTeam": "BUF",
-     "seasonPoints": 139.6
+     "seasonPoints": 139.6,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 4241389,
      "name": "CeeDee Lamb",
      "position": "WR",
      "proTeam": "DAL",
-     "seasonPoints": 193.3
+     "seasonPoints": 193.3,
+     "acquisitionType": "TRADE"
     },
     {
      "playerId": -16027,
      "name": "Buccaneers D/ST",
      "position": "D/ST",
      "proTeam": "TB",
-     "seasonPoints": 125.0
+     "seasonPoints": 125.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 2573079,
      "name": "Carson Wentz",
      "position": "QB",
      "proTeam": "IND",
-     "seasonPoints": 312.02
+     "seasonPoints": 312.02,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3122976,
      "name": "Jeff Wilson Jr.",
      "position": "RB",
      "proTeam": "SF",
-     "seasonPoints": 48.0
+     "seasonPoints": 48.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 15880,
      "name": "Robert Woods",
      "position": "WR",
      "proTeam": "LAR",
-     "seasonPoints": 114.7
+     "seasonPoints": 114.7,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 4048244,
      "name": "Alexander Mattison",
      "position": "RB",
      "proTeam": "MIN",
-     "seasonPoints": 109.9
+     "seasonPoints": 109.9,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3115375,
      "name": "Darrel Williams",
      "position": "RB",
      "proTeam": "KC",
-     "seasonPoints": 172.5
+     "seasonPoints": 172.5,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 15965,
      "name": "Dustin Hopkins",
      "position": "K",
      "proTeam": "LAC",
-     "seasonPoints": 143.0
+     "seasonPoints": 143.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": -16015,
      "name": "Dolphins D/ST",
      "position": "D/ST",
      "proTeam": "MIA",
-     "seasonPoints": 141.0
+     "seasonPoints": 141.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3912550,
      "name": "Ronald Jones II",
      "position": "RB",
      "proTeam": "TB",
-     "seasonPoints": 74.2
+     "seasonPoints": 74.2,
+     "acquisitionType": "ADD"
     }
    ]
   },
@@ -1126,154 +1245,176 @@
      "name": "Nick Chubb",
      "position": "RB",
      "proTeam": "CLE",
-     "seasonPoints": 205.3
+     "seasonPoints": 205.3,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3925357,
      "name": "Calvin Ridley",
      "position": "WR",
      "proTeam": "ATL",
-     "seasonPoints": 55.6
+     "seasonPoints": 55.6,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4035538,
      "name": "David Montgomery",
      "position": "RB",
      "proTeam": "CHI",
-     "seasonPoints": 174.0
+     "seasonPoints": 174.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 2976212,
      "name": "Stefon Diggs",
      "position": "WR",
      "proTeam": "BUF",
-     "seasonPoints": 234.0
+     "seasonPoints": 234.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4361579,
      "name": "Javonte Williams",
      "position": "RB",
      "proTeam": "DEN",
-     "seasonPoints": 183.4
+     "seasonPoints": 183.4,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 2330,
      "name": "Tom Brady",
      "position": "QB",
      "proTeam": "TB",
-     "seasonPoints": 460.74
+     "seasonPoints": 460.74,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 16731,
      "name": "Brandin Cooks",
      "position": "WR",
      "proTeam": "HOU",
-     "seasonPoints": 186.8
+     "seasonPoints": 186.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 2979843,
      "name": "Kenyan Drake",
      "position": "RB",
      "proTeam": "LV",
-     "seasonPoints": 87.5
+     "seasonPoints": 87.5,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3055899,
      "name": "Harrison Butker",
      "position": "K",
      "proTeam": "KC",
-     "seasonPoints": 137.0
+     "seasonPoints": 137.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 2508176,
      "name": "David Johnson",
      "position": "RB",
      "proTeam": "HOU",
-     "seasonPoints": 65.3
+     "seasonPoints": 65.3,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 13983,
      "name": "A.J. Green",
      "position": "WR",
      "proTeam": "ARI",
-     "seasonPoints": 129.8
+     "seasonPoints": 129.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3915486,
      "name": "Tyler Conklin",
      "position": "TE",
      "proTeam": "MIN",
-     "seasonPoints": 107.8
+     "seasonPoints": 107.8,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 14053,
      "name": "Randall Cobb",
      "position": "WR",
      "proTeam": "GB",
-     "seasonPoints": 79.6
+     "seasonPoints": 79.6,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3061612,
      "name": "Jamal Agnew",
      "position": "WR",
      "proTeam": "JAX",
-     "seasonPoints": 64.0
+     "seasonPoints": 64.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3125116,
      "name": "D'Onta Foreman",
      "position": "RB",
      "proTeam": "TEN",
-     "seasonPoints": 89.4
+     "seasonPoints": 89.4,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3128451,
      "name": "Tre'Quan Smith",
      "position": "WR",
      "proTeam": "NO",
-     "seasonPoints": 71.7
+     "seasonPoints": 71.7,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 15971,
      "name": "Rex Burkhead",
      "position": "RB",
      "proTeam": "HOU",
-     "seasonPoints": 91.8
+     "seasonPoints": 91.8,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": -16012,
      "name": "Chiefs D/ST",
      "position": "D/ST",
      "proTeam": "KC",
-     "seasonPoints": 102.0
+     "seasonPoints": 102.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3045238,
      "name": "Godwin Igwebuike",
      "position": "RB",
      "proTeam": "DET",
-     "seasonPoints": 23.3
+     "seasonPoints": 23.3,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 14993,
      "name": "Greg Zuerlein",
      "position": "K",
      "proTeam": "DAL",
-     "seasonPoints": 134.0
+     "seasonPoints": 134.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 4374302,
      "name": "Amon-Ra St. Brown",
      "position": "WR",
      "proTeam": "DET",
-     "seasonPoints": 182.3
+     "seasonPoints": 182.3,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 4362504,
      "name": "Brevin Jordan",
      "position": "TE",
      "proTeam": "HOU",
-     "seasonPoints": 45.8
+     "seasonPoints": 45.8,
+     "acquisitionType": "ADD"
     }
    ]
   },
@@ -1299,147 +1440,168 @@
      "name": "Ezekiel Elliott",
      "position": "RB",
      "proTeam": "DAL",
-     "seasonPoints": 228.56
+     "seasonPoints": 228.56,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4047646,
      "name": "A.J. Brown",
      "position": "WR",
      "proTeam": "TEN",
-     "seasonPoints": 149.4
+     "seasonPoints": 149.4,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4036133,
      "name": "T.J. Hockenson",
      "position": "TE",
      "proTeam": "DET",
-     "seasonPoints": 114.8
+     "seasonPoints": 114.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 16733,
      "name": "Odell Beckham Jr.",
      "position": "WR",
      "proTeam": "LAR",
-     "seasonPoints": 107.1
+     "seasonPoints": 107.1,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3917315,
      "name": "Kyler Murray",
      "position": "QB",
      "proTeam": "ARI",
-     "seasonPoints": 348.48
+     "seasonPoints": 348.48,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4241372,
      "name": "Marquise Brown",
      "position": "WR",
      "proTeam": "BAL",
-     "seasonPoints": 180.8
+     "seasonPoints": 180.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3128721,
      "name": "Sony Michel",
      "position": "RB",
      "proTeam": "LAR",
-     "seasonPoints": 135.8
+     "seasonPoints": 135.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 15683,
      "name": "Justin Tucker",
      "position": "K",
      "proTeam": "BAL",
-     "seasonPoints": 160.0
+     "seasonPoints": 160.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": -16014,
      "name": "Rams D/ST",
      "position": "D/ST",
      "proTeam": "LAR",
-     "seasonPoints": 105.0
+     "seasonPoints": 105.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 16913,
      "name": "James White",
      "position": "RB",
      "proTeam": "NE",
-     "seasonPoints": 25.2
+     "seasonPoints": 25.2,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4241985,
      "name": "J.K. Dobbins",
      "position": "RB",
      "proTeam": "BAL",
-     "seasonPoints": 0
+     "seasonPoints": 0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 16725,
      "name": "Sammy Watkins",
      "position": "WR",
      "proTeam": "BAL",
-     "seasonPoints": 56.9
+     "seasonPoints": 56.9,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3917792,
      "name": "Daniel Jones",
      "position": "QB",
      "proTeam": "NYG",
-     "seasonPoints": 187.02
+     "seasonPoints": 187.02,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3045523,
      "name": "Kendrick Bourne",
      "position": "WR",
      "proTeam": "NE",
-     "seasonPoints": 155.0
+     "seasonPoints": 155.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 16944,
      "name": "Devonta Freeman",
      "position": "RB",
      "proTeam": "BAL",
-     "seasonPoints": 129.6
+     "seasonPoints": 129.6,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 16760,
      "name": "Jimmy Garoppolo",
      "position": "QB",
      "proTeam": "SF",
-     "seasonPoints": 267.5
+     "seasonPoints": 267.5,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 2979477,
      "name": "Tevin Coleman",
      "position": "RB",
      "proTeam": "NYJ",
-     "seasonPoints": 46.0
+     "seasonPoints": 46.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": -16024,
      "name": "Chargers D/ST",
      "position": "D/ST",
      "proTeam": "LAC",
-     "seasonPoints": 61.0
+     "seasonPoints": 61.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 2576623,
      "name": "DeVante Parker",
      "position": "WR",
      "proTeam": "MIA",
-     "seasonPoints": 83.5
+     "seasonPoints": 83.5,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3046439,
      "name": "Hunter Henry",
      "position": "TE",
      "proTeam": "NE",
-     "seasonPoints": 139.3
+     "seasonPoints": 139.3,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3918639,
      "name": "Gerald Everett",
      "position": "TE",
      "proTeam": "SEA",
-     "seasonPoints": 93.8
+     "seasonPoints": 93.8,
+     "acquisitionType": "ADD"
     }
    ]
   },
@@ -1465,126 +1627,144 @@
      "name": "Najee Harris",
      "position": "RB",
      "proTeam": "PIT",
-     "seasonPoints": 263.7
+     "seasonPoints": 263.7,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3068267,
      "name": "Austin Ekeler",
      "position": "RB",
      "proTeam": "LAC",
-     "seasonPoints": 308.8
+     "seasonPoints": 308.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4242335,
      "name": "Jonathan Taylor",
      "position": "RB",
      "proTeam": "IND",
-     "seasonPoints": 353.1
+     "seasonPoints": 353.1,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 2977187,
      "name": "Cooper Kupp",
      "position": "WR",
      "proTeam": "LAR",
-     "seasonPoints": 367.0
+     "seasonPoints": 367.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4239993,
      "name": "Tee Higgins",
      "position": "WR",
      "proTeam": "CIN",
-     "seasonPoints": 182.1
+     "seasonPoints": 182.1,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 8439,
      "name": "Aaron Rodgers",
      "position": "QB",
      "proTeam": "GB",
-     "seasonPoints": 406.8
+     "seasonPoints": 406.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3126486,
      "name": "Deebo Samuel",
      "position": "WR",
      "proTeam": "SF",
-     "seasonPoints": 302.46
+     "seasonPoints": 302.46,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4036131,
      "name": "Noah Fant",
      "position": "TE",
      "proTeam": "DEN",
-     "seasonPoints": 125.0
+     "seasonPoints": 125.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4239934,
      "name": "AJ Dillon",
      "position": "RB",
      "proTeam": "GB",
-     "seasonPoints": 168.6
+     "seasonPoints": 168.6,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3116164,
      "name": "Mike Gesicki",
      "position": "TE",
      "proTeam": "MIA",
-     "seasonPoints": 128.5
+     "seasonPoints": 128.5,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3915511,
      "name": "Joe Burrow",
      "position": "QB",
      "proTeam": "CIN",
-     "seasonPoints": 382.24
+     "seasonPoints": 382.24,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": -16017,
      "name": "Patriots D/ST",
      "position": "D/ST",
      "proTeam": "NE",
-     "seasonPoints": 148.0
+     "seasonPoints": 148.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 12537,
      "name": "Jared Cook",
      "position": "TE",
      "proTeam": "LAC",
-     "seasonPoints": 108.4
+     "seasonPoints": 108.4,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 11122,
      "name": "Matt Prater",
      "position": "K",
      "proTeam": "ARI",
-     "seasonPoints": 147.0
+     "seasonPoints": 147.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 15920,
      "name": "Latavius Murray",
      "position": "RB",
      "proTeam": "BAL",
-     "seasonPoints": 98.6
+     "seasonPoints": 98.6,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": -16009,
      "name": "Packers D/ST",
      "position": "D/ST",
      "proTeam": "GB",
-     "seasonPoints": 108.0
+     "seasonPoints": 108.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 9354,
      "name": "Robbie Gould",
      "position": "K",
      "proTeam": "SF",
-     "seasonPoints": 109.0
+     "seasonPoints": 109.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3116136,
      "name": "Justin Jackson",
      "position": "RB",
      "proTeam": "LAC",
-     "seasonPoints": 75.2
+     "seasonPoints": 75.2,
+     "acquisitionType": "ADD"
     }
    ]
   },
@@ -1610,133 +1790,152 @@
      "name": "Derrick Henry",
      "position": "RB",
      "proTeam": "TEN",
-     "seasonPoints": 186.3
+     "seasonPoints": 186.3,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 2576925,
      "name": "Darren Waller",
      "position": "TE",
      "proTeam": "LV",
-     "seasonPoints": 106.0
+     "seasonPoints": 106.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 2577327,
      "name": "Tyler Lockett",
      "position": "WR",
      "proTeam": "SEA",
-     "seasonPoints": 204.9
+     "seasonPoints": 204.9,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3915416,
      "name": "DJ Moore",
      "position": "WR",
      "proTeam": "CAR",
-     "seasonPoints": 191.0
+     "seasonPoints": 191.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4241463,
      "name": "Jerry Jeudy",
      "position": "WR",
      "proTeam": "DEN",
-     "seasonPoints": 66.0
+     "seasonPoints": 66.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 14881,
      "name": "Russell Wilson",
      "position": "QB",
      "proTeam": "SEA",
-     "seasonPoints": 292.82
+     "seasonPoints": 292.82,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4039359,
      "name": "Darrell Henderson Jr.",
      "position": "RB",
      "proTeam": "LAR",
-     "seasonPoints": 148.9
+     "seasonPoints": 148.9,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3121427,
      "name": "Curtis Samuel",
      "position": "WR",
      "proTeam": "WSH",
-     "seasonPoints": 6.8
+     "seasonPoints": 6.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 15349,
      "name": "Cole Beasley",
      "position": "WR",
      "proTeam": "BUF",
-     "seasonPoints": 118.3
+     "seasonPoints": 118.3,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4040761,
      "name": "Devin Singletary",
      "position": "RB",
      "proTeam": "BUF",
-     "seasonPoints": 177.8
+     "seasonPoints": 177.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3116165,
      "name": "Chris Godwin",
      "position": "WR",
      "proTeam": "TB",
-     "seasonPoints": 193.4
+     "seasonPoints": 193.4,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3930066,
      "name": "Van Jefferson",
      "position": "WR",
      "proTeam": "LAR",
-     "seasonPoints": 143.2
+     "seasonPoints": 143.2,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": -16022,
      "name": "Cardinals D/ST",
      "position": "D/ST",
      "proTeam": "ARI",
-     "seasonPoints": 114.0
+     "seasonPoints": 114.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3135321,
      "name": "Hunter Renfrow",
      "position": "WR",
      "proTeam": "LV",
-     "seasonPoints": 207.6
+     "seasonPoints": 207.6,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 2565969,
      "name": "Taylor Heinicke",
      "position": "QB",
      "proTeam": "WSH",
-     "seasonPoints": 262.36
+     "seasonPoints": 262.36,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 10621,
      "name": "Nick Folk",
      "position": "K",
      "proTeam": "NE",
-     "seasonPoints": 168.0
+     "seasonPoints": 168.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3126246,
      "name": "Dontrell Hilliard",
      "position": "RB",
      "proTeam": "TEN",
-     "seasonPoints": 63.2
+     "seasonPoints": 63.2,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3843945,
      "name": "Foster Moreau",
      "position": "TE",
      "proTeam": "LV",
-     "seasonPoints": 70.3
+     "seasonPoints": 70.3,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 12731,
      "name": "Ryan Succop",
      "position": "K",
      "proTeam": "TB",
-     "seasonPoints": 133.0
+     "seasonPoints": 133.0,
+     "acquisitionType": "ADD"
     }
    ]
   },
@@ -1762,140 +1961,160 @@
      "name": "Travis Kelce",
      "position": "TE",
      "proTeam": "KC",
-     "seasonPoints": 216.8
+     "seasonPoints": 216.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4242214,
      "name": "Clyde Edwards-Helaire",
      "position": "RB",
      "proTeam": "KC",
-     "seasonPoints": 108.1
+     "seasonPoints": 108.1,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 16799,
      "name": "Allen Robinson II",
      "position": "WR",
      "proTeam": "CHI",
-     "seasonPoints": 68.0
+     "seasonPoints": 68.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3119195,
      "name": "Chase Edmonds",
      "position": "RB",
      "proTeam": "ARI",
-     "seasonPoints": 121.8
+     "seasonPoints": 121.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3886818,
      "name": "Myles Gaskin",
      "position": "RB",
      "proTeam": "MIA",
-     "seasonPoints": 149.1
+     "seasonPoints": 149.1,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 16790,
      "name": "Jarvis Landry",
      "position": "WR",
      "proTeam": "CLE",
-     "seasonPoints": 107.0
+     "seasonPoints": 107.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3045144,
      "name": "Tyler Boyd",
      "position": "WR",
      "proTeam": "CIN",
-     "seasonPoints": 150.34
+     "seasonPoints": 150.34,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3918298,
      "name": "Josh Allen",
      "position": "QB",
      "proTeam": "BUF",
-     "seasonPoints": 474.58
+     "seasonPoints": 474.58,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4035170,
      "name": "Marquez Callaway",
      "position": "WR",
      "proTeam": "NO",
-     "seasonPoints": 128.8
+     "seasonPoints": 128.8,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3916430,
      "name": "Nyheim Hines",
      "position": "RB",
      "proTeam": "IND",
-     "seasonPoints": 92.6
+     "seasonPoints": 92.6,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": -16023,
      "name": "Steelers D/ST",
      "position": "D/ST",
      "proTeam": "PIT",
-     "seasonPoints": 90.0
+     "seasonPoints": 90.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3121410,
      "name": "Parris Campbell",
      "position": "WR",
      "proTeam": "IND",
-     "seasonPoints": 27.2
+     "seasonPoints": 27.2,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 13295,
      "name": "Emmanuel Sanders",
      "position": "WR",
      "proTeam": "BUF",
-     "seasonPoints": 110.7
+     "seasonPoints": 110.7,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3917232,
      "name": "Tyler Bass",
      "position": "K",
      "proTeam": "BUF",
-     "seasonPoints": 139.0
+     "seasonPoints": 139.0,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4361411,
      "name": "Pat Freiermuth",
      "position": "TE",
      "proTeam": "PIT",
-     "seasonPoints": 121.7
+     "seasonPoints": 121.7,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 15807,
      "name": "Cordarrelle Patterson",
      "position": "RB",
      "proTeam": "ATL",
-     "seasonPoints": 208.6
+     "seasonPoints": 208.6,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": -16006,
      "name": "Cowboys D/ST",
      "position": "D/ST",
      "proTeam": "DAL",
-     "seasonPoints": 163.0
+     "seasonPoints": 163.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 4243315,
      "name": "Salvon Ahmed",
      "position": "RB",
      "proTeam": "MIA",
-     "seasonPoints": 32.6
+     "seasonPoints": 32.6,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 4372414,
      "name": "Elijah Moore",
      "position": "WR",
      "proTeam": "NYJ",
-     "seasonPoints": 116.7
+     "seasonPoints": 116.7,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 4258595,
      "name": "Cole Kmet",
      "position": "TE",
      "proTeam": "CHI",
-     "seasonPoints": 91.2
+     "seasonPoints": 91.2,
+     "acquisitionType": "ADD"
     }
    ]
   },
@@ -1921,133 +2140,152 @@
      "name": "Alvin Kamara",
      "position": "RB",
      "proTeam": "NO",
-     "seasonPoints": 211.2
+     "seasonPoints": 211.2,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3919596,
      "name": "Chris Carson",
      "position": "RB",
      "proTeam": "SEA",
-     "seasonPoints": 45.1
+     "seasonPoints": 45.1,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 16460,
      "name": "Adam Thielen",
      "position": "WR",
      "proTeam": "MIN",
-     "seasonPoints": 166.3
+     "seasonPoints": 166.3,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 2577417,
      "name": "Dak Prescott",
      "position": "QB",
      "proTeam": "DAL",
-     "seasonPoints": 394.56
+     "seasonPoints": 394.56,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3045147,
      "name": "James Conner",
      "position": "RB",
      "proTeam": "ARI",
-     "seasonPoints": 239.2
+     "seasonPoints": 239.2,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 4035004,
      "name": "Mecole Hardman",
      "position": "WR",
      "proTeam": "KC",
-     "seasonPoints": 111.4
+     "seasonPoints": 111.4,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 2976592,
      "name": "Sterling Shepard",
      "position": "WR",
      "proTeam": "NYG",
-     "seasonPoints": 59.7
+     "seasonPoints": 59.7,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 13229,
      "name": "Rob Gronkowski",
      "position": "TE",
      "proTeam": "TB",
-     "seasonPoints": 143.7
+     "seasonPoints": 143.7,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 2576716,
      "name": "Jamison Crowder",
      "position": "WR",
      "proTeam": "NYJ",
-     "seasonPoints": 84.2
+     "seasonPoints": 84.2,
+     "acquisitionType": "DRAFT"
     },
     {
      "playerId": 3116365,
      "name": "Mark Andrews",
      "position": "TE",
      "proTeam": "BAL",
-     "seasonPoints": 247.6
+     "seasonPoints": 247.6,
+     "acquisitionType": "TRADE"
     },
     {
      "playerId": 13981,
      "name": "Mark Ingram II",
      "position": "RB",
      "proTeam": "NO",
-     "seasonPoints": 95.1
+     "seasonPoints": 95.1,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 16757,
      "name": "Derek Carr",
      "position": "QB",
      "proTeam": "LV",
-     "seasonPoints": 302.96
+     "seasonPoints": 302.96,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 2572861,
      "name": "J.D. McKissic",
      "position": "RB",
      "proTeam": "WSH",
-     "seasonPoints": 106.4
+     "seasonPoints": 106.4,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3051909,
      "name": "Daniel Carlson",
      "position": "K",
      "proTeam": "LV",
-     "seasonPoints": 171.0
+     "seasonPoints": 171.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 4036335,
      "name": "Cedrick Wilson",
      "position": "WR",
      "proTeam": "DAL",
-     "seasonPoints": 125.32
+     "seasonPoints": 125.32,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": -16033,
      "name": "Ravens D/ST",
      "position": "D/ST",
      "proTeam": "BAL",
-     "seasonPoints": 58.0
+     "seasonPoints": 58.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3916566,
      "name": "K.J. Osborn",
      "position": "WR",
      "proTeam": "MIN",
-     "seasonPoints": 133.5
+     "seasonPoints": 133.5,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3115378,
      "name": "Russell Gage",
      "position": "WR",
      "proTeam": "ATL",
-     "seasonPoints": 130.0
+     "seasonPoints": 130.0,
+     "acquisitionType": "ADD"
     },
     {
      "playerId": 3128390,
      "name": "Allen Lazard",
      "position": "WR",
      "proTeam": "GB",
-     "seasonPoints": 122.5
+     "seasonPoints": 122.5,
+     "acquisitionType": "ADD"
     }
    ]
   }
@@ -38666,5 +38904,8 @@
    }
   ]
  },
- "warnings": []
+ "trades": [],
+ "warnings": [
+  "trade history unavailable: League 477497 does not exist"
+ ]
 }

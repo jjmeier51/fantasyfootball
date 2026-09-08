@@ -1,7 +1,7 @@
 {
  "leagueName": "League of Gangstars",
- "lastSynced": "2026-09-08T04:19:14.165537+00:00",
- "generatedAt": "2026-09-08T13:07:44.809099+00:00",
+ "lastSynced": "2026-09-08T13:17:30.710554+00:00",
+ "generatedAt": "2026-09-08T13:17:32.486969+00:00",
  "seasons": [
   2010,
   2011,
@@ -46,7 +46,36 @@
   "2026": "full"
  },
  "screenshotsNeeded": {},
- "warnings": [],
+ "warnings": [
+  {
+   "year": 2019,
+   "message": "trade history unavailable: League 477497 does not exist"
+  },
+  {
+   "year": 2020,
+   "message": "trade history unavailable: League 477497 does not exist"
+  },
+  {
+   "year": 2021,
+   "message": "trade history unavailable: League 477497 does not exist"
+  },
+  {
+   "year": 2022,
+   "message": "trade history unavailable: League 477497 does not exist"
+  },
+  {
+   "year": 2023,
+   "message": "trade history unavailable: League 477497 does not exist"
+  },
+  {
+   "year": 2024,
+   "message": "trade history unavailable: League 477497 does not exist"
+  },
+  {
+   "year": 2025,
+   "message": "trade history unavailable: League 477497 does not exist"
+  }
+ ],
  "counts": {
   "owners": 19,
   "games": 1415,

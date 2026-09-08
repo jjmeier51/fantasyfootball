@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -7,9 +7,8 @@ import ThemePlayer from "@/components/ThemePlayer";
 import CommandPalette from "@/components/CommandPalette";
 import { meta, ownersLite, seasons } from "@/lib/data";
 
-// Atlassian's Charlie Display / Charlie Text are proprietary; these are the closest open pairing.
-const sans = Inter({ variable: "--font-sans-src", subsets: ["latin"] });
-const display = Plus_Jakarta_Sans({ variable: "--font-display-src", subsets: ["latin"], weight: ["600", "700", "800"] });
+// One typeface everywhere: Inter for body text and, in heavier weights, for headlines and numbers.
+const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
 const description = `The complete history of ${meta.leagueName}: trophies, records, rivalries and fun facts since ${meta.firstSeason}.`;
 
@@ -31,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${sans.variable} ${display.variable} h-full antialiased`}>
+    <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <ThemePlayer>
           <Nav leagueName={meta.leagueName} isSample={meta.isSample} />

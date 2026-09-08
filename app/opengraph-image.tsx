@@ -5,7 +5,7 @@ export const alt = "League of Gangstars";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-const DISPLAY_FONT_URL = "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_KUnNSg.ttf";
+const DISPLAY_FONT_URL = "https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYMZg.ttf";
 
 async function loadFont(): Promise<ArrayBuffer | null> {
   try {
@@ -39,7 +39,7 @@ export default async function OpenGraphImage() {
           Est. {meta.firstSeason} · Fantasy Football
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 96, fontWeight: 800, lineHeight: 1.05, letterSpacing: -3, color: "#e9c766" }}>{meta.leagueName}</div>
+          <div style={{ fontSize: 92, fontWeight: 800, lineHeight: 1.05, letterSpacing: -4, color: "#e9c766" }}>{meta.leagueName}</div>
           <div style={{ fontSize: 30, color: "#b6bdcc", marginTop: 18, fontFamily: "Helvetica, Arial, sans-serif" }}>
             Every championship, every blowout, every embarrassing week. Preserved forever.
           </div>

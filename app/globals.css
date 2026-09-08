@@ -32,8 +32,8 @@
   --color-cool: var(--cool);
   --color-good: var(--good);
   --color-bad: var(--bad);
-  --font-sans: var(--font-sans-src), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-display-src), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
 html {

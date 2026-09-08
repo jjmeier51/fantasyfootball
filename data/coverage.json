@@ -258,7 +258,7 @@
  "2026": {
   "fields": {
    "settings": "full",
-   "teams": "partial",
+   "teams": "n/a",
    "owners": "full",
    "weeklyScores": "n/a",
    "finalStandings": "n/a",
@@ -267,7 +267,7 @@
    "logos": "partial",
    "boxscores": "n/a"
   },
-  "tier": "partial",
+  "tier": "full",
   "screenshotsNeeded": [],
   "source": "espn"
  }

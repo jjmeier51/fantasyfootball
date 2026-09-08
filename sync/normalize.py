@@ -270,6 +270,8 @@ def coverage_for(season: dict, raw: dict, owner_map: OwnerMap) -> dict:
     cov: dict[str, str] = {}
     cov["settings"] = "full" if raw.get("settings") else "missing"
     cov["teams"] = "full" if teams and all((t["wins"] + t["losses"] + t["ties"]) > 0 for t in teams) else ("partial" if teams else "missing")
+    if teams and not season["isComplete"] and not completed:
+        cov["teams"] = "n/a"  # season hasn't kicked off yet; nothing is missing
     unknown = [t for t in teams if t["ownerKey"].startswith("unknown-")]
     cov["owners"] = "missing" if not teams or len(unknown) == n else ("partial" if unknown else "full")
     reg_expected = (n // 2) * len([w for w in completed if w <= reg]) if n else 0

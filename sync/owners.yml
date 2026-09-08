@@ -5,140 +5,101 @@
 # team-season to an owner when ESPN has no owner info for it.
 owners:
 - key: tyler-small
-  name: Tyler
+  name: Smalls
   swids:
   - '{1E50E876-951E-4524-BCBA-2038B98C1108}'
   active: true
-  auto: true
-- key: shane-vlasic
-  name: SHane
+- key: shane
+  name: Shane
   swids:
   - '{5E47899F-1AD7-4E25-91B0-E6BCADCC3DAF}'
+  - '{63BA1837-5C2B-4F3A-BA18-375C2BEF3A78}'
   active: true
-  auto: true
 - key: chase-warren
   name: Chase
   swids:
   - '{0A86415D-BA5C-44A1-A904-C04D738E88F6}'
+  - '{D575691A-17D2-4FEF-B569-1A17D2AFEF55}'
   active: true
-  auto: true
 - key: drew-matteo
   name: Drew
   swids:
   - '{6BD55E7F-09BF-4862-A6C3-6203C7585F3D}'
   active: true
-  auto: true
 - key: john-meier
-  name: John
+  name: Johnny
   swids:
   - '{3F446563-718C-429D-8806-008711337B0A}'
   active: true
-  auto: true
 - key: kevin-mcgaughey
   name: Kevin
   swids:
   - '{32C94A1A-FC90-465B-BAC8-E8A195FBACB2}'
   active: true
-  auto: true
 - key: ethan-miller
-  name: ethan
+  name: Ethan
   swids:
   - '{2C6E8125-9689-4ED5-9CC1-4B7CDAC6A8C4}'
+  - '{2B540E18-958C-4394-940E-18958CF39448}'
   active: true
-  auto: true
 - key: jp-woodward
   name: JP
   swids:
   - '{3C11D75D-7CD1-4370-8A5A-B7D3A39EF1C4}'
   active: true
-  auto: true
 - key: caleb-dessalgne
   name: Caleb
   swids:
   - '{D67E52DA-C6E6-4B39-AAE2-184BD9A40B45}'
   active: true
-  auto: true
 - key: taylor-evans
   name: Taylor
   swids:
   - '{3BDBBDAA-1109-4E00-8E62-356929F796B6}'
   active: true
-  auto: true
 - key: cole-coder
   name: Cole
   swids:
   - '{7A7F0660-0661-4643-BF06-600661964395}'
   active: true
-  auto: true
 - key: ryan-watson
   name: Ryan
   swids:
   - '{42C8712A-A63B-4633-8871-2AA63B3633D8}'
   active: true
-  auto: true
 - key: taylor-brown
-  name: Taylor B.
+  name: Brown
   swids:
   - '{AE18570C-39F3-4C59-BFE1-634AFDED6097}'
+  - '{62115F85-130E-48E9-99F7-172E11E0F531}'
   active: true
-  auto: true
 - key: nate-lee-deison
   name: Nate
   swids:
   - '{9142CFBF-738B-46EF-82CF-BF738BC6EF7E}'
   active: true
-  auto: true
 - key: alex-wegweiser
   name: Alex
   swids:
   - '{55CF64B9-57C7-4B50-8F64-B957C73B5055}'
   active: true
-  auto: true
 - key: nick-salemo
   name: Nick
   swids:
   - '{6FDACAB7-B341-476F-9ACA-B7B341976F0A}'
   active: true
-  auto: true
 - key: conor-nevins
   name: Conor
   swids:
   - '{ED9801C7-FD3A-409E-BDFF-3DA7B7919D06}'
   active: true
-  auto: true
-- key: shane-mike
-  name: Shane M.
-  swids:
-  - '{63BA1837-5C2B-4F3A-BA18-375C2BEF3A78}'
-  active: true
-  auto: true
 - key: anthony-gatto
   name: Anthony
   swids:
   - '{0B4798CF-BD82-409F-BF1E-90A5A7205375}'
   active: true
-  auto: true
-- key: chase-warren-2
-  name: Chase W.
-  swids:
-  - '{D575691A-17D2-4FEF-B569-1A17D2AFEF55}'
-  active: true
-  auto: true
-- key: ethan-miller-2
-  name: Ethan M.
-  swids:
-  - '{2B540E18-958C-4394-940E-18958CF39448}'
-  active: true
-  auto: true
-- key: taylor-brown-2
-  name: Taylor B.
-  swids:
-  - '{62115F85-130E-48E9-99F7-172E11E0F531}'
-  active: true
-  auto: true
 - key: mike-vespa
   name: Mike
   swids:
   - '{ADCC4B0E-CF21-4266-8DE5-F1F8006C614B}'
   active: true
-  auto: true

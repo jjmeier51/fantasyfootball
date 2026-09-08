@@ -1,7 +1,7 @@
 {
  "leagueName": "League of Gangstars Season 17",
  "lastSynced": "2026-09-08T04:19:14.165537+00:00",
- "generatedAt": "2026-09-08T04:19:15.122410+00:00",
+ "generatedAt": "2026-09-08T04:25:18.160745+00:00",
  "seasons": [
   2010,
   2011,
@@ -43,107 +43,14 @@
   "2023": "full",
   "2024": "full",
   "2025": "full",
-  "2026": "partial"
+  "2026": "full"
  },
  "screenshotsNeeded": {},
- "warnings": [
-  {
-   "year": 2010,
-   "message": "new owner stub 'tyler-small' created for Tyler; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2010,
-   "message": "new owner stub 'shane-vlasic' created for SHane; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2010,
-   "message": "new owner stub 'chase-warren' created for Chase; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2010,
-   "message": "new owner stub 'drew-matteo' created for Drew; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2010,
-   "message": "new owner stub 'john-meier' created for John; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2010,
-   "message": "new owner stub 'kevin-mcgaughey' created for Kevin; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2010,
-   "message": "new owner stub 'ethan-miller' created for ethan; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2010,
-   "message": "new owner stub 'jp-woodward' created for JP; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2011,
-   "message": "new owner stub 'caleb-dessalgne' created for Caleb; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2011,
-   "message": "new owner stub 'taylor-evans' created for Taylor; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2013,
-   "message": "new owner stub 'cole-coder' created for Cole; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2013,
-   "message": "new owner stub 'ryan-watson' created for Ryan; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2014,
-   "message": "new owner stub 'taylor-brown' created for Taylor B.; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2014,
-   "message": "new owner stub 'nate-lee-deison' created for Nate; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2014,
-   "message": "new owner stub 'alex-wegweiser' created for Alex; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2014,
-   "message": "new owner stub 'nick-salemo' created for Nick; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2015,
-   "message": "new owner stub 'conor-nevins' created for Conor; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2015,
-   "message": "new owner stub 'shane-mike' created for Shane M.; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2016,
-   "message": "new owner stub 'anthony-gatto' created for Anthony; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2023,
-   "message": "new owner stub 'chase-warren-2' created for Chase W.; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2023,
-   "message": "new owner stub 'ethan-miller-2' created for Ethan M.; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2023,
-   "message": "new owner stub 'taylor-brown-2' created for Taylor B.; edit sync/owners.yml to rename/merge"
-  },
-  {
-   "year": 2026,
-   "message": "new owner stub 'mike-vespa' created for Mike; edit sync/owners.yml to rename/merge"
-  }
- ],
+ "warnings": [],
  "counts": {
-  "owners": 23,
+  "owners": 19,
   "games": 1415,
-  "facts": 141,
+  "facts": 129,
   "records": 36
  }
 }

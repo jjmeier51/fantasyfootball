@@ -2,7 +2,7 @@
  "year": 2025,
  "leagueId": 477497,
  "source": "espn",
- "fetchedAt": "2026-09-08T13:17:28.713813+00:00",
+ "fetchedAt": "2026-09-08T13:20:21.202778+00:00",
  "settings": {
   "name": "League of Gangstars Season 7",
   "teamCount": 12,
@@ -88,7 +88,26 @@
    16,
    17
   ],
-  "weekStarts": {}
+  "weekStarts": {
+   "1": 1757031600000,
+   "2": 1757636100000,
+   "3": 1758240900000,
+   "4": 1758845700000,
+   "5": 1759450500000,
+   "6": 1760055300000,
+   "7": 1760660100000,
+   "8": 1761264900000,
+   "9": 1761869700000,
+   "10": 1762478100000,
+   "12": 1763687700000,
+   "13": 1764266400000,
+   "14": 1764897300000,
+   "15": 1765502100000,
+   "16": 1766106900000,
+   "17": 1766685600000,
+   "18": 1767475800000,
+   "11": 1763082900000
+  }
  },
  "members": [
   {
@@ -31787,8 +31806,31 @@
    }
   ]
  },
- "trades": [],
- "warnings": [
-  "trade history unavailable: League 477497 does not exist"
- ]
+ "trades": [
+  {
+   "id": "57770486-be22-4e4e-86f8-696748abe0e0",
+   "date": 1759508406364,
+   "week": 5,
+   "items": [
+    {
+     "playerId": 4429025,
+     "fromTeamId": 14,
+     "toTeamId": 5,
+     "name": "Quentin Johnston",
+     "position": "WR",
+     "proTeam": "LAC"
+    },
+    {
+     "playerId": 4035538,
+     "fromTeamId": 5,
+     "toTeamId": 14,
+     "name": "David Montgomery",
+     "position": "RB",
+     "proTeam": "HOU"
+    }
+   ],
+   "source": "transactions"
+  }
+ ],
+ "warnings": []
 }

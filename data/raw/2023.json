@@ -2,7 +2,7 @@
  "year": 2023,
  "leagueId": 477497,
  "source": "espn",
- "fetchedAt": "2026-09-08T13:17:24.837421+00:00",
+ "fetchedAt": "2026-09-08T13:20:08.224057+00:00",
  "settings": {
   "name": "League of Gangstars Season 7",
   "teamCount": 12,
@@ -88,7 +88,26 @@
    16,
    17
   ],
-  "weekStarts": {}
+  "weekStarts": {
+   "1": 1694132400000,
+   "2": 1694736900000,
+   "3": 1695341700000,
+   "4": 1695946500000,
+   "5": 1696551300000,
+   "6": 1697156100000,
+   "7": 1697760900000,
+   "8": 1698365700000,
+   "9": 1698970500000,
+   "10": 1699578900000,
+   "12": 1700760600000,
+   "13": 1701393300000,
+   "14": 1701998100000,
+   "15": 1702602900000,
+   "16": 1703207700000,
+   "17": 1703812500000,
+   "18": 1704576600000,
+   "11": 1700183700000
+  }
  },
  "members": [
   {
@@ -38255,8 +38274,63 @@
    }
   ]
  },
- "trades": [],
- "warnings": [
-  "trade history unavailable: League 477497 does not exist"
- ]
+ "trades": [
+  {
+   "id": "ace8f5fe-a5bd-4828-a518-bfc7ddfb4be7",
+   "date": 1700079504069,
+   "week": 11,
+   "items": [
+    {
+     "playerId": -16025,
+     "fromTeamId": 6,
+     "toTeamId": 5,
+     "name": "49ers D/ST",
+     "position": "D/ST",
+     "proTeam": "SF"
+    },
+    {
+     "playerId": -16020,
+     "fromTeamId": 5,
+     "toTeamId": 6,
+     "name": "Jets D/ST",
+     "position": "D/ST",
+     "proTeam": "NYJ"
+    },
+    {
+     "playerId": 2976212,
+     "fromTeamId": 5,
+     "toTeamId": 6,
+     "name": "Stefon Diggs",
+     "position": "WR",
+     "proTeam": "BUF"
+    },
+    {
+     "playerId": 4040715,
+     "fromTeamId": 6,
+     "toTeamId": 5,
+     "name": "Jalen Hurts",
+     "position": "QB",
+     "proTeam": "PHI"
+    },
+    {
+     "playerId": 15795,
+     "fromTeamId": 6,
+     "toTeamId": 5,
+     "name": "DeAndre Hopkins",
+     "position": "WR",
+     "proTeam": "TEN"
+    },
+    {
+     "playerId": 4429205,
+     "fromTeamId": 6,
+     "toTeamId": 5,
+     "name": "Jordan Addison",
+     "position": "WR",
+     "proTeam": "MIN"
+    }
+   ],
+   "source": "transactions"
+  }
+ ],
+ "warnings": []
 }

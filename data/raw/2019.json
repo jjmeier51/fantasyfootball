@@ -2,7 +2,7 @@
  "year": 2019,
  "leagueId": 477497,
  "source": "espn",
- "fetchedAt": "2026-09-08T13:17:15.965193+00:00",
+ "fetchedAt": "2026-09-08T13:19:41.629967+00:00",
  "settings": {
   "name": "League of Gangstars Season 5",
   "teamCount": 12,
@@ -84,7 +84,25 @@
    15,
    16
   ],
-  "weekStarts": {}
+  "weekStarts": {
+   "1": 1567729200000,
+   "2": 1568334000000,
+   "3": 1568938800000,
+   "4": 1569543600000,
+   "5": 1570148400000,
+   "7": 1571358000000,
+   "8": 1571962800000,
+   "9": 1572567600000,
+   "10": 1573176000000,
+   "11": 1573780800000,
+   "12": 1574385600000,
+   "13": 1574962200000,
+   "14": 1575595200000,
+   "15": 1576200000000,
+   "16": 1576951200000,
+   "17": 1577642400000,
+   "6": 1570753200000
+  }
  },
  "members": [
   {
@@ -30930,8 +30948,31 @@
    }
   ]
  },
- "trades": [],
- "warnings": [
-  "trade history unavailable: League 477497 does not exist"
- ]
+ "trades": [
+  {
+   "id": "f40efd71-4786-43ad-b540-37815c510322",
+   "date": 1567128403982,
+   "week": 1,
+   "items": [
+    {
+     "playerId": 2977698,
+     "fromTeamId": 6,
+     "toTeamId": 5,
+     "name": "Glenn Gronkowski",
+     "position": "RB",
+     "proTeam": "FA"
+    },
+    {
+     "playerId": 3843750,
+     "fromTeamId": 5,
+     "toTeamId": 6,
+     "name": "Derrius Guice",
+     "position": "RB",
+     "proTeam": "WSH"
+    }
+   ],
+   "source": "transactions"
+  }
+ ],
+ "warnings": []
 }

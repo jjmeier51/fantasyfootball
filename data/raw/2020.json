@@ -2,7 +2,7 @@
  "year": 2020,
  "leagueId": 477497,
  "source": "espn",
- "fetchedAt": "2026-09-08T13:17:18.245894+00:00",
+ "fetchedAt": "2026-09-08T13:19:47.583143+00:00",
  "settings": {
   "name": "League of Gangstars Season 6",
   "teamCount": 12,
@@ -84,7 +84,25 @@
    15,
    16
   ],
-  "weekStarts": {}
+  "weekStarts": {
+   "1": 1599783600000,
+   "2": 1600388400000,
+   "3": 1600993200000,
+   "4": 1601598000000,
+   "5": 1602202800000,
+   "6": 1603040400000,
+   "8": 1604017200000,
+   "9": 1604625600000,
+   "10": 1605230400000,
+   "11": 1605835200000,
+   "12": 1606411800000,
+   "13": 1607277600000,
+   "14": 1607649600000,
+   "15": 1608254400000,
+   "16": 1608931800000,
+   "17": 1609696800000,
+   "7": 1603412400000
+  }
  },
  "members": [
   {
@@ -35556,6 +35574,6 @@
  },
  "trades": [],
  "warnings": [
-  "trade history unavailable: League 477497 does not exist"
+  "trade history unavailable: transaction ledger returned no trades; activity feed unavailable: League 477497 does not exist"
  ]
 }

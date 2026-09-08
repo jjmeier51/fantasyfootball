@@ -2,7 +2,7 @@
  "year": 2021,
  "leagueId": 477497,
  "source": "espn",
- "fetchedAt": "2026-09-08T13:17:20.446681+00:00",
+ "fetchedAt": "2026-09-08T13:19:54.925490+00:00",
  "settings": {
   "name": "League of Gangstars Season 7",
   "teamCount": 12,
@@ -88,7 +88,26 @@
    16,
    17
   ],
-  "weekStarts": {}
+  "weekStarts": {
+   "1": 1631233200000,
+   "2": 1631838000000,
+   "3": 1632442800000,
+   "4": 1633047600000,
+   "5": 1633652400000,
+   "6": 1634257200000,
+   "7": 1634862000000,
+   "8": 1635466800000,
+   "9": 1636071600000,
+   "10": 1636680000000,
+   "11": 1637284800000,
+   "12": 1637861400000,
+   "13": 1638494400000,
+   "15": 1639704000000,
+   "16": 1640308800000,
+   "17": 1641146400000,
+   "18": 1641677400000,
+   "14": 1639099200000
+  }
  },
  "members": [
   {
@@ -38904,8 +38923,47 @@
    }
   ]
  },
- "trades": [],
- "warnings": [
-  "trade history unavailable: League 477497 does not exist"
- ]
+ "trades": [
+  {
+   "id": "39ecccd0-96e9-4824-b160-773d2485ae3a",
+   "date": 1635555465174,
+   "week": 8,
+   "items": [
+    {
+     "playerId": 4040655,
+     "fromTeamId": 5,
+     "toTeamId": 6,
+     "name": "Darnell Mooney",
+     "position": "WR",
+     "proTeam": "CHI"
+    },
+    {
+     "playerId": 2976499,
+     "fromTeamId": 5,
+     "toTeamId": 6,
+     "name": "Amari Cooper",
+     "position": "WR",
+     "proTeam": "DAL"
+    },
+    {
+     "playerId": 15072,
+     "fromTeamId": 6,
+     "toTeamId": 5,
+     "name": "Marvin Jones Jr.",
+     "position": "WR",
+     "proTeam": "JAX"
+    },
+    {
+     "playerId": 3116385,
+     "fromTeamId": 6,
+     "toTeamId": 5,
+     "name": "Joe Mixon",
+     "position": "RB",
+     "proTeam": "CIN"
+    }
+   ],
+   "source": "transactions"
+  }
+ ],
+ "warnings": []
 }

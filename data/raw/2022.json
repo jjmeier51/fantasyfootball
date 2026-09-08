@@ -2,7 +2,7 @@
  "year": 2022,
  "leagueId": 477497,
  "source": "espn",
- "fetchedAt": "2026-09-08T13:17:22.627966+00:00",
+ "fetchedAt": "2026-09-08T13:20:01.597759+00:00",
  "settings": {
   "name": "League of Gangstars Season 7",
   "teamCount": 12,
@@ -88,7 +88,26 @@
    16,
    17
   ],
-  "weekStarts": {}
+  "weekStarts": {
+   "1": 1662682800000,
+   "2": 1663287300000,
+   "3": 1663892100000,
+   "4": 1664496900000,
+   "5": 1665101700000,
+   "6": 1665706500000,
+   "7": 1666311300000,
+   "8": 1666916100000,
+   "9": 1667520900000,
+   "10": 1668129300000,
+   "11": 1668734100000,
+   "12": 1669311000000,
+   "13": 1669943700000,
+   "15": 1671153300000,
+   "16": 1671758100000,
+   "17": 1672362900000,
+   "18": 1673127000000,
+   "14": 1670548500000
+  }
  },
  "members": [
   {
@@ -38504,8 +38523,143 @@
    }
   ]
  },
- "trades": [],
- "warnings": [
-  "trade history unavailable: League 477497 does not exist"
- ]
+ "trades": [
+  {
+   "id": "ed634864-0132-4985-bc65-4f6d2317f916",
+   "date": 1662587957704,
+   "week": 1,
+   "items": [
+    {
+     "playerId": 4045163,
+     "fromTeamId": 15,
+     "toTeamId": 5,
+     "name": "Miles Sanders",
+     "position": "RB",
+     "proTeam": "CAR"
+    },
+    {
+     "playerId": 4361529,
+     "fromTeamId": 15,
+     "toTeamId": 5,
+     "name": "Isiah Pacheco",
+     "position": "RB",
+     "proTeam": "KC"
+    },
+    {
+     "playerId": 4426354,
+     "fromTeamId": 5,
+     "toTeamId": 15,
+     "name": "George Pickens",
+     "position": "WR",
+     "proTeam": "PIT"
+    },
+    {
+     "playerId": 16782,
+     "fromTeamId": 5,
+     "toTeamId": 15,
+     "name": "Jerick McKinnon",
+     "position": "RB",
+     "proTeam": "KC"
+    }
+   ],
+   "source": "transactions"
+  },
+  {
+   "id": "80c0849a-495b-499f-9fbc-91e73e12da95",
+   "date": 1664984464142,
+   "week": 5,
+   "items": [
+    {
+     "playerId": 2577327,
+     "fromTeamId": 6,
+     "toTeamId": 5,
+     "name": "Tyler Lockett",
+     "position": "WR",
+     "proTeam": "SEA"
+    },
+    {
+     "playerId": 4048244,
+     "fromTeamId": 6,
+     "toTeamId": 5,
+     "name": "Alexander Mattison",
+     "position": "RB",
+     "proTeam": "MIN"
+    },
+    {
+     "playerId": 3116593,
+     "fromTeamId": 6,
+     "toTeamId": 5,
+     "name": "Dalvin Cook",
+     "position": "RB",
+     "proTeam": "MIN"
+    },
+    {
+     "playerId": 3119195,
+     "fromTeamId": 5,
+     "toTeamId": 6,
+     "name": "Chase Edmonds",
+     "position": "RB",
+     "proTeam": "TB"
+    },
+    {
+     "playerId": 3126486,
+     "fromTeamId": 5,
+     "toTeamId": 6,
+     "name": "Deebo Samuel",
+     "position": "WR",
+     "proTeam": "SF"
+    }
+   ],
+   "source": "transactions"
+  },
+  {
+   "id": "da6d914d-d207-4364-8ac5-95c0f42bc33b",
+   "date": 1666866486487,
+   "week": 8,
+   "items": [
+    {
+     "playerId": 4241463,
+     "fromTeamId": 5,
+     "toTeamId": 14,
+     "name": "Jerry Jeudy",
+     "position": "WR",
+     "proTeam": "DEN"
+    },
+    {
+     "playerId": 3116593,
+     "fromTeamId": 5,
+     "toTeamId": 14,
+     "name": "Dalvin Cook",
+     "position": "RB",
+     "proTeam": "MIN"
+    },
+    {
+     "playerId": 15864,
+     "fromTeamId": 5,
+     "toTeamId": 14,
+     "name": "Geno Smith",
+     "position": "QB",
+     "proTeam": "SEA"
+    },
+    {
+     "playerId": 3045138,
+     "fromTeamId": 14,
+     "toTeamId": 5,
+     "name": "Mike Williams",
+     "position": "WR",
+     "proTeam": "LAC"
+    },
+    {
+     "playerId": 4241479,
+     "fromTeamId": 14,
+     "toTeamId": 5,
+     "name": "Tua Tagovailoa",
+     "position": "QB",
+     "proTeam": "MIA"
+    }
+   ],
+   "source": "transactions"
+  }
+ ],
+ "warnings": []
 }

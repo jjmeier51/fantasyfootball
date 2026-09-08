@@ -2,7 +2,7 @@
  "year": 2024,
  "leagueId": 477497,
  "source": "espn",
- "fetchedAt": "2026-09-08T13:17:26.854916+00:00",
+ "fetchedAt": "2026-09-08T13:20:14.616926+00:00",
  "settings": {
   "name": "League of Gangstars Season 7",
   "teamCount": 12,
@@ -88,7 +88,26 @@
    16,
    17
   ],
-  "weekStarts": {}
+  "weekStarts": {
+   "1": 1725582000000,
+   "2": 1726186500000,
+   "3": 1726791300000,
+   "4": 1727396100000,
+   "5": 1728000900000,
+   "6": 1728605700000,
+   "7": 1729210500000,
+   "8": 1729815300000,
+   "9": 1730420100000,
+   "10": 1731028500000,
+   "11": 1731633300000,
+   "12": 1732238100000,
+   "13": 1732815000000,
+   "15": 1734052500000,
+   "16": 1734657300000,
+   "17": 1735149600000,
+   "18": 1736026200000,
+   "14": 1733447700000
+  }
  },
  "members": [
   {
@@ -38487,8 +38506,95 @@
    }
   ]
  },
- "trades": [],
- "warnings": [
-  "trade history unavailable: League 477497 does not exist"
- ]
+ "trades": [
+  {
+   "id": "0bde7239-c143-45dc-91e7-9db803f713df",
+   "date": 1727984782828,
+   "week": 5,
+   "items": [
+    {
+     "playerId": 4361432,
+     "fromTeamId": 5,
+     "toTeamId": 7,
+     "name": "Romeo Doubs",
+     "position": "WR",
+     "proTeam": "GB"
+    },
+    {
+     "playerId": 16800,
+     "fromTeamId": 5,
+     "toTeamId": 7,
+     "name": "Davante Adams",
+     "position": "WR",
+     "proTeam": "LAR"
+    },
+    {
+     "playerId": 3045138,
+     "fromTeamId": 7,
+     "toTeamId": 5,
+     "name": "Mike Williams",
+     "position": "WR",
+     "proTeam": "LAC"
+    },
+    {
+     "playerId": 4429160,
+     "fromTeamId": 7,
+     "toTeamId": 5,
+     "name": "De'Von Achane",
+     "position": "RB",
+     "proTeam": "MIA"
+    }
+   ],
+   "source": "transactions"
+  },
+  {
+   "id": "8010b3c5-a3cf-48e1-be6e-d61cb4b4d15e",
+   "date": 1731192801797,
+   "week": 10,
+   "items": [
+    {
+     "playerId": 4361432,
+     "fromTeamId": 7,
+     "toTeamId": 5,
+     "name": "Romeo Doubs",
+     "position": "WR",
+     "proTeam": "GB"
+    },
+    {
+     "playerId": 3116406,
+     "fromTeamId": 7,
+     "toTeamId": 5,
+     "name": "Tyreek Hill",
+     "position": "WR",
+     "proTeam": "MIA"
+    },
+    {
+     "playerId": 4595348,
+     "fromTeamId": 7,
+     "toTeamId": 5,
+     "name": "Malik Nabers",
+     "position": "WR",
+     "proTeam": "NYG"
+    },
+    {
+     "playerId": 3121023,
+     "fromTeamId": 5,
+     "toTeamId": 7,
+     "name": "Dallas Goedert",
+     "position": "TE",
+     "proTeam": "PHI"
+    },
+    {
+     "playerId": 4429160,
+     "fromTeamId": 5,
+     "toTeamId": 7,
+     "name": "De'Von Achane",
+     "position": "RB",
+     "proTeam": "MIA"
+    }
+   ],
+   "source": "transactions"
+  }
+ ],
+ "warnings": []
 }

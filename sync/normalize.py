@@ -424,8 +424,8 @@ def normalize_season(raw: dict, owner_map: OwnerMap) -> dict:
     trades = []
     for t in raw.get("trades", []) or []:
         date = t.get("date") or 0
-        week = None
-        if week_starts:
+        week = t.get("week")
+        if week is None and week_starts:
             later = [w for w, start in week_starts.items() if start > date]
             week = min(later) if later else final_period + 1
         sides: dict = {}

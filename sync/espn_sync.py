@@ -116,10 +116,8 @@ def fetch_week_starts(league: League) -> dict[str, int]:
     return starts
 
 
-def fetch_trades(league: League, year: int) -> list[dict]:
-    """Every completed trade from ESPN's league activity feed (2019+ only)."""
-    if year < 2019:
-        return []
+def _trades_from_activity(league: League) -> list[dict]:
+    """Trades from the league activity feed. ESPN only serves this for the current season."""
     filters = {"topics": {"filterType": {"value": ["ACTIVITY_TRANSACTIONS"]}, "limit": 500, "limitPerMessageSet": {"value": 50},
                           "offset": 0, "sortMessageDate": {"sortPriority": 1, "sortAsc": False},
                           "sortFor": {"sortPriority": 2, "sortAsc": False}, "filterIncludeMessageTypeIds": {"value": [244]}}}
@@ -133,8 +131,74 @@ def fetch_trades(league: League, year: int) -> list[dict]:
                 continue
             items.append({"playerId": msg.get("targetId"), "fromTeamId": msg.get("from"), "toTeamId": msg.get("to")})
         if items:
-            trades.append({"id": topic.get("id"), "date": topic.get("date"), "items": items})
+            trades.append({"id": topic.get("id"), "date": topic.get("date"), "week": None, "items": items, "source": "activity"})
     return trades
+
+
+def _trades_from_transactions(league: League, final_period: int) -> list[dict]:
+    """Trades from the league transaction ledger (mTransactions2), which persists for past seasons."""
+    filters = {"transactions": {"filterType": {"value": ["TRADE_ACCEPT", "TRADE_UPHOLD"]}}}
+    headers = {"x-fantasy-filter": json.dumps(filters)}
+    seen: dict = {}
+
+    def ingest(data):
+        for tx in data.get("transactions", []) or []:
+            if tx.get("status") not in (None, "EXECUTED"):
+                continue
+            if tx.get("type") not in ("TRADE_ACCEPT", "TRADE_UPHOLD"):
+                continue
+            tid = tx.get("id") or f"{tx.get('scoringPeriodId')}-{tx.get('proposedDate')}"
+            if tid in seen:
+                continue
+            players: dict = {}
+            for it in tx.get("items", []) or []:
+                pid = it.get("playerId")
+                if not pid:
+                    continue
+                rec = players.setdefault(pid, {"playerId": pid, "fromTeamId": None, "toTeamId": None})
+                if it.get("fromTeamId"):
+                    rec["fromTeamId"] = it["fromTeamId"]
+                if it.get("toTeamId"):
+                    rec["toTeamId"] = it["toTeamId"]
+                if it.get("type") == "DROP" and not rec["fromTeamId"]:
+                    rec["fromTeamId"] = tx.get("teamId")
+                if it.get("type") == "ADD" and not rec["toTeamId"]:
+                    rec["toTeamId"] = tx.get("teamId")
+            items = [r for r in players.values() if r["fromTeamId"] and r["toTeamId"] and r["fromTeamId"] != r["toTeamId"]]
+            if items:
+                seen[tid] = {"id": tid, "date": tx.get("processDate") or tx.get("proposedDate"),
+                             "week": tx.get("scoringPeriodId"), "items": items, "source": "transactions"}
+
+    # one unfiltered-by-week call first; some seasons return everything at once
+    ingest(league.espn_request.league_get(params={"view": "mTransactions2"}, headers=headers))
+    if not seen:
+        for week in range(1, final_period + 1):
+            try:
+                ingest(league.espn_request.league_get(params={"view": "mTransactions2", "scoringPeriodId": week}, headers=headers))
+            except Exception:  # noqa: BLE001
+                break
+            time.sleep(0.15)
+    return list(seen.values())
+
+
+def fetch_trades(league: League, year: int) -> tuple[list[dict], list[str]]:
+    """Every completed two-team trade for a season (2019+), plus warnings about what failed."""
+    if year < 2019:
+        return [], []
+    notes: list[str] = []
+    try:
+        trades = _trades_from_transactions(league, league.finalScoringPeriod or 17)
+        if trades:
+            return trades, notes
+        notes.append("transaction ledger returned no trades")
+    except Exception as e:  # noqa: BLE001
+        notes.append(f"transaction ledger unavailable: {e}")
+    try:
+        trades = _trades_from_activity(league)
+        return trades, notes
+    except Exception as e:  # noqa: BLE001
+        notes.append(f"activity feed unavailable: {e}")
+        return [], notes
 
 
 def download_logo(url: str, year: int, team_id: int) -> str | None:
@@ -287,7 +351,9 @@ def fetch_season(year: int, existing: dict | None, with_boxscores: bool) -> dict
     week_starts: dict[str, int] = {}
     if year >= 2019:
         try:
-            trades = fetch_trades(league, year)
+            trades, trade_notes = fetch_trades(league, year)
+            if trade_notes and not trades:
+                warnings.append("trade history unavailable: " + "; ".join(trade_notes))
             week_starts = fetch_week_starts(league)
             meta = fetch_player_meta(league, [it["playerId"] for t in trades for it in t["items"]], year) if trades else {}
             roster_meta = {p["playerId"]: p for t in teams for p in t["roster"]}

@@ -452,7 +452,7 @@ def normalize_season(raw: dict, owner_map: OwnerMap) -> dict:
     trades.sort(key=lambda t: t["date"])
 
     season = {
-        "year": year, "name": settings.get("name", ""), "teamCount": settings.get("teamCount", len(teams)),
+        "year": year, "name": re.sub(r"\s+Season\s+\d+\s*$", "", settings.get("name", "") or "", flags=re.I), "teamCount": settings.get("teamCount", len(teams)),
         "regSeasonWeeks": settings.get("regSeasonWeeks", 13), "playoffTeamCount": settings.get("playoffTeamCount", 0),
         "matchupPeriods": periods,
         "isComplete": bool(status.get("isComplete")), "completedWeeks": status.get("completedWeeks", []),

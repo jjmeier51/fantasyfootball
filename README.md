@@ -104,6 +104,23 @@ Stats degrade gracefully: a season with only a champion still counts toward titl
 finishes; one with team records also counts toward career and season records; single-game
 and streak records only use seasons with weekly scores.
 
+### Optional: hand adjustments (`sync/adjustments.yml`)
+
+Some things are the commissioner's call. `sync/adjustments.yml` is applied on top of the computed
+stats every sync:
+
+```yaml
+goat_overrides: { john-meier: 91.2 }         # replace an all-time-ranking score (row is marked "adjusted")
+hide_facts_for: [jp-woodward]                # no fun facts about these owners, by key or by name
+custom_facts:                                # hand-written facts shown with the generated ones
+  - { id: johnny-dance, category: trophies, ownerKey: john-meier, href: /owners/john-meier,
+      text: "Johnny wins the championship 66% of the time he makes the playoffs." }
+```
+
+Single-game records (highest score, blowouts, closest games, title-game marks) only consider
+seasons from `RECORD_MIN_YEAR` in `sync/config.py` (2019) so eras with different scoring don't
+mix. Season, career and streak records use full history.
+
 ### 5. Deploy on Vercel + domain
 
 1. vercel.com → **Add New Project** → import this GitHub repo. Framework is detected as Next.js;

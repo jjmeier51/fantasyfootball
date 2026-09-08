@@ -293,6 +293,7 @@ export interface GoatRow {
   components: Record<string, number>;
   seasons: number;
   rank: number;
+  adjusted?: boolean;
 }
 
 export interface LuckRow {
@@ -336,7 +337,10 @@ export interface DraftValueRow {
   overall: number;
   seasonPoints: number;
   finishRank: number;
+  posFinishRank?: number;
+  posDraftRank?: number;
   value: number;
+  rank?: number;
 }
 
 export interface FunFact {
@@ -385,7 +389,7 @@ export interface Records {
   teamSeasons: TeamSeasonRank[];
   goat: GoatRow[];
   luck: LuckRow[];
-  draft: { profiles: Record<string, DraftProfile>; facts: FunFact[]; steals: DraftValueRow[]; busts: DraftValueRow[]; draftsAnalyzed: number };
+  draft: { profiles: Record<string, DraftProfile>; facts: FunFact[]; steals: DraftValueRow[]; busts: DraftValueRow[]; greatest: DraftValueRow[]; draftsAnalyzed: number };
   funFacts: FunFact[];
 }
 

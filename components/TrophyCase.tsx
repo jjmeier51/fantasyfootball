@@ -8,14 +8,16 @@ import Trophy from "./Trophy";
 import ChampionshipModal from "./ChampionshipModal";
 import OwnerAvatar from "./OwnerAvatar";
 
-export default function TrophyCase({ trophies, owners }: { trophies: TrophyT[]; owners: OwnerLite[] }) {
+export default function TrophyCase({ trophies, owners, order }: { trophies: TrophyT[]; owners: OwnerLite[]; order: string[] }) {
   const [filter, setFilter] = useState<string | null>(null);
   const [open, setOpen] = useState<TrophyT | null>(null);
-  const won = useMemo(() => trophies.filter((t) => t.champion), [trophies]);
+  // newest title first
+  const won = useMemo(() => trophies.filter((t) => t.champion).sort((a, b) => b.year - a.year), [trophies]);
   const champs = useMemo(() => {
     const keys = new Set(won.map((t) => t.champion!.ownerKey));
-    return owners.filter((o) => keys.has(o.key));
-  }, [won, owners]);
+    const rank = new Map(order.map((k, i) => [k, i]));
+    return owners.filter((o) => keys.has(o.key)).sort((a, b) => (rank.get(a.key) ?? 99) - (rank.get(b.key) ?? 99));
+  }, [won, owners, order]);
   const latest = won.reduce((a, b) => (b.year > a.year ? b : a), won[0]);
   // shelves of up to 5 trophies
   const shelves: TrophyT[][] = [];
@@ -68,7 +70,7 @@ export default function TrophyCase({ trophies, owners }: { trophies: TrophyT[]; 
                   >
                     <Trophy year={t.year} line1={t.champion!.teamName} line2={t.champion!.name} size={150} glow={t.year === latest?.year && !dim} dim={dim} className="w-full h-auto max-w-[170px]" />
                     <div className={clsx("mt-2 text-center transition-opacity", dim && "opacity-30")}>
-                      <div className="font-display text-xl leading-none gold-text">{t.year}</div>
+                      <div className="font-display text-lg leading-none gold-text">{t.year}</div>
                       <div className="text-[12px] text-text-2 leading-tight mt-0.5 line-clamp-1">{t.champion!.teamName}</div>
                       <div className="text-[11px] text-muted">({t.champion!.name})</div>
                     </div>

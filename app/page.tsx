@@ -24,7 +24,13 @@ function thisWeekInHistory() {
 export default function HomePage() {
   const champCount = new Map<string, number>();
   for (const t of records.trophies) if (t.champion) champCount.set(t.champion.ownerKey, (champCount.get(t.champion.ownerKey) ?? 0) + 1);
-  const podium = [...champCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5);
+  const totalTitles = [...champCount.values()].reduce((a, b) => a + b, 0);
+  // records.podium is pre-sorted: titles, then fewer finals losses, then earliest title
+  const podium = records.podium.filter((p) => p.titles.length).slice(0, 5).map((p) => [p.ownerKey, p.titles.length] as const);
+  const top3 = podium.slice(0, 3);
+  const top3Share = totalTitles ? Math.round((top3.reduce((a, [, n]) => a + n, 0) / totalTitles) * 100) : 0;
+  const top3Names = top3.map(([k]) => ownerName(k));
+  const dynastyLine = top3.length === 3 ? `${top3Names[0]}, ${top3Names[1]}, and ${top3Names[2]} have combined for ${top3Share}% of the league's championships.` : "";
   const latestWeek = currentSeason.completedWeeks.length ? Math.max(...currentSeason.completedWeeks) : null;
   const latest = latestWeek ? currentSeason.matchups.filter((m) => m.week === latestWeek && m.decided) : [];
   const history = thisWeekInHistory();
@@ -42,10 +48,10 @@ export default function HomePage() {
       {/* HERO */}
       <section className="relative pt-12 pb-10 grid lg:grid-cols-[1.2fr_1fr] gap-8 items-center">
         <div>
-          <div className="eyebrow mb-3">Est. {meta.firstSeason} · {seasons.length} seasons · {meta.counts.owners} owners</div>
-          <h1 className="font-display text-6xl sm:text-7xl lg:text-8xl leading-[0.9] gold-text">{meta.leagueName}</h1>
+          <div className="eyebrow mb-3">Est. {meta.firstSeason} · {seasons.length} seasons</div>
+          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.02] gold-text">{meta.leagueName}</h1>
           <p className="mt-4 text-text-2 text-lg max-w-xl">
-            Every championship, every blowout, every embarrassing week. The complete history of the league, pulled straight from ESPN and preserved forever.
+            Every championship, every blowout, every embarrassing week. The complete history of the league since our freshman year of college, pulled straight from ESPN and preserved forever.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/trophy-room" className="inline-flex items-center gap-2 rounded-full bg-gold text-bg font-semibold px-5 py-2.5 hover:bg-gold-2 transition-colors">
@@ -61,7 +67,7 @@ export default function HomePage() {
             <Trophy year={reigningTrophy.year} line1={reigningTrophy.champion.teamName} line2={reigningTrophy.champion.name} size={150} glow />
             <div>
               <div className="eyebrow">Reigning Champion</div>
-              <div className="font-display text-4xl leading-none mt-1">{reigningTrophy.champion.name}</div>
+              <div className="font-display text-3xl leading-tight mt-1">{reigningTrophy.champion.name}</div>
               <div className="text-text-2 mt-1">{reigningTrophy.champion.teamName}</div>
               <div className="text-sm text-muted mt-2">
                 {reigningTrophy.year} · {reigningTrophy.champion.record} · {fmt(reigningTrophy.champion.pointsFor, 1)} pts
@@ -83,7 +89,14 @@ export default function HomePage() {
         <StatTile label="Seasons" value={seasons.length} sub={`${meta.firstSeason}–${meta.currentSeason}`} href="/seasons" />
         <StatTile label="Games played" value={meta.counts.games.toLocaleString()} href="/matchups" />
         <StatTile label="Different champions" value={champCount.size} sub={`in ${completeSeasons.length} completed seasons`} href="/trophy-room" />
-        <StatTile label="Most titles" value={podium[0] ? podium[0][1] : "—"} sub={podium[0] ? ownerName(podium[0][0]) : ""} accent href="/trophy-room" />
+        {dynastyLine ? (
+          <Link href="/trophy-room" className="card card-hover p-4 h-full">
+            <div className="text-[11px] uppercase tracking-widest text-muted">Dynasties</div>
+            <div className="font-display text-lg sm:text-xl leading-snug mt-2 gold-text">{dynastyLine}</div>
+          </Link>
+        ) : (
+          <StatTile label="Most titles" value={podium[0] ? podium[0][1] : "—"} sub={podium[0] ? ownerName(podium[0][0]) : ""} accent href="/trophy-room" />
+        )}
       </section>
 
       {/* PODIUM + LATEST */}
@@ -161,7 +174,7 @@ export default function HomePage() {
             r ? (
               <Link key={label} href="/records" className="card card-hover p-4">
                 <div className="text-[11px] uppercase tracking-widest text-muted">{label}</div>
-                <div className="font-display text-4xl gold-text mt-1 tabular">{fmtV(r.value)}</div>
+                <div className="font-display text-3xl gold-text mt-1 tabular">{fmtV(r.value)}</div>
                 <div className="flex items-center gap-2 mt-2 text-sm">
                   <OwnerAvatar owner={ownerLite(r.ownerKey)} logo={r.logo} size={22} />
                   <span className="font-medium">{ownerName(r.ownerKey)}</span>
@@ -182,7 +195,7 @@ export default function HomePage() {
             <div className="flex items-center gap-4 mt-3">
               <OwnerAvatar owner={ownerLite(best.ownerKey)} logo={best.logo} size={64} ring />
               <div>
-                <div className="font-display text-4xl leading-none">{best.year} {best.teamName}</div>
+                <div className="font-display text-2xl sm:text-3xl leading-tight">{best.year} {best.teamName}</div>
                 <div className="text-text-2 mt-1">{ownerName(best.ownerKey)} · {record(best.wins, best.losses, best.ties)} · {fmt(best.pointsFor, 1)} pts</div>
               </div>
             </div>

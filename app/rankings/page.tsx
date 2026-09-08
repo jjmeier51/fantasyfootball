@@ -45,7 +45,7 @@ export default function RankingsPage() {
       </section>
 
       <section className="mt-12">
-        <SectionHeader eyebrow="GOAT" title="Greatest owners of all time" sub="Titles ×10, runner-ups ×4, playoff appearances ×2, regular-season titles ×3, win% ×30, average scoring z ×5, last-place finishes −3." />
+        <SectionHeader eyebrow="GOAT" title="Greatest owners of all time" sub="Titles ×10, runner-ups ×4, playoff appearances ×2, regular-season titles ×3, win% ×30, average scoring z ×5, last-place finishes −3. Rows marked adjusted were settled by the commissioner." />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {records.goat.map((g) => {
             const c = careers.get(g.ownerKey);
@@ -54,7 +54,7 @@ export default function RankingsPage() {
                 <div className={clsx("font-display text-4xl w-10", g.rank <= 3 ? "gold-text" : "text-muted")}>{g.rank}</div>
                 <OwnerAvatar owner={ownerLite(g.ownerKey)} size={48} ring={g.rank === 1} />
                 <div className="min-w-0 flex-1">
-                  <div className="font-semibold">{ownerName(g.ownerKey)} <span className="text-muted text-xs font-normal">{g.seasons} seasons</span></div>
+                  <div className="font-semibold">{ownerName(g.ownerKey)} <span className="text-muted text-xs font-normal">{g.seasons} seasons</span>{g.adjusted && <Pill tone="gold" className="ml-2">adjusted</Pill>}</div>
                   {c && <div className="text-xs text-muted">{record(c.wins, c.losses, c.ties)} · {c.titles.length} titles · {c.playoffApps.length} playoffs</div>}
                   <div className="mt-2 flex flex-wrap gap-1 text-[10px] text-muted">
                     {Object.entries(g.components).filter(([, v]) => v).map(([k, v]) => <span key={k} className="rounded bg-surface-2 px-1.5 py-0.5">{k} {v > 0 ? "+" : ""}{v}</span>)}

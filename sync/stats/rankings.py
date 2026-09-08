@@ -36,7 +36,8 @@ def build_team_seasons(seasons: list[dict]) -> list[dict]:
     return rows
 
 
-def build_goat(careers: list[dict]) -> list[dict]:
+def build_goat(careers: list[dict], overrides: dict | None = None) -> list[dict]:
+    overrides = overrides or {}
     out = []
     for c in careers:
         if c["seasons"] == 0:
@@ -50,8 +51,12 @@ def build_goat(careers: list[dict]) -> list[dict]:
             "scoring": round(5 * c["pfZAvg"], 1),
             "sackos": -3 * len(c["lastPlaces"]),
         }
-        out.append({"ownerKey": c["ownerKey"], "score": round(sum(comp.values()), 1), "components": comp,
-                    "seasons": c["seasons"]})
+        score = round(sum(comp.values()), 1)
+        if c["ownerKey"] in overrides:
+            comp["override"] = round(float(overrides[c["ownerKey"]]) - score, 1)
+            score = round(float(overrides[c["ownerKey"]]), 1)
+        out.append({"ownerKey": c["ownerKey"], "score": score, "components": comp,
+                    "seasons": c["seasons"], "adjusted": c["ownerKey"] in overrides})
     out.sort(key=lambda r: -r["score"])
     for i, r in enumerate(out, start=1):
         r["rank"] = i

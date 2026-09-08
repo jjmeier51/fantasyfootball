@@ -29,6 +29,9 @@ FIRST_SEASON = int(os.environ.get("FIRST_SEASON", "2010"))
 
 # ESPN only serves per-week player box scores from 2019 onwards.
 BOXSCORE_MIN_YEAR = 2019
+# Single-game records (highest score, blowouts, ...) only consider seasons from this year on.
+RECORD_MIN_YEAR = 2019
+ADJUSTMENTS_FILE = SYNC_DIR / "adjustments.yml"
 
 
 def current_season() -> int:

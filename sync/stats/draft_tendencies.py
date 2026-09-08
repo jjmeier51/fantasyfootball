@@ -6,6 +6,18 @@ from collections import Counter, defaultdict
 from config import PRO_TEAM_NAMES
 
 KEY_POSITIONS = ["K", "D/ST", "QB", "TE"]
+LOYALTY_ENDINGS = [
+    "Some habits are permanent.",
+    "That's a relationship at this point.",
+    "Old flames die hard.",
+    "Someone check on him.",
+    "Commitment issues, solved.",
+    "Ride or die.",
+    "The group chat has noticed.",
+    "Muscle memory.",
+    "He'd draft him again tomorrow.",
+    "No notes.",
+]
 
 
 def build_draft_tendencies(seasons: list[dict], owners: list[dict]) -> dict:
@@ -63,7 +75,7 @@ def build_draft_tendencies(seasons: list[dict], owners: list[dict]) -> dict:
     league_avg_first = {pos: (sum(v) / len(v) if v else None) for pos, v in league_first_round.items()}
     pos_word = {"K": "kicker", "D/ST": "defense", "QB": "quarterback", "TE": "tight end"}
 
-    for k, o in per_owner.items():
+    for idx, (k, o) in enumerate(sorted(per_owner.items())):
         if o["drafts"] == 0:
             continue
         name = names.get(k, k)
@@ -119,7 +131,7 @@ def build_draft_tendencies(seasons: list[dict], owners: list[dict]) -> dict:
             prof["mostDraftedPlayer"] = {"name": pname, "times": cnt}
             if cnt >= 3:
                 facts.append({"id": f"player-{k}", "category": "draft", "ownerKey": k,
-                              "text": f"{name} has drafted {pname} {cnt} times. Loyalty or stubbornness?",
+                              "text": f"{name} has drafted {pname} {cnt} times. {LOYALTY_ENDINGS[idx % len(LOYALTY_ENDINGS)]}",
                               "href": f"/owners/{k}#draft"})
         # positional makeup of rounds 1-3
         tot = sum(o["top3"].values())
@@ -171,5 +183,38 @@ def build_draft_tendencies(seasons: list[dict], owners: list[dict]) -> dict:
             profiles[f["ownerKey"]]["facts"].append(f["text"])
     steals.sort(key=lambda r: -r["value"])
     busts.sort(key=lambda r: r["value"])
+
+    # Greatest picks of all time: skill players only. Compare where a player was taken among
+    # his position (e.g. the 41st RB drafted) with where he finished among his position that
+    # season (e.g. RB4). Only starter-caliber finishes count, so the list is real hits, not
+    # late-round quarterbacks padding raw points.
+    STARTER_CUTOFF = {"QB": 8, "TE": 8, "RB": 14, "WR": 14}
+    greatest = []
+    for s in drafts:
+        picks = [p for p in s["draft"] if p.get("seasonPoints") is not None and p.get("ownerKey") in keys
+                 and p.get("position") in STARTER_CUTOFF]
+        if len(picks) < 20:
+            continue
+        ranked = sorted(picks, key=lambda p: -(p["seasonPoints"] or 0))
+        finish = {p["playerId"]: i + 1 for i, p in enumerate(ranked)}
+        pos_finish, pos_draft = {}, {}
+        for pos in STARTER_CUTOFF:
+            for i, p in enumerate([q for q in ranked if q["position"] == pos]):
+                pos_finish[p["playerId"]] = i + 1
+            for i, p in enumerate(sorted([q for q in picks if q["position"] == pos], key=lambda q: q["overall"])):
+                pos_draft[p["playerId"]] = i + 1
+        for p in picks:
+            pf, pd = pos_finish[p["playerId"]], pos_draft[p["playerId"]]
+            if pf > STARTER_CUTOFF[p["position"]]:
+                continue
+            greatest.append({
+                "ownerKey": p["ownerKey"], "year": s["year"], "player": p["playerName"], "position": p["position"],
+                "proTeam": p.get("proTeam"), "round": p["round"], "overall": p["overall"], "seasonPoints": p["seasonPoints"],
+                "finishRank": finish[p["playerId"]], "posFinishRank": pf, "posDraftRank": pd,
+                "value": pd - pf,
+            })
+    greatest.sort(key=lambda r: (-r["value"], -r["seasonPoints"]))
+    for i, r in enumerate(greatest[:15], start=1):
+        r["rank"] = i
     return {"profiles": profiles, "facts": facts, "steals": steals[:15], "busts": busts[:15],
-            "draftsAnalyzed": n_drafts}
+            "greatest": greatest[:15], "draftsAnalyzed": n_drafts}

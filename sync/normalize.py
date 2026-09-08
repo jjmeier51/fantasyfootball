@@ -388,14 +388,28 @@ def normalize_season(raw: dict, owner_map: OwnerMap) -> dict:
             "away": {"teamId": m["awayTeamId"], "ownerKey": a, "score": m.get("awayScore", 0)},
             "winnerKey": winner, "decided": decided,
         })
+    boxscores = {}
+    for wk, entries in (raw.get("boxscores") or {}).items():
+        boxscores[wk] = [dict(e, ownerKey=owner_of.get(e["teamId"])) for e in entries]
+    # Season points per player: end-of-season roster totals first, then summed box scores
+    # for players who were dropped before the season ended (2019+).
+    season_pts: dict = {}
+    for entries in boxscores.values():
+        for e in entries:
+            for pl in e.get("players", []):
+                if pl.get("playerId") is not None:
+                    season_pts[pl["playerId"]] = round(season_pts.get(pl["playerId"], 0.0) + (pl.get("points") or 0), 2)
+    for t in teams:
+        for pl in t.get("roster", []):
+            if pl.get("playerId") is not None and pl.get("seasonPoints"):
+                season_pts[pl["playerId"]] = pl["seasonPoints"]
     draft = []
     for p in raw.get("draft", []):
         d = dict(p)
         d["ownerKey"] = owner_of.get(p.get("teamId"))
+        if d.get("seasonPoints") is None and d.get("playerId") in season_pts:
+            d["seasonPoints"] = season_pts[d["playerId"]]
         draft.append(d)
-    boxscores = {}
-    for wk, entries in (raw.get("boxscores") or {}).items():
-        boxscores[wk] = [dict(e, ownerKey=owner_of.get(e["teamId"])) for e in entries]
 
     season = {
         "year": year, "name": settings.get("name", ""), "teamCount": settings.get("teamCount", len(teams)),
@@ -487,6 +501,8 @@ def main(argv=None):
     for s in seasons:
         write_override_template(s, s["coverage"])
     league_name = next((s["name"] for s in reversed(seasons) if s["name"]), "Fantasy League")
+    # ESPN appends things like "Season 17" to the league name; the site wants the bare name.
+    league_name = re.sub(r"\s*[-–:|]?\s*(season|year)\s*\d+\s*$", "", league_name, flags=re.I).strip() or league_name
     DATA_DIR.mkdir(exist_ok=True)
     (DATA_DIR / "league.json").write_text(json.dumps({"leagueName": league_name, "seasons": seasons}, separators=(",", ":")))
     (DATA_DIR / "owners.json").write_text(json.dumps({"owners": owners}, indent=1))

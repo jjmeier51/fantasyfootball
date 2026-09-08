@@ -2,10 +2,13 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 from datetime import datetime, timezone
 
-from config import DATA_DIR
+import yaml
+
+from config import ADJUSTMENTS_FILE, DATA_DIR
 from stats.careers import build_careers
 from stats.common import PLAYOFF_TYPES, team_games
 from stats.draft_tendencies import build_draft_tendencies
@@ -54,24 +57,51 @@ def build_trophies(seasons: list[dict], owners: list[dict]) -> list[dict]:
     return out
 
 
+def filter_facts(facts: list[dict], owners: list[dict], adjustments: dict) -> list[dict]:
+    """Drop facts about hidden owners (by key or by name mention), then add hand-written ones."""
+    hidden = set(adjustments.get("hide_facts_for") or [])
+    names = [o["name"] for o in owners if o["key"] in hidden]
+    pattern = re.compile(r"\b(" + "|".join(re.escape(n) for n in names) + r")\b") if names else None
+    out = []
+    for f in facts:
+        if f.get("ownerKey") in hidden:
+            continue
+        if pattern and pattern.search(f["text"]):
+            continue
+        out.append(f)
+    for cf in adjustments.get("custom_facts") or []:
+        if cf.get("id") and cf.get("text"):
+            out.append({"id": cf["id"], "category": cf.get("category", "league"), "text": cf["text"],
+                        **({"ownerKey": cf["ownerKey"]} if cf.get("ownerKey") else {}),
+                        **({"year": cf["year"]} if cf.get("year") else {}),
+                        **({"href": cf["href"]} if cf.get("href") else {})})
+    return out
+
+
 def main():
     league = json.loads((DATA_DIR / "league.json").read_text())
     owners = json.loads((DATA_DIR / "owners.json").read_text())["owners"]
     coverage = json.loads((DATA_DIR / "coverage.json").read_text())
     seasons = league["seasons"]
 
+    adjustments = yaml.safe_load(ADJUSTMENTS_FILE.read_text()) if ADJUSTMENTS_FILE.exists() else {}
+    adjustments = adjustments or {}
+
     careers = build_careers(seasons, owners)
     luck_rows = build_luck(seasons)
     records = build_records(seasons, careers, luck_rows)
     h2h = build_h2h(seasons, owners)
     team_seasons = build_team_seasons(seasons)
-    goat = build_goat(careers)
+    goat = build_goat(careers, adjustments.get("goat_overrides"))
     draft = build_draft_tendencies(seasons, owners)
     facts = build_facts(seasons, owners, careers, records, h2h, team_seasons, luck_rows) + draft["facts"]
+    facts = filter_facts(facts, owners, adjustments)
     trophies = build_trophies(seasons, owners)
 
+    # titles, then fewer finals losses, then earlier first title
     podium = sorted([{"ownerKey": c["ownerKey"], "titles": c["titles"], "runnerUps": c["runnerUps"], "thirds": c["thirds"], "lastPlaces": c["lastPlaces"]}
-                     for c in careers if c["titles"] or c["runnerUps"]], key=lambda p: (-len(p["titles"]), -len(p["runnerUps"])))
+                     for c in careers if c["titles"] or c["runnerUps"]],
+                    key=lambda p: (-len(p["titles"]), len(p["runnerUps"]), min(p["titles"]) if p["titles"] else 9999))
 
     records_out = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),

@@ -1,0 +1,22 @@
+# Hand-tuned adjustments applied on top of the computed stats by build_stats.py.
+# Everything here is optional.
+
+# Replace a computed "Greatest owners of all time" score. The page marks the row as adjusted.
+goat_overrides:
+  john-meier: 91.2
+
+# Owners whose fun facts should not appear anywhere (by owner key). Facts that merely
+# mention them by name are dropped too.
+hide_facts_for:
+  - jp-woodward
+  - anthony-gatto
+  - taylor-brown
+  - cole-coder
+
+# Extra facts written by hand. They appear alongside the generated ones.
+custom_facts:
+  - id: johnny-dance
+    category: trophies
+    ownerKey: john-meier
+    href: /owners/john-meier
+    text: "Johnny wins the championship 66% of the time he makes the playoffs, and 100% of the time he makes the championship game. Don't let him in the dance."

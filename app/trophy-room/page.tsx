@@ -14,7 +14,7 @@ export default function TrophyRoomPage() {
   return (
     <div>
       <PageHero eyebrow="Hall of champions" title="Trophy Room" sub="One trophy for every season. Click any of them to see the roster that brought it home." />
-      <TrophyCase trophies={trophies} owners={ownersLite} />
+      <TrophyCase trophies={trophies} owners={ownersLite} order={records.podium.map((p) => p.ownerKey)} />
 
       <section className="mt-14">
         <SectionHeader eyebrow="Dynasties" title="Championship podium" />
@@ -30,7 +30,7 @@ export default function TrophyRoomPage() {
                   <div className="text-xs text-muted">{p.titles.join(", ")}</div>
                   <div className="text-xs text-text-2 mt-1">{p.runnerUps.length} runner-up · {p.thirds.length} third · {p.lastPlaces.length} last</div>
                 </div>
-                <div className="ml-auto font-display text-5xl gold-text">{p.titles.length}</div>
+                <div className="ml-auto font-display text-4xl gold-text">{p.titles.length}</div>
               </Link>
             );
           })}

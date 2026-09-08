@@ -32,8 +32,8 @@
   --color-cool: var(--cool);
   --color-good: var(--good);
   --color-bad: var(--bad);
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-bebas), "Impact", "Arial Narrow", sans-serif;
+  --font-sans: var(--font-sans-src), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display-src), "Georgia", "Times New Roman", serif;
 }
 
 html {
@@ -53,7 +53,8 @@ body {
 
 .font-display {
   font-family: var(--font-display);
-  letter-spacing: 0.02em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .gold-text {

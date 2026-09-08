@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { Sparkles, Shuffle } from "lucide-react";
+import { Sparkles, Shuffle, ChevronRight } from "lucide-react";
 import type { FunFact } from "@/lib/types";
 
 export default function FunFactTicker({ facts, interval = 9000 }: { facts: FunFact[]; interval?: number }) {
@@ -42,15 +42,25 @@ export default function FunFactTicker({ facts, interval = 9000 }: { facts: FunFa
           body
         )}
       </div>
-      <button
-        type="button"
-        onClick={shuffle}
-        className="shrink-0 p-2 rounded-md text-muted hover:text-gold hover:bg-white/5"
-        aria-label="Another fact"
-        title="Another fact"
-      >
-        <Shuffle size={16} />
-      </button>
+      <div className="shrink-0 flex items-center gap-1">
+        <button
+          type="button"
+          onClick={shuffle}
+          className="p-2 rounded-md text-muted hover:text-gold hover:bg-white/5"
+          aria-label="Random fact"
+          title="Random fact"
+        >
+          <Shuffle size={16} />
+        </button>
+        <button
+          type="button"
+          onClick={() => setI((v) => (v + 1) % order.length)}
+          className="inline-flex items-center gap-1 rounded-full border border-border px-3 py-1.5 text-xs font-semibold text-text-2 hover:border-gold/60 hover:text-gold"
+          aria-label="Next fact"
+        >
+          Next <ChevronRight size={14} />
+        </button>
+      </div>
     </div>
   );
 }

@@ -129,3 +129,36 @@ def test_streaks_and_team_seasons(league):
     assert careers["ann"]["longestWinStreak"]["length"] == 3
     ts = build_team_seasons(seasons)
     assert ts[0]["ownerKey"] == "ann" and ts[0]["year"] == 2019 and ts[0]["result"] == "champion"
+
+
+def test_goat_override_reranks(league):
+    from stats.rankings import build_goat
+    seasons, owners, _ = league
+    careers = build_careers(seasons, owners)
+    plain = build_goat(careers)
+    assert plain[0]["ownerKey"] == "ann"
+    boosted = build_goat(careers, {"bob": 999})
+    assert boosted[0]["ownerKey"] == "bob" and boosted[0]["adjusted"] and boosted[0]["score"] == 999.0
+    assert "override" in boosted[0]["components"]
+
+
+def test_fact_filtering_hides_owner_but_not_lookalikes():
+    from build_stats import filter_facts
+    owners = [{"key": "brown", "name": "Brown"}, {"key": "ann", "name": "Ann"}]
+    facts = [
+        {"id": "a", "category": "x", "text": "Brown has won 2 titles.", "ownerKey": "brown"},
+        {"id": "b", "category": "x", "text": "Ann has beaten Brown 5 straight times.", "ownerKey": "ann"},
+        {"id": "c", "category": "x", "text": "Ann always picks Browns players.", "ownerKey": "ann"},
+    ]
+    out = filter_facts(facts, owners, {"hide_facts_for": ["brown"], "custom_facts": [{"id": "z", "text": "Hand written."}]})
+    assert [f["id"] for f in out] == ["c", "z"]
+
+
+def test_single_game_records_respect_cutoff(league, monkeypatch):
+    import stats.records as rec
+    seasons, owners, _ = league
+    careers = build_careers(seasons, owners)
+    monkeypatch.setattr(rec, "RECORD_MIN_YEAR", 2020)
+    records = {r["id"]: r for r in rec.build_records(seasons, careers, build_luck(seasons))}
+    assert all(e["year"] >= 2020 for e in records["high-score"]["entries"])
+    assert any(e["year"] == 2019 for e in records["season-pf"]["entries"])  # season records keep history

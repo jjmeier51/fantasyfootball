@@ -3,7 +3,8 @@ import Link from "next/link";
 import { ownerLite, ownerName, records, seasonsDesc } from "@/lib/data";
 import DraftExplorer from "@/components/DraftExplorer";
 import OwnerAvatar from "@/components/OwnerAvatar";
-import { PageHero, SectionHeader } from "@/components/ui";
+import { PageHero, Pill, SectionHeader } from "@/components/ui";
+import { fmt, ordinal } from "@/lib/format";
 
 export const metadata: Metadata = { title: "Draft History" };
 
@@ -15,6 +16,31 @@ export default function DraftsPage() {
   return (
     <div>
       <PageHero eyebrow="War room" title="Draft History" sub="Every board since the beginning, plus who reaches, who waits, and who can't quit their favorite team." />
+
+      {d.greatest.length > 0 && (
+        <section className="mb-10">
+          <SectionHeader eyebrow="Hall of fame" title="Greatest Draft Picks of All-Time" sub="Players who finished as a top starter at their position after being drafted well down the board. Ranked by how many players at the same position were taken ahead of them versus where they finished." />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {d.greatest.slice(0, 12).map((g) => (
+              <Link key={`${g.year}-${g.player}`} href={`/seasons/${g.year}`} className="card card-hover shine p-4 flex gap-3">
+                <div className={`font-display text-3xl w-9 shrink-0 ${g.rank! <= 3 ? "gold-text" : "text-muted"}`}>{g.rank}</div>
+                <div className="min-w-0 flex-1">
+                  <div className="font-display text-lg leading-tight truncate">{g.player}</div>
+                  <div className="text-xs text-muted">{g.position} · {g.proTeam} · {g.year} · drafted by <span className="text-text-2">{ownerName(g.ownerKey)}</span></div>
+                  <div className="mt-2 text-sm text-text-2">
+                    Taken {ordinal(g.overall)} overall (round {g.round}), the {ordinal(g.posDraftRank ?? 0)} {g.position} off the board. Finished as the <span className="text-gold-2 font-semibold">{g.position}{g.posFinishRank}</span> with {fmt(g.seasonPoints, 1)} points.
+                  </div>
+                  <div className="mt-2 flex gap-1.5">
+                    <Pill tone="gold">+{g.value} spots</Pill>
+                    <Pill>#{g.finishRank} overall scorer</Pill>
+                  </div>
+                </div>
+                <OwnerAvatar owner={ownerLite(g.ownerKey)} size={32} />
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="grid lg:grid-cols-3 gap-4">
         <div className="card p-5 lg:col-span-1">

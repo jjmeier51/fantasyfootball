@@ -6,13 +6,14 @@ import { useState } from "react";
 import { Menu, Search, X } from "lucide-react";
 import clsx from "clsx";
 import { SoundButton } from "./ThemePlayer";
+import FootballLogo from "./FootballLogo";
 
 const LINKS = [
   { href: "/trophy-room", label: "Trophy Room" },
   { href: "/records", label: "Records" },
   { href: "/owners", label: "Owners" },
   { href: "/seasons", label: "Seasons" },
-  { href: "/head-to-head", label: "Head-to-Head" },
+  { href: "/head-to-head", label: "H2H" },
   { href: "/rankings", label: "Rankings" },
   { href: "/drafts", label: "Drafts" },
   { href: "/matchups", label: "Matchups" },
@@ -31,10 +32,8 @@ export default function Nav({ leagueName, isSample }: { leagueName: string; isSa
       )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center gap-4">
         <Link href="/" className="flex items-center gap-3 shrink-0" aria-label="Home">
-          <span className="w-9 h-9 rounded-full bg-linear-to-br from-gold-2 to-gold-dim flex items-center justify-center font-display text-bg text-xl leading-none pt-0.5">
-            LG
-          </span>
-          <span className="font-display text-2xl tracking-wide gold-text hidden sm:inline">{leagueName}</span>
+          <FootballLogo className="w-9 h-9" />
+          <span className="font-display text-xl gold-text hidden sm:inline">{leagueName}</span>
         </Link>
         <nav className="hidden lg:flex items-center gap-1 ml-4">
           {LINKS.map((l) => (

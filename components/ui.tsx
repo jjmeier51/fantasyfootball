@@ -7,7 +7,7 @@ export function SectionHeader({ eyebrow, title, sub, action, id }: { eyebrow?: s
     <div id={id} className="flex flex-wrap items-end justify-between gap-3 mb-5 scroll-mt-24">
       <div>
         {eyebrow && <div className="eyebrow mb-1">{eyebrow}</div>}
-        <h2 className="font-display text-3xl sm:text-4xl leading-none">{title}</h2>
+        <h2 className="font-display text-2xl sm:text-3xl leading-tight">{title}</h2>
         {sub && <p className="text-sm text-text-2 mt-1 max-w-2xl">{sub}</p>}
       </div>
       {action}
@@ -19,7 +19,7 @@ export function PageHero({ eyebrow, title, sub, children }: { eyebrow?: string; 
   return (
     <div className="pt-10 pb-8">
       {eyebrow && <div className="eyebrow mb-2">{eyebrow}</div>}
-      <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[0.95] gold-text">{title}</h1>
+      <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05] gold-text">{title}</h1>
       {sub && <p className="text-text-2 mt-3 max-w-2xl text-base sm:text-lg">{sub}</p>}
       {children}
     </div>
@@ -30,7 +30,7 @@ export function StatTile({ label, value, sub, accent, href }: { label: string; v
   const body = (
     <div className={clsx("card p-4 h-full", href && "card-hover")}>
       <div className="text-[11px] uppercase tracking-widest text-muted">{label}</div>
-      <div className={clsx("font-display text-3xl sm:text-4xl leading-none mt-2 tabular", accent && "gold-text")}>{value}</div>
+      <div className={clsx("font-display text-2xl sm:text-3xl leading-tight mt-2 tabular", accent && "gold-text")}>{value}</div>
       {sub && <div className="text-xs text-text-2 mt-1.5">{sub}</div>}
     </div>
   );

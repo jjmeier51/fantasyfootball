@@ -1,6 +1,7 @@
 """The all-time records book."""
 from __future__ import annotations
 
+from config import RECORD_MIN_YEAR
 from .common import PLAYOFF_TYPES, team_games, team_name, logo, week_scores
 
 
@@ -23,30 +24,35 @@ def _rec(rid, category, title, unit, better, entries, description="", limit=10):
 def build_records(seasons: list[dict], careers: list[dict], luck_rows: list[dict]) -> list[dict]:
     recs = []
     games = []
+    since = f"({RECORD_MIN_YEAR} onward)"
     for s in seasons:
+        if s["year"] < RECORD_MIN_YEAR:
+            continue  # single-game records only count the modern scoring era
         for g in team_games(s):
             games.append((s, g))
     decided = [(s, g) for s, g in games if g["won"] is not None]
 
     # ---- single game
     recs.append(_rec("high-score", "singleGame", "Highest Single-Week Score", "pts", "high",
-                     [_entry(s, g, g["score"]) for s, g in games], "Most points by one team in a single week."))
+                     [_entry(s, g, g["score"]) for s, g in games], f"Most points by one team in a single week {since}."))
     recs.append(_rec("low-score", "singleGame", "Lowest Single-Week Score", "pts", "low",
-                     [_entry(s, g, g["score"]) for s, g in games if g["score"] > 0], "The weeks nobody wants to remember."))
+                     [_entry(s, g, g["score"]) for s, g in games if g["score"] > 0], f"The weeks nobody wants to remember {since}."))
     recs.append(_rec("blowout", "singleGame", "Biggest Blowout", "margin", "high",
-                     [_entry(s, g, g["margin"]) for s, g in decided if g["margin"] > 0], "Largest margin of victory."))
+                     [_entry(s, g, g["margin"]) for s, g in decided if g["margin"] > 0], f"Largest margin of victory {since}."))
     recs.append(_rec("closest", "singleGame", "Closest Game", "margin", "low",
-                     [_entry(s, g, abs(g["margin"])) for s, g in decided if g["margin"] > 0], "Decided by the thinnest margins."))
+                     [_entry(s, g, abs(g["margin"])) for s, g in decided if g["margin"] > 0], f"Decided by the thinnest margins {since}."))
     recs.append(_rec("shootout", "singleGame", "Highest-Scoring Game", "combined", "high",
-                     [_entry(s, g, round(g["score"] + g["oppScore"], 2)) for s, g in decided if g["margin"] > 0], "Combined points, both teams."))
+                     [_entry(s, g, round(g["score"] + g["oppScore"], 2)) for s, g in decided if g["margin"] > 0], f"Combined points, both teams {since}."))
     recs.append(_rec("points-in-loss", "oddities", "Most Points in a Loss", "pts", "high",
-                     [_entry(s, g, g["score"]) for s, g in decided if g["won"] is False], "Great week, wrong opponent."))
+                     [_entry(s, g, g["score"]) for s, g in decided if g["won"] is False], f"Great week, wrong opponent {since}."))
     recs.append(_rec("fewest-in-win", "oddities", "Fewest Points in a Win", "pts", "low",
-                     [_entry(s, g, g["score"]) for s, g in decided if g["won"] and g["score"] > 0], "Winning ugly."))
+                     [_entry(s, g, g["score"]) for s, g in decided if g["won"] and g["score"] > 0], f"Winning ugly {since}."))
     recs.append(_rec("playoff-high", "playoffs", "Highest Playoff Score", "pts", "high",
-                     [_entry(s, g, g["score"]) for s, g in games if g["isPlayoff"]]))
+                     [_entry(s, g, g["score"]) for s, g in games if g["isPlayoff"]], since))
     finals = []
     for s in seasons:
+        if s["year"] < RECORD_MIN_YEAR:
+            continue
         fw = [m["week"] for m in s["matchups"] if m["type"] in PLAYOFF_TYPES and m["decided"]]
         if not fw:
             continue
@@ -55,11 +61,11 @@ def build_records(seasons: list[dict], careers: list[dict], luck_rows: list[dict
             if g["isPlayoff"] and g["week"] == last and s["honors"].get("champion") in (g["ownerKey"], g["oppKey"]):
                 finals.append((s, g))
     recs.append(_rec("title-game-high", "playoffs", "Highest Championship-Game Score", "pts", "high",
-                     [_entry(s, g, g["score"]) for s, g in finals]))
+                     [_entry(s, g, g["score"]) for s, g in finals], since))
     recs.append(_rec("title-game-closest", "playoffs", "Closest Championship Game", "margin", "low",
-                     [_entry(s, g, abs(g["margin"])) for s, g in finals if g["won"]]))
+                     [_entry(s, g, abs(g["margin"])) for s, g in finals if g["won"]], since))
     recs.append(_rec("title-game-blowout", "playoffs", "Most Lopsided Championship Game", "margin", "high",
-                     [_entry(s, g, g["margin"]) for s, g in finals if g["won"]]))
+                     [_entry(s, g, g["margin"]) for s, g in finals if g["won"]], since))
 
     # ---- season
     tseasons = []

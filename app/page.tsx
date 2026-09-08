@@ -30,7 +30,7 @@ export default function HomePage() {
   const top3 = podium.slice(0, 3);
   const top3Share = totalTitles ? Math.round((top3.reduce((a, [, n]) => a + n, 0) / totalTitles) * 100) : 0;
   const top3Names = top3.map(([k]) => ownerName(k));
-  const dynastyLine = top3.length === 3 ? `${top3Names[0]}, ${top3Names[1]}, and ${top3Names[2]} have combined for ${top3Share}% of the league's championships.` : "";
+  const dynastyLine = top3.length === 3 ? `${top3Names[0]}, ${top3Names[1]}, and ${top3Names[2]} have combined for ${top3Share}% of the league's championships (nice).` : "";
   const latestWeek = currentSeason.completedWeeks.length ? Math.max(...currentSeason.completedWeeks) : null;
   const latest = latestWeek ? currentSeason.matchups.filter((m) => m.week === latestWeek && m.decided) : [];
   const history = thisWeekInHistory();
@@ -92,7 +92,7 @@ export default function HomePage() {
         {dynastyLine ? (
           <Link href="/trophy-room" className="card card-hover p-4 h-full">
             <div className="text-[11px] uppercase tracking-widest text-muted">Dynasties</div>
-            <div className="font-display text-lg sm:text-xl leading-snug mt-2 gold-text">{dynastyLine}</div>
+            <div className="font-display text-base sm:text-[17px] leading-snug mt-2 gold-text">{dynastyLine}</div>
           </Link>
         ) : (
           <StatTile label="Most titles" value={podium[0] ? podium[0][1] : "—"} sub={podium[0] ? ownerName(podium[0][0]) : ""} accent href="/trophy-room" />

@@ -5,11 +5,11 @@ export const alt = "League of Gangstars";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-const PLAYFAIR_URL = "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDQ.ttf";
+const DISPLAY_FONT_URL = "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_KUnNSg.ttf";
 
 async function loadFont(): Promise<ArrayBuffer | null> {
   try {
-    const res = await fetch(PLAYFAIR_URL);
+    const res = await fetch(DISPLAY_FONT_URL);
     return res.ok ? await res.arrayBuffer() : null;
   } catch {
     return null;
@@ -18,7 +18,7 @@ async function loadFont(): Promise<ArrayBuffer | null> {
 
 export default async function OpenGraphImage() {
   const champs = new Set(records.trophies.filter((t) => t.champion).map((t) => t.champion!.ownerKey)).size;
-  const playfair = await loadFont();
+  const displayFont = await loadFont();
   return new ImageResponse(
     (
       <div
@@ -31,7 +31,7 @@ export default async function OpenGraphImage() {
           padding: 64,
           background: "linear-gradient(160deg, #0f1420 0%, #090c14 60%, #141a2b 100%)",
           color: "#f2f4f8",
-          fontFamily: playfair ? "Playfair" : "serif",
+          fontFamily: displayFont ? "Display" : "sans-serif",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 18, fontSize: 22, letterSpacing: 6, color: "#d4af37", textTransform: "uppercase" }}>
@@ -39,7 +39,7 @@ export default async function OpenGraphImage() {
           Est. {meta.firstSeason} · Fantasy Football
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 108, fontWeight: 700, lineHeight: 1, color: "#e9c766" }}>{meta.leagueName}</div>
+          <div style={{ fontSize: 96, fontWeight: 800, lineHeight: 1.05, letterSpacing: -3, color: "#e9c766" }}>{meta.leagueName}</div>
           <div style={{ fontSize: 30, color: "#b6bdcc", marginTop: 18, fontFamily: "Helvetica, Arial, sans-serif" }}>
             Every championship, every blowout, every embarrassing week. Preserved forever.
           </div>
@@ -59,6 +59,6 @@ export default async function OpenGraphImage() {
         </div>
       </div>
     ),
-    { ...size, fonts: playfair ? [{ name: "Playfair", data: playfair, weight: 700, style: "normal" }] : [] },
+    { ...size, fonts: displayFont ? [{ name: "Display", data: displayFont, weight: 800, style: "normal" }] : [] },
   );
 }

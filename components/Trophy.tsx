@@ -108,7 +108,7 @@ export default function Trophy({ year, line1, line2, size = 220, glow, dim, clas
       </g>
 
       {/* engraving */}
-      <text x="100" y="226" textAnchor="middle" fontSize="9.5" fontWeight="700" fill="#f1d67a" fontFamily="var(--font-display-src), Georgia, serif" letterSpacing="0.5">
+      <text x="100" y="226" textAnchor="middle" fontSize="9.5" fontWeight="700" fill="#f1d67a" fontFamily="var(--font-display-src), system-ui, sans-serif" letterSpacing="0.3">
         {year} CHAMPION
       </text>
       <text x="100" y="237" textAnchor="middle" fontSize="7.5" fill="#e6e9f0" fontFamily="var(--font-sans-src), system-ui, sans-serif">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Source_Sans_3 } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -7,8 +7,9 @@ import ThemePlayer from "@/components/ThemePlayer";
 import CommandPalette from "@/components/CommandPalette";
 import { meta, ownersLite, seasons } from "@/lib/data";
 
-const sans = Source_Sans_3({ variable: "--font-sans-src", subsets: ["latin"], weight: ["400", "600", "700"] });
-const display = Playfair_Display({ variable: "--font-display-src", subsets: ["latin"], weight: ["600", "700", "900"], style: ["normal", "italic"] });
+// Atlassian's Charlie Display / Charlie Text are proprietary; these are the closest open pairing.
+const sans = Inter({ variable: "--font-sans-src", subsets: ["latin"] });
+const display = Plus_Jakarta_Sans({ variable: "--font-display-src", subsets: ["latin"], weight: ["600", "700", "800"] });
 
 const description = `The complete history of ${meta.leagueName}: trophies, records, rivalries and fun facts since ${meta.firstSeason}.`;
 

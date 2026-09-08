@@ -197,3 +197,22 @@ def test_waiver_pickups_are_undrafted_players(league):
     assert w["name"] == "Bench Guy" and w["points"] == 52.0 and w["year"] == 2020
     assert [r["year"] for r in waiver["byYear"]] == [2020]
     assert waiver["allTime"][0]["name"] == "Bench Guy"
+
+
+def test_waiver_qb_needs_top3_finish(league):
+    from stats.highlights import build_highlights
+    seasons, owners, _ = league
+    # 2019: give Cat's final roster an undrafted QB who is the only QB (rank 1 -> qualifies)
+    cat = next(t for t in seasons[0]["teams"] if t["ownerKey"] == "cat-cole")
+    cat["roster"].append({"playerId": 50, "name": "Waiver QB", "position": "QB", "proTeam": "KC", "seasonPoints": 300})
+    seasons[0]["draft"] = [{"round": 1, "pick": 1, "overall": 1, "teamId": 1, "ownerKey": "ann", "playerId": 1,
+                             "playerName": "Some Guy", "position": "RB", "proTeam": "NYG", "keeper": False, "bid": None}]
+    hl, _, waiver = build_highlights(seasons, build_team_seasons(seasons))
+    assert hl["cat-cole"]["bestPlayers"]["waiver"]["name"] == "Waiver QB"
+    # add three better QBs on other rosters -> now QB4, no longer a pickup
+    for i, t in enumerate(seasons[0]["teams"][:3]):
+        t["roster"].append({"playerId": 60 + i, "name": f"Star QB {i}", "position": "QB", "proTeam": "BUF", "seasonPoints": 400 + i})
+        seasons[0]["draft"].append({"round": 2, "pick": i + 1, "overall": 5 + i, "teamId": t["teamId"], "ownerKey": t["ownerKey"], "playerId": 60 + i,
+                                    "playerName": f"Star QB {i}", "position": "QB", "proTeam": "BUF", "keeper": False, "bid": None})
+    hl, _, waiver = build_highlights(seasons, build_team_seasons(seasons))
+    assert hl["cat-cole"]["bestPlayers"]["waiver"] is None

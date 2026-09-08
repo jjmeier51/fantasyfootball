@@ -238,6 +238,7 @@ export interface RecordEntry {
   weeks?: number | null;
   totalWeeks?: number | null;
   source?: string;
+  qbRank?: number | null;
 }
 
 export interface RecordDef {

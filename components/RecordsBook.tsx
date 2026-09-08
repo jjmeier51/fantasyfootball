@@ -47,7 +47,7 @@ function valueLabel(r: RecordDef, e: RecordEntry) {
 
 function context(r: RecordDef, e: RecordEntry, owners: Map<string, OwnerLite>) {
   const opp = e.oppKey ? owners.get(e.oppKey)?.name ?? e.oppKey : null;
-  if (e.player) return `${e.year} · ${e.teamName}${e.source === "rostered-weeks" && e.weeks ? ` · ${e.weeks} of ${e.totalWeeks} weeks` : ""}`;
+  if (e.player) return `${e.year} · ${e.teamName}${e.source === "rostered-weeks" && e.weeks ? ` · ${e.weeks} of ${e.totalWeeks} weeks` : ""}${e.qbRank ? ` · finished QB${e.qbRank}` : ""}`;
   if (r.category === "career") return `${e.seasons} seasons · ${e.record}`;
   if (r.category === "streaks") return e.endYear ? `${e.year} wk ${e.week} → ${e.endYear} wk ${e.endWeek}` : `${e.year}–${e.endYear ?? e.year}`;
   if (e.week) return `${e.year} · Week ${e.week}${opp ? ` · vs ${opp} (${fmt(e.oppScore)})` : ""}${e.isPlayoff ? " · Playoffs" : ""}`;

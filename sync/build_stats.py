@@ -144,13 +144,13 @@ def main(argv=None):
     def waiver_entry(r):
         return {"ownerKey": r["ownerKey"], "value": r["points"], "year": r["year"], "teamName": r["teamName"],
                 "player": r["name"], "position": r["position"], "proTeam": r["proTeam"], "headshot": r.get("headshot"),
-                "weeks": r.get("weeks"), "totalWeeks": r.get("totalWeeks"), "source": r["source"]}
+                "weeks": r.get("weeks"), "totalWeeks": r.get("totalWeeks"), "source": r["source"], "qbRank": r.get("qbRank")}
 
     records.append({"id": "waiver-all-time", "category": "waiver", "title": "Best Waiver Wire Pickup of All Time", "unit": "pts",
-                    "better": "high", "description": "Undrafted players, ranked by fantasy points scored on the roster that picked them up.",
+                    "better": "high", "description": "Undrafted players, ranked by fantasy points scored on the roster that picked them up. Quarterbacks only qualify if they finished QB3 or better that season.",
                     "entries": [waiver_entry(r) for r in waiver["allTime"][:10]]})
     records.append({"id": "waiver-by-year", "category": "waiver", "title": "Best Waiver Wire Pickup by Season", "unit": "pts",
-                    "better": "high", "description": "The top undrafted pickup from every season, newest first.",
+                    "better": "high", "description": "The top undrafted pickup from every season, newest first. Quarterbacks only qualify if they finished QB3 or better.",
                     "entries": [waiver_entry(r) for r in waiver["byYear"]], "keepOrder": True})
     del names_by_key
 

@@ -113,12 +113,37 @@ def build_highlights(seasons: list[dict], team_seasons: list[dict]) -> tuple[dic
         best_players = {
             "qb": pick([r for r in cands if r["position"] == "QB"]),
             "flex": pick([r for r in cands if r["position"] not in ("QB", "K", "D/ST", "")]),
-            "waiver": pick([r for r in cands if r.get("pickup") and r["position"] not in ("K", "D/ST", "")]),
+            "waiver": None,  # filled in below once QB ranks are known
         }
         out[k] = {"bestTeam": best_team, "bestPlayers": best_players}
 
     league_top = sorted(all_rows, key=lambda r: -r["points"])[:15]
-    skill_pickups = [r for r in pickups if r["position"] not in ("K", "D/ST", "")]
+
+    # Quarterbacks only count as waiver pickups when they finished QB3 or better that season
+    # (ranked by full-season points among every QB on a roster that year).
+    qb_rank: dict[tuple, int] = {}
+    for year in {r["year"] for r in all_rows}:
+        qbs: dict = {}
+        for r in all_rows:
+            if r["year"] == year and r["position"] == "QB" and r.get("playerId") is not None:
+                pts = r.get("seasonPoints") or r["points"]
+                qbs[r["playerId"]] = max(qbs.get(r["playerId"], 0), pts)
+        for i, (pid, _) in enumerate(sorted(qbs.items(), key=lambda kv: -kv[1]), start=1):
+            qb_rank[(year, pid)] = i
+    for r in pickups:
+        if r["position"] == "QB":
+            r["qbRank"] = qb_rank.get((r["year"], r["playerId"]))
+
+    def pickup_ok(r):
+        if r["position"] in ("K", "D/ST", ""):
+            return False
+        if r["position"] == "QB":
+            return (r.get("qbRank") or 99) <= 3
+        return True
+
+    skill_pickups = [r for r in pickups if pickup_ok(r)]
+    for k in out:
+        out[k]["bestPlayers"]["waiver"] = pick([r for r in skill_pickups if r["ownerKey"] == k])
     by_year = []
     for year in sorted({r["year"] for r in skill_pickups}, reverse=True):
         best = max([r for r in skill_pickups if r["year"] == year], key=lambda r: r["points"])

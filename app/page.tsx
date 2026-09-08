@@ -50,7 +50,7 @@ export default function HomePage() {
         <div>
           <div className="eyebrow mb-3">Est. {meta.firstSeason} · {seasons.length} seasons</div>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-[4.25rem] leading-[1.08] gold-text">{meta.leagueName}</h1>
-          <p className="mt-4 text-text-2 text-lg max-w-xl">
+          <p className="mt-4 text-text-2 text-[11.7px] leading-relaxed max-w-xl">
             Every championship, every blowout, every embarrassing week. The complete history of the league since our freshman year of college, pulled straight from ESPN and preserved forever.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">

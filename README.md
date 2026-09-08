@@ -119,6 +119,9 @@ and streak records only use seasons with weekly scores.
 
 ## Weekly sync
 
+The workflow only appears in the Actions tab once `.github/workflows/sync.yml` is on the
+default branch (`main`).
+
 `.github/workflows/sync.yml` runs Tuesdays at 08:00 ET (after Monday Night Football is final),
 refreshes the current season, recomputes everything, runs the tests, and commits. Run it by hand
 any time from the Actions tab.

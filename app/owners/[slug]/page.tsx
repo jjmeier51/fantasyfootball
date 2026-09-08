@@ -30,7 +30,8 @@ export default async function OwnerPage({ params }: { params: Promise<{ slug: st
   const goat = records.goat.find((g) => g.ownerKey === slug);
   const bestSeason = records.teamSeasons.find((t) => t.ownerKey === slug);
   const draft = records.draft.profiles[slug];
-  const facts = records.funFacts.filter((f) => f.ownerKey === slug);
+  const toneRank = { positive: 0, neutral: 1, negative: 2 } as const;
+  const facts = records.funFacts.filter((f) => f.ownerKey === slug).sort((a, b) => toneRank[a.tone ?? "neutral"] - toneRank[b.tone ?? "neutral"]);
   const maxTeams = Math.max(...seasons.map((s) => s.teamCount));
   const titles = records.trophies.filter((t) => t.champion?.ownerKey === slug);
   const history = [...o.seasons].sort((a, b) => b - a).map((y) => ({ year: y, ...o.teamNames[String(y)], logo: o.logos[String(y)] ?? null, finish: c.finishes.find((f) => f.year === y) }));

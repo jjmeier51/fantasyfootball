@@ -88,17 +88,17 @@ def build_draft_tendencies(seasons: list[dict], owners: list[dict]) -> dict:
             prof[f"first{pos.replace('/', '')}Round"] = round(avg, 1) if avg else None
             prof[f"firstTo{pos.replace('/', '')}"] = cnt
             if cnt >= 3 and cnt >= 0.4 * o["drafts"]:
-                facts.append({"id": f"first-{pos}-{k}", "category": "draft", "ownerKey": k,
+                facts.append({"id": f"first-{pos}-{k}", "category": "draft", "tone": "neutral", "ownerKey": k,
                               "text": f"{name} has been the first to draft a {pos_word[pos]} in {cnt} of {o['drafts']} drafts.",
                               "href": f"/owners/{k}#draft"})
             if avg and league_avg_first.get(pos) and o["drafts"] >= 3:
                 diff = league_avg_first[pos] - avg
                 if diff >= 2.0:
-                    facts.append({"id": f"early-{pos}-{k}", "category": "draft", "ownerKey": k,
+                    facts.append({"id": f"early-{pos}-{k}", "category": "draft", "tone": "neutral", "ownerKey": k,
                                   "text": f"{name} takes a {pos_word[pos]} in round {avg:.1f} on average, {diff:.1f} rounds earlier than the league.",
                                   "href": f"/owners/{k}#draft"})
                 elif diff <= -2.0:
-                    facts.append({"id": f"late-{pos}-{k}", "category": "draft", "ownerKey": k,
+                    facts.append({"id": f"late-{pos}-{k}", "category": "draft", "tone": "neutral", "ownerKey": k,
                                   "text": f"{name} waits on {pos_word[pos]}s: round {avg:.1f} on average, {abs(diff):.1f} rounds later than the league.",
                                   "href": f"/owners/{k}#draft"})
         # NFL-team loyalty
@@ -117,11 +117,11 @@ def build_draft_tendencies(seasons: list[dict], owners: list[dict]) -> dict:
             prof["favoriteTeam"] = {"team": team, "name": PRO_TEAM_NAMES.get(team, team), "picks": cnt,
                                     "pct": round(100 * pct, 1), "leaguePct": round(100 * league_pct, 1), "streak": best}
             if cnt >= 6 and league_pct and pct >= 2.2 * league_pct:
-                facts.append({"id": f"team-{k}", "category": "draft", "ownerKey": k,
+                facts.append({"id": f"team-{k}", "category": "draft", "tone": "neutral", "ownerKey": k,
                               "text": f"{round(100 * pct)}% of {name}'s draft picks have been {PRO_TEAM_NAMES.get(team, team)} (league average {round(100 * league_pct)}%). {name} always picks {PRO_TEAM_NAMES.get(team, team)} players for some reason.",
                               "href": f"/owners/{k}#draft"})
             elif best >= 5:
-                facts.append({"id": f"team-streak-{k}", "category": "draft", "ownerKey": k,
+                facts.append({"id": f"team-streak-{k}", "category": "draft", "tone": "neutral", "ownerKey": k,
                               "text": f"{name} has drafted at least one {PRO_TEAM_NAMES.get(team, team)} player in {best} straight drafts.",
                               "href": f"/owners/{k}#draft"})
         # player loyalty
@@ -130,7 +130,7 @@ def build_draft_tendencies(seasons: list[dict], owners: list[dict]) -> dict:
             pname = o["playerNames"].get(pid) or "the same player"
             prof["mostDraftedPlayer"] = {"name": pname, "times": cnt}
             if cnt >= 3:
-                facts.append({"id": f"player-{k}", "category": "draft", "ownerKey": k,
+                facts.append({"id": f"player-{k}", "category": "draft", "tone": "neutral", "ownerKey": k,
                               "text": f"{name} has drafted {pname} {cnt} times. {LOYALTY_ENDINGS[idx % len(LOYALTY_ENDINGS)]}",
                               "href": f"/owners/{k}#draft"})
         # positional makeup of rounds 1-3
@@ -140,16 +140,16 @@ def build_draft_tendencies(seasons: list[dict], owners: list[dict]) -> dict:
             prof["earlyRoundMix"] = mix
             rb, wr = mix.get("RB", 0), mix.get("WR", 0)
             if rb >= 65 and o["drafts"] >= 3:
-                facts.append({"id": f"rb-{k}", "category": "draft", "ownerKey": k,
+                facts.append({"id": f"rb-{k}", "category": "draft", "tone": "neutral", "ownerKey": k,
                               "text": f"{rb}% of {name}'s first three-round picks have been running backs. Ground and pound.",
                               "href": f"/owners/{k}#draft"})
             elif wr >= 60 and o["drafts"] >= 3:
-                facts.append({"id": f"wr-{k}", "category": "draft", "ownerKey": k,
+                facts.append({"id": f"wr-{k}", "category": "draft", "tone": "neutral", "ownerKey": k,
                               "text": f"{name} goes wide receiver early: {wr}% of their first three-round picks are WRs.",
                               "href": f"/owners/{k}#draft"})
             qb_rounds = o["firstPosRound"]["QB"]
             if qb_rounds and min(qb_rounds) >= 6 and len(qb_rounds) >= 3:
-                facts.append({"id": f"qb-wait-{k}", "category": "draft", "ownerKey": k,
+                facts.append({"id": f"qb-wait-{k}", "category": "draft", "tone": "neutral", "ownerKey": k,
                               "text": f"{name} has never taken a quarterback before round {min(qb_rounds)}.",
                               "href": f"/owners/{k}#draft"})
         profiles[k] = prof
@@ -158,7 +158,7 @@ def build_draft_tendencies(seasons: list[dict], owners: list[dict]) -> dict:
     if player_drafted:
         pid, cnt = player_drafted.most_common(1)[0]
         if cnt >= 3:
-            facts.append({"id": "most-drafted", "category": "draft",
+            facts.append({"id": "most-drafted", "category": "draft", "tone": "neutral",
                           "text": f"{player_names.get(pid) or 'One player'} is the most drafted player in league history, taken {cnt} times.",
                           "href": "/drafts"})
 

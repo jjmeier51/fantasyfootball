@@ -347,6 +347,7 @@ export interface FunFact {
   id: string;
   category: string;
   text: string;
+  tone?: "positive" | "negative" | "neutral";
   ownerKey?: string;
   year?: number;
   href?: string;

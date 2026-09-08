@@ -133,7 +133,7 @@ def main(argv=None):
                             minimum=lambda k: 4 if k in current_members else 2)
     trophies = build_trophies(seasons, owners)
     highlights, top_player_seasons = build_highlights(seasons, team_seasons)
-    mvps = [h["mvp"] for h in highlights.values() if h.get("mvp")]
+    mvps = [p for h in highlights.values() for p in h["bestPlayers"].values() if p]
     shots = download_headshots(mvps + top_player_seasons, enabled=not args.no_network)
     for row in mvps + top_player_seasons:
         key = headshot_key(row)
@@ -174,7 +174,7 @@ def main(argv=None):
     }
     (DATA_DIR / "meta.json").write_text(json.dumps(meta, indent=1))
     print(f"records.json: {len(records)} records, {len(facts)} fun facts, {len(team_seasons)} team-seasons, "
-          f"{len(draft['profiles'])} draft profiles, {len(mvps)} MVPs ({sum(1 for m in mvps if m.get('headshot'))} headshots); "
+          f"{len(draft['profiles'])} draft profiles, {len(mvps)} best players ({sum(1 for m in mvps if m.get('headshot'))} headshots); "
           f"meta.json written (sample={meta['isSample']})")
     return 0
 

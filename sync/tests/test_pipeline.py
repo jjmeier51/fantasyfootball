@@ -178,7 +178,9 @@ def test_highlights_best_team_and_mvp(league):
     ann = hl["ann"]
     assert ann["bestTeam"]["year"] == 2019 and ann["bestTeam"]["roster"][0]["name"] == "Some Guy"
     # 2019 has no box scores -> season totals (100); 2020 box scores -> rostered weeks: Some Guy 55.5, Bench Guy 52
-    assert ann["mvp"]["year"] == 2019 and ann["mvp"]["source"] == "season-total" and ann["mvp"]["points"] == 100
+    flex = ann["bestPlayers"]["flex"]
+    assert flex["name"] == "Some Guy" and flex["year"] == 2019 and flex["source"] == "season-total" and flex["points"] == 100
+    assert ann["bestPlayers"]["qb"] is None  # fixture has no quarterbacks
     rostered = [r for r in top if r["source"] == "rostered-weeks" and r["ownerKey"] == "ann"]
     assert {r["name"]: r["points"] for r in rostered} == {"Some Guy": 55.5, "Bench Guy": 52.0}
     assert all(r["weeks"] == 2 for r in rostered)

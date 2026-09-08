@@ -25,7 +25,7 @@ def _espn_url(player_id, position: str):
 
 
 def build_highlights(seasons: list[dict], team_seasons: list[dict]) -> tuple[dict, list[dict]]:
-    """Returns ({ownerKey: {bestTeam, mvp}}, league-wide top player-seasons)."""
+    """Returns ({ownerKey: {bestTeam, bestPlayers: {qb, flex}}}, league-wide top player-seasons)."""
     by_year = {s["year"]: s for s in seasons}
 
     # --- candidate player-seasons per owner
@@ -81,12 +81,20 @@ def build_highlights(seasons: list[dict], team_seasons: list[dict]) -> tuple[dic
                     "finalRank": team.get("finalRank"), "rank": best["rank"], "result": best["result"], "score": best["score"],
                     "roster": _roster_with_lineup(season, team),
                 }
-        mvp = None
-        if candidates.get(k):
-            top = max(candidates[k], key=lambda r: (r["points"], r.get("seasonPoints") or 0))
-            mvp = dict(top, espnUrl=_espn_url(top["playerId"], top["position"]), headshot=None)
-            mvp.pop("ownerKey", None)
-        out[k] = {"bestTeam": best_team, "mvp": mvp}
+        def pick(rows):
+            if not rows:
+                return None
+            top = max(rows, key=lambda r: (r["points"], r.get("seasonPoints") or 0))
+            row = dict(top, espnUrl=_espn_url(top["playerId"], top["position"]), headshot=None)
+            row.pop("ownerKey", None)
+            return row
+
+        cands = candidates.get(k, [])
+        best_players = {
+            "qb": pick([r for r in cands if r["position"] == "QB"]),
+            "flex": pick([r for r in cands if r["position"] not in ("QB", "K", "D/ST", "")]),
+        }
+        out[k] = {"bestTeam": best_team, "bestPlayers": best_players}
 
     league_top = sorted(all_rows, key=lambda r: -r["points"])[:15]
     return out, league_top

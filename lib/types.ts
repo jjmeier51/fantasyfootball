@@ -425,7 +425,7 @@ export interface Mvp {
 
 export interface OwnerHighlights {
   bestTeam: BestTeam | null;
-  mvp: Mvp | null;
+  bestPlayers: { qb: Mvp | null; flex: Mvp | null };
 }
 
 export interface Records {

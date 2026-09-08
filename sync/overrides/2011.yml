@@ -1,0 +1,19 @@
+# Manual data for 2011, typed in from screenshots. Overrides always win over ESPN data.
+# Remove this file when using a real league (it is sample data).
+season: 2011
+sample: true
+champion: johnny
+runner_up: mike
+third: kevin
+last_place: danny
+final_standings: [johnny, mike, kevin, tyler, caleb, nick, brandon, eric, sean, danny]
+champion_roster:
+  - {player: "Aaron Rodgers", position: QB, nfl_team: GB, slot: QB, points: 31.2}
+  - {player: "Arian Foster", position: RB, nfl_team: HOU, slot: RB, points: 18.4}
+  - {player: "Ray Rice", position: RB, nfl_team: BAL, slot: RB, points: 22.0}
+  - {player: "Calvin Johnson", position: WR, nfl_team: DET, slot: WR, points: 27.9}
+  - {player: "Wes Welker", position: WR, nfl_team: NE, slot: WR, points: 14.1}
+  - {player: "Rob Gronkowski", position: TE, nfl_team: NE, slot: TE, points: 24.6}
+  - {player: "Marshawn Lynch", position: RB, nfl_team: SEA, slot: FLEX, points: 12.3}
+  - {player: "Stephen Gostkowski", position: K, nfl_team: NE, slot: K, points: 9.0}
+  - {player: "49ers D/ST", position: D/ST, nfl_team: SF, slot: D/ST, points: 11.0}

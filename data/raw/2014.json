@@ -1,0 +1,5088 @@
+{
+ "year": 2014,
+ "leagueId": 0,
+ "source": "sample",
+ "fetchedAt": "2026-09-08T03:27:55.282708+00:00",
+ "settings": {
+  "name": "League of Gangstars",
+  "teamCount": 12,
+  "regSeasonWeeks": 13,
+  "playoffTeamCount": 6,
+  "scoringType": "H2H_POINTS",
+  "isAuction": false,
+  "matchupPeriods": {
+   "1": [
+    1
+   ],
+   "2": [
+    2
+   ],
+   "3": [
+    3
+   ],
+   "4": [
+    4
+   ],
+   "5": [
+    5
+   ],
+   "6": [
+    6
+   ],
+   "7": [
+    7
+   ],
+   "8": [
+    8
+   ],
+   "9": [
+    9
+   ],
+   "10": [
+    10
+   ],
+   "11": [
+    11
+   ],
+   "12": [
+    12
+   ],
+   "13": [
+    13
+   ],
+   "14": [
+    14
+   ],
+   "15": [
+    15
+   ],
+   "16": [
+    16
+   ]
+  }
+ },
+ "status": {
+  "currentWeek": 16,
+  "currentMatchupPeriod": 16,
+  "finalScoringPeriod": 16,
+  "isComplete": true,
+  "completedWeeks": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16
+  ]
+ },
+ "members": [
+  {
+   "swid": "{SAMPLE-0000-0}",
+   "firstName": "Johnny",
+   "lastName": "Meier",
+   "displayName": "JohnnyM"
+  },
+  {
+   "swid": "{SAMPLE-0001-0}",
+   "firstName": "Caleb",
+   "lastName": "Stone",
+   "displayName": "CalebS"
+  },
+  {
+   "swid": "{SAMPLE-0002-0}",
+   "firstName": "Nick",
+   "lastName": "Alvarez",
+   "displayName": "NickA"
+  },
+  {
+   "swid": "{SAMPLE-0003-0}",
+   "firstName": "Mike",
+   "lastName": "Chen",
+   "displayName": "MikeC"
+  },
+  {
+   "swid": "{SAMPLE-0004-0}",
+   "firstName": "Tyler",
+   "lastName": "Brooks",
+   "displayName": "TylerB"
+  },
+  {
+   "swid": "{SAMPLE-0005-0}",
+   "firstName": "Danny",
+   "lastName": "Russo",
+   "displayName": "DannyR"
+  },
+  {
+   "swid": "{SAMPLE-0006-0}",
+   "firstName": "Kevin",
+   "lastName": "O'Neil",
+   "displayName": "KevinO"
+  },
+  {
+   "swid": "{SAMPLE-0007-0}",
+   "firstName": "Brandon",
+   "lastName": "Hale",
+   "displayName": "BrandonH"
+  },
+  {
+   "swid": "{SAMPLE-0008-0}",
+   "firstName": "Eric",
+   "lastName": "Park",
+   "displayName": "EricP"
+  },
+  {
+   "swid": "{SAMPLE-0009-0}",
+   "firstName": "Sean",
+   "lastName": "Murphy",
+   "displayName": "SeanM"
+  },
+  {
+   "swid": "{SAMPLE-0010-0}",
+   "firstName": "Alex",
+   "lastName": "Rivera",
+   "displayName": "AlexR"
+  },
+  {
+   "swid": "{SAMPLE-0011-0}",
+   "firstName": "Chris",
+   "lastName": "Dunn",
+   "displayName": "ChrisD"
+  }
+ ],
+ "teams": [
+  {
+   "teamId": 1,
+   "name": "Vick in a Box",
+   "abbrev": "VIAB",
+   "ownerSwids": [
+    "{SAMPLE-0000-0}"
+   ],
+   "logoUrl": "https://example.invalid/logos/2014/1.svg",
+   "logo": "/logos/2014/1.svg",
+   "wins": 7,
+   "losses": 6,
+   "ties": 0,
+   "pointsFor": 1893.69,
+   "pointsAgainst": 1781.6,
+   "seed": 6,
+   "finalRank": 5,
+   "roster": [
+    {
+     "playerId": 10138,
+     "name": "Ja'Marr Chubb",
+     "position": "WR",
+     "proTeam": "PHI",
+     "seasonPoints": 229.4
+    },
+    {
+     "playerId": 10044,
+     "name": "Travis Peterson",
+     "position": "WR",
+     "proTeam": "DAL",
+     "seasonPoints": 197.7
+    },
+    {
+     "playerId": 10275,
+     "name": "Tyreek Brown",
+     "position": "WR",
+     "proTeam": "MIN",
+     "seasonPoints": 237.1
+    },
+    {
+     "playerId": 10128,
+     "name": "Marcus Love",
+     "position": "WR",
+     "proTeam": "NYG",
+     "seasonPoints": 179.2
+    },
+    {
+     "playerId": 10023,
+     "name": "Dak Chase",
+     "position": "RB",
+     "proTeam": "HOU",
+     "seasonPoints": 253.8
+    },
+    {
+     "playerId": 10196,
+     "name": "Saquon Ekeler",
+     "position": "RB",
+     "proTeam": "PHI",
+     "seasonPoints": 160.0
+    },
+    {
+     "playerId": 10305,
+     "name": "Lamar Andrews",
+     "position": "WR",
+     "proTeam": "JAX",
+     "seasonPoints": 175.0
+    },
+    {
+     "playerId": 10001,
+     "name": "Kirk Mahomes",
+     "position": "QB",
+     "proTeam": "HOU",
+     "seasonPoints": 266.3
+    },
+    {
+     "playerId": 10278,
+     "name": "Rob Kittle",
+     "position": "TE",
+     "proTeam": "PHI",
+     "seasonPoints": 121.9
+    },
+    {
+     "playerId": 10083,
+     "name": "George Kittle",
+     "position": "TE",
+     "proTeam": "PIT",
+     "seasonPoints": 90.4
+    },
+    {
+     "playerId": 10119,
+     "name": "Russell Goff",
+     "position": "WR",
+     "proTeam": "NE",
+     "seasonPoints": 168.0
+    },
+    {
+     "playerId": 10149,
+     "name": "Aaron Brees",
+     "position": "WR",
+     "proTeam": "BUF",
+     "seasonPoints": 119.4
+    },
+    {
+     "playerId": 10029,
+     "name": "Stefon Chubb",
+     "position": "QB",
+     "proTeam": "WSH",
+     "seasonPoints": 259.0
+    },
+    {
+     "playerId": 10057,
+     "name": "Justin Hurts",
+     "position": "WR",
+     "proTeam": "CHI",
+     "seasonPoints": 142.8
+    },
+    {
+     "playerId": 10310,
+     "name": "Brock Robinson",
+     "position": "RB",
+     "proTeam": "LAR",
+     "seasonPoints": 121.7
+    },
+    {
+     "playerId": 10123,
+     "name": "Rob Henry",
+     "position": "WR",
+     "proTeam": "JAX",
+     "seasonPoints": 144.7
+    }
+   ]
+  },
+  {
+   "teamId": 2,
+   "name": "Stone Cold Kickers",
+   "abbrev": "SCK",
+   "ownerSwids": [
+    "{SAMPLE-0001-0}"
+   ],
+   "logoUrl": "https://example.invalid/logos/2014/2.svg",
+   "logo": "/logos/2014/2.svg",
+   "wins": 11,
+   "losses": 2,
+   "ties": 0,
+   "pointsFor": 2157.34,
+   "pointsAgainst": 1723.18,
+   "seed": 2,
+   "finalRank": 4,
+   "roster": [
+    {
+     "playerId": 10041,
+     "name": "Christian Ekeler",
+     "position": "WR",
+     "proTeam": "IND",
+     "seasonPoints": 258.9
+    },
+    {
+     "playerId": 10301,
+     "name": "Puka Prescott",
+     "position": "WR",
+     "proTeam": "CLE",
+     "seasonPoints": 208.4
+    },
+    {
+     "playerId": 10295,
+     "name": "Trevor Cook",
+     "position": "WR",
+     "proTeam": "ATL",
+     "seasonPoints": 217.0
+    },
+    {
+     "playerId": 10035,
+     "name": "Jared White",
+     "position": "WR",
+     "proTeam": "DEN",
+     "seasonPoints": 275.8
+    },
+    {
+     "playerId": 10094,
+     "name": "Drew Allen",
+     "position": "K",
+     "proTeam": "PHI",
+     "seasonPoints": 162.6
+    },
+    {
+     "playerId": 10291,
+     "name": "Amon-Ra LaPorta",
+     "position": "RB",
+     "proTeam": "PHI",
+     "seasonPoints": 263.8
+    },
+    {
+     "playerId": 10066,
+     "name": "Christian Johnson",
+     "position": "TE",
+     "proTeam": "CAR",
+     "seasonPoints": 126.9
+    },
+    {
+     "playerId": 10134,
+     "name": "Alvin Ekeler",
+     "position": "RB",
+     "proTeam": "WSH",
+     "seasonPoints": 211.7
+    },
+    {
+     "playerId": 10197,
+     "name": "Derrick Peterson",
+     "position": "TE",
+     "proTeam": "DET",
+     "seasonPoints": 107.9
+    },
+    {
+     "playerId": 10147,
+     "name": "Puka Ekeler",
+     "position": "TE",
+     "proTeam": "BUF",
+     "seasonPoints": 98.8
+    },
+    {
+     "playerId": 10166,
+     "name": "Julio Hurts",
+     "position": "QB",
+     "proTeam": "DEN",
+     "seasonPoints": 215.3
+    },
+    {
+     "playerId": 10255,
+     "name": "NYG D/ST",
+     "position": "D/ST",
+     "proTeam": "NYG",
+     "seasonPoints": 103.5
+    },
+    {
+     "playerId": 10127,
+     "name": "MIA D/ST",
+     "position": "D/ST",
+     "proTeam": "MIA",
+     "seasonPoints": 140.2
+    },
+    {
+     "playerId": 10212,
+     "name": "ATL D/ST",
+     "position": "D/ST",
+     "proTeam": "ATL",
+     "seasonPoints": 145.1
+    },
+    {
+     "playerId": 10269,
+     "name": "Kyler Kamara",
+     "position": "QB",
+     "proTeam": "PHI",
+     "seasonPoints": 180.2
+    },
+    {
+     "playerId": 10215,
+     "name": "Puka Taylor",
+     "position": "TE",
+     "proTeam": "SF",
+     "seasonPoints": 84.1
+    }
+   ]
+  },
+  {
+   "teamId": 3,
+   "name": "Big Blue Wrecking Crew",
+   "abbrev": "BBWC",
+   "ownerSwids": [
+    "{SAMPLE-0002-0}"
+   ],
+   "logoUrl": "https://example.invalid/logos/2014/3.svg",
+   "logo": "/logos/2014/3.svg",
+   "wins": 6,
+   "losses": 7,
+   "ties": 0,
+   "pointsFor": 1651.45,
+   "pointsAgainst": 1712.11,
+   "seed": 7,
+   "finalRank": 7,
+   "roster": [
+    {
+     "playerId": 10065,
+     "name": "Cooper Adams",
+     "position": "WR",
+     "proTeam": "TEN",
+     "seasonPoints": 232.6
+    },
+    {
+     "playerId": 10252,
+     "name": "Jalen LaPorta",
+     "position": "RB",
+     "proTeam": "CIN",
+     "seasonPoints": 216.7
+    },
+    {
+     "playerId": 10126,
+     "name": "Puka Cousins",
+     "position": "WR",
+     "proTeam": "NYG",
+     "seasonPoints": 194.9
+    },
+    {
+     "playerId": 10115,
+     "name": "Mark Brown",
+     "position": "RB",
+     "proTeam": "NYG",
+     "seasonPoints": 215.5
+    },
+    {
+     "playerId": 10304,
+     "name": "Jordan Adams",
+     "position": "QB",
+     "proTeam": "NYG",
+     "seasonPoints": 280.5
+    },
+    {
+     "playerId": 10195,
+     "name": "Davante Jones",
+     "position": "WR",
+     "proTeam": "MIN",
+     "seasonPoints": 182.7
+    },
+    {
+     "playerId": 10125,
+     "name": "Matt Jefferson",
+     "position": "WR",
+     "proTeam": "TEN",
+     "seasonPoints": 174.2
+    },
+    {
+     "playerId": 10211,
+     "name": "Josh Hall",
+     "position": "WR",
+     "proTeam": "NO",
+     "seasonPoints": 180.5
+    },
+    {
+     "playerId": 10177,
+     "name": "Sam Taylor",
+     "position": "WR",
+     "proTeam": "PHI",
+     "seasonPoints": 175.4
+    },
+    {
+     "playerId": 10019,
+     "name": "Stefon Andrews",
+     "position": "TE",
+     "proTeam": "NYG",
+     "seasonPoints": 101.4
+    },
+    {
+     "playerId": 10117,
+     "name": "Cooper Ekeler",
+     "position": "RB",
+     "proTeam": "CAR",
+     "seasonPoints": 219.1
+    },
+    {
+     "playerId": 10307,
+     "name": "CIN D/ST",
+     "position": "D/ST",
+     "proTeam": "CIN",
+     "seasonPoints": 146.2
+    },
+    {
+     "playerId": 10140,
+     "name": "Davante Robinson",
+     "position": "K",
+     "proTeam": "NYJ",
+     "seasonPoints": 110.7
+    },
+    {
+     "playerId": 10114,
+     "name": "Patrick Hall",
+     "position": "WR",
+     "proTeam": "NYJ",
+     "seasonPoints": 140.3
+    },
+    {
+     "playerId": 10229,
+     "name": "Cooper McCaffrey",
+     "position": "WR",
+     "proTeam": "DET",
+     "seasonPoints": 145.6
+    },
+    {
+     "playerId": 10018,
+     "name": "DeShawn Jones",
+     "position": "RB",
+     "proTeam": "DEN",
+     "seasonPoints": 177.3
+    }
+   ]
+  },
+  {
+   "teamId": 4,
+   "name": "Kelce's Kingdom",
+   "abbrev": "KK",
+   "ownerSwids": [
+    "{SAMPLE-0003-0}"
+   ],
+   "logoUrl": "https://example.invalid/logos/2014/4.svg",
+   "logo": "/logos/2014/4.svg",
+   "wins": 11,
+   "losses": 2,
+   "ties": 0,
+   "pointsFor": 2236.08,
+   "pointsAgainst": 1662.09,
+   "seed": 1,
+   "finalRank": 2,
+   "roster": [
+    {
+     "playerId": 10160,
+     "name": "Antonio St. Brown",
+     "position": "WR",
+     "proTeam": "IND",
+     "seasonPoints": 201.2
+    },
+    {
+     "playerId": 10225,
+     "name": "Alvin Purdy",
+     "position": "QB",
+     "proTeam": "CAR",
+     "seasonPoints": 367.8
+    },
+    {
+     "playerId": 10299,
+     "name": "Antonio Kittle",
+     "position": "RB",
+     "proTeam": "SEA",
+     "seasonPoints": 173.5
+    },
+    {
+     "playerId": 10316,
+     "name": "DeShawn Love",
+     "position": "WR",
+     "proTeam": "WSH",
+     "seasonPoints": 147.4
+    },
+    {
+     "playerId": 10104,
+     "name": "Dak Kupp",
+     "position": "QB",
+     "proTeam": "CHI",
+     "seasonPoints": 326.8
+    },
+    {
+     "playerId": 10010,
+     "name": "Alvin Nacua",
+     "position": "WR",
+     "proTeam": "LAC",
+     "seasonPoints": 161.7
+    },
+    {
+     "playerId": 10028,
+     "name": "Justin Henry",
+     "position": "QB",
+     "proTeam": "LV",
+     "seasonPoints": 303.7
+    },
+    {
+     "playerId": 10077,
+     "name": "Saquon Jefferson",
+     "position": "QB",
+     "proTeam": "NYJ",
+     "seasonPoints": 328.6
+    },
+    {
+     "playerId": 10182,
+     "name": "Ezekiel Lawrence",
+     "position": "RB",
+     "proTeam": "DET",
+     "seasonPoints": 201.9
+    },
+    {
+     "playerId": 10207,
+     "name": "Joe Ryan",
+     "position": "WR",
+     "proTeam": "IND",
+     "seasonPoints": 132.2
+    },
+    {
+     "playerId": 10187,
+     "name": "Tyreek Cousins",
+     "position": "RB",
+     "proTeam": "SEA",
+     "seasonPoints": 178.2
+    },
+    {
+     "playerId": 10133,
+     "name": "WSH D/ST",
+     "position": "D/ST",
+     "proTeam": "WSH",
+     "seasonPoints": 135.3
+    },
+    {
+     "playerId": 10105,
+     "name": "Tee LaPorta",
+     "position": "QB",
+     "proTeam": "TEN",
+     "seasonPoints": 213.9
+    },
+    {
+     "playerId": 10224,
+     "name": "Sam Collins",
+     "position": "TE",
+     "proTeam": "DEN",
+     "seasonPoints": 84.2
+    },
+    {
+     "playerId": 10079,
+     "name": "SF D/ST",
+     "position": "D/ST",
+     "proTeam": "SF",
+     "seasonPoints": 92.4
+    },
+    {
+     "playerId": 10098,
+     "name": "Justin McCaffrey",
+     "position": "RB",
+     "proTeam": "DET",
+     "seasonPoints": 138.1
+    }
+   ]
+  },
+  {
+   "teamId": 5,
+   "name": "Brooks Was Here",
+   "abbrev": "BWH",
+   "ownerSwids": [
+    "{SAMPLE-0004-0}"
+   ],
+   "logoUrl": "https://example.invalid/logos/2014/5.svg",
+   "logo": "/logos/2014/5.svg",
+   "wins": 10,
+   "losses": 3,
+   "ties": 0,
+   "pointsFor": 2069.93,
+   "pointsAgainst": 1763.75,
+   "seed": 3,
+   "finalRank": 1,
+   "roster": [
+    {
+     "playerId": 10005,
+     "name": "CeeDee LaPorta",
+     "position": "WR",
+     "proTeam": "LV",
+     "seasonPoints": 250.2
+    },
+    {
+     "playerId": 10151,
+     "name": "Russell Robinson",
+     "position": "RB",
+     "proTeam": "CIN",
+     "seasonPoints": 272.3
+    },
+    {
+     "playerId": 10158,
+     "name": "Antonio Barkley",
+     "position": "RB",
+     "proTeam": "SEA",
+     "seasonPoints": 219.0
+    },
+    {
+     "playerId": 10141,
+     "name": "Brock Taylor",
+     "position": "TE",
+     "proTeam": "MIA",
+     "seasonPoints": 147.1
+    },
+    {
+     "playerId": 10075,
+     "name": "Davante Allen",
+     "position": "QB",
+     "proTeam": "PHI",
+     "seasonPoints": 380.0
+    },
+    {
+     "playerId": 10178,
+     "name": "Jalen Nacua",
+     "position": "WR",
+     "proTeam": "PIT",
+     "seasonPoints": 175.4
+    },
+    {
+     "playerId": 10191,
+     "name": "Patrick Brees",
+     "position": "QB",
+     "proTeam": "DET",
+     "seasonPoints": 292.3
+    },
+    {
+     "playerId": 10249,
+     "name": "Alvin Burrow",
+     "position": "WR",
+     "proTeam": "NO",
+     "seasonPoints": 155.6
+    },
+    {
+     "playerId": 10159,
+     "name": "Austin Nacua",
+     "position": "QB",
+     "proTeam": "LV",
+     "seasonPoints": 288.9
+    },
+    {
+     "playerId": 10100,
+     "name": "Lamar Kelce",
+     "position": "QB",
+     "proTeam": "TB",
+     "seasonPoints": 303.7
+    },
+    {
+     "playerId": 10122,
+     "name": "Kyler Kupp",
+     "position": "RB",
+     "proTeam": "CLE",
+     "seasonPoints": 162.5
+    },
+    {
+     "playerId": 10097,
+     "name": "CAR D/ST",
+     "position": "D/ST",
+     "proTeam": "CAR",
+     "seasonPoints": 129.1
+    },
+    {
+     "playerId": 10062,
+     "name": "Travis Allen",
+     "position": "WR",
+     "proTeam": "PHI",
+     "seasonPoints": 137.3
+    },
+    {
+     "playerId": 10106,
+     "name": "CeeDee Brown",
+     "position": "WR",
+     "proTeam": "TEN",
+     "seasonPoints": 144.8
+    },
+    {
+     "playerId": 10162,
+     "name": "Russell Burrow",
+     "position": "WR",
+     "proTeam": "ATL",
+     "seasonPoints": 128.4
+    },
+    {
+     "playerId": 10150,
+     "name": "Breece Cousins",
+     "position": "TE",
+     "proTeam": "TB",
+     "seasonPoints": 66.7
+    }
+   ]
+  },
+  {
+   "teamId": 6,
+   "name": "Russo's Rejects",
+   "abbrev": "RR",
+   "ownerSwids": [
+    "{SAMPLE-0005-0}"
+   ],
+   "logoUrl": "https://example.invalid/logos/2014/6.svg",
+   "logo": "/logos/2014/6.svg",
+   "wins": 5,
+   "losses": 8,
+   "ties": 0,
+   "pointsFor": 1591.41,
+   "pointsAgainst": 1789.52,
+   "seed": 9,
+   "finalRank": 9,
+   "roster": [
+    {
+     "playerId": 10118,
+     "name": "Patrick Cook",
+     "position": "TE",
+     "proTeam": "GB",
+     "seasonPoints": 116.8
+    },
+    {
+     "playerId": 10135,
+     "name": "Brock Collins",
+     "position": "QB",
+     "proTeam": "BAL",
+     "seasonPoints": 414.0
+    },
+    {
+     "playerId": 10164,
+     "name": "George Hill",
+     "position": "WR",
+     "proTeam": "MIA",
+     "seasonPoints": 249.0
+    },
+    {
+     "playerId": 10251,
+     "name": "Travis Burrow",
+     "position": "RB",
+     "proTeam": "DAL",
+     "seasonPoints": 206.6
+    },
+    {
+     "playerId": 10271,
+     "name": "Julio Henry",
+     "position": "WR",
+     "proTeam": "BUF",
+     "seasonPoints": 187.9
+    },
+    {
+     "playerId": 10213,
+     "name": "Jonathan Johnson",
+     "position": "TE",
+     "proTeam": "BUF",
+     "seasonPoints": 123.5
+    },
+    {
+     "playerId": 10070,
+     "name": "Jalen Chubb",
+     "position": "RB",
+     "proTeam": "NYJ",
+     "seasonPoints": 211.6
+    },
+    {
+     "playerId": 10089,
+     "name": "Mark Hurts",
+     "position": "WR",
+     "proTeam": "NYG",
+     "seasonPoints": 160.3
+    },
+    {
+     "playerId": 10176,
+     "name": "Nico Andrews",
+     "position": "K",
+     "proTeam": "MIN",
+     "seasonPoints": 155.7
+    },
+    {
+     "playerId": 10085,
+     "name": "Justin Kittle",
+     "position": "WR",
+     "proTeam": "JAX",
+     "seasonPoints": 158.0
+    },
+    {
+     "playerId": 10306,
+     "name": "Mark Johnson",
+     "position": "TE",
+     "proTeam": "DEN",
+     "seasonPoints": 105.4
+    },
+    {
+     "playerId": 10220,
+     "name": "Justin Beckham",
+     "position": "RB",
+     "proTeam": "TEN",
+     "seasonPoints": 138.1
+    },
+    {
+     "playerId": 10262,
+     "name": "Amon-Ra Ryan",
+     "position": "WR",
+     "proTeam": "MIA",
+     "seasonPoints": 155.1
+    },
+    {
+     "playerId": 10228,
+     "name": "Puka Walker",
+     "position": "WR",
+     "proTeam": "PIT",
+     "seasonPoints": 112.0
+    },
+    {
+     "playerId": 10156,
+     "name": "Antonio Kupp",
+     "position": "TE",
+     "proTeam": "SF",
+     "seasonPoints": 77.7
+    },
+    {
+     "playerId": 10214,
+     "name": "Nick Newton",
+     "position": "QB",
+     "proTeam": "BUF",
+     "seasonPoints": 216.3
+    }
+   ]
+  },
+  {
+   "teamId": 7,
+   "name": "Boston Tea Party",
+   "abbrev": "BTP",
+   "ownerSwids": [
+    "{SAMPLE-0006-0}"
+   ],
+   "logoUrl": "https://example.invalid/logos/2014/7.svg",
+   "logo": "/logos/2014/7.svg",
+   "wins": 1,
+   "losses": 12,
+   "ties": 0,
+   "pointsFor": 1404.87,
+   "pointsAgainst": 1900.66,
+   "seed": 11,
+   "finalRank": 11,
+   "roster": [
+    {
+     "playerId": 10136,
+     "name": "Cam Newton",
+     "position": "TE",
+     "proTeam": "ARI",
+     "seasonPoints": 152.7
+    },
+    {
+     "playerId": 10300,
+     "name": "George Murray",
+     "position": "WR",
+     "proTeam": "DAL",
+     "seasonPoints": 252.2
+    },
+    {
+     "playerId": 10241,
+     "name": "Amon-Ra Love",
+     "position": "RB",
+     "proTeam": "ARI",
+     "seasonPoints": 190.6
+    },
+    {
+     "playerId": 10081,
+     "name": "Sam Hill",
+     "position": "WR",
+     "proTeam": "MIA",
+     "seasonPoints": 194.6
+    },
+    {
+     "playerId": 10059,
+     "name": "Puka Chase",
+     "position": "RB",
+     "proTeam": "LAC",
+     "seasonPoints": 207.6
+    },
+    {
+     "playerId": 10250,
+     "name": "Amari Taylor",
+     "position": "WR",
+     "proTeam": "CIN",
+     "seasonPoints": 188.3
+    },
+    {
+     "playerId": 10043,
+     "name": "Amari Peterson",
+     "position": "RB",
+     "proTeam": "GB",
+     "seasonPoints": 186.9
+    },
+    {
+     "playerId": 10107,
+     "name": "Brock Adams",
+     "position": "WR",
+     "proTeam": "PIT",
+     "seasonPoints": 142.7
+    },
+    {
+     "playerId": 10308,
+     "name": "Joe Chubb",
+     "position": "TE",
+     "proTeam": "NO",
+     "seasonPoints": 70.3
+    },
+    {
+     "playerId": 10279,
+     "name": "Christian Jefferson",
+     "position": "TE",
+     "proTeam": "MIA",
+     "seasonPoints": 102.5
+    },
+    {
+     "playerId": 10064,
+     "name": "Rachaad Murray",
+     "position": "WR",
+     "proTeam": "KC",
+     "seasonPoints": 178.0
+    },
+    {
+     "playerId": 10040,
+     "name": "Nick Taylor",
+     "position": "QB",
+     "proTeam": "JAX",
+     "seasonPoints": 234.8
+    },
+    {
+     "playerId": 10082,
+     "name": "Kyren Mahomes",
+     "position": "WR",
+     "proTeam": "SEA",
+     "seasonPoints": 174.8
+    },
+    {
+     "playerId": 10053,
+     "name": "Dak Elliott",
+     "position": "QB",
+     "proTeam": "ARI",
+     "seasonPoints": 194.5
+    },
+    {
+     "playerId": 10273,
+     "name": "Dalvin Purdy",
+     "position": "RB",
+     "proTeam": "DET",
+     "seasonPoints": 148.7
+    },
+    {
+     "playerId": 10221,
+     "name": "Ja'Marr Diggs",
+     "position": "WR",
+     "proTeam": "CAR",
+     "seasonPoints": 127.4
+    }
+   ]
+  },
+  {
+   "teamId": 8,
+   "name": "Hale Storm",
+   "abbrev": "HS",
+   "ownerSwids": [
+    "{SAMPLE-0007-0}"
+   ],
+   "logoUrl": "https://example.invalid/logos/2014/8.svg",
+   "logo": "/logos/2014/8.svg",
+   "wins": 5,
+   "losses": 8,
+   "ties": 0,
+   "pointsFor": 1558.67,
+   "pointsAgainst": 1831.7,
+   "seed": 10,
+   "finalRank": 10,
+   "roster": [
+    {
+     "playerId": 10183,
+     "name": "Adrian Williams",
+     "position": "WR",
+     "proTeam": "MIA",
+     "seasonPoints": 243.1
+    },
+    {
+     "playerId": 10074,
+     "name": "Bijan Jefferson",
+     "position": "TE",
+     "proTeam": "GB",
+     "seasonPoints": 172.7
+    },
+    {
+     "playerId": 10315,
+     "name": "Adrian Wilson",
+     "position": "TE",
+     "proTeam": "MIN",
+     "seasonPoints": 135.3
+    },
+    {
+     "playerId": 10281,
+     "name": "George Mahomes",
+     "position": "WR",
+     "proTeam": "NO",
+     "seasonPoints": 227.4
+    },
+    {
+     "playerId": 10060,
+     "name": "George Jackson",
+     "position": "TE",
+     "proTeam": "KC",
+     "seasonPoints": 145.5
+    },
+    {
+     "playerId": 10086,
+     "name": "Breece Wilson",
+     "position": "WR",
+     "proTeam": "IND",
+     "seasonPoints": 180.7
+    },
+    {
+     "playerId": 10021,
+     "name": "Nick Wilson",
+     "position": "WR",
+     "proTeam": "LAC",
+     "seasonPoints": 171.9
+    },
+    {
+     "playerId": 10282,
+     "name": "Kirk Ridley",
+     "position": "RB",
+     "proTeam": "LV",
+     "seasonPoints": 210.7
+    },
+    {
+     "playerId": 10058,
+     "name": "Cam Lawrence",
+     "position": "WR",
+     "proTeam": "BUF",
+     "seasonPoints": 123.1
+    },
+    {
+     "playerId": 10131,
+     "name": "Alvin Mahomes",
+     "position": "RB",
+     "proTeam": "CHI",
+     "seasonPoints": 142.5
+    },
+    {
+     "playerId": 10317,
+     "name": "Jalen Johnson",
+     "position": "TE",
+     "proTeam": "DET",
+     "seasonPoints": 102.0
+    },
+    {
+     "playerId": 10303,
+     "name": "Christian Cook",
+     "position": "WR",
+     "proTeam": "LAC",
+     "seasonPoints": 155.4
+    },
+    {
+     "playerId": 10234,
+     "name": "Antonio Andrews",
+     "position": "TE",
+     "proTeam": "CIN",
+     "seasonPoints": 99.7
+    },
+    {
+     "playerId": 10253,
+     "name": "Derrick Gronkowski",
+     "position": "K",
+     "proTeam": "NE",
+     "seasonPoints": 75.2
+    },
+    {
+     "playerId": 10047,
+     "name": "Russell Cousins",
+     "position": "RB",
+     "proTeam": "MIN",
+     "seasonPoints": 151.6
+    },
+    {
+     "playerId": 10313,
+     "name": "Russell Walker",
+     "position": "K",
+     "proTeam": "KC",
+     "seasonPoints": 123.7
+    }
+   ]
+  },
+  {
+   "teamId": 9,
+   "name": "Park Place",
+   "abbrev": "PP",
+   "ownerSwids": [
+    "{SAMPLE-0008-0}"
+   ],
+   "logoUrl": "https://example.invalid/logos/2014/9.svg",
+   "logo": "/logos/2014/9.svg",
+   "wins": 8,
+   "losses": 5,
+   "ties": 0,
+   "pointsFor": 1824.23,
+   "pointsAgainst": 1785.54,
+   "seed": 4,
+   "finalRank": 6,
+   "roster": [
+    {
+     "playerId": 10238,
+     "name": "George Chase",
+     "position": "RB",
+     "proTeam": "MIN",
+     "seasonPoints": 217.0
+    },
+    {
+     "playerId": 10246,
+     "name": "Russell Williams",
+     "position": "TE",
+     "proTeam": "TB",
+     "seasonPoints": 165.2
+    },
+    {
+     "playerId": 10193,
+     "name": "DeShawn Brown",
+     "position": "RB",
+     "proTeam": "DET",
+     "seasonPoints": 213.5
+    },
+    {
+     "playerId": 10113,
+     "name": "Alvin Allen",
+     "position": "QB",
+     "proTeam": "NE",
+     "seasonPoints": 363.6
+    },
+    {
+     "playerId": 10015,
+     "name": "Odell Hall",
+     "position": "RB",
+     "proTeam": "ARI",
+     "seasonPoints": 185.0
+    },
+    {
+     "playerId": 10274,
+     "name": "George Taylor",
+     "position": "RB",
+     "proTeam": "SEA",
+     "seasonPoints": 186.2
+    },
+    {
+     "playerId": 10121,
+     "name": "Tee Murray",
+     "position": "WR",
+     "proTeam": "SF",
+     "seasonPoints": 144.3
+    },
+    {
+     "playerId": 10051,
+     "name": "Drew St. Brown",
+     "position": "RB",
+     "proTeam": "IND",
+     "seasonPoints": 160.7
+    },
+    {
+     "playerId": 10189,
+     "name": "Jared Cousins",
+     "position": "RB",
+     "proTeam": "LAC",
+     "seasonPoints": 157.3
+    },
+    {
+     "playerId": 10267,
+     "name": "Saquon Henry",
+     "position": "WR",
+     "proTeam": "CLE",
+     "seasonPoints": 154.2
+    },
+    {
+     "playerId": 10087,
+     "name": "PIT D/ST",
+     "position": "D/ST",
+     "proTeam": "PIT",
+     "seasonPoints": 135.2
+    },
+    {
+     "playerId": 10286,
+     "name": "Odell Lawrence",
+     "position": "K",
+     "proTeam": "HOU",
+     "seasonPoints": 165.3
+    },
+    {
+     "playerId": 10226,
+     "name": "Alvin Goff",
+     "position": "K",
+     "proTeam": "PIT",
+     "seasonPoints": 114.0
+    },
+    {
+     "playerId": 10061,
+     "name": "TB D/ST",
+     "position": "D/ST",
+     "proTeam": "TB",
+     "seasonPoints": 101.1
+    },
+    {
+     "playerId": 10072,
+     "name": "Travis Elliott",
+     "position": "QB",
+     "proTeam": "KC",
+     "seasonPoints": 218.1
+    },
+    {
+     "playerId": 10161,
+     "name": "Trevor Peterson",
+     "position": "WR",
+     "proTeam": "NE",
+     "seasonPoints": 149.2
+    }
+   ]
+  },
+  {
+   "teamId": 10,
+   "name": "Murph's Turf",
+   "abbrev": "MT",
+   "ownerSwids": [
+    "{SAMPLE-0009-0}"
+   ],
+   "logoUrl": "https://example.invalid/logos/2014/10.svg",
+   "logo": "/logos/2014/10.svg",
+   "wins": 1,
+   "losses": 12,
+   "ties": 0,
+   "pointsFor": 1359.89,
+   "pointsAgainst": 1702.98,
+   "seed": 12,
+   "finalRank": 12,
+   "roster": [
+    {
+     "playerId": 10024,
+     "name": "Stefon Johnson",
+     "position": "TE",
+     "proTeam": "WSH",
+     "seasonPoints": 142.6
+    },
+    {
+     "playerId": 10261,
+     "name": "Sam Kittle",
+     "position": "WR",
+     "proTeam": "LAC",
+     "seasonPoints": 230.4
+    },
+    {
+     "playerId": 10054,
+     "name": "Ja'Marr Wilson",
+     "position": "WR",
+     "proTeam": "LAC",
+     "seasonPoints": 248.4
+    },
+    {
+     "playerId": 10090,
+     "name": "Trevor Ekeler",
+     "position": "QB",
+     "proTeam": "TB",
+     "seasonPoints": 335.4
+    },
+    {
+     "playerId": 10111,
+     "name": "Kirk Hill",
+     "position": "RB",
+     "proTeam": "ARI",
+     "seasonPoints": 179.0
+    },
+    {
+     "playerId": 10230,
+     "name": "Matt Elliott",
+     "position": "TE",
+     "proTeam": "CLE",
+     "seasonPoints": 95.4
+    },
+    {
+     "playerId": 10268,
+     "name": "Kyler Brees",
+     "position": "TE",
+     "proTeam": "ATL",
+     "seasonPoints": 137.1
+    },
+    {
+     "playerId": 10254,
+     "name": "Mark Kupp",
+     "position": "RB",
+     "proTeam": "PIT",
+     "seasonPoints": 193.1
+    },
+    {
+     "playerId": 10093,
+     "name": "Derrick Chase",
+     "position": "WR",
+     "proTeam": "ARI",
+     "seasonPoints": 157.5
+    },
+    {
+     "playerId": 10030,
+     "name": "ARI D/ST",
+     "position": "D/ST",
+     "proTeam": "ARI",
+     "seasonPoints": 133.8
+    },
+    {
+     "playerId": 10155,
+     "name": "Bijan Peterson",
+     "position": "WR",
+     "proTeam": "ARI",
+     "seasonPoints": 130.5
+    },
+    {
+     "playerId": 10186,
+     "name": "LV D/ST",
+     "position": "D/ST",
+     "proTeam": "LV",
+     "seasonPoints": 83.8
+    },
+    {
+     "playerId": 10009,
+     "name": "LAC D/ST",
+     "position": "D/ST",
+     "proTeam": "LAC",
+     "seasonPoints": 128.4
+    },
+    {
+     "playerId": 10032,
+     "name": "Nick Henry",
+     "position": "RB",
+     "proTeam": "KC",
+     "seasonPoints": 155.8
+    },
+    {
+     "playerId": 10006,
+     "name": "Kenneth Ridley",
+     "position": "WR",
+     "proTeam": "KC",
+     "seasonPoints": 142.0
+    },
+    {
+     "playerId": 10237,
+     "name": "Justin Higgins",
+     "position": "WR",
+     "proTeam": "NE",
+     "seasonPoints": 141.0
+    }
+   ]
+  },
+  {
+   "teamId": 11,
+   "name": "Rivera's Roughnecks",
+   "abbrev": "RR",
+   "ownerSwids": [
+    "{SAMPLE-0010-0}"
+   ],
+   "logoUrl": "https://example.invalid/logos/2014/11.svg",
+   "logo": "/logos/2014/11.svg",
+   "wins": 5,
+   "losses": 8,
+   "ties": 0,
+   "pointsFor": 1678.66,
+   "pointsAgainst": 1791.93,
+   "seed": 8,
+   "finalRank": 8,
+   "roster": [
+    {
+     "playerId": 10265,
+     "name": "Amon-Ra Newton",
+     "position": "WR",
+     "proTeam": "CIN",
+     "seasonPoints": 206.6
+    },
+    {
+     "playerId": 10240,
+     "name": "Amon-Ra Collins",
+     "position": "QB",
+     "proTeam": "TB",
+     "seasonPoints": 396.2
+    },
+    {
+     "playerId": 10244,
+     "name": "Ja'Marr Cousins",
+     "position": "WR",
+     "proTeam": "CAR",
+     "seasonPoints": 194.5
+    },
+    {
+     "playerId": 10284,
+     "name": "Adrian Mahomes",
+     "position": "RB",
+     "proTeam": "LAR",
+     "seasonPoints": 205.9
+    },
+    {
+     "playerId": 10165,
+     "name": "Calvin Elliott",
+     "position": "RB",
+     "proTeam": "JAX",
+     "seasonPoints": 188.3
+    },
+    {
+     "playerId": 10239,
+     "name": "Mark Williams",
+     "position": "RB",
+     "proTeam": "TB",
+     "seasonPoints": 165.2
+    },
+    {
+     "playerId": 10314,
+     "name": "DeShawn Cousins",
+     "position": "WR",
+     "proTeam": "LAC",
+     "seasonPoints": 162.5
+    },
+    {
+     "playerId": 10208,
+     "name": "Russell Barkley",
+     "position": "RB",
+     "proTeam": "WSH",
+     "seasonPoints": 190.6
+    },
+    {
+     "playerId": 10050,
+     "name": "GB D/ST",
+     "position": "D/ST",
+     "proTeam": "GB",
+     "seasonPoints": 107.3
+    },
+    {
+     "playerId": 10031,
+     "name": "CeeDee Henry",
+     "position": "WR",
+     "proTeam": "DAL",
+     "seasonPoints": 171.7
+    },
+    {
+     "playerId": 10302,
+     "name": "Tee Diggs",
+     "position": "WR",
+     "proTeam": "CHI",
+     "seasonPoints": 147.9
+    },
+    {
+     "playerId": 10016,
+     "name": "LAR D/ST",
+     "position": "D/ST",
+     "proTeam": "LAR",
+     "seasonPoints": 119.5
+    },
+    {
+     "playerId": 10157,
+     "name": "Ezekiel Wilson",
+     "position": "WR",
+     "proTeam": "DEN",
+     "seasonPoints": 130.7
+    },
+    {
+     "playerId": 10096,
+     "name": "Tyreek Diggs",
+     "position": "RB",
+     "proTeam": "IND",
+     "seasonPoints": 136.3
+    },
+    {
+     "playerId": 10073,
+     "name": "Tyreek Kamara",
+     "position": "WR",
+     "proTeam": "PHI",
+     "seasonPoints": 143.1
+    },
+    {
+     "playerId": 10179,
+     "name": "Alvin Ridley",
+     "position": "WR",
+     "proTeam": "WSH",
+     "seasonPoints": 127.0
+    }
+   ]
+  },
+  {
+   "teamId": 12,
+   "name": "Dunn Deal",
+   "abbrev": "DD",
+   "ownerSwids": [
+    "{SAMPLE-0011-0}"
+   ],
+   "logoUrl": "https://example.invalid/logos/2014/12.svg",
+   "logo": "/logos/2014/12.svg",
+   "wins": 8,
+   "losses": 5,
+   "ties": 0,
+   "pointsFor": 1814.83,
+   "pointsAgainst": 1795.99,
+   "seed": 5,
+   "finalRank": 3,
+   "roster": [
+    {
+     "playerId": 10003,
+     "name": "Cam Kelce",
+     "position": "RB",
+     "proTeam": "SEA",
+     "seasonPoints": 220.3
+    },
+    {
+     "playerId": 10276,
+     "name": "Nick Lawrence",
+     "position": "WR",
+     "proTeam": "TB",
+     "seasonPoints": 195.1
+    },
+    {
+     "playerId": 10200,
+     "name": "Bijan Chubb",
+     "position": "RB",
+     "proTeam": "SEA",
+     "seasonPoints": 194.3
+    },
+    {
+     "playerId": 10048,
+     "name": "Tyreek Allen",
+     "position": "WR",
+     "proTeam": "WSH",
+     "seasonPoints": 228.4
+    },
+    {
+     "playerId": 10101,
+     "name": "DeShawn Taylor",
+     "position": "TE",
+     "proTeam": "KC",
+     "seasonPoints": 114.9
+    },
+    {
+     "playerId": 10137,
+     "name": "Odell Burrow",
+     "position": "WR",
+     "proTeam": "NO",
+     "seasonPoints": 162.8
+    },
+    {
+     "playerId": 10318,
+     "name": "Josh Hurts",
+     "position": "WR",
+     "proTeam": "KC",
+     "seasonPoints": 186.1
+    },
+    {
+     "playerId": 10218,
+     "name": "Adrian Peterson",
+     "position": "QB",
+     "proTeam": "IND",
+     "seasonPoints": 290.1
+    },
+    {
+     "playerId": 10124,
+     "name": "Amari Walker",
+     "position": "WR",
+     "proTeam": "MIA",
+     "seasonPoints": 187.5
+    },
+    {
+     "playerId": 10038,
+     "name": "Adrian White",
+     "position": "QB",
+     "proTeam": "CAR",
+     "seasonPoints": 283.4
+    },
+    {
+     "playerId": 10199,
+     "name": "Saquon Cousins",
+     "position": "WR",
+     "proTeam": "TB",
+     "seasonPoints": 137.3
+    },
+    {
+     "playerId": 10296,
+     "name": "Jonathan Burrow",
+     "position": "K",
+     "proTeam": "MIA",
+     "seasonPoints": 138.2
+    },
+    {
+     "playerId": 10078,
+     "name": "Kyler Walker",
+     "position": "QB",
+     "proTeam": "CLE",
+     "seasonPoints": 222.3
+    },
+    {
+     "playerId": 10188,
+     "name": "Matt Diggs",
+     "position": "TE",
+     "proTeam": "ATL",
+     "seasonPoints": 87.6
+    },
+    {
+     "playerId": 10285,
+     "name": "Alvin Elliott",
+     "position": "WR",
+     "proTeam": "NE",
+     "seasonPoints": 136.1
+    },
+    {
+     "playerId": 10320,
+     "name": "Breece Jones",
+     "position": "RB",
+     "proTeam": "CIN",
+     "seasonPoints": 124.3
+    }
+   ]
+  }
+ ],
+ "matchups": [
+  {
+   "week": 1,
+   "homeTeamId": 1,
+   "awayTeamId": 12,
+   "homeScore": 141.07,
+   "awayScore": 136.33,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 1,
+   "homeTeamId": 2,
+   "awayTeamId": 11,
+   "homeScore": 170.86,
+   "awayScore": 136.55,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 1,
+   "homeTeamId": 3,
+   "awayTeamId": 10,
+   "homeScore": 113.52,
+   "awayScore": 107.65,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 1,
+   "homeTeamId": 4,
+   "awayTeamId": 9,
+   "homeScore": 190.41,
+   "awayScore": 106.19,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 1,
+   "homeTeamId": 5,
+   "awayTeamId": 8,
+   "homeScore": 160.67,
+   "awayScore": 115.92,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 1,
+   "homeTeamId": 6,
+   "awayTeamId": 7,
+   "homeScore": 125.47,
+   "awayScore": 90.94,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 2,
+   "homeTeamId": 1,
+   "awayTeamId": 11,
+   "homeScore": 124.08,
+   "awayScore": 109.56,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 2,
+   "homeTeamId": 12,
+   "awayTeamId": 10,
+   "homeScore": 134.09,
+   "awayScore": 104.06,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 2,
+   "homeTeamId": 2,
+   "awayTeamId": 9,
+   "homeScore": 164.7,
+   "awayScore": 143.33,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 2,
+   "homeTeamId": 3,
+   "awayTeamId": 8,
+   "homeScore": 113.9,
+   "awayScore": 114.62,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 2,
+   "homeTeamId": 4,
+   "awayTeamId": 7,
+   "homeScore": 193.56,
+   "awayScore": 118.79,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 2,
+   "homeTeamId": 5,
+   "awayTeamId": 6,
+   "homeScore": 158.85,
+   "awayScore": 102.6,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 3,
+   "homeTeamId": 1,
+   "awayTeamId": 10,
+   "homeScore": 139.88,
+   "awayScore": 109.7,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 3,
+   "homeTeamId": 11,
+   "awayTeamId": 9,
+   "homeScore": 123.71,
+   "awayScore": 147.36,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 3,
+   "homeTeamId": 12,
+   "awayTeamId": 8,
+   "homeScore": 138.77,
+   "awayScore": 134.68,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 3,
+   "homeTeamId": 2,
+   "awayTeamId": 7,
+   "homeScore": 134.33,
+   "awayScore": 108.93,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 3,
+   "homeTeamId": 3,
+   "awayTeamId": 6,
+   "homeScore": 103.05,
+   "awayScore": 123.05,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 3,
+   "homeTeamId": 4,
+   "awayTeamId": 5,
+   "homeScore": 173.03,
+   "awayScore": 154.53,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 4,
+   "homeTeamId": 1,
+   "awayTeamId": 9,
+   "homeScore": 147.77,
+   "awayScore": 154.84,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 4,
+   "homeTeamId": 10,
+   "awayTeamId": 8,
+   "homeScore": 97.32,
+   "awayScore": 118.63,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 4,
+   "homeTeamId": 11,
+   "awayTeamId": 7,
+   "homeScore": 144.43,
+   "awayScore": 113.65,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 4,
+   "homeTeamId": 12,
+   "awayTeamId": 6,
+   "homeScore": 148.62,
+   "awayScore": 145.4,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 4,
+   "homeTeamId": 2,
+   "awayTeamId": 5,
+   "homeScore": 157.72,
+   "awayScore": 170.32,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 4,
+   "homeTeamId": 3,
+   "awayTeamId": 4,
+   "homeScore": 143.96,
+   "awayScore": 137.09,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 5,
+   "homeTeamId": 1,
+   "awayTeamId": 8,
+   "homeScore": 146.69,
+   "awayScore": 108.0,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 5,
+   "homeTeamId": 9,
+   "awayTeamId": 7,
+   "homeScore": 130.05,
+   "awayScore": 98.98,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 5,
+   "homeTeamId": 10,
+   "awayTeamId": 6,
+   "homeScore": 110.07,
+   "awayScore": 123.49,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 5,
+   "homeTeamId": 11,
+   "awayTeamId": 5,
+   "homeScore": 153.61,
+   "awayScore": 158.28,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 5,
+   "homeTeamId": 12,
+   "awayTeamId": 4,
+   "homeScore": 123.85,
+   "awayScore": 171.28,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 5,
+   "homeTeamId": 2,
+   "awayTeamId": 3,
+   "homeScore": 168.19,
+   "awayScore": 145.68,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 6,
+   "homeTeamId": 1,
+   "awayTeamId": 7,
+   "homeScore": 181.2,
+   "awayScore": 103.46,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 6,
+   "homeTeamId": 8,
+   "awayTeamId": 6,
+   "homeScore": 123.51,
+   "awayScore": 106.31,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 6,
+   "homeTeamId": 9,
+   "awayTeamId": 5,
+   "homeScore": 128.46,
+   "awayScore": 154.99,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 6,
+   "homeTeamId": 10,
+   "awayTeamId": 4,
+   "homeScore": 96.44,
+   "awayScore": 167.66,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 6,
+   "homeTeamId": 11,
+   "awayTeamId": 3,
+   "homeScore": 124.65,
+   "awayScore": 125.12,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 6,
+   "homeTeamId": 12,
+   "awayTeamId": 2,
+   "homeScore": 136.43,
+   "awayScore": 155.88,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 7,
+   "homeTeamId": 1,
+   "awayTeamId": 6,
+   "homeScore": 137.82,
+   "awayScore": 139.36,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 7,
+   "homeTeamId": 7,
+   "awayTeamId": 5,
+   "homeScore": 105.61,
+   "awayScore": 165.43,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 7,
+   "homeTeamId": 8,
+   "awayTeamId": 4,
+   "homeScore": 123.94,
+   "awayScore": 185.98,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 7,
+   "homeTeamId": 9,
+   "awayTeamId": 3,
+   "homeScore": 160.45,
+   "awayScore": 109.23,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 7,
+   "homeTeamId": 10,
+   "awayTeamId": 2,
+   "homeScore": 96.37,
+   "awayScore": 156.9,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 7,
+   "homeTeamId": 11,
+   "awayTeamId": 12,
+   "homeScore": 150.14,
+   "awayScore": 109.51,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 8,
+   "homeTeamId": 1,
+   "awayTeamId": 5,
+   "homeScore": 126.46,
+   "awayScore": 164.87,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 8,
+   "homeTeamId": 6,
+   "awayTeamId": 4,
+   "homeScore": 124.52,
+   "awayScore": 174.78,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 8,
+   "homeTeamId": 7,
+   "awayTeamId": 3,
+   "homeScore": 124.18,
+   "awayScore": 131.69,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 8,
+   "homeTeamId": 8,
+   "awayTeamId": 2,
+   "homeScore": 111.47,
+   "awayScore": 199.18,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 8,
+   "homeTeamId": 9,
+   "awayTeamId": 12,
+   "homeScore": 140.25,
+   "awayScore": 116.93,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 8,
+   "homeTeamId": 10,
+   "awayTeamId": 11,
+   "homeScore": 93.43,
+   "awayScore": 94.0,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 9,
+   "homeTeamId": 1,
+   "awayTeamId": 4,
+   "homeScore": 153.94,
+   "awayScore": 174.9,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 9,
+   "homeTeamId": 5,
+   "awayTeamId": 3,
+   "homeScore": 170.77,
+   "awayScore": 145.96,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 9,
+   "homeTeamId": 6,
+   "awayTeamId": 2,
+   "homeScore": 102.09,
+   "awayScore": 191.9,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 9,
+   "homeTeamId": 7,
+   "awayTeamId": 12,
+   "homeScore": 117.38,
+   "awayScore": 166.47,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 9,
+   "homeTeamId": 8,
+   "awayTeamId": 11,
+   "homeScore": 138.58,
+   "awayScore": 139.27,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 9,
+   "homeTeamId": 9,
+   "awayTeamId": 10,
+   "homeScore": 151.85,
+   "awayScore": 89.62,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 10,
+   "homeTeamId": 1,
+   "awayTeamId": 3,
+   "homeScore": 116.73,
+   "awayScore": 145.01,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 10,
+   "homeTeamId": 4,
+   "awayTeamId": 2,
+   "homeScore": 166.26,
+   "awayScore": 170.35,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 10,
+   "homeTeamId": 5,
+   "awayTeamId": 12,
+   "homeScore": 158.4,
+   "awayScore": 161.78,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 10,
+   "homeTeamId": 6,
+   "awayTeamId": 11,
+   "homeScore": 107.0,
+   "awayScore": 116.22,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 10,
+   "homeTeamId": 7,
+   "awayTeamId": 10,
+   "homeScore": 123.52,
+   "awayScore": 113.15,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 10,
+   "homeTeamId": 8,
+   "awayTeamId": 9,
+   "homeScore": 130.56,
+   "awayScore": 168.03,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 11,
+   "homeTeamId": 1,
+   "awayTeamId": 2,
+   "homeScore": 147.67,
+   "awayScore": 141.2,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 11,
+   "homeTeamId": 3,
+   "awayTeamId": 12,
+   "homeScore": 113.14,
+   "awayScore": 148.62,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 11,
+   "homeTeamId": 4,
+   "awayTeamId": 11,
+   "homeScore": 153.43,
+   "awayScore": 120.53,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 11,
+   "homeTeamId": 5,
+   "awayTeamId": 10,
+   "homeScore": 129.78,
+   "awayScore": 111.24,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 11,
+   "homeTeamId": 6,
+   "awayTeamId": 9,
+   "homeScore": 107.78,
+   "awayScore": 150.26,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 11,
+   "homeTeamId": 7,
+   "awayTeamId": 8,
+   "homeScore": 102.63,
+   "awayScore": 107.68,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 12,
+   "homeTeamId": 1,
+   "awayTeamId": 12,
+   "homeScore": 153.07,
+   "awayScore": 161.0,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 12,
+   "homeTeamId": 2,
+   "awayTeamId": 11,
+   "homeScore": 173.32,
+   "awayScore": 132.62,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 12,
+   "homeTeamId": 3,
+   "awayTeamId": 10,
+   "homeScore": 117.23,
+   "awayScore": 119.6,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 12,
+   "homeTeamId": 4,
+   "awayTeamId": 9,
+   "homeScore": 178.05,
+   "awayScore": 117.7,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 12,
+   "homeTeamId": 5,
+   "awayTeamId": 8,
+   "homeScore": 128.99,
+   "awayScore": 134.57,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "AWAY"
+  },
+  {
+   "week": 12,
+   "homeTeamId": 6,
+   "awayTeamId": 7,
+   "homeScore": 137.55,
+   "awayScore": 89.45,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 13,
+   "homeTeamId": 1,
+   "awayTeamId": 11,
+   "homeScore": 177.31,
+   "awayScore": 133.37,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 13,
+   "homeTeamId": 12,
+   "awayTeamId": 10,
+   "homeScore": 132.43,
+   "awayScore": 111.24,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 13,
+   "homeTeamId": 2,
+   "awayTeamId": 9,
+   "homeScore": 172.81,
+   "awayScore": 125.46,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 13,
+   "homeTeamId": 3,
+   "awayTeamId": 8,
+   "homeScore": 143.96,
+   "awayScore": 96.51,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 13,
+   "homeTeamId": 4,
+   "awayTeamId": 7,
+   "homeScore": 169.65,
+   "awayScore": 107.35,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 13,
+   "homeTeamId": 5,
+   "awayTeamId": 6,
+   "homeScore": 194.05,
+   "awayScore": 146.79,
+   "type": "NONE",
+   "isPlayoff": false,
+   "winner": "HOME"
+  },
+  {
+   "week": 14,
+   "homeTeamId": 5,
+   "awayTeamId": 1,
+   "homeScore": 164.07,
+   "awayScore": 132.74,
+   "type": "WINNERS_BRACKET",
+   "isPlayoff": true,
+   "winner": "HOME"
+  },
+  {
+   "week": 14,
+   "homeTeamId": 9,
+   "awayTeamId": 12,
+   "homeScore": 156.43,
+   "awayScore": 159.74,
+   "type": "WINNERS_BRACKET",
+   "isPlayoff": true,
+   "winner": "AWAY"
+  },
+  {
+   "week": 14,
+   "homeTeamId": 10,
+   "awayTeamId": 7,
+   "homeScore": 107.06,
+   "awayScore": 100.06,
+   "type": "LOSERS_CONSOLATION_LADDER",
+   "isPlayoff": true,
+   "winner": "HOME"
+  },
+  {
+   "week": 15,
+   "homeTeamId": 4,
+   "awayTeamId": 12,
+   "homeScore": 140.83,
+   "awayScore": 110.78,
+   "type": "WINNERS_BRACKET",
+   "isPlayoff": true,
+   "winner": "HOME"
+  },
+  {
+   "week": 15,
+   "homeTeamId": 2,
+   "awayTeamId": 5,
+   "homeScore": 118.83,
+   "awayScore": 138.64,
+   "type": "WINNERS_BRACKET",
+   "isPlayoff": true,
+   "winner": "AWAY"
+  },
+  {
+   "week": 16,
+   "homeTeamId": 4,
+   "awayTeamId": 5,
+   "homeScore": 149.23,
+   "awayScore": 159.53,
+   "type": "WINNERS_BRACKET",
+   "isPlayoff": true,
+   "winner": "AWAY"
+  },
+  {
+   "week": 16,
+   "homeTeamId": 12,
+   "awayTeamId": 2,
+   "homeScore": 167.44,
+   "awayScore": 129.09,
+   "type": "WINNERS_CONSOLATION_LADDER",
+   "isPlayoff": true,
+   "winner": "HOME"
+  }
+ ],
+ "draft": [
+  {
+   "round": 1,
+   "pick": 1,
+   "overall": 1,
+   "teamId": 3,
+   "playerId": 10065,
+   "playerName": "Cooper Adams",
+   "position": "WR",
+   "proTeam": "TEN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 232.6
+  },
+  {
+   "round": 1,
+   "pick": 2,
+   "overall": 2,
+   "teamId": 6,
+   "playerId": 10118,
+   "playerName": "Patrick Cook",
+   "position": "TE",
+   "proTeam": "GB",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 116.8
+  },
+  {
+   "round": 1,
+   "pick": 3,
+   "overall": 3,
+   "teamId": 1,
+   "playerId": 10138,
+   "playerName": "Ja'Marr Chubb",
+   "position": "WR",
+   "proTeam": "PHI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 229.4
+  },
+  {
+   "round": 1,
+   "pick": 4,
+   "overall": 4,
+   "teamId": 10,
+   "playerId": 10024,
+   "playerName": "Stefon Johnson",
+   "position": "TE",
+   "proTeam": "WSH",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 142.6
+  },
+  {
+   "round": 1,
+   "pick": 5,
+   "overall": 5,
+   "teamId": 9,
+   "playerId": 10238,
+   "playerName": "George Chase",
+   "position": "RB",
+   "proTeam": "MIN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 217.0
+  },
+  {
+   "round": 1,
+   "pick": 6,
+   "overall": 6,
+   "teamId": 7,
+   "playerId": 10136,
+   "playerName": "Cam Newton",
+   "position": "TE",
+   "proTeam": "ARI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 152.7
+  },
+  {
+   "round": 1,
+   "pick": 7,
+   "overall": 7,
+   "teamId": 8,
+   "playerId": 10183,
+   "playerName": "Adrian Williams",
+   "position": "WR",
+   "proTeam": "MIA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 243.1
+  },
+  {
+   "round": 1,
+   "pick": 8,
+   "overall": 8,
+   "teamId": 12,
+   "playerId": 10003,
+   "playerName": "Cam Kelce",
+   "position": "RB",
+   "proTeam": "SEA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 220.3
+  },
+  {
+   "round": 1,
+   "pick": 9,
+   "overall": 9,
+   "teamId": 4,
+   "playerId": 10160,
+   "playerName": "Antonio St. Brown",
+   "position": "WR",
+   "proTeam": "IND",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 201.2
+  },
+  {
+   "round": 1,
+   "pick": 10,
+   "overall": 10,
+   "teamId": 5,
+   "playerId": 10005,
+   "playerName": "CeeDee LaPorta",
+   "position": "WR",
+   "proTeam": "LV",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 250.2
+  },
+  {
+   "round": 1,
+   "pick": 11,
+   "overall": 11,
+   "teamId": 2,
+   "playerId": 10041,
+   "playerName": "Christian Ekeler",
+   "position": "WR",
+   "proTeam": "IND",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 258.9
+  },
+  {
+   "round": 1,
+   "pick": 12,
+   "overall": 12,
+   "teamId": 11,
+   "playerId": 10265,
+   "playerName": "Amon-Ra Newton",
+   "position": "WR",
+   "proTeam": "CIN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 206.6
+  },
+  {
+   "round": 2,
+   "pick": 1,
+   "overall": 13,
+   "teamId": 11,
+   "playerId": 10240,
+   "playerName": "Amon-Ra Collins",
+   "position": "QB",
+   "proTeam": "TB",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 396.2
+  },
+  {
+   "round": 2,
+   "pick": 2,
+   "overall": 14,
+   "teamId": 2,
+   "playerId": 10301,
+   "playerName": "Puka Prescott",
+   "position": "WR",
+   "proTeam": "CLE",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 208.4
+  },
+  {
+   "round": 2,
+   "pick": 3,
+   "overall": 15,
+   "teamId": 5,
+   "playerId": 10151,
+   "playerName": "Russell Robinson",
+   "position": "RB",
+   "proTeam": "CIN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 272.3
+  },
+  {
+   "round": 2,
+   "pick": 4,
+   "overall": 16,
+   "teamId": 4,
+   "playerId": 10225,
+   "playerName": "Alvin Purdy",
+   "position": "QB",
+   "proTeam": "CAR",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 367.8
+  },
+  {
+   "round": 2,
+   "pick": 5,
+   "overall": 17,
+   "teamId": 12,
+   "playerId": 10276,
+   "playerName": "Nick Lawrence",
+   "position": "WR",
+   "proTeam": "TB",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 195.1
+  },
+  {
+   "round": 2,
+   "pick": 6,
+   "overall": 18,
+   "teamId": 8,
+   "playerId": 10074,
+   "playerName": "Bijan Jefferson",
+   "position": "TE",
+   "proTeam": "GB",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 172.7
+  },
+  {
+   "round": 2,
+   "pick": 7,
+   "overall": 19,
+   "teamId": 7,
+   "playerId": 10300,
+   "playerName": "George Murray",
+   "position": "WR",
+   "proTeam": "DAL",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 252.2
+  },
+  {
+   "round": 2,
+   "pick": 8,
+   "overall": 20,
+   "teamId": 9,
+   "playerId": 10246,
+   "playerName": "Russell Williams",
+   "position": "TE",
+   "proTeam": "TB",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 165.2
+  },
+  {
+   "round": 2,
+   "pick": 9,
+   "overall": 21,
+   "teamId": 10,
+   "playerId": 10261,
+   "playerName": "Sam Kittle",
+   "position": "WR",
+   "proTeam": "LAC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 230.4
+  },
+  {
+   "round": 2,
+   "pick": 10,
+   "overall": 22,
+   "teamId": 1,
+   "playerId": 10044,
+   "playerName": "Travis Peterson",
+   "position": "WR",
+   "proTeam": "DAL",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 197.7
+  },
+  {
+   "round": 2,
+   "pick": 11,
+   "overall": 23,
+   "teamId": 6,
+   "playerId": 10135,
+   "playerName": "Brock Collins",
+   "position": "QB",
+   "proTeam": "BAL",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 414.0
+  },
+  {
+   "round": 2,
+   "pick": 12,
+   "overall": 24,
+   "teamId": 3,
+   "playerId": 10252,
+   "playerName": "Jalen LaPorta",
+   "position": "RB",
+   "proTeam": "CIN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 216.7
+  },
+  {
+   "round": 3,
+   "pick": 1,
+   "overall": 25,
+   "teamId": 3,
+   "playerId": 10126,
+   "playerName": "Puka Cousins",
+   "position": "WR",
+   "proTeam": "NYG",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 194.9
+  },
+  {
+   "round": 3,
+   "pick": 2,
+   "overall": 26,
+   "teamId": 6,
+   "playerId": 10164,
+   "playerName": "George Hill",
+   "position": "WR",
+   "proTeam": "MIA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 249.0
+  },
+  {
+   "round": 3,
+   "pick": 3,
+   "overall": 27,
+   "teamId": 1,
+   "playerId": 10275,
+   "playerName": "Tyreek Brown",
+   "position": "WR",
+   "proTeam": "MIN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 237.1
+  },
+  {
+   "round": 3,
+   "pick": 4,
+   "overall": 28,
+   "teamId": 10,
+   "playerId": 10054,
+   "playerName": "Ja'Marr Wilson",
+   "position": "WR",
+   "proTeam": "LAC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 248.4
+  },
+  {
+   "round": 3,
+   "pick": 5,
+   "overall": 29,
+   "teamId": 9,
+   "playerId": 10193,
+   "playerName": "DeShawn Brown",
+   "position": "RB",
+   "proTeam": "DET",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 213.5
+  },
+  {
+   "round": 3,
+   "pick": 6,
+   "overall": 30,
+   "teamId": 7,
+   "playerId": 10241,
+   "playerName": "Amon-Ra Love",
+   "position": "RB",
+   "proTeam": "ARI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 190.6
+  },
+  {
+   "round": 3,
+   "pick": 7,
+   "overall": 31,
+   "teamId": 8,
+   "playerId": 10315,
+   "playerName": "Adrian Wilson",
+   "position": "TE",
+   "proTeam": "MIN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 135.3
+  },
+  {
+   "round": 3,
+   "pick": 8,
+   "overall": 32,
+   "teamId": 12,
+   "playerId": 10200,
+   "playerName": "Bijan Chubb",
+   "position": "RB",
+   "proTeam": "SEA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 194.3
+  },
+  {
+   "round": 3,
+   "pick": 9,
+   "overall": 33,
+   "teamId": 4,
+   "playerId": 10299,
+   "playerName": "Antonio Kittle",
+   "position": "RB",
+   "proTeam": "SEA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 173.5
+  },
+  {
+   "round": 3,
+   "pick": 10,
+   "overall": 34,
+   "teamId": 5,
+   "playerId": 10158,
+   "playerName": "Antonio Barkley",
+   "position": "RB",
+   "proTeam": "SEA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 219.0
+  },
+  {
+   "round": 3,
+   "pick": 11,
+   "overall": 35,
+   "teamId": 2,
+   "playerId": 10295,
+   "playerName": "Trevor Cook",
+   "position": "WR",
+   "proTeam": "ATL",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 217.0
+  },
+  {
+   "round": 3,
+   "pick": 12,
+   "overall": 36,
+   "teamId": 11,
+   "playerId": 10244,
+   "playerName": "Ja'Marr Cousins",
+   "position": "WR",
+   "proTeam": "CAR",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 194.5
+  },
+  {
+   "round": 4,
+   "pick": 1,
+   "overall": 37,
+   "teamId": 11,
+   "playerId": 10284,
+   "playerName": "Adrian Mahomes",
+   "position": "RB",
+   "proTeam": "LAR",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 205.9
+  },
+  {
+   "round": 4,
+   "pick": 2,
+   "overall": 38,
+   "teamId": 2,
+   "playerId": 10035,
+   "playerName": "Jared White",
+   "position": "WR",
+   "proTeam": "DEN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 275.8
+  },
+  {
+   "round": 4,
+   "pick": 3,
+   "overall": 39,
+   "teamId": 5,
+   "playerId": 10141,
+   "playerName": "Brock Taylor",
+   "position": "TE",
+   "proTeam": "MIA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 147.1
+  },
+  {
+   "round": 4,
+   "pick": 4,
+   "overall": 40,
+   "teamId": 4,
+   "playerId": 10316,
+   "playerName": "DeShawn Love",
+   "position": "WR",
+   "proTeam": "WSH",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 147.4
+  },
+  {
+   "round": 4,
+   "pick": 5,
+   "overall": 41,
+   "teamId": 12,
+   "playerId": 10048,
+   "playerName": "Tyreek Allen",
+   "position": "WR",
+   "proTeam": "WSH",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 228.4
+  },
+  {
+   "round": 4,
+   "pick": 6,
+   "overall": 42,
+   "teamId": 8,
+   "playerId": 10281,
+   "playerName": "George Mahomes",
+   "position": "WR",
+   "proTeam": "NO",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 227.4
+  },
+  {
+   "round": 4,
+   "pick": 7,
+   "overall": 43,
+   "teamId": 7,
+   "playerId": 10081,
+   "playerName": "Sam Hill",
+   "position": "WR",
+   "proTeam": "MIA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 194.6
+  },
+  {
+   "round": 4,
+   "pick": 8,
+   "overall": 44,
+   "teamId": 9,
+   "playerId": 10113,
+   "playerName": "Alvin Allen",
+   "position": "QB",
+   "proTeam": "NE",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 363.6
+  },
+  {
+   "round": 4,
+   "pick": 9,
+   "overall": 45,
+   "teamId": 10,
+   "playerId": 10090,
+   "playerName": "Trevor Ekeler",
+   "position": "QB",
+   "proTeam": "TB",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 335.4
+  },
+  {
+   "round": 4,
+   "pick": 10,
+   "overall": 46,
+   "teamId": 1,
+   "playerId": 10128,
+   "playerName": "Marcus Love",
+   "position": "WR",
+   "proTeam": "NYG",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 179.2
+  },
+  {
+   "round": 4,
+   "pick": 11,
+   "overall": 47,
+   "teamId": 6,
+   "playerId": 10251,
+   "playerName": "Travis Burrow",
+   "position": "RB",
+   "proTeam": "DAL",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 206.6
+  },
+  {
+   "round": 4,
+   "pick": 12,
+   "overall": 48,
+   "teamId": 3,
+   "playerId": 10115,
+   "playerName": "Mark Brown",
+   "position": "RB",
+   "proTeam": "NYG",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 215.5
+  },
+  {
+   "round": 5,
+   "pick": 1,
+   "overall": 49,
+   "teamId": 3,
+   "playerId": 10304,
+   "playerName": "Jordan Adams",
+   "position": "QB",
+   "proTeam": "NYG",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 280.5
+  },
+  {
+   "round": 5,
+   "pick": 2,
+   "overall": 50,
+   "teamId": 6,
+   "playerId": 10271,
+   "playerName": "Julio Henry",
+   "position": "WR",
+   "proTeam": "BUF",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 187.9
+  },
+  {
+   "round": 5,
+   "pick": 3,
+   "overall": 51,
+   "teamId": 1,
+   "playerId": 10023,
+   "playerName": "Dak Chase",
+   "position": "RB",
+   "proTeam": "HOU",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 253.8
+  },
+  {
+   "round": 5,
+   "pick": 4,
+   "overall": 52,
+   "teamId": 10,
+   "playerId": 10111,
+   "playerName": "Kirk Hill",
+   "position": "RB",
+   "proTeam": "ARI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 179.0
+  },
+  {
+   "round": 5,
+   "pick": 5,
+   "overall": 53,
+   "teamId": 9,
+   "playerId": 10015,
+   "playerName": "Odell Hall",
+   "position": "RB",
+   "proTeam": "ARI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 185.0
+  },
+  {
+   "round": 5,
+   "pick": 6,
+   "overall": 54,
+   "teamId": 7,
+   "playerId": 10059,
+   "playerName": "Puka Chase",
+   "position": "RB",
+   "proTeam": "LAC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 207.6
+  },
+  {
+   "round": 5,
+   "pick": 7,
+   "overall": 55,
+   "teamId": 8,
+   "playerId": 10060,
+   "playerName": "George Jackson",
+   "position": "TE",
+   "proTeam": "KC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 145.5
+  },
+  {
+   "round": 5,
+   "pick": 8,
+   "overall": 56,
+   "teamId": 12,
+   "playerId": 10101,
+   "playerName": "DeShawn Taylor",
+   "position": "TE",
+   "proTeam": "KC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 114.9
+  },
+  {
+   "round": 5,
+   "pick": 9,
+   "overall": 57,
+   "teamId": 4,
+   "playerId": 10104,
+   "playerName": "Dak Kupp",
+   "position": "QB",
+   "proTeam": "CHI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 326.8
+  },
+  {
+   "round": 5,
+   "pick": 10,
+   "overall": 58,
+   "teamId": 5,
+   "playerId": 10075,
+   "playerName": "Davante Allen",
+   "position": "QB",
+   "proTeam": "PHI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 380.0
+  },
+  {
+   "round": 5,
+   "pick": 11,
+   "overall": 59,
+   "teamId": 2,
+   "playerId": 10094,
+   "playerName": "Drew Allen",
+   "position": "K",
+   "proTeam": "PHI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 162.6
+  },
+  {
+   "round": 5,
+   "pick": 12,
+   "overall": 60,
+   "teamId": 11,
+   "playerId": 10165,
+   "playerName": "Calvin Elliott",
+   "position": "RB",
+   "proTeam": "JAX",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 188.3
+  },
+  {
+   "round": 6,
+   "pick": 1,
+   "overall": 61,
+   "teamId": 11,
+   "playerId": 10239,
+   "playerName": "Mark Williams",
+   "position": "RB",
+   "proTeam": "TB",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 165.2
+  },
+  {
+   "round": 6,
+   "pick": 2,
+   "overall": 62,
+   "teamId": 2,
+   "playerId": 10291,
+   "playerName": "Amon-Ra LaPorta",
+   "position": "RB",
+   "proTeam": "PHI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 263.8
+  },
+  {
+   "round": 6,
+   "pick": 3,
+   "overall": 63,
+   "teamId": 5,
+   "playerId": 10178,
+   "playerName": "Jalen Nacua",
+   "position": "WR",
+   "proTeam": "PIT",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 175.4
+  },
+  {
+   "round": 6,
+   "pick": 4,
+   "overall": 64,
+   "teamId": 4,
+   "playerId": 10010,
+   "playerName": "Alvin Nacua",
+   "position": "WR",
+   "proTeam": "LAC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 161.7
+  },
+  {
+   "round": 6,
+   "pick": 5,
+   "overall": 65,
+   "teamId": 12,
+   "playerId": 10137,
+   "playerName": "Odell Burrow",
+   "position": "WR",
+   "proTeam": "NO",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 162.8
+  },
+  {
+   "round": 6,
+   "pick": 6,
+   "overall": 66,
+   "teamId": 8,
+   "playerId": 10086,
+   "playerName": "Breece Wilson",
+   "position": "WR",
+   "proTeam": "IND",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 180.7
+  },
+  {
+   "round": 6,
+   "pick": 7,
+   "overall": 67,
+   "teamId": 7,
+   "playerId": 10250,
+   "playerName": "Amari Taylor",
+   "position": "WR",
+   "proTeam": "CIN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 188.3
+  },
+  {
+   "round": 6,
+   "pick": 8,
+   "overall": 68,
+   "teamId": 9,
+   "playerId": 10274,
+   "playerName": "George Taylor",
+   "position": "RB",
+   "proTeam": "SEA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 186.2
+  },
+  {
+   "round": 6,
+   "pick": 9,
+   "overall": 69,
+   "teamId": 10,
+   "playerId": 10230,
+   "playerName": "Matt Elliott",
+   "position": "TE",
+   "proTeam": "CLE",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 95.4
+  },
+  {
+   "round": 6,
+   "pick": 10,
+   "overall": 70,
+   "teamId": 1,
+   "playerId": 10196,
+   "playerName": "Saquon Ekeler",
+   "position": "RB",
+   "proTeam": "PHI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 160.0
+  },
+  {
+   "round": 6,
+   "pick": 11,
+   "overall": 71,
+   "teamId": 6,
+   "playerId": 10213,
+   "playerName": "Jonathan Johnson",
+   "position": "TE",
+   "proTeam": "BUF",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 123.5
+  },
+  {
+   "round": 6,
+   "pick": 12,
+   "overall": 72,
+   "teamId": 3,
+   "playerId": 10195,
+   "playerName": "Davante Jones",
+   "position": "WR",
+   "proTeam": "MIN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 182.7
+  },
+  {
+   "round": 7,
+   "pick": 1,
+   "overall": 73,
+   "teamId": 3,
+   "playerId": 10125,
+   "playerName": "Matt Jefferson",
+   "position": "WR",
+   "proTeam": "TEN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 174.2
+  },
+  {
+   "round": 7,
+   "pick": 2,
+   "overall": 74,
+   "teamId": 6,
+   "playerId": 10070,
+   "playerName": "Jalen Chubb",
+   "position": "RB",
+   "proTeam": "NYJ",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 211.6
+  },
+  {
+   "round": 7,
+   "pick": 3,
+   "overall": 75,
+   "teamId": 1,
+   "playerId": 10305,
+   "playerName": "Lamar Andrews",
+   "position": "WR",
+   "proTeam": "JAX",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 175.0
+  },
+  {
+   "round": 7,
+   "pick": 4,
+   "overall": 76,
+   "teamId": 10,
+   "playerId": 10268,
+   "playerName": "Kyler Brees",
+   "position": "TE",
+   "proTeam": "ATL",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 137.1
+  },
+  {
+   "round": 7,
+   "pick": 5,
+   "overall": 77,
+   "teamId": 9,
+   "playerId": 10121,
+   "playerName": "Tee Murray",
+   "position": "WR",
+   "proTeam": "SF",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 144.3
+  },
+  {
+   "round": 7,
+   "pick": 6,
+   "overall": 78,
+   "teamId": 7,
+   "playerId": 10043,
+   "playerName": "Amari Peterson",
+   "position": "RB",
+   "proTeam": "GB",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 186.9
+  },
+  {
+   "round": 7,
+   "pick": 7,
+   "overall": 79,
+   "teamId": 8,
+   "playerId": 10021,
+   "playerName": "Nick Wilson",
+   "position": "WR",
+   "proTeam": "LAC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 171.9
+  },
+  {
+   "round": 7,
+   "pick": 8,
+   "overall": 80,
+   "teamId": 12,
+   "playerId": 10318,
+   "playerName": "Josh Hurts",
+   "position": "WR",
+   "proTeam": "KC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 186.1
+  },
+  {
+   "round": 7,
+   "pick": 9,
+   "overall": 81,
+   "teamId": 4,
+   "playerId": 10028,
+   "playerName": "Justin Henry",
+   "position": "QB",
+   "proTeam": "LV",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 303.7
+  },
+  {
+   "round": 7,
+   "pick": 10,
+   "overall": 82,
+   "teamId": 5,
+   "playerId": 10191,
+   "playerName": "Patrick Brees",
+   "position": "QB",
+   "proTeam": "DET",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 292.3
+  },
+  {
+   "round": 7,
+   "pick": 11,
+   "overall": 83,
+   "teamId": 2,
+   "playerId": 10066,
+   "playerName": "Christian Johnson",
+   "position": "TE",
+   "proTeam": "CAR",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 126.9
+  },
+  {
+   "round": 7,
+   "pick": 12,
+   "overall": 84,
+   "teamId": 11,
+   "playerId": 10314,
+   "playerName": "DeShawn Cousins",
+   "position": "WR",
+   "proTeam": "LAC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 162.5
+  },
+  {
+   "round": 8,
+   "pick": 1,
+   "overall": 85,
+   "teamId": 11,
+   "playerId": 10208,
+   "playerName": "Russell Barkley",
+   "position": "RB",
+   "proTeam": "WSH",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 190.6
+  },
+  {
+   "round": 8,
+   "pick": 2,
+   "overall": 86,
+   "teamId": 2,
+   "playerId": 10134,
+   "playerName": "Alvin Ekeler",
+   "position": "RB",
+   "proTeam": "WSH",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 211.7
+  },
+  {
+   "round": 8,
+   "pick": 3,
+   "overall": 87,
+   "teamId": 5,
+   "playerId": 10249,
+   "playerName": "Alvin Burrow",
+   "position": "WR",
+   "proTeam": "NO",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 155.6
+  },
+  {
+   "round": 8,
+   "pick": 4,
+   "overall": 88,
+   "teamId": 4,
+   "playerId": 10077,
+   "playerName": "Saquon Jefferson",
+   "position": "QB",
+   "proTeam": "NYJ",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 328.6
+  },
+  {
+   "round": 8,
+   "pick": 5,
+   "overall": 89,
+   "teamId": 12,
+   "playerId": 10218,
+   "playerName": "Adrian Peterson",
+   "position": "QB",
+   "proTeam": "IND",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 290.1
+  },
+  {
+   "round": 8,
+   "pick": 6,
+   "overall": 90,
+   "teamId": 8,
+   "playerId": 10282,
+   "playerName": "Kirk Ridley",
+   "position": "RB",
+   "proTeam": "LV",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 210.7
+  },
+  {
+   "round": 8,
+   "pick": 7,
+   "overall": 91,
+   "teamId": 7,
+   "playerId": 10107,
+   "playerName": "Brock Adams",
+   "position": "WR",
+   "proTeam": "PIT",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 142.7
+  },
+  {
+   "round": 8,
+   "pick": 8,
+   "overall": 92,
+   "teamId": 9,
+   "playerId": 10051,
+   "playerName": "Drew St. Brown",
+   "position": "RB",
+   "proTeam": "IND",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 160.7
+  },
+  {
+   "round": 8,
+   "pick": 9,
+   "overall": 93,
+   "teamId": 10,
+   "playerId": 10254,
+   "playerName": "Mark Kupp",
+   "position": "RB",
+   "proTeam": "PIT",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 193.1
+  },
+  {
+   "round": 8,
+   "pick": 10,
+   "overall": 94,
+   "teamId": 1,
+   "playerId": 10001,
+   "playerName": "Kirk Mahomes",
+   "position": "QB",
+   "proTeam": "HOU",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 266.3
+  },
+  {
+   "round": 8,
+   "pick": 11,
+   "overall": 95,
+   "teamId": 6,
+   "playerId": 10089,
+   "playerName": "Mark Hurts",
+   "position": "WR",
+   "proTeam": "NYG",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 160.3
+  },
+  {
+   "round": 8,
+   "pick": 12,
+   "overall": 96,
+   "teamId": 3,
+   "playerId": 10211,
+   "playerName": "Josh Hall",
+   "position": "WR",
+   "proTeam": "NO",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 180.5
+  },
+  {
+   "round": 9,
+   "pick": 1,
+   "overall": 97,
+   "teamId": 3,
+   "playerId": 10177,
+   "playerName": "Sam Taylor",
+   "position": "WR",
+   "proTeam": "PHI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 175.4
+  },
+  {
+   "round": 9,
+   "pick": 2,
+   "overall": 98,
+   "teamId": 6,
+   "playerId": 10176,
+   "playerName": "Nico Andrews",
+   "position": "K",
+   "proTeam": "MIN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 155.7
+  },
+  {
+   "round": 9,
+   "pick": 3,
+   "overall": 99,
+   "teamId": 1,
+   "playerId": 10278,
+   "playerName": "Rob Kittle",
+   "position": "TE",
+   "proTeam": "PHI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 121.9
+  },
+  {
+   "round": 9,
+   "pick": 4,
+   "overall": 100,
+   "teamId": 10,
+   "playerId": 10093,
+   "playerName": "Derrick Chase",
+   "position": "WR",
+   "proTeam": "ARI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 157.5
+  },
+  {
+   "round": 9,
+   "pick": 5,
+   "overall": 101,
+   "teamId": 9,
+   "playerId": 10189,
+   "playerName": "Jared Cousins",
+   "position": "RB",
+   "proTeam": "LAC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 157.3
+  },
+  {
+   "round": 9,
+   "pick": 6,
+   "overall": 102,
+   "teamId": 7,
+   "playerId": 10308,
+   "playerName": "Joe Chubb",
+   "position": "TE",
+   "proTeam": "NO",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 70.3
+  },
+  {
+   "round": 9,
+   "pick": 7,
+   "overall": 103,
+   "teamId": 8,
+   "playerId": 10058,
+   "playerName": "Cam Lawrence",
+   "position": "WR",
+   "proTeam": "BUF",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 123.1
+  },
+  {
+   "round": 9,
+   "pick": 8,
+   "overall": 104,
+   "teamId": 12,
+   "playerId": 10124,
+   "playerName": "Amari Walker",
+   "position": "WR",
+   "proTeam": "MIA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 187.5
+  },
+  {
+   "round": 9,
+   "pick": 9,
+   "overall": 105,
+   "teamId": 4,
+   "playerId": 10182,
+   "playerName": "Ezekiel Lawrence",
+   "position": "RB",
+   "proTeam": "DET",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 201.9
+  },
+  {
+   "round": 9,
+   "pick": 10,
+   "overall": 106,
+   "teamId": 5,
+   "playerId": 10159,
+   "playerName": "Austin Nacua",
+   "position": "QB",
+   "proTeam": "LV",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 288.9
+  },
+  {
+   "round": 9,
+   "pick": 11,
+   "overall": 107,
+   "teamId": 2,
+   "playerId": 10197,
+   "playerName": "Derrick Peterson",
+   "position": "TE",
+   "proTeam": "DET",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 107.9
+  },
+  {
+   "round": 9,
+   "pick": 12,
+   "overall": 108,
+   "teamId": 11,
+   "playerId": 10050,
+   "playerName": "GB D/ST",
+   "position": "D/ST",
+   "proTeam": "GB",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 107.3
+  },
+  {
+   "round": 10,
+   "pick": 1,
+   "overall": 109,
+   "teamId": 11,
+   "playerId": 10031,
+   "playerName": "CeeDee Henry",
+   "position": "WR",
+   "proTeam": "DAL",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 171.7
+  },
+  {
+   "round": 10,
+   "pick": 2,
+   "overall": 110,
+   "teamId": 2,
+   "playerId": 10147,
+   "playerName": "Puka Ekeler",
+   "position": "TE",
+   "proTeam": "BUF",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 98.8
+  },
+  {
+   "round": 10,
+   "pick": 3,
+   "overall": 111,
+   "teamId": 5,
+   "playerId": 10100,
+   "playerName": "Lamar Kelce",
+   "position": "QB",
+   "proTeam": "TB",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 303.7
+  },
+  {
+   "round": 10,
+   "pick": 4,
+   "overall": 112,
+   "teamId": 4,
+   "playerId": 10207,
+   "playerName": "Joe Ryan",
+   "position": "WR",
+   "proTeam": "IND",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 132.2
+  },
+  {
+   "round": 10,
+   "pick": 5,
+   "overall": 113,
+   "teamId": 12,
+   "playerId": 10038,
+   "playerName": "Adrian White",
+   "position": "QB",
+   "proTeam": "CAR",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 283.4
+  },
+  {
+   "round": 10,
+   "pick": 6,
+   "overall": 114,
+   "teamId": 8,
+   "playerId": 10131,
+   "playerName": "Alvin Mahomes",
+   "position": "RB",
+   "proTeam": "CHI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 142.5
+  },
+  {
+   "round": 10,
+   "pick": 7,
+   "overall": 115,
+   "teamId": 7,
+   "playerId": 10279,
+   "playerName": "Christian Jefferson",
+   "position": "TE",
+   "proTeam": "MIA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 102.5
+  },
+  {
+   "round": 10,
+   "pick": 8,
+   "overall": 116,
+   "teamId": 9,
+   "playerId": 10267,
+   "playerName": "Saquon Henry",
+   "position": "WR",
+   "proTeam": "CLE",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 154.2
+  },
+  {
+   "round": 10,
+   "pick": 9,
+   "overall": 117,
+   "teamId": 10,
+   "playerId": 10030,
+   "playerName": "ARI D/ST",
+   "position": "D/ST",
+   "proTeam": "ARI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 133.8
+  },
+  {
+   "round": 10,
+   "pick": 10,
+   "overall": 118,
+   "teamId": 1,
+   "playerId": 10083,
+   "playerName": "George Kittle",
+   "position": "TE",
+   "proTeam": "PIT",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 90.4
+  },
+  {
+   "round": 10,
+   "pick": 11,
+   "overall": 119,
+   "teamId": 6,
+   "playerId": 10085,
+   "playerName": "Justin Kittle",
+   "position": "WR",
+   "proTeam": "JAX",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 158.0
+  },
+  {
+   "round": 10,
+   "pick": 12,
+   "overall": 120,
+   "teamId": 3,
+   "playerId": 10019,
+   "playerName": "Stefon Andrews",
+   "position": "TE",
+   "proTeam": "NYG",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 101.4
+  },
+  {
+   "round": 11,
+   "pick": 1,
+   "overall": 121,
+   "teamId": 3,
+   "playerId": 10117,
+   "playerName": "Cooper Ekeler",
+   "position": "RB",
+   "proTeam": "CAR",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 219.1
+  },
+  {
+   "round": 11,
+   "pick": 2,
+   "overall": 122,
+   "teamId": 6,
+   "playerId": 10306,
+   "playerName": "Mark Johnson",
+   "position": "TE",
+   "proTeam": "DEN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 105.4
+  },
+  {
+   "round": 11,
+   "pick": 3,
+   "overall": 123,
+   "teamId": 1,
+   "playerId": 10119,
+   "playerName": "Russell Goff",
+   "position": "WR",
+   "proTeam": "NE",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 168.0
+  },
+  {
+   "round": 11,
+   "pick": 4,
+   "overall": 124,
+   "teamId": 10,
+   "playerId": 10155,
+   "playerName": "Bijan Peterson",
+   "position": "WR",
+   "proTeam": "ARI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 130.5
+  },
+  {
+   "round": 11,
+   "pick": 5,
+   "overall": 125,
+   "teamId": 9,
+   "playerId": 10087,
+   "playerName": "PIT D/ST",
+   "position": "D/ST",
+   "proTeam": "PIT",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 135.2
+  },
+  {
+   "round": 11,
+   "pick": 6,
+   "overall": 126,
+   "teamId": 7,
+   "playerId": 10064,
+   "playerName": "Rachaad Murray",
+   "position": "WR",
+   "proTeam": "KC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 178.0
+  },
+  {
+   "round": 11,
+   "pick": 7,
+   "overall": 127,
+   "teamId": 8,
+   "playerId": 10317,
+   "playerName": "Jalen Johnson",
+   "position": "TE",
+   "proTeam": "DET",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 102.0
+  },
+  {
+   "round": 11,
+   "pick": 8,
+   "overall": 128,
+   "teamId": 12,
+   "playerId": 10199,
+   "playerName": "Saquon Cousins",
+   "position": "WR",
+   "proTeam": "TB",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 137.3
+  },
+  {
+   "round": 11,
+   "pick": 9,
+   "overall": 129,
+   "teamId": 4,
+   "playerId": 10187,
+   "playerName": "Tyreek Cousins",
+   "position": "RB",
+   "proTeam": "SEA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 178.2
+  },
+  {
+   "round": 11,
+   "pick": 10,
+   "overall": 130,
+   "teamId": 5,
+   "playerId": 10122,
+   "playerName": "Kyler Kupp",
+   "position": "RB",
+   "proTeam": "CLE",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 162.5
+  },
+  {
+   "round": 11,
+   "pick": 11,
+   "overall": 131,
+   "teamId": 2,
+   "playerId": 10166,
+   "playerName": "Julio Hurts",
+   "position": "QB",
+   "proTeam": "DEN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 215.3
+  },
+  {
+   "round": 11,
+   "pick": 12,
+   "overall": 132,
+   "teamId": 11,
+   "playerId": 10302,
+   "playerName": "Tee Diggs",
+   "position": "WR",
+   "proTeam": "CHI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 147.9
+  },
+  {
+   "round": 12,
+   "pick": 1,
+   "overall": 133,
+   "teamId": 11,
+   "playerId": 10016,
+   "playerName": "LAR D/ST",
+   "position": "D/ST",
+   "proTeam": "LAR",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 119.5
+  },
+  {
+   "round": 12,
+   "pick": 2,
+   "overall": 134,
+   "teamId": 2,
+   "playerId": 10255,
+   "playerName": "NYG D/ST",
+   "position": "D/ST",
+   "proTeam": "NYG",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 103.5
+  },
+  {
+   "round": 12,
+   "pick": 3,
+   "overall": 135,
+   "teamId": 5,
+   "playerId": 10097,
+   "playerName": "CAR D/ST",
+   "position": "D/ST",
+   "proTeam": "CAR",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 129.1
+  },
+  {
+   "round": 12,
+   "pick": 4,
+   "overall": 136,
+   "teamId": 4,
+   "playerId": 10133,
+   "playerName": "WSH D/ST",
+   "position": "D/ST",
+   "proTeam": "WSH",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 135.3
+  },
+  {
+   "round": 12,
+   "pick": 5,
+   "overall": 137,
+   "teamId": 12,
+   "playerId": 10296,
+   "playerName": "Jonathan Burrow",
+   "position": "K",
+   "proTeam": "MIA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 138.2
+  },
+  {
+   "round": 12,
+   "pick": 6,
+   "overall": 138,
+   "teamId": 8,
+   "playerId": 10303,
+   "playerName": "Christian Cook",
+   "position": "WR",
+   "proTeam": "LAC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 155.4
+  },
+  {
+   "round": 12,
+   "pick": 7,
+   "overall": 139,
+   "teamId": 7,
+   "playerId": 10040,
+   "playerName": "Nick Taylor",
+   "position": "QB",
+   "proTeam": "JAX",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 234.8
+  },
+  {
+   "round": 12,
+   "pick": 8,
+   "overall": 140,
+   "teamId": 9,
+   "playerId": 10286,
+   "playerName": "Odell Lawrence",
+   "position": "K",
+   "proTeam": "HOU",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 165.3
+  },
+  {
+   "round": 12,
+   "pick": 9,
+   "overall": 141,
+   "teamId": 10,
+   "playerId": 10186,
+   "playerName": "LV D/ST",
+   "position": "D/ST",
+   "proTeam": "LV",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 83.8
+  },
+  {
+   "round": 12,
+   "pick": 10,
+   "overall": 142,
+   "teamId": 1,
+   "playerId": 10149,
+   "playerName": "Aaron Brees",
+   "position": "WR",
+   "proTeam": "BUF",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 119.4
+  },
+  {
+   "round": 12,
+   "pick": 11,
+   "overall": 143,
+   "teamId": 6,
+   "playerId": 10220,
+   "playerName": "Justin Beckham",
+   "position": "RB",
+   "proTeam": "TEN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 138.1
+  },
+  {
+   "round": 12,
+   "pick": 12,
+   "overall": 144,
+   "teamId": 3,
+   "playerId": 10307,
+   "playerName": "CIN D/ST",
+   "position": "D/ST",
+   "proTeam": "CIN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 146.2
+  },
+  {
+   "round": 13,
+   "pick": 1,
+   "overall": 145,
+   "teamId": 3,
+   "playerId": 10140,
+   "playerName": "Davante Robinson",
+   "position": "K",
+   "proTeam": "NYJ",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 110.7
+  },
+  {
+   "round": 13,
+   "pick": 2,
+   "overall": 146,
+   "teamId": 6,
+   "playerId": 10262,
+   "playerName": "Amon-Ra Ryan",
+   "position": "WR",
+   "proTeam": "MIA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 155.1
+  },
+  {
+   "round": 13,
+   "pick": 3,
+   "overall": 147,
+   "teamId": 1,
+   "playerId": 10029,
+   "playerName": "Stefon Chubb",
+   "position": "QB",
+   "proTeam": "WSH",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 259.0
+  },
+  {
+   "round": 13,
+   "pick": 4,
+   "overall": 148,
+   "teamId": 10,
+   "playerId": 10009,
+   "playerName": "LAC D/ST",
+   "position": "D/ST",
+   "proTeam": "LAC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 128.4
+  },
+  {
+   "round": 13,
+   "pick": 5,
+   "overall": 149,
+   "teamId": 9,
+   "playerId": 10226,
+   "playerName": "Alvin Goff",
+   "position": "K",
+   "proTeam": "PIT",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 114.0
+  },
+  {
+   "round": 13,
+   "pick": 6,
+   "overall": 150,
+   "teamId": 7,
+   "playerId": 10082,
+   "playerName": "Kyren Mahomes",
+   "position": "WR",
+   "proTeam": "SEA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 174.8
+  },
+  {
+   "round": 13,
+   "pick": 7,
+   "overall": 151,
+   "teamId": 8,
+   "playerId": 10234,
+   "playerName": "Antonio Andrews",
+   "position": "TE",
+   "proTeam": "CIN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 99.7
+  },
+  {
+   "round": 13,
+   "pick": 8,
+   "overall": 152,
+   "teamId": 12,
+   "playerId": 10078,
+   "playerName": "Kyler Walker",
+   "position": "QB",
+   "proTeam": "CLE",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 222.3
+  },
+  {
+   "round": 13,
+   "pick": 9,
+   "overall": 153,
+   "teamId": 4,
+   "playerId": 10105,
+   "playerName": "Tee LaPorta",
+   "position": "QB",
+   "proTeam": "TEN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 213.9
+  },
+  {
+   "round": 13,
+   "pick": 10,
+   "overall": 154,
+   "teamId": 5,
+   "playerId": 10062,
+   "playerName": "Travis Allen",
+   "position": "WR",
+   "proTeam": "PHI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 137.3
+  },
+  {
+   "round": 13,
+   "pick": 11,
+   "overall": 155,
+   "teamId": 2,
+   "playerId": 10127,
+   "playerName": "MIA D/ST",
+   "position": "D/ST",
+   "proTeam": "MIA",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 140.2
+  },
+  {
+   "round": 13,
+   "pick": 12,
+   "overall": 156,
+   "teamId": 11,
+   "playerId": 10157,
+   "playerName": "Ezekiel Wilson",
+   "position": "WR",
+   "proTeam": "DEN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 130.7
+  },
+  {
+   "round": 14,
+   "pick": 1,
+   "overall": 157,
+   "teamId": 11,
+   "playerId": 10096,
+   "playerName": "Tyreek Diggs",
+   "position": "RB",
+   "proTeam": "IND",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 136.3
+  },
+  {
+   "round": 14,
+   "pick": 2,
+   "overall": 158,
+   "teamId": 2,
+   "playerId": 10212,
+   "playerName": "ATL D/ST",
+   "position": "D/ST",
+   "proTeam": "ATL",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 145.1
+  },
+  {
+   "round": 14,
+   "pick": 3,
+   "overall": 159,
+   "teamId": 5,
+   "playerId": 10106,
+   "playerName": "CeeDee Brown",
+   "position": "WR",
+   "proTeam": "TEN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 144.8
+  },
+  {
+   "round": 14,
+   "pick": 4,
+   "overall": 160,
+   "teamId": 4,
+   "playerId": 10224,
+   "playerName": "Sam Collins",
+   "position": "TE",
+   "proTeam": "DEN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 84.2
+  },
+  {
+   "round": 14,
+   "pick": 5,
+   "overall": 161,
+   "teamId": 12,
+   "playerId": 10188,
+   "playerName": "Matt Diggs",
+   "position": "TE",
+   "proTeam": "ATL",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 87.6
+  },
+  {
+   "round": 14,
+   "pick": 6,
+   "overall": 162,
+   "teamId": 8,
+   "playerId": 10253,
+   "playerName": "Derrick Gronkowski",
+   "position": "K",
+   "proTeam": "NE",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 75.2
+  },
+  {
+   "round": 14,
+   "pick": 7,
+   "overall": 163,
+   "teamId": 7,
+   "playerId": 10053,
+   "playerName": "Dak Elliott",
+   "position": "QB",
+   "proTeam": "ARI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 194.5
+  },
+  {
+   "round": 14,
+   "pick": 8,
+   "overall": 164,
+   "teamId": 9,
+   "playerId": 10061,
+   "playerName": "TB D/ST",
+   "position": "D/ST",
+   "proTeam": "TB",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 101.1
+  },
+  {
+   "round": 14,
+   "pick": 9,
+   "overall": 165,
+   "teamId": 10,
+   "playerId": 10032,
+   "playerName": "Nick Henry",
+   "position": "RB",
+   "proTeam": "KC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 155.8
+  },
+  {
+   "round": 14,
+   "pick": 10,
+   "overall": 166,
+   "teamId": 1,
+   "playerId": 10057,
+   "playerName": "Justin Hurts",
+   "position": "WR",
+   "proTeam": "CHI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 142.8
+  },
+  {
+   "round": 14,
+   "pick": 11,
+   "overall": 167,
+   "teamId": 6,
+   "playerId": 10228,
+   "playerName": "Puka Walker",
+   "position": "WR",
+   "proTeam": "PIT",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 112.0
+  },
+  {
+   "round": 14,
+   "pick": 12,
+   "overall": 168,
+   "teamId": 3,
+   "playerId": 10114,
+   "playerName": "Patrick Hall",
+   "position": "WR",
+   "proTeam": "NYJ",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 140.3
+  },
+  {
+   "round": 15,
+   "pick": 1,
+   "overall": 169,
+   "teamId": 3,
+   "playerId": 10229,
+   "playerName": "Cooper McCaffrey",
+   "position": "WR",
+   "proTeam": "DET",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 145.6
+  },
+  {
+   "round": 15,
+   "pick": 2,
+   "overall": 170,
+   "teamId": 6,
+   "playerId": 10156,
+   "playerName": "Antonio Kupp",
+   "position": "TE",
+   "proTeam": "SF",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 77.7
+  },
+  {
+   "round": 15,
+   "pick": 3,
+   "overall": 171,
+   "teamId": 1,
+   "playerId": 10310,
+   "playerName": "Brock Robinson",
+   "position": "RB",
+   "proTeam": "LAR",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 121.7
+  },
+  {
+   "round": 15,
+   "pick": 4,
+   "overall": 172,
+   "teamId": 10,
+   "playerId": 10006,
+   "playerName": "Kenneth Ridley",
+   "position": "WR",
+   "proTeam": "KC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 142.0
+  },
+  {
+   "round": 15,
+   "pick": 5,
+   "overall": 173,
+   "teamId": 9,
+   "playerId": 10072,
+   "playerName": "Travis Elliott",
+   "position": "QB",
+   "proTeam": "KC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 218.1
+  },
+  {
+   "round": 15,
+   "pick": 6,
+   "overall": 174,
+   "teamId": 7,
+   "playerId": 10273,
+   "playerName": "Dalvin Purdy",
+   "position": "RB",
+   "proTeam": "DET",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 148.7
+  },
+  {
+   "round": 15,
+   "pick": 7,
+   "overall": 175,
+   "teamId": 8,
+   "playerId": 10047,
+   "playerName": "Russell Cousins",
+   "position": "RB",
+   "proTeam": "MIN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 151.6
+  },
+  {
+   "round": 15,
+   "pick": 8,
+   "overall": 176,
+   "teamId": 12,
+   "playerId": 10285,
+   "playerName": "Alvin Elliott",
+   "position": "WR",
+   "proTeam": "NE",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 136.1
+  },
+  {
+   "round": 15,
+   "pick": 9,
+   "overall": 177,
+   "teamId": 4,
+   "playerId": 10079,
+   "playerName": "SF D/ST",
+   "position": "D/ST",
+   "proTeam": "SF",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 92.4
+  },
+  {
+   "round": 15,
+   "pick": 10,
+   "overall": 178,
+   "teamId": 5,
+   "playerId": 10162,
+   "playerName": "Russell Burrow",
+   "position": "WR",
+   "proTeam": "ATL",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 128.4
+  },
+  {
+   "round": 15,
+   "pick": 11,
+   "overall": 179,
+   "teamId": 2,
+   "playerId": 10269,
+   "playerName": "Kyler Kamara",
+   "position": "QB",
+   "proTeam": "PHI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 180.2
+  },
+  {
+   "round": 15,
+   "pick": 12,
+   "overall": 180,
+   "teamId": 11,
+   "playerId": 10073,
+   "playerName": "Tyreek Kamara",
+   "position": "WR",
+   "proTeam": "PHI",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 143.1
+  },
+  {
+   "round": 16,
+   "pick": 1,
+   "overall": 181,
+   "teamId": 11,
+   "playerId": 10179,
+   "playerName": "Alvin Ridley",
+   "position": "WR",
+   "proTeam": "WSH",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 127.0
+  },
+  {
+   "round": 16,
+   "pick": 2,
+   "overall": 182,
+   "teamId": 2,
+   "playerId": 10215,
+   "playerName": "Puka Taylor",
+   "position": "TE",
+   "proTeam": "SF",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 84.1
+  },
+  {
+   "round": 16,
+   "pick": 3,
+   "overall": 183,
+   "teamId": 5,
+   "playerId": 10150,
+   "playerName": "Breece Cousins",
+   "position": "TE",
+   "proTeam": "TB",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 66.7
+  },
+  {
+   "round": 16,
+   "pick": 4,
+   "overall": 184,
+   "teamId": 4,
+   "playerId": 10098,
+   "playerName": "Justin McCaffrey",
+   "position": "RB",
+   "proTeam": "DET",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 138.1
+  },
+  {
+   "round": 16,
+   "pick": 5,
+   "overall": 185,
+   "teamId": 12,
+   "playerId": 10320,
+   "playerName": "Breece Jones",
+   "position": "RB",
+   "proTeam": "CIN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 124.3
+  },
+  {
+   "round": 16,
+   "pick": 6,
+   "overall": 186,
+   "teamId": 8,
+   "playerId": 10313,
+   "playerName": "Russell Walker",
+   "position": "K",
+   "proTeam": "KC",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 123.7
+  },
+  {
+   "round": 16,
+   "pick": 7,
+   "overall": 187,
+   "teamId": 7,
+   "playerId": 10221,
+   "playerName": "Ja'Marr Diggs",
+   "position": "WR",
+   "proTeam": "CAR",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 127.4
+  },
+  {
+   "round": 16,
+   "pick": 8,
+   "overall": 188,
+   "teamId": 9,
+   "playerId": 10161,
+   "playerName": "Trevor Peterson",
+   "position": "WR",
+   "proTeam": "NE",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 149.2
+  },
+  {
+   "round": 16,
+   "pick": 9,
+   "overall": 189,
+   "teamId": 10,
+   "playerId": 10237,
+   "playerName": "Justin Higgins",
+   "position": "WR",
+   "proTeam": "NE",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 141.0
+  },
+  {
+   "round": 16,
+   "pick": 10,
+   "overall": 190,
+   "teamId": 1,
+   "playerId": 10123,
+   "playerName": "Rob Henry",
+   "position": "WR",
+   "proTeam": "JAX",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 144.7
+  },
+  {
+   "round": 16,
+   "pick": 11,
+   "overall": 191,
+   "teamId": 6,
+   "playerId": 10214,
+   "playerName": "Nick Newton",
+   "position": "QB",
+   "proTeam": "BUF",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 216.3
+  },
+  {
+   "round": 16,
+   "pick": 12,
+   "overall": 192,
+   "teamId": 3,
+   "playerId": 10018,
+   "playerName": "DeShawn Jones",
+   "position": "RB",
+   "proTeam": "DEN",
+   "keeper": false,
+   "bid": null,
+   "seasonPoints": 177.3
+  }
+ ],
+ "boxscores": {},
+ "warnings": []
+}

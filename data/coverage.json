@@ -1,0 +1,274 @@
+{
+ "2010": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "missing",
+   "logos": "full",
+   "boxscores": "n/a"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2011": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "n/a"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2012": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "n/a"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2013": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "n/a"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2014": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "n/a"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2015": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "n/a"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2016": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "n/a"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2017": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "n/a"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2018": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "n/a"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2019": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "full"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2020": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "full"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2021": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "full"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2022": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "full"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2023": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "full"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2024": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "full"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2025": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "full",
+   "champion": "full",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "full"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ },
+ "2026": {
+  "fields": {
+   "settings": "full",
+   "teams": "full",
+   "owners": "full",
+   "weeklyScores": "full",
+   "finalStandings": "n/a",
+   "champion": "n/a",
+   "draft": "full",
+   "logos": "full",
+   "boxscores": "full"
+  },
+  "tier": "full",
+  "screenshotsNeeded": [],
+  "source": "sample"
+ }
+}

@@ -1,0 +1,131 @@
+"""End-to-end checks on a tiny fixture league: owner merging, overrides, records, h2h, streaks."""
+import json
+
+import pytest
+import yaml
+
+import normalize
+from stats.careers import build_careers
+from stats.h2h import build_h2h
+from stats.rankings import build_luck, build_team_seasons
+from stats.records import build_records
+
+
+def raw_season(year, teams, matchups, members, final_ranks=None, draft=None, complete=True):
+    ts = []
+    reg = [m for m in matchups if m[4] <= 2]  # ESPN team records cover the regular season only
+    for tid, (name, swids) in enumerate(teams, start=1):
+        matchups_all = matchups
+        matchups = reg
+        w = sum(1 for m in matchups if (m[0] == tid and m[2] > m[3]) or (m[1] == tid and m[3] > m[2]))
+        l = sum(1 for m in matchups if (m[0] == tid and m[2] < m[3]) or (m[1] == tid and m[3] < m[2]))
+        pf = sum(m[2] for m in matchups if m[0] == tid) + sum(m[3] for m in matchups if m[1] == tid)
+        pa = sum(m[3] for m in matchups if m[0] == tid) + sum(m[2] for m in matchups if m[1] == tid)
+        ts.append({"teamId": tid, "name": name, "abbrev": name[:3].upper(), "ownerSwids": swids, "wins": w, "losses": l,
+                   "ties": 0, "pointsFor": pf, "pointsAgainst": pa, "seed": tid,
+                   "finalRank": (final_ranks or {}).get(tid, 0), "logoUrl": "", "logo": None,
+                   "roster": [{"playerId": 1, "name": "Some Guy", "position": "RB", "proTeam": "NYG", "seasonPoints": 100}]})
+        matchups = matchups_all
+    ms = [{"week": wk, "homeTeamId": h, "awayTeamId": a, "homeScore": hs, "awayScore": as_,
+           "type": "WINNERS_BRACKET" if wk > 2 else "NONE", "isPlayoff": wk > 2,
+           "winner": "HOME" if hs > as_ else "AWAY"} for (h, a, hs, as_, wk) in matchups]
+    return {"year": year, "leagueId": 1, "source": "espn", "fetchedAt": "2026-01-01T00:00:00Z",
+            "settings": {"name": "Test League", "teamCount": len(teams), "regSeasonWeeks": 2, "playoffTeamCount": 2,
+                         "scoringType": "H2H", "isAuction": False, "matchupPeriods": {"1": [1], "2": [2], "3": [3]}},
+            "status": {"currentWeek": 4, "currentMatchupPeriod": 4, "finalScoringPeriod": 3, "isComplete": complete,
+                       "completedWeeks": [1, 2, 3]},
+            "members": [{"swid": s, "firstName": f, "lastName": l, "displayName": f} for s, f, l in members],
+            "teams": ts, "matchups": ms, "draft": draft or [], "boxscores": {}, "warnings": []}
+
+
+@pytest.fixture
+def league(tmp_path, monkeypatch):
+    owners_file = tmp_path / "owners.yml"
+    overrides = tmp_path / "overrides"
+    overrides.mkdir()
+    monkeypatch.setattr(normalize, "OWNERS_FILE", owners_file)
+    monkeypatch.setattr(normalize, "OVERRIDES_DIR", overrides)
+    members = [("{A1}", "Ann", "Able"), ("{A2}", "Ann", "Able"), ("{B}", "Bob", "Baker"),
+               ("{C}", "Cat", "Cole"), ("{D}", "Dan", "Dole")]
+    owners_file.write_text(yaml.safe_dump({"owners": [
+        {"key": "ann", "name": "Ann", "swids": ["{A1}", "{A2}"]},
+        {"key": "bob", "name": "Bob", "swids": ["{B}"]},
+    ]}))
+    # 2019: Ann (swid A1) as "Ann's Army"; 2020: Ann (swid A2) renamed "Able Bodies"
+    s19 = raw_season(2019,
+                     [("Ann's Army", ["{A1}"]), ("Bob Squad", ["{B}"]), ("Cats", ["{C}"]), ("Dans", ["{D}"])],
+                     [(1, 2, 120.5, 100.0, 1), (3, 4, 90.0, 95.0, 1), (1, 3, 130.0, 80.0, 2), (2, 4, 101.0, 99.0, 2),
+                      (1, 2, 150.0, 149.5, 3)],
+                     members, final_ranks={1: 1, 2: 2, 3: 4, 4: 3})
+    # 2020 has NO final standings from ESPN -> override supplies them
+    s20 = raw_season(2020,
+                     [("Able Bodies", ["{A2}"]), ("Bob Squad", ["{B}"]), ("Cats", ["{C}"]), ("Dans", ["{D}"])],
+                     [(1, 2, 88.0, 110.0, 1), (3, 4, 70.0, 75.0, 1), (1, 3, 200.0, 60.0, 2), (2, 4, 105.0, 104.0, 2),
+                      (2, 1, 120.0, 119.0, 3)],
+                     members)
+    (overrides / "2020.yml").write_text(yaml.safe_dump({
+        "season": 2020, "champion": "bob", "runner_up": "ann", "final_standings": ["bob", "ann", "dan-dole", "cat-cole"],
+        "champion_roster": [{"player": "Old Guy", "position": "QB", "nfl_team": "GB", "slot": "QB", "points": 20}],
+    }))
+    owner_map = normalize.OwnerMap(normalize.load_yaml(owners_file), real_data=True)
+    seasons = [normalize.normalize_season(s19, owner_map), normalize.normalize_season(s20, owner_map)]
+    owner_map.save()
+    owners = normalize.build_owners(seasons, owner_map)
+    return seasons, owners, owner_map
+
+
+def test_owner_merge_across_swids_and_team_names(league):
+    seasons, owners, owner_map = league
+    ann = next(o for o in owners if o["key"] == "ann")
+    assert ann["seasons"] == [2019, 2020]
+    assert {v["name"] for v in ann["teamNames"].values()} == {"Ann's Army", "Able Bodies"}
+    careers = build_careers(seasons, owners)
+    c = next(c for c in careers if c["ownerKey"] == "ann")
+    assert c["seasons"] == 2
+    assert (c["wins"], c["losses"]) == (2 + 1, 0 + 1)
+    assert c["titles"] == [2019] and c["runnerUps"] == [2020]
+
+
+def test_unknown_swids_get_stubs(league):
+    seasons, owners, owner_map = league
+    keys = {o["key"] for o in owners}
+    assert "cat-cole" in keys and "dan-dole" in keys
+    assert any(o.get("auto") for o in owner_map.owners)
+
+
+def test_override_supplies_standings_and_roster(league):
+    seasons, owners, _ = league
+    s20 = seasons[1]
+    assert s20["honors"]["champion"] == "bob"
+    assert s20["honors"]["runnerUp"] == "ann"
+    assert s20["honors"]["lastPlace"] == "cat-cole"
+    assert s20["championRosterSource"] == "override"
+    assert s20["championRoster"][0]["name"] == "Old Guy"
+    assert s20["coverage"]["fields"]["finalStandings"] == "full"
+    assert s20["coverage"]["tier"] == "full"
+    # 2019 title-week roster falls back to final roster since no box scores
+    assert seasons[0]["championRosterSource"] == "final-roster"
+
+
+def test_records_and_h2h(league):
+    seasons, owners, _ = league
+    careers = build_careers(seasons, owners)
+    luck = build_luck(seasons)
+    records = {r["id"]: r for r in build_records(seasons, careers, luck)}
+    hi = records["high-score"]["entries"][0]
+    assert hi["ownerKey"] == "ann" and hi["value"] == 200.0 and hi["year"] == 2020
+    closest = records["closest"]["entries"][0]
+    assert closest["value"] == 0.5
+    h2h = build_h2h(seasons, owners)["matrix"]
+    ab, ba = h2h["ann"]["bob"], h2h["bob"]["ann"]
+    assert ab["games"] == ba["games"] == 4
+    assert ab["wins"] == ba["losses"] and ab["losses"] == ba["wins"]
+    assert ab["playoffWins"] == 1 and ab["playoffLosses"] == 1
+
+
+def test_streaks_and_team_seasons(league):
+    seasons, owners, _ = league
+    careers = {c["ownerKey"]: c for c in build_careers(seasons, owners)}
+    assert careers["ann"]["longestWinStreak"]["length"] == 3
+    ts = build_team_seasons(seasons)
+    assert ts[0]["ownerKey"] == "ann" and ts[0]["year"] == 2019 and ts[0]["result"] == "champion"

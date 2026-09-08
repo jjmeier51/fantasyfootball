@@ -1,0 +1,65 @@
+{
+ "leagueName": "League of Gangstars",
+ "lastSynced": "2026-09-08T03:27:55.666580+00:00",
+ "generatedAt": "2026-09-08T03:27:56.296353+00:00",
+ "seasons": [
+  2010,
+  2011,
+  2012,
+  2013,
+  2014,
+  2015,
+  2016,
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "firstSeason": 2010,
+ "currentSeason": 2026,
+ "currentSeasonComplete": false,
+ "currentWeek": 2,
+ "isSample": true,
+ "coverage": {
+  "2010": "full",
+  "2011": "full",
+  "2012": "full",
+  "2013": "full",
+  "2014": "full",
+  "2015": "full",
+  "2016": "full",
+  "2017": "full",
+  "2018": "full",
+  "2019": "full",
+  "2020": "full",
+  "2021": "full",
+  "2022": "full",
+  "2023": "full",
+  "2024": "full",
+  "2025": "full",
+  "2026": "full"
+ },
+ "screenshotsNeeded": {},
+ "warnings": [
+  {
+   "year": 2010,
+   "message": "ESPN returned no draft detail for 2010 (sample gap)"
+  },
+  {
+   "year": 2011,
+   "message": "ESPN returned no final standings for 2011 (sample gap; see sync/overrides/2011.yml)"
+  }
+ ],
+ "counts": {
+  "owners": 12,
+  "games": 1358,
+  "facts": 143,
+  "records": 36
+ }
+}

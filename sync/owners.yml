@@ -1,0 +1,89 @@
+# Owner identity map. Each owner may have several ESPN accounts (swids) and
+# many team names over the years; all stats stick to the `key`.
+# Entries marked `sample: true` are demo data and are dropped once real ESPN data exists.
+owners:
+- key: johnny
+  name: Johnny
+  swids:
+  - '{SAMPLE-0000-0}'
+  color: '#b91c1c'
+  active: true
+  sample: true
+- key: caleb
+  name: Caleb
+  swids:
+  - '{SAMPLE-0001-0}'
+  color: '#1d4ed8'
+  active: true
+  sample: true
+- key: nick
+  name: Nick
+  swids:
+  - '{SAMPLE-0002-0}'
+  color: '#047857'
+  active: true
+  sample: true
+- key: mike
+  name: Mike
+  swids:
+  - '{SAMPLE-0003-0}'
+  color: '#7c3aed'
+  active: true
+  sample: true
+- key: tyler
+  name: Tyler
+  swids:
+  - '{SAMPLE-0004-0}'
+  color: '#c2410c'
+  active: true
+  sample: true
+- key: danny
+  name: Danny
+  swids:
+  - '{SAMPLE-0005-0}'
+  color: '#0e7490'
+  active: true
+  sample: true
+- key: kevin
+  name: Kevin
+  swids:
+  - '{SAMPLE-0006-0}'
+  color: '#be123c'
+  active: true
+  sample: true
+- key: brandon
+  name: Brandon
+  swids:
+  - '{SAMPLE-0007-0}'
+  color: '#4d7c0f'
+  active: true
+  sample: true
+- key: eric
+  name: Eric
+  swids:
+  - '{SAMPLE-0008-0}'
+  color: '#6d28d9'
+  active: true
+  sample: true
+- key: sean
+  name: Sean
+  swids:
+  - '{SAMPLE-0009-0}'
+  color: '#0369a1'
+  active: true
+  sample: true
+- key: alex
+  name: Alex
+  swids:
+  - '{SAMPLE-0010-0}'
+  - '{SAMPLE-0010-1}'
+  color: '#a16207'
+  active: true
+  sample: true
+- key: chris
+  name: Chris
+  swids:
+  - '{SAMPLE-0011-0}'
+  color: '#374151'
+  active: true
+  sample: true

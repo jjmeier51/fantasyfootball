@@ -7,13 +7,13 @@
    "weeklyScores": "full",
    "finalStandings": "full",
    "champion": "full",
-   "draft": "missing",
-   "logos": "full",
+   "draft": "full",
+   "logos": "missing",
    "boxscores": "n/a"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2011": {
   "fields": {
@@ -24,12 +24,12 @@
    "finalStandings": "full",
    "champion": "full",
    "draft": "full",
-   "logos": "full",
+   "logos": "missing",
    "boxscores": "n/a"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2012": {
   "fields": {
@@ -40,12 +40,12 @@
    "finalStandings": "full",
    "champion": "full",
    "draft": "full",
-   "logos": "full",
+   "logos": "missing",
    "boxscores": "n/a"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2013": {
   "fields": {
@@ -56,12 +56,12 @@
    "finalStandings": "full",
    "champion": "full",
    "draft": "full",
-   "logos": "full",
+   "logos": "partial",
    "boxscores": "n/a"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2014": {
   "fields": {
@@ -72,12 +72,12 @@
    "finalStandings": "full",
    "champion": "full",
    "draft": "full",
-   "logos": "full",
+   "logos": "partial",
    "boxscores": "n/a"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2015": {
   "fields": {
@@ -88,12 +88,12 @@
    "finalStandings": "full",
    "champion": "full",
    "draft": "full",
-   "logos": "full",
+   "logos": "partial",
    "boxscores": "n/a"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2016": {
   "fields": {
@@ -104,12 +104,12 @@
    "finalStandings": "full",
    "champion": "full",
    "draft": "full",
-   "logos": "full",
+   "logos": "partial",
    "boxscores": "n/a"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2017": {
   "fields": {
@@ -120,12 +120,12 @@
    "finalStandings": "full",
    "champion": "full",
    "draft": "full",
-   "logos": "full",
+   "logos": "partial",
    "boxscores": "n/a"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2018": {
   "fields": {
@@ -136,12 +136,12 @@
    "finalStandings": "full",
    "champion": "full",
    "draft": "full",
-   "logos": "full",
+   "logos": "partial",
    "boxscores": "n/a"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2019": {
   "fields": {
@@ -152,12 +152,12 @@
    "finalStandings": "full",
    "champion": "full",
    "draft": "full",
-   "logos": "full",
+   "logos": "partial",
    "boxscores": "full"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2020": {
   "fields": {
@@ -168,12 +168,12 @@
    "finalStandings": "full",
    "champion": "full",
    "draft": "full",
-   "logos": "full",
+   "logos": "partial",
    "boxscores": "full"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2021": {
   "fields": {
@@ -184,12 +184,12 @@
    "finalStandings": "full",
    "champion": "full",
    "draft": "full",
-   "logos": "full",
+   "logos": "partial",
    "boxscores": "full"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2022": {
   "fields": {
@@ -200,12 +200,12 @@
    "finalStandings": "full",
    "champion": "full",
    "draft": "full",
-   "logos": "full",
+   "logos": "partial",
    "boxscores": "full"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2023": {
   "fields": {
@@ -216,12 +216,12 @@
    "finalStandings": "full",
    "champion": "full",
    "draft": "full",
-   "logos": "full",
+   "logos": "partial",
    "boxscores": "full"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2024": {
   "fields": {
@@ -232,12 +232,12 @@
    "finalStandings": "full",
    "champion": "full",
    "draft": "full",
-   "logos": "full",
+   "logos": "partial",
    "boxscores": "full"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2025": {
   "fields": {
@@ -248,27 +248,27 @@
    "finalStandings": "full",
    "champion": "full",
    "draft": "full",
-   "logos": "full",
+   "logos": "partial",
    "boxscores": "full"
   },
   "tier": "full",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  },
  "2026": {
   "fields": {
    "settings": "full",
-   "teams": "full",
+   "teams": "partial",
    "owners": "full",
-   "weeklyScores": "full",
+   "weeklyScores": "n/a",
    "finalStandings": "n/a",
    "champion": "n/a",
    "draft": "full",
-   "logos": "full",
-   "boxscores": "full"
+   "logos": "partial",
+   "boxscores": "n/a"
   },
-  "tier": "full",
+  "tier": "partial",
   "screenshotsNeeded": [],
-  "source": "sample"
+  "source": "espn"
  }
 }

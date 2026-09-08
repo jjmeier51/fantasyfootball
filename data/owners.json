@@ -1,11 +1,11 @@
 {
  "owners": [
   {
-   "key": "johnny",
-   "name": "Johnny",
-   "color": "#b91c1c",
+   "key": "tyler-small",
+   "name": "Tyler",
+   "color": null,
    "swids": [
-    "{SAMPLE-0000-0}"
+    "{1E50E876-951E-4524-BCBA-2038B98C1108}"
    ],
    "active": true,
    "seasons": [
@@ -31,265 +31,156 @@
    "lastSeason": 2026,
    "teamNames": {
     "2010": {
-     "name": "Vick in a Box",
-     "abbrev": "VIAB",
+     "name": "sweat-T SMALLballs",
+     "abbrev": "TBRD",
      "teamId": 1
     },
     "2011": {
-     "name": "Vick in a Box",
-     "abbrev": "VIAB",
+     "name": "T Smalls",
+     "abbrev": "T",
      "teamId": 1
     },
     "2012": {
-     "name": "Vick in a Box",
-     "abbrev": "VIAB",
+     "name": "T Smalls",
+     "abbrev": "T",
      "teamId": 1
     },
     "2013": {
-     "name": "Vick in a Box",
-     "abbrev": "VIAB",
+     "name": "T Smalls",
+     "abbrev": "T",
      "teamId": 1
     },
     "2014": {
-     "name": "Vick in a Box",
-     "abbrev": "VIAB",
+     "name": "T Smalls",
+     "abbrev": "T",
      "teamId": 1
     },
     "2015": {
-     "name": "Johnny's Juggernauts",
-     "abbrev": "JJ",
+     "name": "T Smalls",
+     "abbrev": "T",
      "teamId": 1
     },
     "2016": {
-     "name": "Johnny's Juggernauts",
-     "abbrev": "JJ",
+     "name": "Tyrod HAILors",
+     "abbrev": "T",
      "teamId": 1
     },
     "2017": {
-     "name": "Johnny's Juggernauts",
-     "abbrev": "JJ",
+     "name": "Tyrod HAILors",
+     "abbrev": "T",
      "teamId": 1
     },
     "2018": {
-     "name": "Johnny's Juggernauts",
-     "abbrev": "JJ",
+     "name": "Doyle RULESSSSS!",
+     "abbrev": "T",
      "teamId": 1
     },
     "2019": {
-     "name": "Johnny's Juggernauts",
-     "abbrev": "JJ",
+     "name": "Doyle RULESSSSS!",
+     "abbrev": "T",
      "teamId": 1
     },
     "2020": {
-     "name": "Meier Time",
-     "abbrev": "MT",
+     "name": "Doyle RULESSSSS!",
+     "abbrev": "T",
      "teamId": 1
     },
     "2021": {
-     "name": "Meier Time",
-     "abbrev": "MT",
+     "name": "Doyle RULESSSSS!",
+     "abbrev": "T",
      "teamId": 1
     },
     "2022": {
-     "name": "Meier Time",
-     "abbrev": "MT",
+     "name": "Team Quarter Chubb",
+     "abbrev": "T",
      "teamId": 1
     },
     "2023": {
-     "name": "Meier Time",
-     "abbrev": "MT",
+     "name": "Scary Terry and the Commies",
+     "abbrev": "T",
      "teamId": 1
     },
     "2024": {
-     "name": "Meier Time",
-     "abbrev": "MT",
+     "name": "Scary Terry and the Commies",
+     "abbrev": "T",
      "teamId": 1
     },
     "2025": {
-     "name": "Meier Time",
-     "abbrev": "MT",
+     "name": "Chubba Hubbas",
+     "abbrev": "T",
      "teamId": 1
     },
     "2026": {
-     "name": "Meier Time",
-     "abbrev": "MT",
+     "name": "T Smalls",
+     "abbrev": "T",
      "teamId": 1
     }
    },
    "logos": {
-    "2010": "/logos/2010/1.svg",
-    "2011": "/logos/2011/1.svg",
-    "2012": "/logos/2012/1.svg",
-    "2013": "/logos/2013/1.svg",
-    "2014": "/logos/2014/1.svg",
-    "2015": "/logos/2015/1.svg",
-    "2016": "/logos/2016/1.svg",
-    "2017": "/logos/2017/1.svg",
-    "2018": "/logos/2018/1.svg",
-    "2019": "/logos/2019/1.svg",
-    "2020": "/logos/2020/1.svg",
-    "2021": "/logos/2021/1.svg",
-    "2022": "/logos/2022/1.svg",
-    "2023": "/logos/2023/1.svg",
-    "2024": "/logos/2024/1.svg",
-    "2025": "/logos/2025/1.svg",
-    "2026": "/logos/2026/1.svg"
+    "2023": "/logos/2023/1.jpg",
+    "2024": "/logos/2024/1.jpg"
    },
-   "currentLogo": "/logos/2026/1.svg",
+   "currentLogo": "/logos/2024/1.jpg",
    "titles": [
-    2011,
-    2015,
-    2017,
-    2018,
-    2021
+    2012
    ]
   },
   {
-   "key": "caleb",
-   "name": "Caleb",
-   "color": "#1d4ed8",
+   "key": "shane-vlasic",
+   "name": "SHane",
+   "color": null,
    "swids": [
-    "{SAMPLE-0001-0}"
+    "{5E47899F-1AD7-4E25-91B0-E6BCADCC3DAF}"
    ],
-   "active": true,
+   "active": false,
    "seasons": [
     2010,
     2011,
     2012,
     2013,
-    2014,
-    2015,
-    2016,
-    2017,
-    2018,
-    2019,
-    2020,
-    2021,
-    2022,
-    2023,
-    2024,
-    2025,
-    2026
+    2014
    ],
    "firstSeason": 2010,
-   "lastSeason": 2026,
+   "lastSeason": 2014,
    "teamNames": {
     "2010": {
-     "name": "Stone Cold Kickers",
-     "abbrev": "SCK",
+     "name": "Russel and Flow Lawlz",
+     "abbrev": "MEIE",
      "teamId": 2
     },
     "2011": {
-     "name": "Stone Cold Kickers",
-     "abbrev": "SCK",
+     "name": "Russel and Flow Lawlz",
+     "abbrev": "MEIE",
      "teamId": 2
     },
     "2012": {
-     "name": "Stone Cold Kickers",
-     "abbrev": "SCK",
+     "name": "Beat Squad BEAT",
+     "abbrev": "SLIM",
      "teamId": 2
     },
     "2013": {
-     "name": "Stone Cold Kickers",
-     "abbrev": "SCK",
+     "name": "Smalls has a  Mangina",
+     "abbrev": "SLIM",
      "teamId": 2
     },
     "2014": {
-     "name": "Stone Cold Kickers",
-     "abbrev": "SCK",
-     "teamId": 2
-    },
-    "2015": {
-     "name": "Caleb's Crushers",
-     "abbrev": "CC",
-     "teamId": 2
-    },
-    "2016": {
-     "name": "Caleb's Crushers",
-     "abbrev": "CC",
-     "teamId": 2
-    },
-    "2017": {
-     "name": "Caleb's Crushers",
-     "abbrev": "CC",
-     "teamId": 2
-    },
-    "2018": {
-     "name": "Caleb's Crushers",
-     "abbrev": "CC",
-     "teamId": 2
-    },
-    "2019": {
-     "name": "Caleb's Crushers",
-     "abbrev": "CC",
-     "teamId": 2
-    },
-    "2020": {
-     "name": "Caleb's Crushers",
-     "abbrev": "CC",
-     "teamId": 2
-    },
-    "2021": {
-     "name": "Caleb's Crushers",
-     "abbrev": "CC",
-     "teamId": 2
-    },
-    "2022": {
-     "name": "Caleb's Crushers",
-     "abbrev": "CC",
-     "teamId": 2
-    },
-    "2023": {
-     "name": "Caleb's Crushers",
-     "abbrev": "CC",
-     "teamId": 2
-    },
-    "2024": {
-     "name": "Caleb's Crushers",
-     "abbrev": "CC",
-     "teamId": 2
-    },
-    "2025": {
-     "name": "Caleb's Crushers",
-     "abbrev": "CC",
-     "teamId": 2
-    },
-    "2026": {
-     "name": "Caleb's Crushers",
-     "abbrev": "CC",
+     "name": "Smalls has a  Mangina",
+     "abbrev": "SLIM",
      "teamId": 2
     }
    },
-   "logos": {
-    "2010": "/logos/2010/2.svg",
-    "2011": "/logos/2011/2.svg",
-    "2012": "/logos/2012/2.svg",
-    "2013": "/logos/2013/2.svg",
-    "2014": "/logos/2014/2.svg",
-    "2015": "/logos/2015/2.svg",
-    "2016": "/logos/2016/2.svg",
-    "2017": "/logos/2017/2.svg",
-    "2018": "/logos/2018/2.svg",
-    "2019": "/logos/2019/2.svg",
-    "2020": "/logos/2020/2.svg",
-    "2021": "/logos/2021/2.svg",
-    "2022": "/logos/2022/2.svg",
-    "2023": "/logos/2023/2.svg",
-    "2024": "/logos/2024/2.svg",
-    "2025": "/logos/2025/2.svg",
-    "2026": "/logos/2026/2.svg"
-   },
-   "currentLogo": "/logos/2026/2.svg",
+   "logos": {},
+   "currentLogo": null,
    "titles": []
   },
   {
-   "key": "nick",
-   "name": "Nick",
-   "color": "#047857",
+   "key": "chase-warren",
+   "name": "Chase",
+   "color": null,
    "swids": [
-    "{SAMPLE-0002-0}"
+    "{0A86415D-BA5C-44A1-A904-C04D738E88F6}"
    ],
-   "active": true,
+   "active": false,
    "seasons": [
     2010,
     2011,
@@ -303,107 +194,78 @@
     2019,
     2020,
     2021,
-    2022,
-    2023,
-    2024,
-    2025,
-    2026
+    2022
    ],
    "firstSeason": 2010,
-   "lastSeason": 2026,
+   "lastSeason": 2022,
    "teamNames": {
     "2010": {
-     "name": "Big Blue Wrecking Crew",
-     "abbrev": "BBWC",
+     "name": "Team SypHILLIS",
+     "abbrev": "BANG",
      "teamId": 3
     },
     "2011": {
-     "name": "Big Blue Wrecking Crew",
-     "abbrev": "BBWC",
+     "name": "Team SypHILLIS",
+     "abbrev": "BANG",
      "teamId": 3
     },
     "2012": {
-     "name": "Big Blue Wrecking Crew",
-     "abbrev": "BBWC",
+     "name": "Lickity Split",
+     "abbrev": "SLAP",
      "teamId": 3
     },
     "2013": {
-     "name": "Big Blue Wrecking Crew",
-     "abbrev": "BBWC",
+     "name": "Lickity Split",
+     "abbrev": "SLAP",
      "teamId": 3
     },
     "2014": {
-     "name": "Big Blue Wrecking Crew",
-     "abbrev": "BBWC",
+     "name": "Lickity Split",
+     "abbrev": "SLAP",
      "teamId": 3
     },
     "2015": {
-     "name": "G-Men Forever",
-     "abbrev": "GF",
+     "name": "Lickity Split",
+     "abbrev": "SLAP",
      "teamId": 3
     },
     "2016": {
-     "name": "G-Men Forever",
-     "abbrev": "GF",
+     "name": "Lickity Split",
+     "abbrev": "SLAP",
      "teamId": 3
     },
     "2017": {
-     "name": "G-Men Forever",
-     "abbrev": "GF",
+     "name": "Lickity Split",
+     "abbrev": "SLAP",
      "teamId": 3
     },
     "2018": {
-     "name": "G-Men Forever",
-     "abbrev": "GF",
+     "name": "Lickity Split",
+     "abbrev": "SLAP",
      "teamId": 3
     },
     "2019": {
-     "name": "G-Men Forever",
-     "abbrev": "GF",
+     "name": "Lickity Split",
+     "abbrev": "SLAP",
      "teamId": 3
     },
     "2020": {
-     "name": "G-Men Forever",
-     "abbrev": "GF",
+     "name": "Lickity Split",
+     "abbrev": "SLAP",
      "teamId": 3
     },
     "2021": {
-     "name": "G-Men Forever",
-     "abbrev": "GF",
+     "name": "Lickity Split",
+     "abbrev": "SLAP",
      "teamId": 3
     },
     "2022": {
-     "name": "G-Men Forever",
-     "abbrev": "GF",
-     "teamId": 3
-    },
-    "2023": {
-     "name": "G-Men Forever",
-     "abbrev": "GF",
-     "teamId": 3
-    },
-    "2024": {
-     "name": "G-Men Forever",
-     "abbrev": "GF",
-     "teamId": 3
-    },
-    "2025": {
-     "name": "G-Men Forever",
-     "abbrev": "GF",
-     "teamId": 3
-    },
-    "2026": {
-     "name": "G-Men Forever",
-     "abbrev": "GF",
+     "name": "Lickity Split",
+     "abbrev": "SLAP",
      "teamId": 3
     }
    },
    "logos": {
-    "2010": "/logos/2010/3.svg",
-    "2011": "/logos/2011/3.svg",
-    "2012": "/logos/2012/3.svg",
-    "2013": "/logos/2013/3.svg",
-    "2014": "/logos/2014/3.svg",
     "2015": "/logos/2015/3.svg",
     "2016": "/logos/2016/3.svg",
     "2017": "/logos/2017/3.svg",
@@ -411,23 +273,19 @@
     "2019": "/logos/2019/3.svg",
     "2020": "/logos/2020/3.svg",
     "2021": "/logos/2021/3.svg",
-    "2022": "/logos/2022/3.svg",
-    "2023": "/logos/2023/3.svg",
-    "2024": "/logos/2024/3.svg",
-    "2025": "/logos/2025/3.svg",
-    "2026": "/logos/2026/3.svg"
+    "2022": "/logos/2022/3.svg"
    },
-   "currentLogo": "/logos/2026/3.svg",
+   "currentLogo": "/logos/2022/3.svg",
    "titles": [
-    2012
+    2010
    ]
   },
   {
-   "key": "mike",
-   "name": "Mike",
-   "color": "#7c3aed",
+   "key": "drew-matteo",
+   "name": "Drew",
+   "color": null,
    "swids": [
-    "{SAMPLE-0003-0}"
+    "{6BD55E7F-09BF-4862-A6C3-6203C7585F3D}"
    ],
    "active": true,
    "seasons": [
@@ -453,119 +311,119 @@
    "lastSeason": 2026,
    "teamNames": {
     "2010": {
-     "name": "Kelce's Kingdom",
-     "abbrev": "KK",
+     "name": "Victorious Secret",
+     "abbrev": "TITS",
      "teamId": 4
     },
     "2011": {
-     "name": "Kelce's Kingdom",
-     "abbrev": "KK",
+     "name": "1st Down Syndrome",
+     "abbrev": "meat",
      "teamId": 4
     },
     "2012": {
-     "name": "Kelce's Kingdom",
-     "abbrev": "KK",
+     "name": "1st Down Syndrome",
+     "abbrev": "poop",
      "teamId": 4
     },
     "2013": {
-     "name": "Kelce's Kingdom",
-     "abbrev": "KK",
+     "name": "1st Down Syndrome",
+     "abbrev": "poop",
      "teamId": 4
     },
     "2014": {
-     "name": "Kelce's Kingdom",
-     "abbrev": "KK",
+     "name": "Off In  Church",
+     "abbrev": "poop",
      "teamId": 4
     },
     "2015": {
-     "name": "Chen Dynasty",
-     "abbrev": "CD",
+     "name": "Off In  Church",
+     "abbrev": "poop",
      "teamId": 4
     },
     "2016": {
-     "name": "Chen Dynasty",
-     "abbrev": "CD",
+     "name": "Off In  Church",
+     "abbrev": "poop",
      "teamId": 4
     },
     "2017": {
-     "name": "Chen Dynasty",
-     "abbrev": "CD",
+     "name": "Off In  Church",
+     "abbrev": "poop",
      "teamId": 4
     },
     "2018": {
-     "name": "Chen Dynasty",
-     "abbrev": "CD",
+     "name": "Off In  Church",
+     "abbrev": "poop",
      "teamId": 4
     },
     "2019": {
-     "name": "Chen Dynasty",
-     "abbrev": "CD",
+     "name": "Off In  Church",
+     "abbrev": "poop",
      "teamId": 4
     },
     "2020": {
-     "name": "Chen Dynasty",
-     "abbrev": "CD",
+     "name": "Off In  Church",
+     "abbrev": "poop",
      "teamId": 4
     },
     "2021": {
-     "name": "Chen Dynasty",
-     "abbrev": "CD",
+     "name": "Off In  Church",
+     "abbrev": "poop",
      "teamId": 4
     },
     "2022": {
-     "name": "Chen Dynasty",
-     "abbrev": "CD",
+     "name": "Off In  Church",
+     "abbrev": "poop",
      "teamId": 4
     },
     "2023": {
-     "name": "Chen Dynasty",
-     "abbrev": "CD",
+     "name": "Off In  Church",
+     "abbrev": "poop",
      "teamId": 4
     },
     "2024": {
-     "name": "Chen Dynasty",
-     "abbrev": "CD",
+     "name": "Off In  Church",
+     "abbrev": "poop",
      "teamId": 4
     },
     "2025": {
-     "name": "Chen Dynasty",
-     "abbrev": "CD",
+     "name": "Off In  Church",
+     "abbrev": "poop",
      "teamId": 4
     },
     "2026": {
-     "name": "Chen Dynasty",
-     "abbrev": "CD",
+     "name": "Off In  Church",
+     "abbrev": "poop",
      "teamId": 4
     }
    },
    "logos": {
-    "2010": "/logos/2010/4.svg",
-    "2011": "/logos/2011/4.svg",
-    "2012": "/logos/2012/4.svg",
-    "2013": "/logos/2013/4.svg",
-    "2014": "/logos/2014/4.svg",
-    "2015": "/logos/2015/4.svg",
-    "2016": "/logos/2016/4.svg",
-    "2017": "/logos/2017/4.svg",
-    "2018": "/logos/2018/4.svg",
-    "2019": "/logos/2019/4.svg",
-    "2020": "/logos/2020/4.svg",
-    "2021": "/logos/2021/4.svg",
-    "2022": "/logos/2022/4.svg",
-    "2023": "/logos/2023/4.svg",
-    "2024": "/logos/2024/4.svg",
-    "2025": "/logos/2025/4.svg",
-    "2026": "/logos/2026/4.svg"
+    "2013": "/logos/2013/4.jpg",
+    "2014": "/logos/2014/4.jpg",
+    "2015": "/logos/2015/4.jpg",
+    "2016": "/logos/2016/4.jpg",
+    "2017": "/logos/2017/4.jpg",
+    "2018": "/logos/2018/4.jpg",
+    "2019": "/logos/2019/4.jpg",
+    "2020": "/logos/2020/4.jpg",
+    "2021": "/logos/2021/4.jpg",
+    "2022": "/logos/2022/4.jpg",
+    "2023": "/logos/2023/4.jpg",
+    "2024": "/logos/2024/4.jpg",
+    "2025": "/logos/2025/4.jpg",
+    "2026": "/logos/2026/4.jpg"
    },
-   "currentLogo": "/logos/2026/4.svg",
-   "titles": []
+   "currentLogo": "/logos/2026/4.jpg",
+   "titles": [
+    2014,
+    2024
+   ]
   },
   {
-   "key": "tyler",
-   "name": "Tyler",
-   "color": "#c2410c",
+   "key": "john-meier",
+   "name": "John",
+   "color": null,
    "swids": [
-    "{SAMPLE-0004-0}"
+    "{3F446563-718C-429D-8806-008711337B0A}"
    ],
    "active": true,
    "seasons": [
@@ -591,105 +449,94 @@
    "lastSeason": 2026,
    "teamNames": {
     "2010": {
-     "name": "Brooks Was Here",
-     "abbrev": "BWH",
+     "name": "Clay Matthews Band",
+     "abbrev": "JJM",
      "teamId": 5
     },
     "2011": {
-     "name": "Brooks Was Here",
-     "abbrev": "BWH",
+     "name": "Show Me Them TD's",
+     "abbrev": "JM",
      "teamId": 5
     },
     "2012": {
-     "name": "Brooks Was Here",
-     "abbrev": "BWH",
+     "name": "Show Me Them TD's",
+     "abbrev": "JM",
      "teamId": 5
     },
     "2013": {
-     "name": "Brooks Was Here",
-     "abbrev": "BWH",
+     "name": "Vick In A Box",
+     "abbrev": "JMEI",
      "teamId": 5
     },
     "2014": {
-     "name": "Brooks Was Here",
-     "abbrev": "BWH",
+     "name": "Vick In A Box",
+     "abbrev": "JMEI",
      "teamId": 5
     },
     "2015": {
-     "name": "Show Me The Mahomes",
-     "abbrev": "SMTM",
+     "name": "Vick In A Box",
+     "abbrev": "JMEI",
      "teamId": 5
     },
     "2016": {
-     "name": "Show Me The Mahomes",
-     "abbrev": "SMTM",
+     "name": "Clinton-Dix Out For Harambe",
+     "abbrev": "RIP",
      "teamId": 5
     },
     "2017": {
-     "name": "Show Me The Mahomes",
-     "abbrev": "SMTM",
+     "name": "Ertz Wentz and Fire",
+     "abbrev": "EWF",
      "teamId": 5
     },
     "2018": {
-     "name": "Show Me The Mahomes",
-     "abbrev": "SMTM",
+     "name": "Ertz Wentz and Fire",
+     "abbrev": "EWF",
      "teamId": 5
     },
     "2019": {
-     "name": "Show Me The Mahomes",
-     "abbrev": "SMTM",
+     "name": "Dude Where's Lamar",
+     "abbrev": "DWL",
      "teamId": 5
     },
     "2020": {
-     "name": "Show Me The Mahomes",
-     "abbrev": "SMTM",
+     "name": "Dude Where's Lamar",
+     "abbrev": "DWL",
      "teamId": 5
     },
     "2021": {
-     "name": "Show Me The Mahomes",
-     "abbrev": "SMTM",
+     "name": "Dude Where's Lamar",
+     "abbrev": "DWL",
      "teamId": 5
     },
     "2022": {
-     "name": "Show Me The Mahomes",
-     "abbrev": "SMTM",
+     "name": "Gisele Bad But My Younghoe Koo",
+     "abbrev": "COOK",
      "teamId": 5
     },
     "2023": {
-     "name": "Show Me The Mahomes",
-     "abbrev": "SMTM",
+     "name": "Lawrence of Amon-RaBia",
+     "abbrev": "JMEI",
      "teamId": 5
     },
     "2024": {
-     "name": "Show Me The Mahomes",
-     "abbrev": "SMTM",
+     "name": "Johnny's Tsunami",
+     "abbrev": "JMEI",
      "teamId": 5
     },
     "2025": {
-     "name": "Show Me The Mahomes",
-     "abbrev": "SMTM",
+     "name": "Johnny's Tsunami",
+     "abbrev": "JMEI",
      "teamId": 5
     },
     "2026": {
-     "name": "Show Me The Mahomes",
-     "abbrev": "SMTM",
+     "name": "Johnny Football Club",
+     "abbrev": "JMEI",
      "teamId": 5
     }
    },
    "logos": {
-    "2010": "/logos/2010/5.svg",
-    "2011": "/logos/2011/5.svg",
-    "2012": "/logos/2012/5.svg",
-    "2013": "/logos/2013/5.svg",
-    "2014": "/logos/2014/5.svg",
     "2015": "/logos/2015/5.svg",
     "2016": "/logos/2016/5.svg",
-    "2017": "/logos/2017/5.svg",
-    "2018": "/logos/2018/5.svg",
-    "2019": "/logos/2019/5.svg",
-    "2020": "/logos/2020/5.svg",
-    "2021": "/logos/2021/5.svg",
-    "2022": "/logos/2022/5.svg",
     "2023": "/logos/2023/5.svg",
     "2024": "/logos/2024/5.svg",
     "2025": "/logos/2025/5.svg",
@@ -697,15 +544,18 @@
    },
    "currentLogo": "/logos/2026/5.svg",
    "titles": [
-    2014
+    2013,
+    2017,
+    2019,
+    2023
    ]
   },
   {
-   "key": "danny",
-   "name": "Danny",
-   "color": "#0e7490",
+   "key": "kevin-mcgaughey",
+   "name": "Kevin",
+   "color": null,
    "swids": [
-    "{SAMPLE-0005-0}"
+    "{32C94A1A-FC90-465B-BAC8-E8A195FBACB2}"
    ],
    "active": true,
    "seasons": [
@@ -731,101 +581,92 @@
    "lastSeason": 2026,
    "teamNames": {
     "2010": {
-     "name": "Russo's Rejects",
-     "abbrev": "RR",
+     "name": "Bloodbath And Beyond",
+     "abbrev": "UGH",
      "teamId": 6
     },
     "2011": {
-     "name": "Russo's Rejects",
-     "abbrev": "RR",
+     "name": "Bloodbath And Beyond",
+     "abbrev": "UGH",
      "teamId": 6
     },
     "2012": {
-     "name": "Russo's Rejects",
-     "abbrev": "RR",
+     "name": "Bloodbath And Beyond",
+     "abbrev": "UGH",
      "teamId": 6
     },
     "2013": {
-     "name": "Russo's Rejects",
-     "abbrev": "RR",
+     "name": "Bloodbath And Beyond",
+     "abbrev": "UGH",
      "teamId": 6
     },
     "2014": {
-     "name": "Russo's Rejects",
-     "abbrev": "RR",
+     "name": "Bloodbath And Beyond",
+     "abbrev": "UGH",
      "teamId": 6
     },
     "2015": {
-     "name": "The Sacko Kings",
-     "abbrev": "TSK",
+     "name": "God Hates Jags",
+     "abbrev": "twat",
      "teamId": 6
     },
     "2016": {
-     "name": "The Sacko Kings",
-     "abbrev": "TSK",
+     "name": "God Hates Jags",
+     "abbrev": "twat",
      "teamId": 6
     },
     "2017": {
-     "name": "The Sacko Kings",
-     "abbrev": "TSK",
+     "name": "God Hates Jags",
+     "abbrev": "twat",
      "teamId": 6
     },
     "2018": {
-     "name": "The Sacko Kings",
-     "abbrev": "TSK",
+     "name": "God Hates Jags",
+     "abbrev": "twat",
      "teamId": 6
     },
     "2019": {
-     "name": "The Sacko Kings",
-     "abbrev": "TSK",
+     "name": "God Hates Jags",
+     "abbrev": "twat",
      "teamId": 6
     },
     "2020": {
-     "name": "The Sacko Kings",
-     "abbrev": "TSK",
+     "name": "God Hates Jags",
+     "abbrev": "twat",
      "teamId": 6
     },
     "2021": {
-     "name": "The Sacko Kings",
-     "abbrev": "TSK",
+     "name": "God Hates Jags",
+     "abbrev": "twat",
      "teamId": 6
     },
     "2022": {
-     "name": "The Sacko Kings",
-     "abbrev": "TSK",
+     "name": "God Hates Jags",
+     "abbrev": "twat",
      "teamId": 6
     },
     "2023": {
-     "name": "The Sacko Kings",
-     "abbrev": "TSK",
+     "name": "God Hates Jags",
+     "abbrev": "twat",
      "teamId": 6
     },
     "2024": {
-     "name": "The Sacko Kings",
-     "abbrev": "TSK",
+     "name": "God Hates Jags",
+     "abbrev": "twat",
      "teamId": 6
     },
     "2025": {
-     "name": "The Sacko Kings",
-     "abbrev": "TSK",
+     "name": "God Hates Jags",
+     "abbrev": "twat",
      "teamId": 6
     },
     "2026": {
-     "name": "The Sacko Kings",
-     "abbrev": "TSK",
+     "name": "God Hates Jags",
+     "abbrev": "twat",
      "teamId": 6
     }
    },
    "logos": {
-    "2010": "/logos/2010/6.svg",
-    "2011": "/logos/2011/6.svg",
-    "2012": "/logos/2012/6.svg",
-    "2013": "/logos/2013/6.svg",
-    "2014": "/logos/2014/6.svg",
-    "2015": "/logos/2015/6.svg",
-    "2016": "/logos/2016/6.svg",
-    "2017": "/logos/2017/6.svg",
-    "2018": "/logos/2018/6.svg",
     "2019": "/logos/2019/6.svg",
     "2020": "/logos/2020/6.svg",
     "2021": "/logos/2021/6.svg",
@@ -836,14 +677,19 @@
     "2026": "/logos/2026/6.svg"
    },
    "currentLogo": "/logos/2026/6.svg",
-   "titles": []
+   "titles": [
+    2011,
+    2016,
+    2020,
+    2025
+   ]
   },
   {
-   "key": "kevin",
-   "name": "Kevin",
-   "color": "#be123c",
+   "key": "ethan-miller",
+   "name": "ethan",
+   "color": null,
    "swids": [
-    "{SAMPLE-0006-0}"
+    "{2C6E8125-9689-4ED5-9CC1-4B7CDAC6A8C4}"
    ],
    "active": true,
    "seasons": [
@@ -869,101 +715,92 @@
    "lastSeason": 2026,
    "teamNames": {
     "2010": {
-     "name": "Boston Tea Party",
-     "abbrev": "BTP",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "Dime",
      "teamId": 7
     },
     "2011": {
-     "name": "Boston Tea Party",
-     "abbrev": "BTP",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "Dime",
      "teamId": 7
     },
     "2012": {
-     "name": "Boston Tea Party",
-     "abbrev": "BTP",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "Dime",
      "teamId": 7
     },
     "2013": {
-     "name": "Boston Tea Party",
-     "abbrev": "BTP",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "Dime",
      "teamId": 7
     },
     "2014": {
-     "name": "Boston Tea Party",
-     "abbrev": "BTP",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
      "teamId": 7
     },
     "2015": {
-     "name": "O'Neil Deal",
-     "abbrev": "OD",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
      "teamId": 7
     },
     "2016": {
-     "name": "O'Neil Deal",
-     "abbrev": "OD",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
      "teamId": 7
     },
     "2017": {
-     "name": "O'Neil Deal",
-     "abbrev": "OD",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
      "teamId": 7
     },
     "2018": {
-     "name": "O'Neil Deal",
-     "abbrev": "OD",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
      "teamId": 7
     },
     "2019": {
-     "name": "O'Neil Deal",
-     "abbrev": "OD",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
      "teamId": 7
     },
     "2020": {
-     "name": "O'Neil Deal",
-     "abbrev": "OD",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
      "teamId": 7
     },
     "2021": {
-     "name": "O'Neil Deal",
-     "abbrev": "OD",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
      "teamId": 7
     },
     "2022": {
-     "name": "O'Neil Deal",
-     "abbrev": "OD",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
      "teamId": 7
     },
     "2023": {
-     "name": "O'Neil Deal",
-     "abbrev": "OD",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
      "teamId": 7
     },
     "2024": {
-     "name": "O'Neil Deal",
-     "abbrev": "OD",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
      "teamId": 7
     },
     "2025": {
-     "name": "O'Neil Deal",
-     "abbrev": "OD",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
      "teamId": 7
     },
     "2026": {
-     "name": "O'Neil Deal",
-     "abbrev": "OD",
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
      "teamId": 7
     }
    },
    "logos": {
-    "2010": "/logos/2010/7.svg",
-    "2011": "/logos/2011/7.svg",
-    "2012": "/logos/2012/7.svg",
-    "2013": "/logos/2013/7.svg",
-    "2014": "/logos/2014/7.svg",
-    "2015": "/logos/2015/7.svg",
-    "2016": "/logos/2016/7.svg",
-    "2017": "/logos/2017/7.svg",
-    "2018": "/logos/2018/7.svg",
     "2019": "/logos/2019/7.svg",
     "2020": "/logos/2020/7.svg",
     "2021": "/logos/2021/7.svg",
@@ -975,20 +812,50 @@
    },
    "currentLogo": "/logos/2026/7.svg",
    "titles": [
-    2013,
-    2019
+    2015,
+    2018,
+    2022
    ]
   },
   {
-   "key": "brandon",
-   "name": "Brandon",
-   "color": "#4d7c0f",
+   "key": "jp-woodward",
+   "name": "JP",
+   "color": null,
    "swids": [
-    "{SAMPLE-0007-0}"
+    "{3C11D75D-7CD1-4370-8A5A-B7D3A39EF1C4}"
+   ],
+   "active": false,
+   "seasons": [
+    2010,
+    2011
+   ],
+   "firstSeason": 2010,
+   "lastSeason": 2011,
+   "teamNames": {
+    "2010": {
+     "name": "Team Woodward",
+     "abbrev": "WOOD",
+     "teamId": 8
+    },
+    "2011": {
+     "name": "Team Woodward",
+     "abbrev": "WOOD",
+     "teamId": 8
+    }
+   },
+   "logos": {},
+   "currentLogo": null,
+   "titles": []
+  },
+  {
+   "key": "caleb-dessalgne",
+   "name": "Caleb",
+   "color": null,
+   "swids": [
+    "{D67E52DA-C6E6-4B39-AAE2-184BD9A40B45}"
    ],
    "active": true,
    "seasons": [
-    2010,
     2011,
     2012,
     2013,
@@ -1006,242 +873,92 @@
     2025,
     2026
    ],
-   "firstSeason": 2010,
+   "firstSeason": 2011,
    "lastSeason": 2026,
    "teamNames": {
-    "2010": {
-     "name": "Hale Storm",
-     "abbrev": "HS",
-     "teamId": 8
-    },
     "2011": {
-     "name": "Hale Storm",
-     "abbrev": "HS",
-     "teamId": 8
-    },
-    "2012": {
-     "name": "Hale Storm",
-     "abbrev": "HS",
-     "teamId": 8
-    },
-    "2013": {
-     "name": "Hale Storm",
-     "abbrev": "HS",
-     "teamId": 8
-    },
-    "2014": {
-     "name": "Hale Storm",
-     "abbrev": "HS",
-     "teamId": 8
-    },
-    "2015": {
-     "name": "Hale Yeah",
-     "abbrev": "HY",
-     "teamId": 8
-    },
-    "2016": {
-     "name": "Hale Yeah",
-     "abbrev": "HY",
-     "teamId": 8
-    },
-    "2017": {
-     "name": "Hale Yeah",
-     "abbrev": "HY",
-     "teamId": 8
-    },
-    "2018": {
-     "name": "Hale Yeah",
-     "abbrev": "HY",
-     "teamId": 8
-    },
-    "2019": {
-     "name": "Hale Yeah",
-     "abbrev": "HY",
-     "teamId": 8
-    },
-    "2020": {
-     "name": "Hale Yeah",
-     "abbrev": "HY",
-     "teamId": 8
-    },
-    "2021": {
-     "name": "Hale Yeah",
-     "abbrev": "HY",
-     "teamId": 8
-    },
-    "2022": {
-     "name": "Hale Yeah",
-     "abbrev": "HY",
-     "teamId": 8
-    },
-    "2023": {
-     "name": "Hale Yeah",
-     "abbrev": "HY",
-     "teamId": 8
-    },
-    "2024": {
-     "name": "Hale Yeah",
-     "abbrev": "HY",
-     "teamId": 8
-    },
-    "2025": {
-     "name": "Hale Yeah",
-     "abbrev": "HY",
-     "teamId": 8
-    },
-    "2026": {
-     "name": "Hale Yeah",
-     "abbrev": "HY",
-     "teamId": 8
-    }
-   },
-   "logos": {
-    "2010": "/logos/2010/8.svg",
-    "2011": "/logos/2011/8.svg",
-    "2012": "/logos/2012/8.svg",
-    "2013": "/logos/2013/8.svg",
-    "2014": "/logos/2014/8.svg",
-    "2015": "/logos/2015/8.svg",
-    "2016": "/logos/2016/8.svg",
-    "2017": "/logos/2017/8.svg",
-    "2018": "/logos/2018/8.svg",
-    "2019": "/logos/2019/8.svg",
-    "2020": "/logos/2020/8.svg",
-    "2021": "/logos/2021/8.svg",
-    "2022": "/logos/2022/8.svg",
-    "2023": "/logos/2023/8.svg",
-    "2024": "/logos/2024/8.svg",
-    "2025": "/logos/2025/8.svg",
-    "2026": "/logos/2026/8.svg"
-   },
-   "currentLogo": "/logos/2026/8.svg",
-   "titles": [
-    2023,
-    2024
-   ]
-  },
-  {
-   "key": "eric",
-   "name": "Eric",
-   "color": "#6d28d9",
-   "swids": [
-    "{SAMPLE-0008-0}"
-   ],
-   "active": true,
-   "seasons": [
-    2010,
-    2011,
-    2012,
-    2013,
-    2014,
-    2015,
-    2016,
-    2017,
-    2018,
-    2019,
-    2020,
-    2021,
-    2022,
-    2023,
-    2024,
-    2025,
-    2026
-   ],
-   "firstSeason": 2010,
-   "lastSeason": 2026,
-   "teamNames": {
-    "2010": {
-     "name": "Park Place",
-     "abbrev": "PP",
-     "teamId": 9
-    },
-    "2011": {
-     "name": "Park Place",
-     "abbrev": "PP",
+     "name": "Token Brother",
+     "abbrev": "TOKE",
      "teamId": 9
     },
     "2012": {
-     "name": "Park Place",
-     "abbrev": "PP",
+     "name": "Token Brother",
+     "abbrev": "TOKE",
      "teamId": 9
     },
     "2013": {
-     "name": "Park Place",
-     "abbrev": "PP",
+     "name": "Token Brother",
+     "abbrev": "TOKE",
      "teamId": 9
     },
     "2014": {
-     "name": "Park Place",
-     "abbrev": "PP",
+     "name": "Twitter Facebook",
+     "abbrev": "Inst",
      "teamId": 9
     },
     "2015": {
-     "name": "Boardwalk Empire",
-     "abbrev": "BE",
+     "name": "AbsolutRedskins Nut",
+     "abbrev": "RNUT",
      "teamId": 9
     },
     "2016": {
-     "name": "Boardwalk Empire",
-     "abbrev": "BE",
+     "name": "AbsolutRedskins Nut",
+     "abbrev": "RNUT",
      "teamId": 9
     },
     "2017": {
-     "name": "Boardwalk Empire",
-     "abbrev": "BE",
+     "name": "AbsolutRedskins Nut",
+     "abbrev": "RNUT",
      "teamId": 9
     },
     "2018": {
-     "name": "Boardwalk Empire",
-     "abbrev": "BE",
+     "name": "AbsolutRedskins Nut",
+     "abbrev": "RNUT",
      "teamId": 9
     },
     "2019": {
-     "name": "Boardwalk Empire",
-     "abbrev": "BE",
+     "name": "AbsolutRedskins Nut",
+     "abbrev": "RNUT",
      "teamId": 9
     },
     "2020": {
-     "name": "Boardwalk Empire",
-     "abbrev": "BE",
+     "name": "COVID CALE",
+     "abbrev": "CALE",
      "teamId": 9
     },
     "2021": {
-     "name": "Boardwalk Empire",
-     "abbrev": "BE",
+     "name": "CHEF CALE",
+     "abbrev": "CALE",
      "teamId": 9
     },
     "2022": {
-     "name": "Boardwalk Empire",
-     "abbrev": "BE",
+     "name": "CHEF CALE",
+     "abbrev": "CALE",
      "teamId": 9
     },
     "2023": {
-     "name": "Boardwalk Empire",
-     "abbrev": "BE",
+     "name": "CHEF CALE",
+     "abbrev": "CALE",
      "teamId": 9
     },
     "2024": {
-     "name": "Boardwalk Empire",
-     "abbrev": "BE",
+     "name": "CHEF CALE",
+     "abbrev": "CALE",
      "teamId": 9
     },
     "2025": {
-     "name": "Boardwalk Empire",
-     "abbrev": "BE",
+     "name": "CHEF CALE",
+     "abbrev": "CALE",
      "teamId": 9
     },
     "2026": {
-     "name": "Boardwalk Empire",
-     "abbrev": "BE",
+     "name": "CHEF CALE",
+     "abbrev": "CALE",
      "teamId": 9
     }
    },
    "logos": {
-    "2010": "/logos/2010/9.svg",
-    "2011": "/logos/2011/9.svg",
-    "2012": "/logos/2012/9.svg",
-    "2013": "/logos/2013/9.svg",
-    "2014": "/logos/2014/9.svg",
+    "2014": "/logos/2014/9.png",
     "2015": "/logos/2015/9.svg",
     "2016": "/logos/2016/9.svg",
     "2017": "/logos/2017/9.svg",
@@ -1259,160 +976,110 @@
    "titles": []
   },
   {
-   "key": "sean",
-   "name": "Sean",
-   "color": "#0369a1",
+   "key": "taylor-evans",
+   "name": "Taylor",
+   "color": null,
    "swids": [
-    "{SAMPLE-0009-0}"
+    "{3BDBBDAA-1109-4E00-8E62-356929F796B6}"
    ],
-   "active": true,
+   "active": false,
    "seasons": [
-    2010,
-    2011,
-    2012,
-    2013,
-    2014,
-    2015,
-    2016,
-    2017,
-    2018,
-    2019,
-    2020,
-    2021,
-    2022,
-    2023,
-    2024,
-    2025,
-    2026
+    2011
    ],
-   "firstSeason": 2010,
-   "lastSeason": 2026,
+   "firstSeason": 2011,
+   "lastSeason": 2011,
    "teamNames": {
-    "2010": {
-     "name": "Murph's Turf",
-     "abbrev": "MT",
-     "teamId": 10
-    },
     "2011": {
-     "name": "Murph's Turf",
-     "abbrev": "MT",
-     "teamId": 10
-    },
-    "2012": {
-     "name": "Murph's Turf",
-     "abbrev": "MT",
-     "teamId": 10
-    },
-    "2013": {
-     "name": "Murph's Turf",
-     "abbrev": "MT",
-     "teamId": 10
-    },
-    "2014": {
-     "name": "Murph's Turf",
-     "abbrev": "MT",
-     "teamId": 10
-    },
-    "2015": {
-     "name": "Lawn Mower Rangers",
-     "abbrev": "LMR",
-     "teamId": 10
-    },
-    "2016": {
-     "name": "Lawn Mower Rangers",
-     "abbrev": "LMR",
-     "teamId": 10
-    },
-    "2017": {
-     "name": "Lawn Mower Rangers",
-     "abbrev": "LMR",
-     "teamId": 10
-    },
-    "2018": {
-     "name": "Lawn Mower Rangers",
-     "abbrev": "LMR",
-     "teamId": 10
-    },
-    "2019": {
-     "name": "Lawn Mower Rangers",
-     "abbrev": "LMR",
-     "teamId": 10
-    },
-    "2020": {
-     "name": "Lawn Mower Rangers",
-     "abbrev": "LMR",
-     "teamId": 10
-    },
-    "2021": {
-     "name": "Lawn Mower Rangers",
-     "abbrev": "LMR",
-     "teamId": 10
-    },
-    "2022": {
-     "name": "Lawn Mower Rangers",
-     "abbrev": "LMR",
-     "teamId": 10
-    },
-    "2023": {
-     "name": "Lawn Mower Rangers",
-     "abbrev": "LMR",
-     "teamId": 10
-    },
-    "2024": {
-     "name": "Lawn Mower Rangers",
-     "abbrev": "LMR",
-     "teamId": 10
-    },
-    "2025": {
-     "name": "Lawn Mower Rangers",
-     "abbrev": "LMR",
-     "teamId": 10
-    },
-    "2026": {
-     "name": "Lawn Mower Rangers",
-     "abbrev": "LMR",
+     "name": "Team Evans",
+     "abbrev": "EVAN",
      "teamId": 10
     }
    },
-   "logos": {
-    "2010": "/logos/2010/10.svg",
-    "2011": "/logos/2011/10.svg",
-    "2012": "/logos/2012/10.svg",
-    "2013": "/logos/2013/10.svg",
-    "2014": "/logos/2014/10.svg",
-    "2015": "/logos/2015/10.svg",
-    "2016": "/logos/2016/10.svg",
-    "2017": "/logos/2017/10.svg",
-    "2018": "/logos/2018/10.svg",
-    "2019": "/logos/2019/10.svg",
-    "2020": "/logos/2020/10.svg",
-    "2021": "/logos/2021/10.svg",
-    "2022": "/logos/2022/10.svg",
-    "2023": "/logos/2023/10.svg",
-    "2024": "/logos/2024/10.svg",
-    "2025": "/logos/2025/10.svg",
-    "2026": "/logos/2026/10.svg"
-   },
-   "currentLogo": "/logos/2026/10.svg",
-   "titles": [
-    2010,
-    2016,
-    2020,
-    2025
-   ]
+   "logos": {},
+   "currentLogo": null,
+   "titles": []
   },
   {
-   "key": "alex",
-   "name": "Alex",
-   "color": "#a16207",
+   "key": "cole-coder",
+   "name": "Cole",
+   "color": null,
    "swids": [
-    "{SAMPLE-0010-0}",
-    "{SAMPLE-0010-1}"
+    "{7A7F0660-0661-4643-BF06-600661964395}"
+   ],
+   "active": false,
+   "seasons": [
+    2013
+   ],
+   "firstSeason": 2013,
+   "lastSeason": 2013,
+   "teamNames": {
+    "2013": {
+     "name": "4th and 25  To Life",
+     "abbrev": "TE81",
+     "teamId": 10
+    }
+   },
+   "logos": {},
+   "currentLogo": null,
+   "titles": []
+  },
+  {
+   "key": "ryan-watson",
+   "name": "Ryan",
+   "color": null,
+   "swids": [
+    "{42C8712A-A63B-4633-8871-2AA63B3633D8}"
+   ],
+   "active": false,
+   "seasons": [
+    2013
+   ],
+   "firstSeason": 2013,
+   "lastSeason": 2013,
+   "teamNames": {
+    "2013": {
+     "name": "Team Fuck Johnny ",
+     "abbrev": "TFJ",
+     "teamId": 11
+    }
+   },
+   "logos": {},
+   "currentLogo": null,
+   "titles": []
+  },
+  {
+   "key": "taylor-brown",
+   "name": "Taylor B.",
+   "color": null,
+   "swids": [
+    "{AE18570C-39F3-4C59-BFE1-634AFDED6097}"
+   ],
+   "active": false,
+   "seasons": [
+    2014
+   ],
+   "firstSeason": 2014,
+   "lastSeason": 2014,
+   "teamNames": {
+    "2014": {
+     "name": "Lagarettes Fat Blount",
+     "abbrev": "WEED",
+     "teamId": 10
+    }
+   },
+   "logos": {},
+   "currentLogo": null,
+   "titles": []
+  },
+  {
+   "key": "nate-lee-deison",
+   "name": "Nate",
+   "color": null,
+   "swids": [
+    "{9142CFBF-738B-46EF-82CF-BF738BC6EF7E}"
    ],
    "active": true,
    "seasons": [
-    2012,
-    2013,
     2014,
     2015,
     2016,
@@ -1427,118 +1094,130 @@
     2025,
     2026
    ],
-   "firstSeason": 2012,
+   "firstSeason": 2014,
    "lastSeason": 2026,
    "teamNames": {
-    "2012": {
-     "name": "Rivera's Roughnecks",
-     "abbrev": "RR",
-     "teamId": 11
-    },
-    "2013": {
-     "name": "Rivera's Roughnecks",
-     "abbrev": "RR",
-     "teamId": 11
-    },
     "2014": {
-     "name": "Rivera's Roughnecks",
-     "abbrev": "RR",
+     "name": "Ghostface Pitta",
+     "abbrev": "\\/\\/",
      "teamId": 11
     },
     "2015": {
-     "name": "Bad Newz Bears",
-     "abbrev": "BNB",
+     "name": "Yeezus Walks",
+     "abbrev": "YE",
      "teamId": 11
     },
     "2016": {
-     "name": "Bad Newz Bears",
-     "abbrev": "BNB",
+     "name": "T.Y. Dolla Sign",
+     "abbrev": "$$$$",
      "teamId": 11
     },
     "2017": {
-     "name": "Bad Newz Bears",
-     "abbrev": "BNB",
+     "name": "Baegon Targaryen",
+     "abbrev": "$$$$",
      "teamId": 11
     },
     "2018": {
-     "name": "Bad Newz Bears",
-     "abbrev": "BNB",
+     "name": "Hotel Wakanda",
+     "abbrev": "$$$$",
      "teamId": 11
     },
     "2019": {
-     "name": "Bad Newz Bears",
-     "abbrev": "BNB",
+     "name": "Yandhi .",
+     "abbrev": "$$$$",
      "teamId": 11
     },
     "2020": {
-     "name": "Bad Newz Bears",
-     "abbrev": "BNB",
+     "name": "Tua Fast Tua Furious",
+     "abbrev": "$$$$",
      "teamId": 11
     },
     "2021": {
-     "name": "Bad Newz Bears",
-     "abbrev": "BNB",
+     "name": "Zeke  Squad",
+     "abbrev": "$BBY",
      "teamId": 11
     },
     "2022": {
-     "name": "Bad Newz Bears",
-     "abbrev": "BNB",
+     "name": "Lamarvelous .",
+     "abbrev": "LaMa",
      "teamId": 11
     },
     "2023": {
-     "name": "Bad Newz Bears",
-     "abbrev": "BNB",
+     "name": "Zay My Name",
+     "abbrev": "ZAY",
      "teamId": 11
     },
     "2024": {
-     "name": "Bad Newz Bears",
-     "abbrev": "BNB",
+     "name": "Zay My Name",
+     "abbrev": "ZAY",
      "teamId": 11
     },
     "2025": {
-     "name": "Bad Newz Bears",
-     "abbrev": "BNB",
+     "name": "Zay My Name",
+     "abbrev": "ZAY",
      "teamId": 11
     },
     "2026": {
-     "name": "Bad Newz Bears",
-     "abbrev": "BNB",
+     "name": "Zay My Name",
+     "abbrev": "ZAY",
      "teamId": 11
     }
    },
    "logos": {
-    "2012": "/logos/2012/11.svg",
-    "2013": "/logos/2013/11.svg",
-    "2014": "/logos/2014/11.svg",
-    "2015": "/logos/2015/11.svg",
-    "2016": "/logos/2016/11.svg",
-    "2017": "/logos/2017/11.svg",
-    "2018": "/logos/2018/11.svg",
-    "2019": "/logos/2019/11.svg",
-    "2020": "/logos/2020/11.svg",
-    "2021": "/logos/2021/11.svg",
-    "2022": "/logos/2022/11.svg",
+    "2014": "/logos/2014/11.gif",
+    "2015": "/logos/2015/11.gif",
+    "2016": "/logos/2016/11.gif",
+    "2017": "/logos/2017/11.gif",
+    "2018": "/logos/2018/11.gif",
+    "2019": "/logos/2019/11.gif",
+    "2020": "/logos/2020/11.gif",
+    "2021": "/logos/2021/11.gif",
+    "2022": "/logos/2022/11.gif",
     "2023": "/logos/2023/11.svg",
-    "2024": "/logos/2024/11.svg",
-    "2025": "/logos/2025/11.svg",
-    "2026": "/logos/2026/11.svg"
+    "2024": "/logos/2024/11.svg"
    },
-   "currentLogo": "/logos/2026/11.svg",
-   "titles": [
-    2022
-   ]
+   "currentLogo": "/logos/2024/11.svg",
+   "titles": []
   },
   {
-   "key": "chris",
-   "name": "Chris",
-   "color": "#374151",
+   "key": "alex-wegweiser",
+   "name": "Alex",
+   "color": null,
    "swids": [
-    "{SAMPLE-0011-0}"
+    "{55CF64B9-57C7-4B50-8F64-B957C73B5055}"
+   ],
+   "active": false,
+   "seasons": [
+    2014,
+    2015
+   ],
+   "firstSeason": 2014,
+   "lastSeason": 2015,
+   "teamNames": {
+    "2014": {
+     "name": "Big Ol' Bortles",
+     "abbrev": "WEGW",
+     "teamId": 12
+    },
+    "2015": {
+     "name": "Big Ol' Bortles",
+     "abbrev": "WEGW",
+     "teamId": 12
+    }
+   },
+   "logos": {},
+   "currentLogo": null,
+   "titles": []
+  },
+  {
+   "key": "nick-salemo",
+   "name": "Nick",
+   "color": null,
+   "swids": [
+    "{6FDACAB7-B341-476F-9ACA-B7B341976F0A}"
    ],
    "active": true,
    "seasons": [
-    2012,
-    2013,
     2014,
     2015,
     2016,
@@ -1553,103 +1232,512 @@
     2025,
     2026
    ],
-   "firstSeason": 2012,
+   "firstSeason": 2014,
    "lastSeason": 2026,
    "teamNames": {
-    "2012": {
-     "name": "Dunn Deal",
-     "abbrev": "DD",
-     "teamId": 12
-    },
-    "2013": {
-     "name": "Dunn Deal",
-     "abbrev": "DD",
-     "teamId": 12
-    },
     "2014": {
-     "name": "Dunn Deal",
-     "abbrev": "DD",
-     "teamId": 12
+     "name": "Forte Oz. of A.J",
+     "abbrev": "BEER",
+     "teamId": 13
     },
     "2015": {
-     "name": "Dunn & Dusted",
-     "abbrev": "D&D",
-     "teamId": 12
+     "name": "Gronk If You're HORNY ",
+     "abbrev": "LOL",
+     "teamId": 13
     },
     "2016": {
-     "name": "Dunn & Dusted",
-     "abbrev": "D&D",
-     "teamId": 12
+     "name": "Coughlin Up  Blood",
+     "abbrev": "LOL",
+     "teamId": 13
     },
     "2017": {
-     "name": "Dunn & Dusted",
-     "abbrev": "D&D",
-     "teamId": 12
+     "name": "Coughlin Up  Blood",
+     "abbrev": "LOL",
+     "teamId": 13
     },
     "2018": {
-     "name": "Dunn & Dusted",
-     "abbrev": "D&D",
-     "teamId": 12
+     "name": "Coughlin Up  Blood",
+     "abbrev": "LOL",
+     "teamId": 13
     },
     "2019": {
-     "name": "Dunn & Dusted",
-     "abbrev": "D&D",
-     "teamId": 12
+     "name": "Le\u2019Veon la Vida Loca",
+     "abbrev": "SAL",
+     "teamId": 13
     },
     "2020": {
-     "name": "Dunn & Dusted",
-     "abbrev": "D&D",
-     "teamId": 12
+     "name": "Tucker? I don't Even know her ",
+     "abbrev": "SAL",
+     "teamId": 13
     },
     "2021": {
-     "name": "Dunn & Dusted",
-     "abbrev": "D&D",
-     "teamId": 12
+     "name": "Aaron it Out ",
+     "abbrev": "SAL",
+     "teamId": 13
     },
     "2022": {
-     "name": "Dunn & Dusted",
-     "abbrev": "D&D",
-     "teamId": 12
+     "name": "TAYLOR MADE",
+     "abbrev": "SAL",
+     "teamId": 13
     },
     "2023": {
-     "name": "Dunn & Dusted",
-     "abbrev": "D&D",
-     "teamId": 12
+     "name": "JUSTIN TIME ",
+     "abbrev": "SAL",
+     "teamId": 13
     },
     "2024": {
-     "name": "Dunn & Dusted",
-     "abbrev": "D&D",
-     "teamId": 12
+     "name": "KING HENRY",
+     "abbrev": "SAL",
+     "teamId": 13
     },
     "2025": {
-     "name": "Dunn & Dusted",
-     "abbrev": "D&D",
-     "teamId": 12
+     "name": "LAPORTA POTTY",
+     "abbrev": "SAL",
+     "teamId": 13
     },
     "2026": {
-     "name": "Dunn & Dusted",
-     "abbrev": "D&D",
-     "teamId": 12
+     "name": "BROWN DARTS MATTER ",
+     "abbrev": "SAL",
+     "teamId": 13
     }
    },
    "logos": {
-    "2012": "/logos/2012/12.svg",
-    "2013": "/logos/2013/12.svg",
-    "2014": "/logos/2014/12.svg",
-    "2015": "/logos/2015/12.svg",
-    "2016": "/logos/2016/12.svg",
-    "2017": "/logos/2017/12.svg",
-    "2018": "/logos/2018/12.svg",
-    "2019": "/logos/2019/12.svg",
-    "2020": "/logos/2020/12.svg",
-    "2021": "/logos/2021/12.svg",
-    "2022": "/logos/2022/12.svg",
-    "2023": "/logos/2023/12.svg",
-    "2024": "/logos/2024/12.svg",
-    "2025": "/logos/2025/12.svg",
-    "2026": "/logos/2026/12.svg"
+    "2016": "/logos/2016/13.jpg",
+    "2017": "/logos/2017/13.jpg",
+    "2018": "/logos/2018/13.jpg",
+    "2019": "/logos/2019/13.jpg",
+    "2020": "/logos/2020/13.jpg",
+    "2021": "/logos/2021/13.jpg",
+    "2022": "/logos/2022/13.jpg",
+    "2023": "/logos/2023/13.jpg",
+    "2024": "/logos/2024/13.jpg",
+    "2025": "/logos/2025/13.jpg",
+    "2026": "/logos/2026/13.jpg"
    },
-   "currentLogo": "/logos/2026/12.svg",
+   "currentLogo": "/logos/2026/13.jpg",
+   "titles": [
+    2021
+   ]
+  },
+  {
+   "key": "conor-nevins",
+   "name": "Conor",
+   "color": null,
+   "swids": [
+    "{ED9801C7-FD3A-409E-BDFF-3DA7B7919D06}"
+   ],
+   "active": true,
+   "seasons": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "firstSeason": 2015,
+   "lastSeason": 2026,
+   "teamNames": {
+    "2015": {
+     "name": "Slob on My Cobb",
+     "abbrev": "CNEV",
+     "teamId": 14
+    },
+    "2016": {
+     "name": "Slob on My Cobb",
+     "abbrev": "CNEV",
+     "teamId": 14
+    },
+    "2017": {
+     "name": "Saved by Le' Bell",
+     "abbrev": "CNEV",
+     "teamId": 14
+    },
+    "2018": {
+     "name": "Kareempie Surprise",
+     "abbrev": "CNEV",
+     "teamId": 14
+    },
+    "2019": {
+     "name": "Keenan and Ekel",
+     "abbrev": "CNEV",
+     "teamId": 14
+    },
+    "2020": {
+     "name": "Fresh Prince of Helaire",
+     "abbrev": "CNEV",
+     "teamId": 14
+    },
+    "2021": {
+     "name": "Big Waller Brand",
+     "abbrev": "CNEV",
+     "teamId": 14
+    },
+    "2022": {
+     "name": "Herb Your Enthusiasm",
+     "abbrev": "CNEV",
+     "teamId": 14
+    },
+    "2023": {
+     "name": "No Achilles, No Cry",
+     "abbrev": "CNEV",
+     "teamId": 14
+    },
+    "2024": {
+     "name": "Jayd-in Full",
+     "abbrev": "CNEV",
+     "teamId": 14
+    },
+    "2025": {
+     "name": "Chase Bank \ud83d\udcb0",
+     "abbrev": "CNEV",
+     "teamId": 14
+    },
+    "2026": {
+     "name": "CNevs",
+     "abbrev": "CNEV",
+     "teamId": 14
+    }
+   },
+   "logos": {
+    "2020": "/logos/2020/14.jpg",
+    "2022": "/logos/2022/14.gif",
+    "2026": "/logos/2026/14.svg"
+   },
+   "currentLogo": "/logos/2026/14.svg",
+   "titles": []
+  },
+  {
+   "key": "shane-mike",
+   "name": "Shane M.",
+   "color": null,
+   "swids": [
+    "{63BA1837-5C2B-4F3A-BA18-375C2BEF3A78}"
+   ],
+   "active": true,
+   "seasons": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "firstSeason": 2015,
+   "lastSeason": 2026,
+   "teamNames": {
+    "2015": {
+     "name": "Team Mike",
+     "abbrev": "MIKE",
+     "teamId": 15
+    },
+    "2016": {
+     "name": "Team Mike",
+     "abbrev": "MIKE",
+     "teamId": 15
+    },
+    "2017": {
+     "name": "Team Mike",
+     "abbrev": "MIKE",
+     "teamId": 15
+    },
+    "2018": {
+     "name": "Team Mike",
+     "abbrev": "MIKE",
+     "teamId": 15
+    },
+    "2019": {
+     "name": "Team Mike",
+     "abbrev": "MIKE",
+     "teamId": 15
+    },
+    "2020": {
+     "name": "Dirty Mike and the Boys",
+     "abbrev": "MIKE",
+     "teamId": 15
+    },
+    "2021": {
+     "name": "Dirty Mike and the Boys",
+     "abbrev": "MIKE",
+     "teamId": 15
+    },
+    "2022": {
+     "name": "Slim Pickens",
+     "abbrev": "MIKE",
+     "teamId": 15
+    },
+    "2023": {
+     "name": "Slim Pickens",
+     "abbrev": "MIKE",
+     "teamId": 15
+    },
+    "2024": {
+     "name": "Slim Pickens",
+     "abbrev": "MIKE",
+     "teamId": 15
+    },
+    "2025": {
+     "name": "Slim Pickens",
+     "abbrev": "MIKE",
+     "teamId": 15
+    },
+    "2026": {
+     "name": "Slim Pickens",
+     "abbrev": "MIKE",
+     "teamId": 15
+    }
+   },
+   "logos": {
+    "2019": "/logos/2019/15.svg",
+    "2020": "/logos/2020/15.svg",
+    "2021": "/logos/2021/15.svg",
+    "2022": "/logos/2022/15.svg",
+    "2023": "/logos/2023/15.svg",
+    "2024": "/logos/2024/15.svg",
+    "2025": "/logos/2025/15.svg",
+    "2026": "/logos/2026/15.svg"
+   },
+   "currentLogo": "/logos/2026/15.svg",
+   "titles": []
+  },
+  {
+   "key": "anthony-gatto",
+   "name": "Anthony",
+   "color": null,
+   "swids": [
+    "{0B4798CF-BD82-409F-BF1E-90A5A7205375}"
+   ],
+   "active": false,
+   "seasons": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+   ],
+   "firstSeason": 2016,
+   "lastSeason": 2022,
+   "teamNames": {
+    "2016": {
+     "name": "Dez Caught It",
+     "abbrev": "GATT",
+     "teamId": 16
+    },
+    "2017": {
+     "name": "Dez Caught It",
+     "abbrev": "GATT",
+     "teamId": 16
+    },
+    "2018": {
+     "name": "Dez Caught It",
+     "abbrev": "GATT",
+     "teamId": 16
+    },
+    "2019": {
+     "name": "Dez Caught It",
+     "abbrev": "GATT",
+     "teamId": 16
+    },
+    "2020": {
+     "name": "Dez Caught It",
+     "abbrev": "GATT",
+     "teamId": 16
+    },
+    "2021": {
+     "name": "Dez Caught It",
+     "abbrev": "GATT",
+     "teamId": 16
+    },
+    "2022": {
+     "name": "Dez Caught It",
+     "abbrev": "GATT",
+     "teamId": 16
+    }
+   },
+   "logos": {
+    "2016": "/logos/2016/16.svg",
+    "2017": "/logos/2017/16.svg",
+    "2018": "/logos/2018/16.svg",
+    "2019": "/logos/2019/16.svg",
+    "2020": "/logos/2020/16.svg",
+    "2021": "/logos/2021/16.svg",
+    "2022": "/logos/2022/16.svg"
+   },
+   "currentLogo": "/logos/2022/16.svg",
+   "titles": []
+  },
+  {
+   "key": "chase-warren-2",
+   "name": "Chase W.",
+   "color": null,
+   "swids": [
+    "{D575691A-17D2-4FEF-B569-1A17D2AFEF55}"
+   ],
+   "active": true,
+   "seasons": [
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "firstSeason": 2023,
+   "lastSeason": 2026,
+   "teamNames": {
+    "2023": {
+     "name": "Lickity Split",
+     "abbrev": "SLAP",
+     "teamId": 3
+    },
+    "2024": {
+     "name": "Lickity Split",
+     "abbrev": "SLAP",
+     "teamId": 3
+    },
+    "2025": {
+     "name": "Lickity Split",
+     "abbrev": "SLAP",
+     "teamId": 3
+    },
+    "2026": {
+     "name": "Lickity Split",
+     "abbrev": "SLAP",
+     "teamId": 3
+    }
+   },
+   "logos": {
+    "2023": "/logos/2023/3.svg",
+    "2024": "/logos/2024/3.svg",
+    "2025": "/logos/2025/3.svg",
+    "2026": "/logos/2026/3.svg"
+   },
+   "currentLogo": "/logos/2026/3.svg",
+   "titles": []
+  },
+  {
+   "key": "ethan-miller-2",
+   "name": "Ethan M.",
+   "color": null,
+   "swids": [
+    "{2B540E18-958C-4394-940E-18958CF39448}"
+   ],
+   "active": true,
+   "seasons": [
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "firstSeason": 2023,
+   "lastSeason": 2026,
+   "teamNames": {
+    "2023": {
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
+     "teamId": 7
+    },
+    "2024": {
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
+     "teamId": 7
+    },
+    "2025": {
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
+     "teamId": 7
+    },
+    "2026": {
+     "name": "Gimme  Yo Change!",
+     "abbrev": "OOMF",
+     "teamId": 7
+    }
+   },
+   "logos": {
+    "2023": "/logos/2023/7.svg",
+    "2024": "/logos/2024/7.svg",
+    "2025": "/logos/2025/7.svg",
+    "2026": "/logos/2026/7.svg"
+   },
+   "currentLogo": "/logos/2026/7.svg",
+   "titles": []
+  },
+  {
+   "key": "taylor-brown-2",
+   "name": "Taylor B.",
+   "color": null,
+   "swids": [
+    "{62115F85-130E-48E9-99F7-172E11E0F531}"
+   ],
+   "active": true,
+   "seasons": [
+    2023,
+    2024,
+    2025
+   ],
+   "firstSeason": 2023,
+   "lastSeason": 2025,
+   "teamNames": {
+    "2023": {
+     "name": "ByeBye Kuck Cousins' ",
+     "abbrev": "BROW",
+     "teamId": 16
+    },
+    "2024": {
+     "name": "Team Browndog",
+     "abbrev": "BROW",
+     "teamId": 16
+    },
+    "2025": {
+     "name": "Team Browndog",
+     "abbrev": "BROW",
+     "teamId": 16
+    }
+   },
+   "logos": {
+    "2023": "/logos/2023/16.jpg",
+    "2024": "/logos/2024/16.svg",
+    "2025": "/logos/2025/16.svg"
+   },
+   "currentLogo": "/logos/2025/16.svg",
+   "titles": []
+  },
+  {
+   "key": "mike-vespa",
+   "name": "Mike",
+   "color": null,
+   "swids": [
+    "{ADCC4B0E-CF21-4266-8DE5-F1F8006C614B}"
+   ],
+   "active": true,
+   "seasons": [
+    2026
+   ],
+   "firstSeason": 2026,
+   "lastSeason": 2026,
+   "teamNames": {
+    "2026": {
+     "name": "The Washington C-Words",
+     "abbrev": "WCW",
+     "teamId": 16
+    }
+   },
+   "logos": {
+    "2026": "/logos/2026/16.svg"
+   },
+   "currentLogo": "/logos/2026/16.svg",
    "titles": []
   }
  ]

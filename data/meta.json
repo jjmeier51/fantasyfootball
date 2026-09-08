@@ -1,7 +1,7 @@
 {
- "leagueName": "League of Gangstars",
- "lastSynced": "2026-09-08T03:27:55.666580+00:00",
- "generatedAt": "2026-09-08T03:27:56.296353+00:00",
+ "leagueName": "League of Gangstars Season 17",
+ "lastSynced": "2026-09-08T04:19:14.165537+00:00",
+ "generatedAt": "2026-09-08T04:19:15.122410+00:00",
  "seasons": [
   2010,
   2011,
@@ -24,8 +24,8 @@
  "firstSeason": 2010,
  "currentSeason": 2026,
  "currentSeasonComplete": false,
- "currentWeek": 2,
- "isSample": true,
+ "currentWeek": 1,
+ "isSample": false,
  "coverage": {
   "2010": "full",
   "2011": "full",
@@ -43,23 +43,107 @@
   "2023": "full",
   "2024": "full",
   "2025": "full",
-  "2026": "full"
+  "2026": "partial"
  },
  "screenshotsNeeded": {},
  "warnings": [
   {
    "year": 2010,
-   "message": "ESPN returned no draft detail for 2010 (sample gap)"
+   "message": "new owner stub 'tyler-small' created for Tyler; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2010,
+   "message": "new owner stub 'shane-vlasic' created for SHane; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2010,
+   "message": "new owner stub 'chase-warren' created for Chase; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2010,
+   "message": "new owner stub 'drew-matteo' created for Drew; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2010,
+   "message": "new owner stub 'john-meier' created for John; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2010,
+   "message": "new owner stub 'kevin-mcgaughey' created for Kevin; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2010,
+   "message": "new owner stub 'ethan-miller' created for ethan; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2010,
+   "message": "new owner stub 'jp-woodward' created for JP; edit sync/owners.yml to rename/merge"
   },
   {
    "year": 2011,
-   "message": "ESPN returned no final standings for 2011 (sample gap; see sync/overrides/2011.yml)"
+   "message": "new owner stub 'caleb-dessalgne' created for Caleb; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2011,
+   "message": "new owner stub 'taylor-evans' created for Taylor; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2013,
+   "message": "new owner stub 'cole-coder' created for Cole; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2013,
+   "message": "new owner stub 'ryan-watson' created for Ryan; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2014,
+   "message": "new owner stub 'taylor-brown' created for Taylor B.; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2014,
+   "message": "new owner stub 'nate-lee-deison' created for Nate; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2014,
+   "message": "new owner stub 'alex-wegweiser' created for Alex; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2014,
+   "message": "new owner stub 'nick-salemo' created for Nick; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2015,
+   "message": "new owner stub 'conor-nevins' created for Conor; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2015,
+   "message": "new owner stub 'shane-mike' created for Shane M.; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2016,
+   "message": "new owner stub 'anthony-gatto' created for Anthony; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2023,
+   "message": "new owner stub 'chase-warren-2' created for Chase W.; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2023,
+   "message": "new owner stub 'ethan-miller-2' created for Ethan M.; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2023,
+   "message": "new owner stub 'taylor-brown-2' created for Taylor B.; edit sync/owners.yml to rename/merge"
+  },
+  {
+   "year": 2026,
+   "message": "new owner stub 'mike-vespa' created for Mike; edit sync/owners.yml to rename/merge"
   }
  ],
  "counts": {
-  "owners": 12,
-  "games": 1358,
-  "facts": 143,
+  "owners": 23,
+  "games": 1415,
+  "facts": 141,
   "records": 36
  }
 }

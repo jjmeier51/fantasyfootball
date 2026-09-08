@@ -24,9 +24,20 @@ export const metadata: Metadata = {
     siteName: meta.leagueName,
     url: "https://leagueofgangstars.com",
     locale: "en_US",
+    images: [
+      {
+        url: "https://leagueofgangstars.com/opengraph-image",
+        secureUrl: "https://leagueofgangstars.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        type: "image/png",
+        alt: `${meta.leagueName} fantasy football history`,
+      },
+    ],
   },
-  twitter: { card: "summary_large_image", title: meta.leagueName, description },
+  twitter: { card: "summary_large_image", title: meta.leagueName, description, images: ["https://leagueofgangstars.com/twitter-image"] },
   appleWebApp: { title: meta.leagueName },
+  alternates: { canonical: "https://leagueofgangstars.com" },
 };
 
 export const viewport: Viewport = {

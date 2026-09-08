@@ -113,24 +113,18 @@ export default async function OwnerPage({ params }: { params: Promise<{ slug: st
         <section className="mt-10">
           <SectionHeader
             eyebrow="Trade desk"
-            title="Your trades"
+            title="Your best trade"
             sub={`${trades.count} trade${trades.count === 1 ? "" : "s"} since 2019 · won ${trades.wins}, lost ${trades.losses} · net ${trades.netPoints >= 0 ? "+" : ""}${fmt(trades.netPoints, 1)} points`}
             action={<Link href="/records#trades" className="text-sm text-gold hover:underline">All trades →</Link>}
           />
-          <div className="grid lg:grid-cols-2 gap-4">
-            {trades.best && (
-              <div className="min-w-0">
-                <div className="eyebrow mb-2">Best trade</div>
-                <TradeCard trade={trades.best} owners={ownerMap} champions={champions} />
-              </div>
-            )}
-            {trades.worst && (
-              <div className="min-w-0">
-                <div className="eyebrow mb-2 text-bad">Worst trade</div>
-                <TradeCard trade={trades.worst} owners={ownerMap} champions={champions} />
-              </div>
-            )}
-          </div>
+          {trades.best && (
+            <div className="max-w-3xl">
+              <TradeCard trade={trades.best} owners={ownerMap} champions={champions} />
+              {trades.bestNet !== null && trades.bestNet < 0 && (
+                <p className="text-xs text-muted mt-2">{o.name} hasn&rsquo;t won a trade yet; this is the one that hurt least.</p>
+              )}
+            </div>
+          )}
         </section>
       )}
 

@@ -468,6 +468,7 @@ export interface OwnerTrades {
   wins: number;
   losses: number;
   best: Trade | null;
+  bestNet: number | null;
   worst: Trade | null;
   netPoints: number;
 }

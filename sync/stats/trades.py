@@ -49,7 +49,7 @@ def build_trades(seasons: list[dict], owners: list[dict]) -> dict:
     rows.sort(key=lambda r: -r["margin"])
     for i, r in enumerate(rows, start=1):
         r["rank"] = i
-    by_owner: dict[str, dict] = defaultdict(lambda: {"count": 0, "wins": 0, "losses": 0, "best": None, "worst": None, "netPoints": 0.0})
+    by_owner: dict[str, dict] = defaultdict(lambda: {"count": 0, "wins": 0, "losses": 0, "best": None, "bestNet": None, "worst": None, "netPoints": 0.0})
     for r in rows:
         w, l = r["winner"]["ownerKey"], r["loser"]["ownerKey"]
         for k, won in ((w, True), (l, False)):
@@ -57,8 +57,9 @@ def build_trades(seasons: list[dict], owners: list[dict]) -> dict:
             d["count"] += 1
             d["wins" if won else "losses"] += 1
             d["netPoints"] = round(d["netPoints"] + (r["margin"] if won else -r["margin"]), 2)
-            if won and (d["best"] is None or r["margin"] > d["best"]["margin"]):
-                d["best"] = r
+            net = r["margin"] if won else -r["margin"]
+            if d["best"] is None or net > d["bestNet"]:
+                d["best"], d["bestNet"] = r, net
             if not won and (d["worst"] is None or r["margin"] > d["worst"]["margin"]):
                 d["worst"] = r
     return {"all": rows, "byOwner": dict(by_owner), "seasonsCovered": sorted({s["year"] for s in seasons if s.get("trades")})}

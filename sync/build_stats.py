@@ -132,12 +132,27 @@ def main(argv=None):
     facts = ensure_positive(facts, pool, set(adjustments.get("hide_facts_for") or []),
                             minimum=lambda k: 4 if k in current_members else 2)
     trophies = build_trophies(seasons, owners)
-    highlights, top_player_seasons = build_highlights(seasons, team_seasons)
+    highlights, top_player_seasons, waiver = build_highlights(seasons, team_seasons)
     mvps = [p for h in highlights.values() for p in h["bestPlayers"].values() if p]
-    shots = download_headshots(mvps + top_player_seasons, enabled=not args.no_network)
-    for row in mvps + top_player_seasons:
+    shot_rows = mvps + top_player_seasons + waiver["byYear"] + waiver["allTime"]
+    shots = download_headshots(shot_rows, enabled=not args.no_network)
+    for row in shot_rows:
         key = headshot_key(row)
         row["headshot"] = shots.get(key) if key else None
+    names_by_key = {o["key"]: o["name"] for o in owners}
+
+    def waiver_entry(r):
+        return {"ownerKey": r["ownerKey"], "value": r["points"], "year": r["year"], "teamName": r["teamName"],
+                "player": r["name"], "position": r["position"], "proTeam": r["proTeam"], "headshot": r.get("headshot"),
+                "weeks": r.get("weeks"), "totalWeeks": r.get("totalWeeks"), "source": r["source"]}
+
+    records.append({"id": "waiver-all-time", "category": "waiver", "title": "Best Waiver Wire Pickup of All Time", "unit": "pts",
+                    "better": "high", "description": "Undrafted players, ranked by fantasy points scored on the roster that picked them up.",
+                    "entries": [waiver_entry(r) for r in waiver["allTime"][:10]]})
+    records.append({"id": "waiver-by-year", "category": "waiver", "title": "Best Waiver Wire Pickup by Season", "unit": "pts",
+                    "better": "high", "description": "The top undrafted pickup from every season, newest first.",
+                    "entries": [waiver_entry(r) for r in waiver["byYear"]], "keepOrder": True})
+    del names_by_key
 
     # titles, then fewer finals losses, then earlier first title
     podium = sorted([{"ownerKey": c["ownerKey"], "titles": c["titles"], "runnerUps": c["runnerUps"], "thirds": c["thirds"], "lastPlaces": c["lastPlaces"]}
@@ -149,7 +164,7 @@ def main(argv=None):
         "trophies": trophies, "podium": podium, "careers": careers, "records": records,
         "h2h": h2h, "teamSeasons": team_seasons, "goat": goat, "luck": luck_rows,
         "draft": draft, "funFacts": facts,
-        "ownerHighlights": highlights, "topPlayerSeasons": top_player_seasons,
+        "ownerHighlights": highlights, "topPlayerSeasons": top_player_seasons, "waiver": waiver,
     }
     (DATA_DIR / "records.json").write_text(json.dumps(records_out, separators=(",", ":")))
 

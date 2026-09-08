@@ -231,16 +231,24 @@ export interface RecordEntry {
   expectedWins?: number;
   luck?: number;
   allPlay?: string;
+  player?: string;
+  position?: string;
+  proTeam?: string;
+  headshot?: string | null;
+  weeks?: number | null;
+  totalWeeks?: number | null;
+  source?: string;
 }
 
 export interface RecordDef {
   id: string;
-  category: "singleGame" | "season" | "career" | "playoffs" | "streaks" | "oddities";
+  category: "singleGame" | "season" | "career" | "playoffs" | "streaks" | "oddities" | "waiver";
   title: string;
   unit: string;
   better: "high" | "low";
   description: string;
   entries: RecordEntry[];
+  keepOrder?: boolean;
 }
 
 export interface H2HCell {
@@ -421,11 +429,12 @@ export interface Mvp {
   espnUrl: string | null;
   headshot: string | null;
   ownerKey?: string;
+  pickup?: boolean;
 }
 
 export interface OwnerHighlights {
   bestTeam: BestTeam | null;
-  bestPlayers: { qb: Mvp | null; flex: Mvp | null };
+  bestPlayers: { qb: Mvp | null; flex: Mvp | null; waiver: Mvp | null };
 }
 
 export interface Records {
@@ -442,6 +451,7 @@ export interface Records {
   funFacts: FunFact[];
   ownerHighlights: Record<string, OwnerHighlights>;
   topPlayerSeasons: Mvp[];
+  waiver: { byYear: Mvp[]; allTime: Mvp[] };
 }
 
 export interface Meta {

@@ -16,6 +16,7 @@ const TABS: { key: RecordDef["category"]; label: string }[] = [
   { key: "playoffs", label: "Playoffs" },
   { key: "streaks", label: "Streaks" },
   { key: "oddities", label: "Oddities" },
+  { key: "waiver", label: "Waiver Wire" },
 ];
 
 function valueLabel(r: RecordDef, e: RecordEntry) {
@@ -46,6 +47,7 @@ function valueLabel(r: RecordDef, e: RecordEntry) {
 
 function context(r: RecordDef, e: RecordEntry, owners: Map<string, OwnerLite>) {
   const opp = e.oppKey ? owners.get(e.oppKey)?.name ?? e.oppKey : null;
+  if (e.player) return `${e.year} · ${e.teamName}${e.source === "rostered-weeks" && e.weeks ? ` · ${e.weeks} of ${e.totalWeeks} weeks` : ""}`;
   if (r.category === "career") return `${e.seasons} seasons · ${e.record}`;
   if (r.category === "streaks") return e.endYear ? `${e.year} wk ${e.week} → ${e.endYear} wk ${e.endWeek}` : `${e.year}–${e.endYear ?? e.year}`;
   if (e.week) return `${e.year} · Week ${e.week}${opp ? ` · vs ${opp} (${fmt(e.oppScore)})` : ""}${e.isPlayoff ? " · Playoffs" : ""}`;
@@ -80,7 +82,7 @@ export default function RecordsBook({ records, owners, details }: { records: Rec
         {list.map((r) => {
           const showAll = expanded[r.id];
           const entries = showAll ? r.entries : r.entries.slice(0, 5);
-          const top = r.entries[0];
+          const top = r.keepOrder ? r.entries.reduce((a, b) => (b.value > a.value ? b : a), r.entries[0]) : r.entries[0];
           return (
             <div key={r.id} className="card p-4 flex flex-col overflow-hidden">
               <div className="flex items-start justify-between gap-3">
@@ -94,7 +96,24 @@ export default function RecordsBook({ records, owners, details }: { records: Rec
                 {entries.map((e, i) => {
                   const o = omap.get(e.ownerKey) ?? { key: e.ownerKey, name: e.ownerKey, color: null, logo: null };
                   const d = e.matchupId ? details[e.matchupId] : undefined;
-                  const inner = (
+                  const inner = e.player ? (
+                    <>
+                      <span className={clsx("font-display text-right shrink-0", r.keepOrder ? "text-sm w-11 text-gold" : clsx("text-lg w-6", i === 0 ? "text-gold" : "text-muted"))}>{r.keepOrder ? e.year : i + 1}</span>
+                      {e.headshot ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img src={e.headshot} alt="" width={32} height={32} className="w-8 h-8 rounded-full object-cover object-top bg-surface-2 ring-1 ring-border shrink-0" />
+                      ) : (
+                        <OwnerAvatar owner={o} size={32} />
+                      )}
+                      <span className="min-w-0 flex-1">
+                        <span className="font-medium">{e.player} <span className="text-muted text-xs font-normal">{e.position} · {e.proTeam}</span></span>
+                        <span className="block text-[11px] text-muted truncate">
+                          <Link href={`/owners/${e.ownerKey}`} className="text-text-2 hover:text-gold" onClick={(ev) => ev.stopPropagation()}>{o.name}</Link> · {context(r, e, omap)}
+                        </span>
+                      </span>
+                      <span className={clsx("tabular text-sm font-semibold", i === 0 && !r.keepOrder && "text-gold-2")}>{valueLabel(r, e)}</span>
+                    </>
+                  ) : (
                     <>
                       <span className={clsx("font-display text-lg w-6 text-right", i === 0 ? "text-gold" : "text-muted")}>{i + 1}</span>
                       <OwnerAvatar owner={o} logo={e.logo ?? undefined} size={26} />

@@ -84,7 +84,7 @@ export default async function OwnerPage({ params }: { params: Promise<{ slug: st
         </section>
       )}
 
-      {(highlights?.bestTeam || highlights?.bestPlayers?.qb || highlights?.bestPlayers?.flex) && (
+      {(highlights?.bestTeam || highlights?.bestPlayers?.qb || highlights?.bestPlayers?.flex || highlights?.bestPlayers?.waiver) && (
         <section className="mt-10 grid lg:grid-cols-[1.2fr_1fr] gap-6 items-start">
           {highlights.bestTeam && (
             <div className="min-w-0">
@@ -92,12 +92,13 @@ export default async function OwnerPage({ params }: { params: Promise<{ slug: st
               <BestTeamCard team={highlights.bestTeam} owner={lite} />
             </div>
           )}
-          {(highlights.bestPlayers.qb || highlights.bestPlayers.flex) && (
+          {(highlights.bestPlayers.qb || highlights.bestPlayers.flex || highlights.bestPlayers.waiver) && (
             <div className="min-w-0">
-              <SectionHeader eyebrow="Franchise players" title="Your Best Players" sub="The best quarterback season and the best non-quarterback season by one of your players." />
+              <SectionHeader eyebrow="Franchise players" title="Your Best Players" sub="Best quarterback season, best non-quarterback season, and the best waiver wire pickup by one of your players." />
               <div className="grid gap-4">
                 {highlights.bestPlayers.qb && <MvpCard mvp={highlights.bestPlayers.qb} ownerName={o.name} label="Best QB" />}
                 {highlights.bestPlayers.flex && <MvpCard mvp={highlights.bestPlayers.flex} ownerName={o.name} label="Best non-QB" />}
+                {highlights.bestPlayers.waiver && <MvpCard mvp={highlights.bestPlayers.waiver} ownerName={o.name} label="Best pickup" />}
               </div>
             </div>
           )}

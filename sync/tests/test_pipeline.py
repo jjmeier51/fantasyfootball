@@ -174,7 +174,7 @@ def test_highlights_best_team_and_mvp(league):
     from stats.highlights import build_highlights
     seasons, owners, _ = league
     ts = build_team_seasons(seasons)
-    hl, top = build_highlights(seasons, ts)
+    hl, top, waiver = build_highlights(seasons, ts)
     ann = hl["ann"]
     assert ann["bestTeam"]["year"] == 2019 and ann["bestTeam"]["roster"][0]["name"] == "Some Guy"
     # 2019 has no box scores -> season totals (100); 2020 box scores -> rostered weeks: Some Guy 55.5, Bench Guy 52
@@ -184,3 +184,16 @@ def test_highlights_best_team_and_mvp(league):
     rostered = [r for r in top if r["source"] == "rostered-weeks" and r["ownerKey"] == "ann"]
     assert {r["name"]: r["points"] for r in rostered} == {"Some Guy": 55.5, "Bench Guy": 52.0}
     assert all(r["weeks"] == 2 for r in rostered)
+
+
+def test_waiver_pickups_are_undrafted_players(league):
+    from stats.highlights import build_highlights
+    seasons, owners, _ = league
+    # 2020: draft Some Guy (id 1) so only Bench Guy (id 7) counts as a pickup
+    seasons[1]["draft"] = [{"round": 1, "pick": 1, "overall": 1, "teamId": 1, "ownerKey": "ann", "playerId": 1,
+                             "playerName": "Some Guy", "position": "RB", "proTeam": "NYG", "keeper": False, "bid": None}]
+    hl, _, waiver = build_highlights(seasons, build_team_seasons(seasons))
+    w = hl["ann"]["bestPlayers"]["waiver"]
+    assert w["name"] == "Bench Guy" and w["points"] == 52.0 and w["year"] == 2020
+    assert [r["year"] for r in waiver["byYear"]] == [2020]
+    assert waiver["allTime"][0]["name"] == "Bench Guy"

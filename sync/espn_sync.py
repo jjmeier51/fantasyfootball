@@ -201,7 +201,8 @@ def fetch_season(year: int, existing: dict | None, with_boxscores: bool) -> dict
         roster = []
         for p in t.roster:
             roster.append({"playerId": p.playerId, "name": p.name, "position": p.position,
-                           "proTeam": p.proTeam, "seasonPoints": round(p.total_points or 0, 2)})
+                           "proTeam": p.proTeam, "seasonPoints": round(p.total_points or 0, 2),
+                           "acquisitionType": getattr(p, "acquisitionType", None) or None})
         teams.append({
             "teamId": t.team_id, "name": t.team_name, "abbrev": t.team_abbrev,
             "ownerSwids": [o.get("id") for o in t.owners if o.get("id")],
@@ -265,7 +266,8 @@ def fetch_season(year: int, existing: dict | None, with_boxscores: bool) -> dict
                             "teamId": team.team_id,
                             "players": [{"playerId": bp.playerId, "name": bp.name, "position": bp.position,
                                          "proTeam": bp.proTeam, "slot": bp.slot_position,
-                                         "points": round(bp.points or 0, 2)} for bp in lineup],
+                                         "points": round(bp.points or 0, 2),
+                                         "acquisitionType": getattr(bp, "acquisitionType", None) or None} for bp in lineup],
                         })
                 time.sleep(0.3)
             except Exception as e:  # noqa: BLE001

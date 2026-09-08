@@ -24,9 +24,19 @@ def _espn_url(player_id, position: str):
     return f"https://www.espn.com/nfl/player/_/id/{player_id}"
 
 
-def build_highlights(seasons: list[dict], team_seasons: list[dict]) -> tuple[dict, list[dict]]:
-    """Returns ({ownerKey: {bestTeam, bestPlayers: {qb, flex}}}, league-wide top player-seasons)."""
+def _is_pickup(row: dict, drafted: set, acq: str | None) -> bool:
+    """A waiver-wire / free-agent pickup: ESPN says ADD when we have it, otherwise any player
+    who was never drafted in that season's draft."""
+    if acq:
+        return acq.upper() == "ADD"
+    return row.get("playerId") is not None and row["playerId"] not in drafted
+
+
+def build_highlights(seasons: list[dict], team_seasons: list[dict]) -> tuple[dict, list[dict], dict]:
+    """Returns ({ownerKey: {bestTeam, bestPlayers: {qb, flex, waiver}}}, league-wide top player-seasons,
+    {"byYear": [...best pickup per season...], "allTime": [...top pickups...]})."""
     by_year = {s["year"]: s for s in seasons}
+    pickups: list[dict] = []
 
     # --- candidate player-seasons per owner
     candidates: dict[str, list[dict]] = defaultdict(list)
@@ -50,12 +60,19 @@ def build_highlights(seasons: list[dict], team_seasons: list[dict]) -> tuple[dic
                         row["points"] = round(row["points"] + (p.get("points") or 0), 2)
                         row["weeks"] += 1
             season_totals = {p.get("playerId"): p.get("seasonPoints") for t in s["teams"] for p in t.get("roster", [])}
+            drafted = {p.get("playerId") for p in s.get("draft", []) if p.get("playerId")}
+            acq_types = {(e.get("ownerKey"), p.get("playerId")): p.get("acquisitionType")
+                         for entries in s["boxscores"].values() for e in entries for p in e["players"] if p.get("acquisitionType")}
             for row in acc.values():
                 row.update({"year": s["year"], "source": "rostered-weeks", "totalWeeks": len(s["boxscores"]),
                             "seasonPoints": season_totals.get(row["playerId"])})
+                row["pickup"] = bool(drafted) and _is_pickup(row, drafted, acq_types.get((row["ownerKey"], row["playerId"])))
                 candidates[row["ownerKey"]].append(row)
                 all_rows.append(row)
+                if row["pickup"]:
+                    pickups.append(row)
         else:
+            drafted = {p.get("playerId") for p in s.get("draft", []) if p.get("playerId")}
             for t in s["teams"]:
                 for p in t.get("roster", []):
                     if not p.get("seasonPoints"):
@@ -63,8 +80,11 @@ def build_highlights(seasons: list[dict], team_seasons: list[dict]) -> tuple[dic
                     row = {"ownerKey": t["ownerKey"], "playerId": p.get("playerId"), "name": p["name"], "position": p.get("position", ""),
                            "proTeam": p.get("proTeam", ""), "points": p["seasonPoints"], "seasonPoints": p["seasonPoints"],
                            "weeks": None, "totalWeeks": None, "teamName": t["name"], "year": s["year"], "source": "season-total"}
+                    row["pickup"] = bool(drafted) and _is_pickup(row, drafted, p.get("acquisitionType"))
                     candidates[t["ownerKey"]].append(row)
                     all_rows.append(row)
+                    if row["pickup"]:
+                        pickups.append(row)
 
     out: dict[str, dict] = {}
     owners = {t["ownerKey"] for s in seasons for t in s["teams"]}
@@ -93,8 +113,16 @@ def build_highlights(seasons: list[dict], team_seasons: list[dict]) -> tuple[dic
         best_players = {
             "qb": pick([r for r in cands if r["position"] == "QB"]),
             "flex": pick([r for r in cands if r["position"] not in ("QB", "K", "D/ST", "")]),
+            "waiver": pick([r for r in cands if r.get("pickup") and r["position"] not in ("K", "D/ST", "")]),
         }
         out[k] = {"bestTeam": best_team, "bestPlayers": best_players}
 
     league_top = sorted(all_rows, key=lambda r: -r["points"])[:15]
-    return out, league_top
+    skill_pickups = [r for r in pickups if r["position"] not in ("K", "D/ST", "")]
+    by_year = []
+    for year in sorted({r["year"] for r in skill_pickups}, reverse=True):
+        best = max([r for r in skill_pickups if r["year"] == year], key=lambda r: r["points"])
+        by_year.append(dict(best, espnUrl=_espn_url(best["playerId"], best["position"]), headshot=None))
+    all_time = [dict(r, espnUrl=_espn_url(r["playerId"], r["position"]), headshot=None)
+                for r in sorted(skill_pickups, key=lambda r: -r["points"])[:15]]
+    return out, league_top, {"byYear": by_year, "allTime": all_time}

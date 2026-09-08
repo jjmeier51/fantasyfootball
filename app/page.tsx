@@ -49,7 +49,7 @@ export default function HomePage() {
       <section className="relative pt-12 pb-10 grid lg:grid-cols-[1.2fr_1fr] gap-8 items-center">
         <div>
           <div className="eyebrow mb-3">Est. {meta.firstSeason} · {seasons.length} seasons</div>
-          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.02] gold-text">{meta.leagueName}</h1>
+          <h1 className="font-display text-5xl sm:text-6xl lg:text-[4.25rem] leading-[1.08] gold-text">{meta.leagueName}</h1>
           <p className="mt-4 text-text-2 text-lg max-w-xl">
             Every championship, every blowout, every embarrassing week. The complete history of the league since our freshman year of college, pulled straight from ESPN and preserved forever.
           </p>

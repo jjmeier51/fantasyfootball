@@ -62,6 +62,9 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  /* keep descenders (g, y, p) inside the painted box so they are not clipped */
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
 }
 
 .card {

@@ -6,6 +6,8 @@ import { fmt, ordinal, record, signed, winPct } from "@/lib/format";
 import OwnerAvatar from "@/components/OwnerAvatar";
 import Trophy from "@/components/Trophy";
 import { FinishChart, PointsChart } from "@/components/charts";
+import BestTeamCard from "@/components/BestTeamCard";
+import MvpCard from "@/components/MvpCard";
 import { Pill, SectionHeader, StatTile } from "@/components/ui";
 
 export function generateStaticParams() {
@@ -34,6 +36,7 @@ export default async function OwnerPage({ params }: { params: Promise<{ slug: st
   const facts = records.funFacts.filter((f) => f.ownerKey === slug).sort((a, b) => toneRank[a.tone ?? "neutral"] - toneRank[b.tone ?? "neutral"]);
   const maxTeams = Math.max(...seasons.map((s) => s.teamCount));
   const titles = records.trophies.filter((t) => t.champion?.ownerKey === slug);
+  const highlights = records.ownerHighlights[slug];
   const history = [...o.seasons].sort((a, b) => b - a).map((y) => ({ year: y, ...o.teamNames[String(y)], logo: o.logos[String(y)] ?? null, finish: c.finishes.find((f) => f.year === y) }));
 
   return (
@@ -78,6 +81,23 @@ export default async function OwnerPage({ params }: { params: Promise<{ slug: st
               </Link>
             ))}
           </div>
+        </section>
+      )}
+
+      {(highlights?.bestTeam || highlights?.mvp) && (
+        <section className="mt-10 grid lg:grid-cols-[1.25fr_1fr] gap-6 items-stretch">
+          {highlights.bestTeam && (
+            <div className="min-w-0">
+              <SectionHeader eyebrow="Peak" title="Your best team" sub={`${o.name}'s strongest season, with the roster that did it.`} />
+              <BestTeamCard team={highlights.bestTeam} owner={lite} />
+            </div>
+          )}
+          {highlights.mvp && (
+            <div className="min-w-0">
+              <SectionHeader eyebrow="Franchise player" title="Your MVP" sub="The best fantasy season ever produced by one of your players." />
+              <MvpCard mvp={highlights.mvp} ownerName={o.name} />
+            </div>
+          )}
         </section>
       )}
 

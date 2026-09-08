@@ -1,6 +1,7 @@
 """league.json -> records.json + meta.json (all derived stats)."""
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import sys
@@ -14,6 +15,8 @@ from stats.common import PLAYOFF_TYPES, team_games
 from stats.draft_tendencies import build_draft_tendencies
 from stats.facts import build_facts, positive_pool
 from stats.h2h import build_h2h
+from stats.highlights import build_highlights
+from headshots import download_headshots, headshot_key
 from stats.rankings import build_goat, build_luck, build_team_seasons
 from stats.records import build_records
 
@@ -102,7 +105,10 @@ def ensure_positive(facts: list[dict], pool: dict[str, list[dict]], hidden: set,
     return out
 
 
-def main():
+def main(argv=None):
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--no-network", action="store_true", help="skip headshot downloads (tests/offline)")
+    args = ap.parse_args(argv)
     league = json.loads((DATA_DIR / "league.json").read_text())
     owners = json.loads((DATA_DIR / "owners.json").read_text())["owners"]
     coverage = json.loads((DATA_DIR / "coverage.json").read_text())
@@ -126,6 +132,12 @@ def main():
     facts = ensure_positive(facts, pool, set(adjustments.get("hide_facts_for") or []),
                             minimum=lambda k: 4 if k in current_members else 2)
     trophies = build_trophies(seasons, owners)
+    highlights, top_player_seasons = build_highlights(seasons, team_seasons)
+    mvps = [h["mvp"] for h in highlights.values() if h.get("mvp")]
+    shots = download_headshots(mvps + top_player_seasons, enabled=not args.no_network)
+    for row in mvps + top_player_seasons:
+        key = headshot_key(row)
+        row["headshot"] = shots.get(key) if key else None
 
     # titles, then fewer finals losses, then earlier first title
     podium = sorted([{"ownerKey": c["ownerKey"], "titles": c["titles"], "runnerUps": c["runnerUps"], "thirds": c["thirds"], "lastPlaces": c["lastPlaces"]}
@@ -137,6 +149,7 @@ def main():
         "trophies": trophies, "podium": podium, "careers": careers, "records": records,
         "h2h": h2h, "teamSeasons": team_seasons, "goat": goat, "luck": luck_rows,
         "draft": draft, "funFacts": facts,
+        "ownerHighlights": highlights, "topPlayerSeasons": top_player_seasons,
     }
     (DATA_DIR / "records.json").write_text(json.dumps(records_out, separators=(",", ":")))
 
@@ -161,7 +174,8 @@ def main():
     }
     (DATA_DIR / "meta.json").write_text(json.dumps(meta, indent=1))
     print(f"records.json: {len(records)} records, {len(facts)} fun facts, {len(team_seasons)} team-seasons, "
-          f"{len(draft['profiles'])} draft profiles; meta.json written (sample={meta['isSample']})")
+          f"{len(draft['profiles'])} draft profiles, {len(mvps)} MVPs ({sum(1 for m in mvps if m.get('headshot'))} headshots); "
+          f"meta.json written (sample={meta['isSample']})")
     return 0
 
 

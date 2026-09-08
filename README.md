@@ -180,6 +180,10 @@ scores are copyrighted and cannot be shipped.
 
 ## Data notes
 
+- Owner pages show "Your MVP" with a headshot. Headshots are downloaded once per player from
+  ESPN's public CDN during the sync (`sync/headshots.py`) into `public/headshots/` and served
+  statically; if a download fails the page shows a monogram badge instead.
+
 - Player-level weekly box scores exist from 2019 on; earlier seasons have team scores, standings,
   drafts and end-of-season rosters only.
 - Championship rosters use the title-game lineup (2019+), otherwise the end-of-season roster,

@@ -380,6 +380,54 @@ export interface Trophy {
   teamCount: number;
 }
 
+export interface BestTeamRoster {
+  playerId: number | null;
+  name: string;
+  position: string;
+  proTeam: string;
+  seasonPoints: number | null;
+  starter: boolean | null;
+}
+
+export interface BestTeam {
+  year: number;
+  teamName: string;
+  logo: string | null;
+  wins: number;
+  losses: number;
+  ties: number;
+  pointsFor: number;
+  pointsAgainst: number;
+  seed: number | null;
+  finalRank: number | null;
+  rank: number;
+  result: TeamSeasonRank["result"];
+  score: number;
+  roster: BestTeamRoster[];
+}
+
+export interface Mvp {
+  playerId: number | null;
+  name: string;
+  position: string;
+  proTeam: string;
+  year: number;
+  teamName: string;
+  points: number;
+  seasonPoints: number | null;
+  weeks: number | null;
+  totalWeeks: number | null;
+  source: "rostered-weeks" | "season-total";
+  espnUrl: string | null;
+  headshot: string | null;
+  ownerKey?: string;
+}
+
+export interface OwnerHighlights {
+  bestTeam: BestTeam | null;
+  mvp: Mvp | null;
+}
+
 export interface Records {
   generatedAt: string;
   trophies: Trophy[];
@@ -392,6 +440,8 @@ export interface Records {
   luck: LuckRow[];
   draft: { profiles: Record<string, DraftProfile>; facts: FunFact[]; steals: DraftValueRow[]; busts: DraftValueRow[]; greatest: DraftValueRow[]; draftsAnalyzed: number };
   funFacts: FunFact[];
+  ownerHighlights: Record<string, OwnerHighlights>;
+  topPlayerSeasons: Mvp[];
 }
 
 export interface Meta {

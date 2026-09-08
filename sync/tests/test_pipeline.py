@@ -63,6 +63,12 @@ def league(tmp_path, monkeypatch):
                      [(1, 2, 88.0, 110.0, 1), (3, 4, 70.0, 75.0, 1), (1, 3, 200.0, 60.0, 2), (2, 4, 105.0, 104.0, 2),
                       (2, 1, 120.0, 119.0, 3)],
                      members)
+    s20["boxscores"] = {
+        "1": [{"teamId": 1, "players": [{"playerId": 1, "name": "Some Guy", "position": "RB", "proTeam": "NYG", "slot": "RB", "points": 30.0},
+                                        {"playerId": 7, "name": "Bench Guy", "position": "WR", "proTeam": "DAL", "slot": "BE", "points": 12.0}]}],
+        "2": [{"teamId": 1, "players": [{"playerId": 1, "name": "Some Guy", "position": "RB", "proTeam": "NYG", "slot": "RB", "points": 25.5},
+                                        {"playerId": 7, "name": "Bench Guy", "position": "WR", "proTeam": "DAL", "slot": "WR", "points": 40.0}]}],
+    }
     (overrides / "2020.yml").write_text(yaml.safe_dump({
         "season": 2020, "champion": "bob", "runner_up": "ann", "final_standings": ["bob", "ann", "dan-dole", "cat-cole"],
         "champion_roster": [{"player": "Old Guy", "position": "QB", "nfl_team": "GB", "slot": "QB", "points": 20}],
@@ -162,3 +168,17 @@ def test_single_game_records_respect_cutoff(league, monkeypatch):
     records = {r["id"]: r for r in rec.build_records(seasons, careers, build_luck(seasons))}
     assert all(e["year"] >= 2020 for e in records["high-score"]["entries"])
     assert any(e["year"] == 2019 for e in records["season-pf"]["entries"])  # season records keep history
+
+
+def test_highlights_best_team_and_mvp(league):
+    from stats.highlights import build_highlights
+    seasons, owners, _ = league
+    ts = build_team_seasons(seasons)
+    hl, top = build_highlights(seasons, ts)
+    ann = hl["ann"]
+    assert ann["bestTeam"]["year"] == 2019 and ann["bestTeam"]["roster"][0]["name"] == "Some Guy"
+    # 2019 has no box scores -> season totals (100); 2020 box scores -> rostered weeks: Some Guy 55.5, Bench Guy 52
+    assert ann["mvp"]["year"] == 2019 and ann["mvp"]["source"] == "season-total" and ann["mvp"]["points"] == 100
+    rostered = [r for r in top if r["source"] == "rostered-weeks" and r["ownerKey"] == "ann"]
+    assert {r["name"]: r["points"] for r in rostered} == {"Some Guy": 55.5, "Bench Guy": 52.0}
+    assert all(r["weeks"] == 2 for r in rostered)

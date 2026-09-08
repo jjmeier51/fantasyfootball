@@ -15,6 +15,12 @@ hide_facts_for:
 
 # Extra facts written by hand. They appear alongside the generated ones.
 custom_facts:
+  - id: caleb-2022-hamlin
+    category: trophies
+    ownerKey: caleb-dessalgne
+    year: 2022
+    href: /seasons/2022
+    text: "Caleb's 2022 title was decided off the field: the final froze at 78.92 to 81.00 when the Bills–Bengals game was cancelled, and the league awarded him the championship."
   - id: gatto-tight-ends
     category: draft
     ownerKey: anthony-gatto

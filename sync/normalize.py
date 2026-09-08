@@ -179,6 +179,9 @@ def apply_overrides(season: dict, ov: dict, owners: OwnerMap, warnings: list[str
             continue
         hs, as_ = float(row.get("home_score", 0)), float(row.get("away_score", 0))
         week = int(row.get("week", 0))
+        forced_winner = row.get("winner")
+        if forced_winner:
+            check(forced_winner)
         # replace any ESPN matchup for the same pair/week
         season["matchups"] = [m for m in season["matchups"] if not (
             m["week"] == week and {m["home"]["ownerKey"], m["away"]["ownerKey"]} == {h, a})]
@@ -188,8 +191,11 @@ def apply_overrides(season: dict, ov: dict, owners: OwnerMap, warnings: list[str
             "type": row.get("type") or ("WINNERS_BRACKET" if row.get("playoff") else "NONE"),
             "home": {"teamId": ht["teamId"], "ownerKey": h, "score": hs},
             "away": {"teamId": at["teamId"], "ownerKey": a, "score": as_},
-            "winnerKey": None if hs == as_ else (h if hs > as_ else a), "decided": True, "fromOverride": True,
+            "winnerKey": forced_winner if forced_winner else (None if hs == as_ else (h if hs > as_ else a)),
+            "decided": True, "fromOverride": True, "multiWeek": False,
         })
+    if ov.get("note"):
+        season["honorsNote"] = str(ov["note"])
     if ov.get("champion_roster"):
         season["championRoster"] = [{
             "playerId": None, "name": r.get("player", ""), "position": r.get("position", ""),

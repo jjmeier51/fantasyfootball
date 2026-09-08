@@ -66,7 +66,14 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
             <Link href={`/owners/${t.champion.ownerKey}`} className="font-display text-5xl leading-none hover:text-gold">{t.champion.name}</Link>
             <div className="text-text-2 mt-1">{t.champion.teamName} · {t.champion.record}{t.champion.seed ? ` · #${t.champion.seed} seed` : ""}</div>
             {t.titleGame && t.runnerUp && (
-              <div className="text-sm text-muted mt-2">Beat {t.runnerUp.name} {fmt(t.titleGame.winnerScore)} – {fmt(t.titleGame.loserScore)} in the final (week {t.titleGame.week}).</div>
+              <div className="text-sm text-muted mt-2">
+                {t.titleGame.winnerScore >= t.titleGame.loserScore ? "Beat" : "Awarded the title over"} {t.runnerUp.name} {fmt(t.titleGame.winnerScore)} – {fmt(t.titleGame.loserScore)} in the final (week {t.titleGame.week}).
+              </div>
+            )}
+            {t.note && (
+              <div className="mt-2 rounded-lg border border-gold/30 bg-gold/5 px-3 py-2 text-xs text-text-2 max-w-xl">
+                <span className="text-gold font-semibold">Commissioner&rsquo;s note.</span> {t.note}
+              </div>
             )}
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-1 gap-2 text-sm">

@@ -105,6 +105,7 @@ export interface Season {
   championRosterSource: "title-week" | "final-roster" | "override" | null;
   warnings: string[];
   hasOverride?: boolean;
+  honorsNote?: string | null;
   coverage: Coverage;
 }
 
@@ -383,11 +384,12 @@ export interface Trophy {
   regSeasonChamp: TrophySide | null;
   topScorer: TrophySide | null;
   titleGame: { matchupId: string; week: number; winnerScore: number; loserScore: number } | null;
-  playoffRun: { week: number; oppKey: string; oppName: string; score: number; oppScore: number; matchupId: string }[];
+  playoffRun: { week: number; oppKey: string; oppName: string; score: number; oppScore: number; matchupId: string; won?: boolean | null }[];
   roster: RosterPlayer[] | null;
   rosterSource: "title-week" | "final-roster" | "override" | null;
   coverageTier: string;
   teamCount: number;
+  note?: string | null;
 }
 
 export interface BestTeamRoster {

@@ -43,7 +43,7 @@ export default function HonorsCard({ t }: { t: TrophyT }) {
           )}
           {t.titleGame && (
             <div className="text-xs text-muted mt-3">
-              Title game {fmt(t.titleGame.winnerScore)} – {fmt(t.titleGame.loserScore)} vs {t.runnerUp?.name}
+              Title game {fmt(t.titleGame.winnerScore)} – {fmt(t.titleGame.loserScore)} vs {t.runnerUp?.name}{t.note ? " *" : ""}
             </div>
           )}
           <div className="mt-auto text-[11px] text-muted">Tap to flip for runner-up, sacko and top scorer</div>

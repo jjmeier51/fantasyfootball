@@ -58,12 +58,18 @@ export default function ChampionshipModal({ t, onClose }: { t: TrophyT; onClose:
                   <li key={g.matchupId} className="flex items-center justify-between gap-3 border-b border-border/60 pb-1 last:border-0">
                     <span className="text-muted text-xs w-14">Week {g.week}</span>
                     <span className="flex-1">
-                      {g.score > g.oppScore ? "def." : "lost to"} <Link href={`/owners/${g.oppKey}`} className="hover:text-gold">{g.oppName}</Link>
+                      {(g.won ?? g.score > g.oppScore) ? "def." : "lost to"} <Link href={`/owners/${g.oppKey}`} className="hover:text-gold">{g.oppName}</Link>
+                      {g.won && g.score < g.oppScore && <span className="text-muted text-xs"> (by ruling)</span>}
                     </span>
                     <span className="tabular font-display text-lg">{fmt(g.score)} – {fmt(g.oppScore)}</span>
                   </li>
                 ))}
               </ul>
+            </div>
+          )}
+          {t.note && (
+            <div className="mt-4 rounded-lg border border-gold/30 bg-gold/5 px-3 py-2 text-xs text-text-2">
+              <span className="text-gold font-semibold">Commissioner&rsquo;s note.</span> {t.note}
             </div>
           )}
           {t.runnerUp && (

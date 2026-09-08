@@ -925,8 +925,7 @@
    "currentLogo": "/logos/2026/7.svg",
    "titles": [
     2015,
-    2018,
-    2022
+    2018
    ]
   },
   {
@@ -1085,7 +1084,9 @@
     "2026": "/logos/2026/9.svg"
    },
    "currentLogo": "/logos/2026/9.svg",
-   "titles": []
+   "titles": [
+    2022
+   ]
   },
   {
    "key": "taylor-evans",

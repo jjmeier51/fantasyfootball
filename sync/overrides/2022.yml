@@ -1,0 +1,9 @@
+# 2022: the championship game (week 17, Caleb 78.92 vs Ethan 81.00) was frozen when the
+# Bills–Bengals game was cancelled after Damar Hamlin's injury. The league awarded the title
+# to Caleb and paid him out manually, so the record reflects Caleb as champion.
+season: 2022
+champion: caleb-dessalgne
+runner_up: ethan-miller
+note: "Title awarded to Caleb after the Bills–Bengals game was cancelled following Damar Hamlin's injury froze the final at 78.92–81.00. The league paid him out manually."
+matchups:
+  - { week: 17, home: caleb-dessalgne, away: ethan-miller, home_score: 78.92, away_score: 81.00, playoff: true, type: WINNERS_BRACKET, winner: caleb-dessalgne }

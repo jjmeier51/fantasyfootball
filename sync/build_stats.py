@@ -50,13 +50,13 @@ def build_trophies(seasons: list[dict], owners: list[dict]) -> list[dict]:
             for g in sorted(team_games(s, include_multiweek=True), key=lambda g: g["week"]):
                 if g["isPlayoff"] and g["ownerKey"] == h["champion"]:
                     run.append({"week": g["week"], "oppKey": g["oppKey"], "oppName": names.get(g["oppKey"], g["oppKey"]),
-                                "score": g["score"], "oppScore": g["oppScore"], "matchupId": g["matchupId"]})
+                                "score": g["score"], "oppScore": g["oppScore"], "matchupId": g["matchupId"], "won": g["won"]})
         out.append({
             "year": s["year"], "isComplete": s["isComplete"],
             "champion": side(h.get("champion")), "runnerUp": side(h.get("runnerUp")), "third": side(h.get("third")),
             "lastPlace": side(h.get("lastPlace")), "regSeasonChamp": side(h.get("regSeasonChamp")), "topScorer": side(h.get("topScorer")),
             "titleGame": title_game, "playoffRun": run, "roster": s.get("championRoster"), "rosterSource": s.get("championRosterSource"),
-            "coverageTier": s["coverage"]["tier"], "teamCount": len(s["teams"]),
+            "coverageTier": s["coverage"]["tier"], "teamCount": len(s["teams"]), "note": s.get("honorsNote"),
         })
     return out
 

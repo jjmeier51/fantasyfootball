@@ -264,3 +264,30 @@ def test_trade_lopsidedness(league):
     assert t["winner"]["ownerKey"] == "bob" and t["winner"]["points"] == 50.0
     assert t["loser"]["ownerKey"] == "ann" and t["loser"]["points"] == 3.0 and t["margin"] == 47.0
     assert trades["byOwner"]["bob"]["best"]["id"] == "2020-t1" and trades["byOwner"]["ann"]["worst"]["id"] == "2020-t1"
+
+
+def test_override_can_force_a_matchup_winner_and_note(tmp_path, monkeypatch, league):
+    seasons, owners, owner_map = league
+    overrides = normalize.OVERRIDES_DIR
+    (overrides / "2019.yml").write_text(yaml.safe_dump({
+        "season": 2019, "champion": "bob", "runner_up": "ann", "note": "Awarded off the field.",
+        "matchups": [{"week": 3, "home": "ann", "away": "bob", "home_score": 150.0, "away_score": 149.5, "playoff": True, "winner": "bob"}],
+    }))
+    raw19 = json.loads(json.dumps({"year": 2019}))  # placeholder to keep flake8 quiet about json import
+    del raw19
+    # re-normalize 2019 from the same raw fixture used by the league fixture
+    import test_pipeline as tp  # noqa: F401
+    s19 = seasons[0]
+    fresh = {"year": 2019, "leagueId": 1, "source": "espn", "fetchedAt": "", "settings": {"name": "T", "teamCount": 4, "regSeasonWeeks": 2, "playoffTeamCount": 2, "matchupPeriods": {"1": [1], "2": [2], "3": [3]}},
+             "status": {"currentWeek": 4, "currentMatchupPeriod": 4, "finalScoringPeriod": 3, "isComplete": True, "completedWeeks": [1, 2, 3]},
+             "members": [{"swid": "{A1}", "firstName": "Ann", "lastName": "Able"}, {"swid": "{B}", "firstName": "Bob", "lastName": "Baker"}],
+             "teams": [{"teamId": 1, "name": "Ann's Army", "abbrev": "ANN", "ownerSwids": ["{A1}"], "wins": 2, "losses": 0, "ties": 0, "pointsFor": 250.5, "pointsAgainst": 180.0, "seed": 1, "finalRank": 1, "logo": None, "roster": []},
+                       {"teamId": 2, "name": "Bob Squad", "abbrev": "BOB", "ownerSwids": ["{B}"], "wins": 1, "losses": 1, "ties": 0, "pointsFor": 201.0, "pointsAgainst": 219.5, "seed": 2, "finalRank": 2, "logo": None, "roster": []}],
+             "matchups": [{"week": 3, "homeTeamId": 1, "awayTeamId": 2, "homeScore": 150.0, "awayScore": 149.5, "type": "WINNERS_BRACKET", "isPlayoff": True, "winner": "HOME"}],
+             "draft": [], "boxscores": {}, "warnings": []}
+    season = normalize.normalize_season(fresh, owner_map)
+    assert season["honors"]["champion"] == "bob" and season["honors"]["runnerUp"] == "ann"
+    final = next(m for m in season["matchups"] if m["week"] == 3)
+    assert final["winnerKey"] == "bob" and final["home"]["score"] == 150.0 and final["away"]["score"] == 149.5
+    assert season["honorsNote"] == "Awarded off the field."
+    assert {t["ownerKey"]: t["finalRank"] for t in season["teams"]} == {"bob": 1, "ann": 2}

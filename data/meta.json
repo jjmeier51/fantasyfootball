@@ -1,7 +1,7 @@
 {
  "leagueName": "League of Gangstars",
  "lastSynced": "2026-09-08T13:20:27.438767+00:00",
- "generatedAt": "2026-09-08T13:31:27.775957+00:00",
+ "generatedAt": "2026-09-08T13:48:27.912877+00:00",
  "seasons": [
   2010,
   2011,
@@ -59,7 +59,7 @@
  "counts": {
   "owners": 19,
   "games": 1415,
-  "facts": 153,
+  "facts": 150,
   "records": 38
  }
 }

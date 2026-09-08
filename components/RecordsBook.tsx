@@ -58,7 +58,7 @@ function context(r: RecordDef, e: RecordEntry, owners: Map<string, OwnerLite>) {
   return "";
 }
 
-export default function RecordsBook({ records, owners, details, trades, tradeSeasons }: { records: RecordDef[]; owners: OwnerLite[]; details: Record<string, MatchupDetail>; trades: Trade[]; tradeSeasons: number[] }) {
+export default function RecordsBook({ records, owners, details, trades, tradeSeasons, champions }: { records: RecordDef[]; owners: OwnerLite[]; details: Record<string, MatchupDetail>; trades: Trade[]; tradeSeasons: number[]; champions: Record<number, string | null> }) {
   const [tab, setTab] = useState<TabKey>("singleGame");
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const [open, setOpen] = useState<MatchupDetail | null>(null);
@@ -84,7 +84,7 @@ export default function RecordsBook({ records, owners, details, trades, tradeSea
       {tab === "trades" && (
         <div>
           <h3 className="font-display text-2xl mb-1">Most Lopsided Trades of All Time</h3>
-          <TradesList trades={trades} owners={owners} seasonsCovered={tradeSeasons} limit={20} />
+          <TradesList trades={trades} owners={owners} seasonsCovered={tradeSeasons} champions={champions} limit={20} />
         </div>
       )}
       <div className={clsx("grid md:grid-cols-2 gap-4", tab === "trades" && "hidden")}>

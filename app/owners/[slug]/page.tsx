@@ -40,6 +40,7 @@ export default async function OwnerPage({ params }: { params: Promise<{ slug: st
   const highlights = records.ownerHighlights[slug];
   const trades = records.trades.byOwner[slug];
   const ownerMap = new Map(records.careers.map((x) => [x.ownerKey, ownerLite(x.ownerKey)]));
+  const champions: Record<number, string | null> = Object.fromEntries(records.trophies.map((t) => [t.year, t.champion?.ownerKey ?? null]));
   const history = [...o.seasons].sort((a, b) => b - a).map((y) => ({ year: y, ...o.teamNames[String(y)], logo: o.logos[String(y)] ?? null, finish: c.finishes.find((f) => f.year === y) }));
 
   return (
@@ -120,13 +121,13 @@ export default async function OwnerPage({ params }: { params: Promise<{ slug: st
             {trades.best && (
               <div className="min-w-0">
                 <div className="eyebrow mb-2">Best trade</div>
-                <TradeCard trade={trades.best} owners={ownerMap} />
+                <TradeCard trade={trades.best} owners={ownerMap} champions={champions} />
               </div>
             )}
             {trades.worst && (
               <div className="min-w-0">
                 <div className="eyebrow mb-2 text-bad">Worst trade</div>
-                <TradeCard trade={trades.worst} owners={ownerMap} />
+                <TradeCard trade={trades.worst} owners={ownerMap} champions={champions} />
               </div>
             )}
           </div>

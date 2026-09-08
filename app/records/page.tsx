@@ -17,6 +17,7 @@ export default function RecordsPage() {
     }
   }
   const partial = seasons.filter((s) => s.coverage.tier !== "full").map((s) => s.year);
+  const champions: Record<number, string | null> = Object.fromEntries(records.trophies.map((t) => [t.year, t.champion?.ownerKey ?? null]));
   return (
     <div>
       <PageHero eyebrow="The book" title="All-Time Records" sub="Every mark that matters, with who set it and against whom. Click a game to see the box score.">
@@ -24,7 +25,7 @@ export default function RecordsPage() {
           <p className="text-xs text-muted mt-3">Seasons with incomplete ESPN data ({partial.join(", ")}) only count toward records their data supports.</p>
         )}
       </PageHero>
-      <RecordsBook records={records.records} owners={ownersLite} details={details} trades={records.trades.all} tradeSeasons={records.trades.seasonsCovered} />
+      <RecordsBook records={records.records} owners={ownersLite} details={details} trades={records.trades.all} tradeSeasons={records.trades.seasonsCovered} champions={champions} />
     </div>
   );
 }

@@ -3,13 +3,15 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
-import type { OwnerLite, RecordDef, RecordEntry } from "@/lib/types";
+import type { OwnerLite, RecordDef, RecordEntry, Trade } from "@/lib/types";
+import TradesList from "./TradesList";
 import type { MatchupDetail } from "@/lib/data";
 import { fmt } from "@/lib/format";
 import OwnerAvatar from "./OwnerAvatar";
 import MatchupModal from "./MatchupModal";
 
-const TABS: { key: RecordDef["category"]; label: string }[] = [
+type TabKey = RecordDef["category"] | "trades";
+const TABS: { key: TabKey; label: string }[] = [
   { key: "singleGame", label: "Single Game" },
   { key: "season", label: "Season" },
   { key: "career", label: "Career" },
@@ -17,6 +19,7 @@ const TABS: { key: RecordDef["category"]; label: string }[] = [
   { key: "streaks", label: "Streaks" },
   { key: "oddities", label: "Oddities" },
   { key: "waiver", label: "Waiver Wire" },
+  { key: "trades", label: "Trades" },
 ];
 
 function valueLabel(r: RecordDef, e: RecordEntry) {
@@ -55,8 +58,8 @@ function context(r: RecordDef, e: RecordEntry, owners: Map<string, OwnerLite>) {
   return "";
 }
 
-export default function RecordsBook({ records, owners, details }: { records: RecordDef[]; owners: OwnerLite[]; details: Record<string, MatchupDetail> }) {
-  const [tab, setTab] = useState<RecordDef["category"]>("singleGame");
+export default function RecordsBook({ records, owners, details, trades, tradeSeasons }: { records: RecordDef[]; owners: OwnerLite[]; details: Record<string, MatchupDetail>; trades: Trade[]; tradeSeasons: number[] }) {
+  const [tab, setTab] = useState<TabKey>("singleGame");
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const [open, setOpen] = useState<MatchupDetail | null>(null);
   const omap = useMemo(() => new Map(owners.map((o) => [o.key, o])), [owners]);
@@ -74,11 +77,17 @@ export default function RecordsBook({ records, owners, details }: { records: Rec
             onClick={() => setTab(t.key)}
             className={clsx("px-4 py-2.5 text-sm whitespace-nowrap border-b-2 -mb-px transition-colors", tab === t.key ? "border-gold text-gold" : "border-transparent text-text-2 hover:text-text")}
           >
-            {t.label} <span className="text-muted text-xs ml-1">{records.filter((r) => r.category === t.key).length}</span>
+            {t.label} <span className="text-muted text-xs ml-1">{t.key === "trades" ? trades.length : records.filter((r) => r.category === t.key).length}</span>
           </button>
         ))}
       </div>
-      <div className="grid md:grid-cols-2 gap-4">
+      {tab === "trades" && (
+        <div>
+          <h3 className="font-display text-2xl mb-1">Most Lopsided Trades of All Time</h3>
+          <TradesList trades={trades} owners={owners} seasonsCovered={tradeSeasons} limit={20} />
+        </div>
+      )}
+      <div className={clsx("grid md:grid-cols-2 gap-4", tab === "trades" && "hidden")}>
         {list.map((r) => {
           const showAll = expanded[r.id];
           const entries = showAll ? r.entries : r.entries.slice(0, 5);

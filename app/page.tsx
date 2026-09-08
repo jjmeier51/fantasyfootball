@@ -47,13 +47,13 @@ export default function HomePage() {
     <div>
       {/* HERO */}
       <section className="relative pt-12 pb-10 grid lg:grid-cols-[1.2fr_1fr] gap-8 items-center">
-        <div>
+        <div className="flex flex-col items-center text-center">
           <div className="eyebrow mb-3">Est. {meta.firstSeason} · {seasons.length} seasons</div>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-[4.25rem] leading-[1.08] gold-text">{meta.leagueName}</h1>
           <p className="mt-4 text-text-2 text-[11.7px] leading-relaxed max-w-xl">
             Every championship, every blowout, every embarrassing week. The complete history of the league since our freshman year of college, pulled straight from ESPN and preserved forever.
           </p>
-          <div className="mt-6 flex flex-wrap gap-3">
+          <div className="mt-6 flex flex-wrap gap-3 justify-center">
             <Link href="/trophy-room" className="inline-flex items-center gap-2 rounded-full bg-linear-to-r from-[#1b2a48] via-[#128a5c] to-[#34d399] text-white font-semibold px-5 py-2.5 shadow-lg shadow-good/20 hover:brightness-110 transition">
               <TrophyIcon size={16} /> Enter the Trophy Room
             </Link>

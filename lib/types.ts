@@ -434,6 +434,44 @@ export interface Mvp {
   pickup?: boolean;
 }
 
+export interface TradePlayer {
+  playerId: number | null;
+  name: string;
+  position: string;
+  proTeam: string;
+  points: number;
+  weeks: number;
+}
+
+export interface TradeSide {
+  ownerKey: string;
+  name: string;
+  teamName: string;
+  received: TradePlayer[];
+  points: number;
+}
+
+export interface Trade {
+  id: string;
+  year: number;
+  week: number | null;
+  date: number | null;
+  winner: TradeSide;
+  loser: TradeSide;
+  margin: number;
+  scoredWeeks: number;
+  rank: number;
+}
+
+export interface OwnerTrades {
+  count: number;
+  wins: number;
+  losses: number;
+  best: Trade | null;
+  worst: Trade | null;
+  netPoints: number;
+}
+
 export interface OwnerHighlights {
   bestTeam: BestTeam | null;
   bestPlayers: { qb: Mvp | null; flex: Mvp | null; waiver: Mvp | null };
@@ -454,6 +492,7 @@ export interface Records {
   ownerHighlights: Record<string, OwnerHighlights>;
   topPlayerSeasons: Mvp[];
   waiver: { byYear: Mvp[]; allTime: Mvp[] };
+  trades: { all: Trade[]; byOwner: Record<string, OwnerTrades>; seasonsCovered: number[] };
 }
 
 export interface Meta {

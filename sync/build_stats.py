@@ -19,6 +19,7 @@ from stats.highlights import build_highlights
 from headshots import download_headshots, headshot_key
 from stats.rankings import build_goat, build_luck, build_team_seasons
 from stats.records import build_records
+from stats.trades import build_trades
 
 
 def build_trophies(seasons: list[dict], owners: list[dict]) -> list[dict]:
@@ -132,6 +133,7 @@ def main(argv=None):
     facts = ensure_positive(facts, pool, set(adjustments.get("hide_facts_for") or []),
                             minimum=lambda k: 4 if k in current_members else 2)
     trophies = build_trophies(seasons, owners)
+    trades = build_trades(seasons, owners)
     highlights, top_player_seasons, waiver = build_highlights(seasons, team_seasons)
     mvps = [p for h in highlights.values() for p in h["bestPlayers"].values() if p]
     shot_rows = mvps + top_player_seasons + waiver["byYear"] + waiver["allTime"]
@@ -164,7 +166,7 @@ def main(argv=None):
         "trophies": trophies, "podium": podium, "careers": careers, "records": records,
         "h2h": h2h, "teamSeasons": team_seasons, "goat": goat, "luck": luck_rows,
         "draft": draft, "funFacts": facts,
-        "ownerHighlights": highlights, "topPlayerSeasons": top_player_seasons, "waiver": waiver,
+        "ownerHighlights": highlights, "topPlayerSeasons": top_player_seasons, "waiver": waiver, "trades": trades,
     }
     (DATA_DIR / "records.json").write_text(json.dumps(records_out, separators=(",", ":")))
 
@@ -189,7 +191,7 @@ def main(argv=None):
     }
     (DATA_DIR / "meta.json").write_text(json.dumps(meta, indent=1))
     print(f"records.json: {len(records)} records, {len(facts)} fun facts, {len(team_seasons)} team-seasons, "
-          f"{len(draft['profiles'])} draft profiles, {len(mvps)} best players ({sum(1 for m in mvps if m.get('headshot'))} headshots); "
+          f"{len(draft['profiles'])} draft profiles, {len(mvps)} best players ({sum(1 for m in mvps if m.get('headshot'))} headshots), {len(trades['all'])} trades; "
           f"meta.json written (sample={meta['isSample']})")
     return 0
 

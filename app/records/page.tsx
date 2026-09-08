@@ -24,7 +24,7 @@ export default function RecordsPage() {
           <p className="text-xs text-muted mt-3">Seasons with incomplete ESPN data ({partial.join(", ")}) only count toward records their data supports.</p>
         )}
       </PageHero>
-      <RecordsBook records={records.records} owners={ownersLite} details={details} />
+      <RecordsBook records={records.records} owners={ownersLite} details={details} trades={records.trades.all} tradeSeasons={records.trades.seasonsCovered} />
     </div>
   );
 }

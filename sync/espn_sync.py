@@ -101,6 +101,42 @@ def fetch_player_meta(league: League, player_ids: list[int], year: int) -> dict[
     return meta
 
 
+def fetch_week_starts(league: League) -> dict[str, int]:
+    """Earliest NFL kickoff (ms epoch) per scoring period, used to place dated events in a week."""
+    starts: dict[str, int] = {}
+    try:
+        for games_by_period in league._get_all_pro_schedule().values():
+            for period, games in (games_by_period or {}).items():
+                for g in games or []:
+                    d = g.get("date")
+                    if d and (str(period) not in starts or d < starts[str(period)]):
+                        starts[str(period)] = d
+    except Exception as e:  # noqa: BLE001
+        log(f"  pro schedule unavailable ({e}); trade weeks will be approximate")
+    return starts
+
+
+def fetch_trades(league: League, year: int) -> list[dict]:
+    """Every completed trade from ESPN's league activity feed (2019+ only)."""
+    if year < 2019:
+        return []
+    filters = {"topics": {"filterType": {"value": ["ACTIVITY_TRANSACTIONS"]}, "limit": 500, "limitPerMessageSet": {"value": 50},
+                          "offset": 0, "sortMessageDate": {"sortPriority": 1, "sortAsc": False},
+                          "sortFor": {"sortPriority": 2, "sortAsc": False}, "filterIncludeMessageTypeIds": {"value": [244]}}}
+    data = league.espn_request.league_get(extend="/communication/", params={"view": "kona_league_communication"},
+                                          headers={"x-fantasy-filter": json.dumps(filters)})
+    trades = []
+    for topic in data.get("topics", []) or []:
+        items = []
+        for msg in topic.get("messages", []) or []:
+            if msg.get("messageTypeId") != 244:
+                continue
+            items.append({"playerId": msg.get("targetId"), "fromTeamId": msg.get("from"), "toTeamId": msg.get("to")})
+        if items:
+            trades.append({"id": topic.get("id"), "date": topic.get("date"), "items": items})
+    return trades
+
+
 def download_logo(url: str, year: int, team_id: int) -> str | None:
     if not url or not url.startswith("http"):
         return None
@@ -246,6 +282,22 @@ def fetch_season(year: int, existing: dict | None, with_boxscores: bool) -> dict
     except Exception as e:  # noqa: BLE001
         warnings.append(f"draft unavailable: {e}")
 
+    # --- trades (2019+) ---
+    trades: list[dict] = []
+    week_starts: dict[str, int] = {}
+    if year >= 2019:
+        try:
+            trades = fetch_trades(league, year)
+            week_starts = fetch_week_starts(league)
+            meta = fetch_player_meta(league, [it["playerId"] for t in trades for it in t["items"]], year) if trades else {}
+            roster_meta = {p["playerId"]: p for t in teams for p in t["roster"]}
+            for t in trades:
+                for it in t["items"]:
+                    info = meta.get(it["playerId"]) or roster_meta.get(it["playerId"]) or {}
+                    it.update({"name": info.get("name", ""), "position": info.get("position", ""), "proTeam": info.get("proTeam", "")})
+        except Exception as e:  # noqa: BLE001
+            warnings.append(f"trade history unavailable: {e}")
+
     # --- box scores (2019+) ---
     boxscores: dict[str, list] = {}
     if with_boxscores and year >= BOXSCORE_MIN_YEAR:
@@ -285,12 +337,13 @@ def fetch_season(year: int, existing: dict | None, with_boxscores: bool) -> dict
                      "matchupPeriods": matchup_periods},
         "status": {"currentWeek": league.current_week, "currentMatchupPeriod": current_mp,
                    "finalScoringPeriod": league.finalScoringPeriod, "isComplete": is_complete,
-                   "completedWeeks": sorted(completed_weeks)},
+                   "completedWeeks": sorted(completed_weeks), "weekStarts": week_starts},
         "members": members,
         "teams": teams,
         "matchups": matchups,
         "draft": draft,
         "boxscores": boxscores,
+        "trades": trades,
         "warnings": warnings,
     }
 
@@ -350,7 +403,7 @@ def main(argv=None):
             continue
         path.write_text(json.dumps(season, indent=1))
         log(f"{year}: {len(season['teams'])} teams, {len(season['matchups'])} matchups, "
-            f"{len(season['draft'])} picks, {len(season['boxscores'])} box-score weeks; "
+            f"{len(season['draft'])} picks, {len(season['boxscores'])} box-score weeks, {len(season['trades'])} trades; "
             f"warnings: {len(season['warnings'])}")
         time.sleep(0.5)
     return 1 if failures else 0

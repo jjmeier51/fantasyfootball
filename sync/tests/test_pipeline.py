@@ -241,3 +241,26 @@ def test_two_week_playoffs_and_decimal_ties(league, monkeypatch):
     closest = records["closest"]["entries"][0]
     assert closest["value"] == 0.0 and closest["score"] == 101.5   # decimal tie ranks first
     assert all(e["week"] != 3 or e["year"] != 2019 for e in records["high-score"]["entries"])
+
+
+def test_trade_lopsidedness(league):
+    from stats.trades import build_trades
+    seasons, owners, _ = league
+    s20 = seasons[1]
+    # Ann trades Bench Guy (id 7) to Bob for player 9 in week 2; box scores show what each did after
+    s20["trades"] = [{"id": "2020-t1", "year": 2020, "date": 0, "week": 2, "sides": [
+        {"ownerKey": "bob", "teamId": 2, "received": [{"playerId": 7, "name": "Bench Guy", "position": "WR", "proTeam": "DAL"}]},
+        {"ownerKey": "ann", "teamId": 1, "received": [{"playerId": 9, "name": "Dud", "position": "RB", "proTeam": "MIA"}]},
+    ]}]
+    s20["boxscores"]["2"] = [
+        {"teamId": 2, "ownerKey": "bob", "players": [{"playerId": 7, "name": "Bench Guy", "position": "WR", "proTeam": "DAL", "slot": "WR", "points": 40.0}]},
+        {"teamId": 1, "ownerKey": "ann", "players": [{"playerId": 9, "name": "Dud", "position": "RB", "proTeam": "MIA", "slot": "RB", "points": 3.0}]},
+    ]
+    s20["boxscores"]["3"] = [
+        {"teamId": 2, "ownerKey": "bob", "players": [{"playerId": 7, "name": "Bench Guy", "position": "WR", "proTeam": "DAL", "slot": "WR", "points": 10.0}]},
+    ]
+    trades = build_trades(seasons, owners)
+    t = trades["all"][0]
+    assert t["winner"]["ownerKey"] == "bob" and t["winner"]["points"] == 50.0
+    assert t["loser"]["ownerKey"] == "ann" and t["loser"]["points"] == 3.0 and t["margin"] == 47.0
+    assert trades["byOwner"]["bob"]["best"]["id"] == "2020-t1" and trades["byOwner"]["ann"]["worst"]["id"] == "2020-t1"

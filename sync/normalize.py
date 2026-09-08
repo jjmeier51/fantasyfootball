@@ -413,13 +413,45 @@ def normalize_season(raw: dict, owner_map: OwnerMap) -> dict:
             d["seasonPoints"] = season_pts[d["playerId"]]
         draft.append(d)
 
+    # trades: map team ids to owners and place each trade in the first week it affected
+    week_starts = {int(k): v for k, v in (status.get("weekStarts") or {}).items()}
+    final_period = status.get("finalScoringPeriod") or (settings.get("regSeasonWeeks", 13) + 4)
+    known_players = {p.get("playerId"): p for t in raw.get("teams", []) for p in t.get("roster", [])}
+    for wk_entries in (raw.get("boxscores") or {}).values():
+        for e in wk_entries:
+            for p in e.get("players", []):
+                known_players.setdefault(p.get("playerId"), p)
+    trades = []
+    for t in raw.get("trades", []) or []:
+        date = t.get("date") or 0
+        week = None
+        if week_starts:
+            later = [w for w, start in week_starts.items() if start > date]
+            week = min(later) if later else final_period + 1
+        sides: dict = {}
+        for it in t.get("items", []):
+            frm, to = owner_of.get(it.get("fromTeamId")), owner_of.get(it.get("toTeamId"))
+            if not frm or not to or frm == to:
+                continue
+            info = known_players.get(it.get("playerId"), {})
+            player = {"playerId": it.get("playerId"), "name": it.get("name") or info.get("name", "Unknown"),
+                      "position": it.get("position") or info.get("position", ""), "proTeam": it.get("proTeam") or info.get("proTeam", "")}
+            sides.setdefault(to, {"ownerKey": to, "teamId": it.get("toTeamId"), "received": []})["received"].append(player)
+            sides.setdefault(frm, {"ownerKey": frm, "teamId": it.get("fromTeamId"), "received": []})
+        if len(sides) != 2:
+            continue  # only two-team trades are scored
+        a, b = sides.values()
+        trades.append({"id": f"{year}-t{t.get('id') or len(trades)}", "year": year, "date": date, "week": week,
+                       "sides": [a, b]})
+    trades.sort(key=lambda t: t["date"])
+
     season = {
         "year": year, "name": settings.get("name", ""), "teamCount": settings.get("teamCount", len(teams)),
         "regSeasonWeeks": settings.get("regSeasonWeeks", 13), "playoffTeamCount": settings.get("playoffTeamCount", 0),
         "matchupPeriods": periods,
         "isComplete": bool(status.get("isComplete")), "completedWeeks": status.get("completedWeeks", []),
         "currentWeek": status.get("currentWeek"), "source": raw.get("source", "espn"),
-        "teams": teams, "matchups": matchups, "draft": draft, "boxscores": boxscores,
+        "teams": teams, "matchups": matchups, "draft": draft, "boxscores": boxscores, "trades": trades,
         "honors": {}, "championRoster": None, "championRosterSource": None, "warnings": warnings,
     }
     ov = load_yaml(OVERRIDES_DIR / f"{year}.yml")

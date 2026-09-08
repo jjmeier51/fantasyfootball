@@ -180,6 +180,11 @@ scores are copyrighted and cannot be shipped.
 
 ## Data notes
 
+- Trades come from ESPN's league activity feed, which only exists from 2019 onward. Each side of
+  a trade is scored by what the players it received went on to produce for their new owner that
+  season, which is what "most lopsided" ranks. Run the workflow with **full refresh** once after
+  updating to load historical trades.
+
 - Owner pages show "Your MVP" with a headshot. Headshots are downloaded once per player from
   ESPN's public CDN during the sync (`sync/headshots.py`) into `public/headshots/` and served
   statically; if a download fails the page shows a monogram badge instead.

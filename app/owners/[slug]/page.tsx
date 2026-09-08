@@ -8,6 +8,7 @@ import Trophy from "@/components/Trophy";
 import { FinishChart, PointsChart } from "@/components/charts";
 import BestTeamCard from "@/components/BestTeamCard";
 import MvpCard from "@/components/MvpCard";
+import TradeCard from "@/components/TradeCard";
 import { Pill, SectionHeader, StatTile } from "@/components/ui";
 
 export function generateStaticParams() {
@@ -37,6 +38,8 @@ export default async function OwnerPage({ params }: { params: Promise<{ slug: st
   const maxTeams = Math.max(...seasons.map((s) => s.teamCount));
   const titles = records.trophies.filter((t) => t.champion?.ownerKey === slug);
   const highlights = records.ownerHighlights[slug];
+  const trades = records.trades.byOwner[slug];
+  const ownerMap = new Map(records.careers.map((x) => [x.ownerKey, ownerLite(x.ownerKey)]));
   const history = [...o.seasons].sort((a, b) => b - a).map((y) => ({ year: y, ...o.teamNames[String(y)], logo: o.logos[String(y)] ?? null, finish: c.finishes.find((f) => f.year === y) }));
 
   return (
@@ -102,6 +105,31 @@ export default async function OwnerPage({ params }: { params: Promise<{ slug: st
               </div>
             </div>
           )}
+        </section>
+      )}
+
+      {trades && trades.count > 0 && (
+        <section className="mt-10">
+          <SectionHeader
+            eyebrow="Trade desk"
+            title="Your trades"
+            sub={`${trades.count} trade${trades.count === 1 ? "" : "s"} since 2019 · won ${trades.wins}, lost ${trades.losses} · net ${trades.netPoints >= 0 ? "+" : ""}${fmt(trades.netPoints, 1)} points`}
+            action={<Link href="/records#trades" className="text-sm text-gold hover:underline">All trades →</Link>}
+          />
+          <div className="grid lg:grid-cols-2 gap-4">
+            {trades.best && (
+              <div className="min-w-0">
+                <div className="eyebrow mb-2">Best trade</div>
+                <TradeCard trade={trades.best} owners={ownerMap} />
+              </div>
+            )}
+            {trades.worst && (
+              <div className="min-w-0">
+                <div className="eyebrow mb-2 text-bad">Worst trade</div>
+                <TradeCard trade={trades.worst} owners={ownerMap} />
+              </div>
+            )}
+          </div>
         </section>
       )}
 

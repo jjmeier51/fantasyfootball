@@ -1,8 +1,9 @@
 name: Sync ESPN data
+run-name: ESPN sync (${{ github.event_name }})
 
 on:
   schedule:
-    # Tuesdays 12:00 UTC (08:00 ET) — after Monday Night Football stats are final.
+    # Tuesdays 12:00 UTC (08:00 ET), after Monday Night Football stats are final.
     - cron: "0 12 * * 2"
   workflow_dispatch:
     inputs:

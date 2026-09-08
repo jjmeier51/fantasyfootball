@@ -19,15 +19,30 @@ export function Modal({ onClose, children, title }: { onClose: () => void; child
     };
   }, [onClose]);
   return (
-    <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4" onClick={onClose} role="dialog" aria-modal="true">
-      <div className="card w-full sm:max-w-3xl max-h-[92vh] overflow-y-auto scrollbar-thin rounded-b-none sm:rounded-2xl" onClick={(e) => e.stopPropagation()}>
-        <div className="sticky top-0 z-10 flex items-center justify-between gap-3 px-5 py-3 border-b border-border bg-surface/95 backdrop-blur">
+    <div
+      className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4"
+      style={{ height: "100dvh" }}
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        className="card w-full sm:max-w-3xl flex flex-col overflow-hidden rounded-b-none sm:rounded-2xl"
+        style={{ maxHeight: "calc(100dvh - max(2.5rem, env(safe-area-inset-top)) - env(safe-area-inset-bottom))" }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="shrink-0 flex items-center justify-between gap-3 px-5 py-3 border-b border-border bg-surface/95">
           <div className="min-w-0">{title}</div>
-          <button type="button" onClick={onClose} className="p-2 rounded-md hover:bg-white/10" aria-label="Close">
-            <X size={18} />
+          <button type="button" onClick={onClose} className="p-2 -mr-2 rounded-md hover:bg-white/10" aria-label="Close" data-testid="modal-close">
+            <X size={20} />
           </button>
         </div>
-        <div className="p-5">{children}</div>
+        <div className="p-5 overflow-y-auto scrollbar-thin flex-1 min-h-0">{children}</div>
+        <div className="shrink-0 sm:hidden border-t border-border p-3 bg-surface" style={{ paddingBottom: "calc(0.75rem + env(safe-area-inset-bottom))" }}>
+          <button type="button" onClick={onClose} className="w-full rounded-full border border-border py-2.5 text-sm font-semibold text-text-2 hover:text-text hover:border-gold/60">
+            Close
+          </button>
+        </div>
       </div>
     </div>
   );

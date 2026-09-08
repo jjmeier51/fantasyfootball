@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
@@ -27,6 +27,11 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image", title: meta.leagueName, description },
   appleWebApp: { title: meta.leagueName },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#050608",
+  viewportFit: "cover", // lets env(safe-area-inset-*) work on notched iPhones
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

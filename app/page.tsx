@@ -54,7 +54,7 @@ export default function HomePage() {
             Every championship, every blowout, every embarrassing week. The complete history of the league since our freshman year of college, pulled straight from ESPN and preserved forever.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Link href="/trophy-room" className="inline-flex items-center gap-2 rounded-full bg-gold text-bg font-semibold px-5 py-2.5 hover:bg-gold-2 transition-colors">
+            <Link href="/trophy-room" className="inline-flex items-center gap-2 rounded-full bg-linear-to-r from-[#1b2a48] via-[#128a5c] to-[#34d399] text-white font-semibold px-5 py-2.5 shadow-lg shadow-good/20 hover:brightness-110 transition">
               <TrophyIcon size={16} /> Enter the Trophy Room
             </Link>
             <Link href="/records" className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 hover:border-gold/60 transition-colors">

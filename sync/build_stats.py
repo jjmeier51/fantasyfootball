@@ -57,18 +57,16 @@ def build_trophies(seasons: list[dict], owners: list[dict]) -> list[dict]:
     return out
 
 
-def filter_facts(facts: list[dict], owners: list[dict], adjustments: dict) -> list[dict]:
-    """Drop facts about hidden owners (by key or by name mention), then add hand-written ones."""
+def hide_facts(facts: list[dict], owners: list[dict], adjustments: dict) -> list[dict]:
+    """Drop facts about hidden owners, by owner key or by whole-word name mention."""
     hidden = set(adjustments.get("hide_facts_for") or [])
     names = [o["name"] for o in owners if o["key"] in hidden]
     pattern = re.compile(r"\b(" + "|".join(re.escape(n) for n in names) + r")\b") if names else None
+    return [f for f in facts if f.get("ownerKey") not in hidden and not (pattern and pattern.search(f["text"]))]
+
+
+def custom_facts(adjustments: dict) -> list[dict]:
     out = []
-    for f in facts:
-        if f.get("ownerKey") in hidden:
-            continue
-        if pattern and pattern.search(f["text"]):
-            continue
-        out.append(f)
     for cf in adjustments.get("custom_facts") or []:
         if cf.get("id") and cf.get("text"):
             out.append({"id": cf["id"], "category": cf.get("category", "league"), "text": cf["text"], "tone": cf.get("tone", "positive"),
@@ -78,16 +76,23 @@ def filter_facts(facts: list[dict], owners: list[dict], adjustments: dict) -> li
     return out
 
 
-def ensure_positive(facts: list[dict], pool: dict[str, list[dict]], hidden: set, minimum: int = 2) -> list[dict]:
-    """Guarantee every owner who has played has at least `minimum` positive facts."""
+def filter_facts(facts: list[dict], owners: list[dict], adjustments: dict) -> list[dict]:
+    """Hide facts about hidden owners, then add hand-written ones."""
+    return hide_facts(facts, owners, adjustments) + custom_facts(adjustments)
+
+
+def ensure_positive(facts: list[dict], pool: dict[str, list[dict]], hidden: set, minimum=2) -> list[dict]:
+    """Guarantee every owner who has played has at least `minimum` positive facts
+    (`minimum` may be an int or a function of the owner key)."""
     have = {f["id"] for f in facts}
     out = list(facts)
     for k, candidates in pool.items():
         if k in hidden:
             continue
+        need = minimum(k) if callable(minimum) else minimum
         count = sum(1 for f in out if f.get("ownerKey") == k and f.get("tone") == "positive")
         for cand in candidates:
-            if count >= minimum:
+            if count >= need:
                 break
             if cand["id"] in have:
                 continue
@@ -114,9 +119,12 @@ def main():
     goat = build_goat(careers, adjustments.get("goat_overrides"))
     draft = build_draft_tendencies(seasons, owners)
     facts = build_facts(seasons, owners, careers, records, h2h, team_seasons, luck_rows) + draft["facts"]
-    facts = filter_facts(facts, owners, adjustments)
-    facts = ensure_positive(facts, positive_pool(seasons, owners, careers, h2h, team_seasons, draft["greatest"]),
-                            set(adjustments.get("hide_facts_for") or []), minimum=2)
+    facts = hide_facts(facts, owners, adjustments) + custom_facts(adjustments)
+    current_year = max(s["year"] for s in seasons)
+    current_members = {t["ownerKey"] for s in seasons if s["year"] == current_year for t in s["teams"]}
+    pool = {k: hide_facts(v, owners, adjustments) for k, v in positive_pool(seasons, owners, careers, h2h, team_seasons, draft["greatest"]).items()}
+    facts = ensure_positive(facts, pool, set(adjustments.get("hide_facts_for") or []),
+                            minimum=lambda k: 4 if k in current_members else 2)
     trophies = build_trophies(seasons, owners)
 
     # titles, then fewer finals losses, then earlier first title

@@ -180,6 +180,41 @@ def build_facts(seasons: list[dict], owners: list[dict], careers: list[dict], re
             n = len({v["name"] for v in rename["teamNames"].values()})
             add("renames", f"{N(rename['key'])} has used {n} different team names. Identity crisis or branding genius?", "league", ownerKey=rename["key"], href=f"/owners/{rename['key']}", tone="neutral")
 
+    # --- lineup management (2019+ box scores)
+    bench = _bench_stats(seasons)
+    if bench:
+        worst = max([(k, v) for k, v in bench.items() if v["games"] >= 20], key=lambda kv: kv[1]["regret"] / kv[1]["games"], default=None)
+        if worst:
+            k, v = worst
+            add(f"bench-worst-{k}", f"{N(k)}'s missed lineup swaps cost {v['regret'] / v['games']:.1f} points per game since 2019, the most in the league. Check the bench before kickoff.", "oddities", tone="negative", ownerKey=k, href=f"/owners/{k}")
+        regret = max([(k, v) for k, v in bench.items() if v["wouldHaveWon"]], key=lambda kv: kv[1]["wouldHaveWon"], default=None)
+        if regret and regret[1]["wouldHaveWon"] >= 3:
+            k, v = regret
+            add(f"bench-regret-{k}", f"{N(k)} has lost {v['wouldHaveWon']} games since 2019 that a single lineup swap would have won.", "oddities", tone="negative", ownerKey=k, href=f"/owners/{k}")
+        big = max([(k, v["worst"]) for k, v in bench.items() if v["worst"]], key=lambda kv: kv[1]["gain"], default=None)
+        if big:
+            k, w = big
+            add("bench-single", f"The worst lineup call in league history: in {w['year']} week {w['week']}, {N(k)} started {w['starterName']} ({w['starterPts']:.1f}) over {w['benchName']} ({w['benchPts']:.1f})" + (f" and lost to {N(w['oppKey'])} by {w['lostBy']:.2f}." if w["lostBy"] else "."), "oddities", tone="negative", ownerKey=k, year=w["year"], href=f"/seasons/{w['year']}")
+    # --- close games
+    situ = _situational(seasons)
+    anti = min([(k, v) for k, v in situ.items() if v["closeW"] + v["closeL"] >= 6], key=lambda kv: kv[1]["closeW"] / (kv[1]["closeW"] + kv[1]["closeL"]), default=None)
+    if anti and anti[1]["closeW"] / (anti[1]["closeW"] + anti[1]["closeL"]) <= 0.4:
+        k, v = anti
+        add(f"anti-clutch-{k}", f"{N(k)} is {v['closeW']}-{v['closeL']} in games decided by fewer than 5 points. Somebody check the kicker.", "oddities", tone="negative", ownerKey=k, href=f"/owners/{k}")
+    fade = min([(k, v) for k, v in situ.items() if v["lateW"] + v["lateL"] >= 8], key=lambda kv: kv[1]["lateW"] / (kv[1]["lateW"] + kv[1]["lateL"]), default=None)
+    if fade and fade[1]["lateW"] / (fade[1]["lateW"] + fade[1]["lateL"]) <= 0.4:
+        k, v = fade
+        add(f"fade-{k}", f"{N(k)} is {v['lateW']}-{v['lateL']} over the last four weeks of the regular season. The wheels come off in November.", "oddities", tone="negative", ownerKey=k, href=f"/owners/{k}")
+    # --- collapses and turnarounds
+    turns = _turnarounds(careers)
+    if turns:
+        up = max(turns, key=lambda t: t["delta"])
+        if up["delta"] >= 5:
+            add("turnaround-league", f"The biggest turnaround in league history: {N(up['ownerKey'])} went from {up['from']['wins']}-{up['from']['losses']} in {up['from']['year']} to {up['to']['wins']}-{up['to']['losses']} in {up['to']['year']}.", "oddities", tone="positive", ownerKey=up["ownerKey"], year=up["to"]["year"], href=f"/owners/{up['ownerKey']}")
+        down = min(turns, key=lambda t: t["delta"])
+        if down["delta"] <= -5:
+            add("collapse-league", f"The biggest collapse in league history: {N(down['ownerKey'])} went from {down['from']['wins']}-{down['from']['losses']} in {down['from']['year']} to {down['to']['wins']}-{down['to']['losses']} in {down['to']['year']}.", "oddities", tone="negative", ownerKey=down["ownerKey"], year=down["to"]["year"], href=f"/owners/{down['ownerKey']}")
+
     # dedupe by id
     seen = set()
     out = []
@@ -191,6 +226,101 @@ def build_facts(seasons: list[dict], owners: list[dict], careers: list[dict], re
     return out
 
 
+def _bench_stats(seasons: list[dict]) -> dict[str, dict]:
+    """Lineup management per owner from 2019+ box scores.
+
+    For every game, find the single best swap the owner missed: the bench player who would have
+    replaced a starter in an eligible slot for the biggest gain. That is the honest measure of
+    'points left on the bench' (a whole bench can't be started at once)."""
+    FLEX = {"FLEX", "RB/WR", "RB/WR/TE", "WR/TE", "OP"}
+    out: dict[str, dict] = {}
+    for s in seasons:
+        results = {}
+        for m in s["matchups"]:
+            if not m["decided"] or m["type"] in ("LOSERS_CONSOLATION_LADDER", "WINNERS_CONSOLATION_LADDER"):
+                continue
+            for me, opp in ((m["home"], m["away"]), (m["away"], m["home"])):
+                results[(m["week"], me["ownerKey"])] = (me["score"], opp["score"], m["winnerKey"], opp["ownerKey"])
+        for wk, entries in (s.get("boxscores") or {}).items():
+            for e in entries:
+                k = e.get("ownerKey")
+                key = (int(wk), k)
+                if not k or key not in results:
+                    continue
+                starters = [p for p in e["players"] if p.get("slot") and p["slot"] not in ("BE", "IR")]
+                benchers = [p for p in e["players"] if p.get("slot") in ("BE", "IR")]
+                best = None
+                for st in starters:
+                    slot = st["slot"]
+                    elig = [b for b in benchers if (b.get("position") == st.get("position")) or
+                            (slot in FLEX and b.get("position") in ("RB", "WR", "TE"))]
+                    for b in elig:
+                        gain = (b.get("points") or 0) - (st.get("points") or 0)
+                        if gain > 0 and (best is None or gain > best["gain"]):
+                            best = {"gain": round(gain, 2), "benchName": b["name"], "benchPts": b.get("points") or 0,
+                                    "starterName": st["name"], "starterPts": st.get("points") or 0, "slot": slot}
+                d = out.setdefault(k, {"regret": 0.0, "games": 0, "worst": None, "wouldHaveWon": 0})
+                d["games"] += 1
+                if not best:
+                    continue
+                d["regret"] += best["gain"]
+                score, opp, winner, opp_key = results[key]
+                lost_by = round(opp - score, 2)
+                if winner and winner != k and best["gain"] > lost_by > 0:
+                    d["wouldHaveWon"] += 1
+                if d["worst"] is None or best["gain"] > d["worst"]["gain"]:
+                    d["worst"] = dict(best, year=s["year"], week=int(wk), lostBy=lost_by if lost_by > 0 else None, oppKey=opp_key)
+    return out
+
+
+def _situational(seasons: list[dict]) -> dict[str, dict]:
+    """Close-game, late-season and playoff scoring splits per owner."""
+    out: dict[str, dict] = {}
+    for s in seasons:
+        reg = s["regSeasonWeeks"]
+        for g in team_games(s):
+            k = g["ownerKey"]
+            d = out.setdefault(k, {"closeW": 0, "closeL": 0, "lateW": 0, "lateL": 0, "regPts": 0.0, "regG": 0, "poPts": 0.0, "poG": 0})
+            if g["won"] is None:
+                continue
+            if abs(g["margin"]) < 5:
+                d["closeW" if g["won"] else "closeL"] += 1
+            if not g["isPlayoff"] and g["week"] > reg - 4:
+                d["lateW" if g["won"] else "lateL"] += 1
+            if g["isPlayoff"]:
+                d["poPts"] += g["score"]; d["poG"] += 1
+            else:
+                d["regPts"] += g["score"]; d["regG"] += 1
+    return out
+
+
+def _turnarounds(careers: list[dict]) -> list[dict]:
+    rows = []
+    for c in careers:
+        fins = sorted([f for f in c["finishes"] if f["isComplete"]], key=lambda f: f["year"])
+        for a, b in zip(fins, fins[1:]):
+            if b["year"] == a["year"] + 1:
+                rows.append({"ownerKey": c["ownerKey"], "from": a, "to": b, "delta": b["wins"] - a["wins"]})
+    return rows
+
+
+def _winning_streak(c: dict) -> tuple[int, int | None]:
+    best = cur = 0
+    start = bstart = None
+    prev = None
+    for f in sorted([f for f in c["finishes"] if f["isComplete"]], key=lambda f: f["year"]):
+        if f["wins"] > f["losses"] and (prev is None or f["year"] == prev + 1) and cur:
+            cur += 1
+        elif f["wins"] > f["losses"]:
+            cur, start = 1, f["year"]
+        else:
+            cur = 0
+        if cur > best:
+            best, bstart = cur, start
+        prev = f["year"]
+    return best, bstart
+
+
 def positive_pool(seasons: list[dict], owners: list[dict], careers: list[dict], h2h: dict,
                   team_seasons: list[dict], greatest_picks: list[dict]) -> dict[str, list[dict]]:
     """Ordered candidate 'brag' facts per owner. Every owner who has played gets several, so the
@@ -200,6 +330,11 @@ def positive_pool(seasons: list[dict], owners: list[dict], careers: list[dict], 
     pool: dict[str, list[dict]] = {}
     champs = {s["year"]: s["honors"].get("champion") for s in seasons}
     ppg_rank = {c["ownerKey"]: i + 1 for i, c in enumerate(sorted([x for x in careers if x["gamesPlayed"] >= 20], key=lambda x: -x["ppg"]))}
+    bench = _bench_stats(seasons)
+    bench_rank = {k: i + 1 for i, (k, _) in enumerate(sorted([(k, v) for k, v in bench.items() if v["games"] >= 20], key=lambda kv: kv[1]["regret"] / kv[1]["games"]))}
+    bottom_rank = {c["ownerKey"]: i + 1 for i, c in enumerate(sorted([x for x in careers if x["gamesPlayed"] >= 40], key=lambda x: x["weeksBottom"] / x["gamesPlayed"]))}
+    situ = _situational(seasons)
+    turnarounds = _turnarounds(careers)
     for c in careers:
         k = c["ownerKey"]
         if c["gamesPlayed"] == 0:
@@ -249,5 +384,51 @@ def positive_pool(seasons: list[dict], owners: list[dict], careers: list[dict], 
             add(f"pos-streak-{k}", f"{N(k)} once won {st['length']} straight games ({st['start']['year']} week {st['start']['week']} to {st['end']['year']} week {st['end']['week']}).", "streaks", href=f"/owners/{k}")
         if ppg_rank.get(k, 99) <= 5:
             add(f"pos-ppg-{k}", f"{N(k)} averages {c['ppg']:.1f} points per game, {ordinal(ppg_rank[k])}-best in league history.", "records", href="/records#career")
-        pool[k] = out
+        # --- newer fact types
+        for y in c.get("topScorerSeasons", []):
+            t = next((f for f in c["finishes"] if f["year"] == y), None)
+            if t:
+                add(f"pos-top-scorer-{k}-{y}", f"{N(k)} led the league in scoring in {y} with {t['pointsFor']:.1f} points.", "records", year=y, href=f"/seasons/{y}")
+                break
+        sit = situ.get(k, {})
+        cw, cl = sit.get("closeW", 0), sit.get("closeL", 0)
+        if cw + cl >= 6 and cw / (cw + cl) >= 0.6:
+            add(f"pos-clutch-{k}", f"{N(k)} is {cw}-{cl} in games decided by fewer than 5 points. Ice in the veins.", "oddities", href=f"/owners/{k}")
+        lw, ll = sit.get("lateW", 0), sit.get("lateL", 0)
+        if lw + ll >= 8 and lw / (lw + ll) >= 0.6:
+            add(f"pos-closer-{k}", f"{N(k)} is {lw}-{ll} over the last four weeks of the regular season. A closer.", "oddities", href=f"/owners/{k}")
+        if sit.get("poG", 0) >= 3 and sit.get("regG", 0) >= 20:
+            bump = sit["poPts"] / sit["poG"] - sit["regPts"] / sit["regG"]
+            if bump >= 5:
+                add(f"pos-po-bump-{k}", f"{N(k)} scores {bump:.1f} more points per game in the playoffs than in the regular season. Built for December.", "trophies", href=f"/owners/{k}")
+        b = bench.get(k)
+        if b and b["games"] >= 20 and bench_rank.get(k, 99) <= 3:
+            add(f"pos-bench-{k}", f"{N(k)} sets the best lineups in the league: missed swaps cost only {b['regret'] / b['games']:.1f} points per game since 2019, {ordinal(bench_rank[k])}-best.", "oddities", href=f"/owners/{k}")
+        if c["gamesPlayed"] >= 40 and bottom_rank.get(k, 99) <= 3:
+            add(f"pos-steady-{k}", f"{N(k)} has been the league's lowest scorer in only {c['weeksBottom']} of {c['gamesPlayed']} weeks, {ordinal(bottom_rank[k])}-fewest in the league. Never the punchline.", "oddities", href=f"/owners/{k}")
+        turn = max([t for t in turnarounds if t["ownerKey"] == k], key=lambda t: t["delta"], default=None)
+        if turn and turn["delta"] >= 5:
+            add(f"pos-turnaround-{k}", f"{N(k)} went from {turn['from']['wins']}-{turn['from']['losses']} in {turn['from']['year']} to {turn['to']['wins']}-{turn['to']['losses']} in {turn['to']['year']}, a {turn['delta']}-win turnaround.", "oddities", year=turn["to"]["year"], href=f"/owners/{k}")
+        ws, wstart = _winning_streak(c)
+        if ws >= 3:
+            add(f"pos-winning-seasons-{k}", f"{N(k)} put together {ws} straight winning seasons starting in {wstart}.", "streaks", href=f"/owners/{k}")
+        if len(c["finalsApps"]) >= 2 and len(c["titles"]) == len(c["finalsApps"]):
+            add(f"pos-finals-perfect-{k}", f"{N(k)} is {len(c['titles'])}-0 in championship games. Undefeated when it matters.", "trophies", href="/trophy-room")
+        elif len(c["titles"]) >= 2 and len(c["titles"]) > len(c["runnerUps"]):
+            add(f"pos-finals-record-{k}", f"{N(k)} is {len(c['titles'])}-{len(c['runnerUps'])} in championship games.", "trophies", href="/trophy-room")
+        yrs = sorted(c["playoffApps"])
+        run = best_run = 0
+        prev = None
+        for y in yrs:
+            run = run + 1 if prev is not None and y == prev + 1 else 1
+            best_run = max(best_run, run)
+            prev = y
+        if best_run >= 3:
+            add(f"pos-po-streak-{k}", f"{N(k)} made the playoffs {best_run} seasons in a row.", "streaks", href=f"/owners/{k}")
+        priority = ["pos-best-season", "pos-owns", "pos-clutch", "pos-finals", "pos-top-scorer", "pos-pick", "pos-closer",
+                    "pos-po-streak", "pos-winning-seasons", "pos-turnaround", "pos-bench", "pos-steady", "pos-po-bump",
+                    "pos-playoffs", "pos-giant", "pos-weeks-top", "pos-playoff-wins", "pos-high-week", "pos-big-win",
+                    "pos-streak", "pos-ppg"]
+        rank_of = lambda f: next((i for i, pre in enumerate(priority) if f["id"].startswith(pre)), 99)  # noqa: E731
+        pool[k] = sorted(out, key=rank_of)
     return pool

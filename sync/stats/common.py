@@ -22,12 +22,17 @@ def team_by_id(season: dict, team_id: int) -> dict | None:
     return None
 
 
-def team_games(season: dict, include_consolation: bool = False):
-    """Yield one record per team per decided matchup (two per matchup)."""
+def team_games(season: dict, include_consolation: bool = False, include_multiweek: bool = False):
+    """Yield one record per team per decided matchup (two per matchup).
+
+    Two-week playoff matchups (one "game" scored over two NFL weeks, used 2010-2018) are
+    skipped by default because their totals aren't comparable to single-week scores."""
     for m in season["matchups"]:
         if not m["decided"]:
             continue
         if m["type"] in CONSOLATION_TYPES and not include_consolation:
+            continue
+        if m.get("multiWeek") and not include_multiweek:
             continue
         for side, other in (("home", "away"), ("away", "home")):
             me, opp = m[side], m[other]
@@ -37,7 +42,7 @@ def team_games(season: dict, include_consolation: bool = False):
                 "ownerKey": me["ownerKey"], "oppKey": opp["ownerKey"],
                 "score": me["score"], "oppScore": opp["score"], "margin": round(me["score"] - opp["score"], 2),
                 "won": won, "isPlayoff": m["type"] in PLAYOFF_TYPES, "type": m["type"],
-                "teamId": me["teamId"], "oppTeamId": opp["teamId"],
+                "teamId": me["teamId"], "oppTeamId": opp["teamId"], "multiWeek": bool(m.get("multiWeek")),
             }
 
 

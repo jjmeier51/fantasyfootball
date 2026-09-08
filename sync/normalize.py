@@ -373,6 +373,7 @@ def normalize_season(raw: dict, owner_map: OwnerMap) -> dict:
         })
     owner_of = {t["teamId"]: t["ownerKey"] for t in teams}
     matchups = []
+    periods = {str(k): v for k, v in (settings.get("matchupPeriods") or {}).items()}
     for i, m in enumerate(raw.get("matchups", [])):
         h, a = owner_of.get(m["homeTeamId"]), owner_of.get(m["awayTeamId"])
         if not h or not a:
@@ -381,9 +382,10 @@ def normalize_season(raw: dict, owner_map: OwnerMap) -> dict:
         winner = None
         if decided:
             winner = h if m["winner"] == "HOME" else (a if m["winner"] == "AWAY" else None)
+        span = periods.get(str(m["week"]), [m["week"]])
         matchups.append({
             "id": f"{year}-w{m['week']}-{i}", "week": m["week"], "isPlayoff": bool(m.get("isPlayoff")),
-            "type": m.get("type", "NONE"),
+            "type": m.get("type", "NONE"), "multiWeek": len(span) > 1,
             "home": {"teamId": m["homeTeamId"], "ownerKey": h, "score": m.get("homeScore", 0)},
             "away": {"teamId": m["awayTeamId"], "ownerKey": a, "score": m.get("awayScore", 0)},
             "winnerKey": winner, "decided": decided,
@@ -414,6 +416,7 @@ def normalize_season(raw: dict, owner_map: OwnerMap) -> dict:
     season = {
         "year": year, "name": settings.get("name", ""), "teamCount": settings.get("teamCount", len(teams)),
         "regSeasonWeeks": settings.get("regSeasonWeeks", 13), "playoffTeamCount": settings.get("playoffTeamCount", 0),
+        "matchupPeriods": periods,
         "isComplete": bool(status.get("isComplete")), "completedWeeks": status.get("completedWeeks", []),
         "currentWeek": status.get("currentWeek"), "source": raw.get("source", "espn"),
         "teams": teams, "matchups": matchups, "draft": draft, "boxscores": boxscores,

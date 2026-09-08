@@ -24,7 +24,7 @@ def _rec(rid, category, title, unit, better, entries, description="", limit=10):
 def build_records(seasons: list[dict], careers: list[dict], luck_rows: list[dict]) -> list[dict]:
     recs = []
     games = []
-    since = f"({RECORD_MIN_YEAR} onward)"
+    since = f"({RECORD_MIN_YEAR} onward; two-week playoff matchups excluded)"
     for s in seasons:
         if s["year"] < RECORD_MIN_YEAR:
             continue  # single-game records only count the modern scoring era
@@ -39,8 +39,17 @@ def build_records(seasons: list[dict], careers: list[dict], luck_rows: list[dict
                      [_entry(s, g, g["score"]) for s, g in games if g["score"] > 0], f"The weeks nobody wants to remember {since}."))
     recs.append(_rec("blowout", "singleGame", "Biggest Blowout", "margin", "high",
                      [_entry(s, g, g["margin"]) for s, g in decided if g["margin"] > 0], f"Largest margin of victory {since}."))
+    # ties count as the closest possible game, but only when the scores carry decimals
+    # (whole-number ties from the old scoring era were far too common to be interesting)
+    seen_ties = set()
+    tie_entries = []
+    for s, g in games:
+        if g["won"] is None and g["score"] != int(g["score"]) and g["matchupId"] not in seen_ties:
+            seen_ties.add(g["matchupId"])
+            tie_entries.append(_entry(s, g, 0.0))
     recs.append(_rec("closest", "singleGame", "Closest Game", "margin", "low",
-                     [_entry(s, g, abs(g["margin"])) for s, g in decided if g["margin"] > 0], f"Decided by the thinnest margins {since}."))
+                     [_entry(s, g, abs(g["margin"])) for s, g in decided if g["margin"] > 0] + tie_entries,
+                     f"Decided by the thinnest margins, including ties with decimal scores {since}."))
     recs.append(_rec("shootout", "singleGame", "Highest-Scoring Game", "combined", "high",
                      [_entry(s, g, round(g["score"] + g["oppScore"], 2)) for s, g in decided if g["margin"] > 0], f"Combined points, both teams {since}."))
     recs.append(_rec("points-in-loss", "oddities", "Most Points in a Loss", "pts", "high",

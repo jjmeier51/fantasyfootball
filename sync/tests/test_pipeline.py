@@ -216,3 +216,28 @@ def test_waiver_qb_needs_top3_finish(league):
                                     "playerName": f"Star QB {i}", "position": "QB", "proTeam": "BUF", "keeper": False, "bid": None})
     hl, _, waiver = build_highlights(seasons, build_team_seasons(seasons))
     assert hl["cat-cole"]["bestPlayers"]["waiver"] is None
+
+
+def test_two_week_playoffs_and_decimal_ties(league, monkeypatch):
+    import stats.records as rec
+    from stats.common import team_games
+    seasons, owners, _ = league
+    s19 = seasons[0]
+    # make 2019's playoff week a two-week matchup and add a decimal tie in week 1
+    for m in s19["matchups"]:
+        if m["week"] == 3:
+            m["multiWeek"] = True
+    s19["matchups"].append({"id": "2019-w1-tie", "week": 1, "isPlayoff": False, "type": "NONE", "multiWeek": False,
+                            "home": {"teamId": 1, "ownerKey": "ann", "score": 101.5}, "away": {"teamId": 3, "ownerKey": "cat-cole", "score": 101.5},
+                            "winnerKey": None, "decided": True})
+    assert all(not g["multiWeek"] for g in team_games(s19))
+    assert any(g["multiWeek"] for g in team_games(s19, include_multiweek=True))
+    careers = build_careers(seasons, owners)
+    ann = next(c for c in careers if c["ownerKey"] == "ann")
+    assert ann["playoffWins"] == 1                      # the two-week final still counts as a playoff win
+    assert ann["highWeek"]["value"] == 200.0            # ...but its 150.0 total never competes for high week
+    monkeypatch.setattr(rec, "RECORD_MIN_YEAR", 2019)
+    records = {r["id"]: r for r in rec.build_records(seasons, careers, build_luck(seasons))}
+    closest = records["closest"]["entries"][0]
+    assert closest["value"] == 0.0 and closest["score"] == 101.5   # decimal tie ranks first
+    assert all(e["week"] != 3 or e["year"] != 2019 for e in records["high-score"]["entries"])

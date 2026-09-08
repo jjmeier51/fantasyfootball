@@ -26,7 +26,8 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
   const t = records.trophies.find((x) => x.year === s.year);
   const standings = [...s.teams].sort((a, b) => (a.finalRank || 99) - (b.finalRank || 99) || (a.seed || 99) - (b.seed || 99) || b.wins - a.wins || b.pointsFor - a.pointsFor);
   const decided = s.matchups.filter((m) => m.decided);
-  const games = decided.flatMap((m) => [
+  // superlatives ignore two-week playoff matchups, whose totals cover two NFL weeks
+  const games = decided.filter((m) => !m.multiWeek).flatMap((m) => [
     { k: m.home.ownerKey, score: m.home.score, opp: m.away.ownerKey, oppScore: m.away.score, week: m.week, id: m.id, m },
     { k: m.away.ownerKey, score: m.away.score, opp: m.home.ownerKey, oppScore: m.home.score, week: m.week, id: m.id, m },
   ]);
@@ -129,7 +130,7 @@ export default async function SeasonPage({ params }: { params: Promise<{ year: s
             <div key={w} className="card p-4">
               <div className="flex items-baseline justify-between mb-2">
                 <span className="font-display text-xl">Week {w}</span>
-                {w > s.regSeasonWeeks && <span className="text-[10px] uppercase tracking-widest text-gold">{matchupTypeLabel(decided.find((m) => m.week === w)?.type ?? "")}</span>}
+                {w > s.regSeasonWeeks && <span className="text-[10px] uppercase tracking-widest text-gold">{matchupTypeLabel(decided.find((m) => m.week === w)?.type ?? "")}{decided.find((m) => m.week === w)?.multiWeek ? " · two-week" : ""}</span>}
               </div>
               <ul className="space-y-1 text-sm">
                 {decided.filter((m) => m.week === w).map((m) => (

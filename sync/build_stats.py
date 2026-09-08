@@ -46,7 +46,7 @@ def build_trophies(seasons: list[dict], owners: list[dict]) -> list[dict]:
                     title_game = {"matchupId": m["id"], "week": m["week"], "winnerScore": ws, "loserScore": ls}
         run = []
         if h.get("champion"):
-            for g in sorted(team_games(s), key=lambda g: g["week"]):
+            for g in sorted(team_games(s, include_multiweek=True), key=lambda g: g["week"]):
                 if g["isPlayoff"] and g["ownerKey"] == h["champion"]:
                     run.append({"week": g["week"], "oppKey": g["oppKey"], "oppName": names.get(g["oppKey"], g["oppKey"]),
                                 "score": g["score"], "oppScore": g["oppScore"], "matchupId": g["matchupId"]})

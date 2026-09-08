@@ -44,6 +44,7 @@ export interface Matchup {
   winnerKey: string | null;
   decided: boolean;
   fromOverride?: boolean;
+  multiWeek?: boolean;
 }
 
 export interface DraftPick {

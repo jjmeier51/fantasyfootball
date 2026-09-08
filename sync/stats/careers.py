@@ -106,7 +106,7 @@ def build_careers(seasons: list[dict], owners: list[dict]) -> list[dict]:
                 "pfZ": round(zmap.get(k, 0.0), 2) if k in zmap else None,
                 "champion": h.get("champion") == k,
             })
-        for g in team_games(s):
+        for g in team_games(s, include_multiweek=True):
             k = g["ownerKey"]
             if k not in car:
                 continue
@@ -117,6 +117,8 @@ def build_careers(seasons: list[dict], owners: list[dict]) -> list[dict]:
                     c["playoffWins"] += 1
                 elif g["won"] is False:
                     c["playoffLosses"] += 1
+            if g["multiWeek"]:
+                continue  # two-week totals don't compete with single-week scores
             entry = {"value": g["score"], "year": g["year"], "week": g["week"], "oppKey": g["oppKey"],
                      "matchupId": g["matchupId"], "won": g["won"], "oppScore": g["oppScore"]}
             if c["highWeek"] is None or g["score"] > c["highWeek"]["value"]:

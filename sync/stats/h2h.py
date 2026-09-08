@@ -18,7 +18,7 @@ def build_h2h(seasons: list[dict], owners: list[dict]) -> dict:
                                 "biggestWin": None, "closest": None}
     seen = set()
     for s in seasons:
-        for g in sorted(team_games(s, include_consolation=True), key=lambda g: (g["year"], g["week"])):
+        for g in sorted(team_games(s, include_consolation=True, include_multiweek=True), key=lambda g: (g["year"], g["week"])):
             a, b = g["ownerKey"], g["oppKey"]
             if a not in matrix or b not in matrix.get(a, {}):
                 continue
@@ -40,10 +40,11 @@ def build_h2h(seasons: list[dict], owners: list[dict]) -> dict:
                 st["length"] += 1
             else:
                 cell["streak"] = {"type": res, "length": 1}
-            if res == "W" and (cell["biggestWin"] is None or g["margin"] > cell["biggestWin"]["margin"]):
-                cell["biggestWin"] = {"margin": g["margin"], "year": g["year"], "week": g["week"], "matchupId": g["matchupId"]}
-            if cell["closest"] is None or abs(g["margin"]) < abs(cell["closest"]["margin"]):
-                cell["closest"] = {"margin": g["margin"], "year": g["year"], "week": g["week"], "matchupId": g["matchupId"]}
+            if not g["multiWeek"]:
+                if res == "W" and (cell["biggestWin"] is None or g["margin"] > cell["biggestWin"]["margin"]):
+                    cell["biggestWin"] = {"margin": g["margin"], "year": g["year"], "week": g["week"], "matchupId": g["matchupId"]}
+                if cell["closest"] is None or abs(g["margin"]) < abs(cell["closest"]["margin"]):
+                    cell["closest"] = {"margin": g["margin"], "year": g["year"], "week": g["week"], "matchupId": g["matchupId"]}
             pair = "|".join(sorted((a, b)))
             if g["matchupId"] not in seen:
                 seen.add(g["matchupId"])

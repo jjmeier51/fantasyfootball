@@ -15,6 +15,11 @@ hide_facts_for:
 
 # Extra facts written by hand. They appear alongside the generated ones.
 custom_facts:
+  - id: gatto-tight-ends
+    category: draft
+    ownerKey: anthony-gatto
+    href: /owners/anthony-gatto
+    text: "Gatto loves drafting tight ends."
   - id: johnny-dance
     category: trophies
     ownerKey: john-meier

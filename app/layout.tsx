@@ -14,7 +14,7 @@ const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 const description = `The complete history of ${meta.leagueName}: trophies, records, rivalries and fun facts since ${meta.firstSeason}.`;
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://leagueofgangstars.com"),
+  metadataBase: new URL("https://www.leagueofgangstars.com"),
   title: { default: meta.leagueName, template: `%s · ${meta.leagueName}` },
   description,
   openGraph: {
@@ -22,12 +22,12 @@ export const metadata: Metadata = {
     description: `Fantasy football history since ${meta.firstSeason}. Trophies, records, rivalries and receipts.`,
     type: "website",
     siteName: meta.leagueName,
-    url: "https://leagueofgangstars.com",
+    url: "https://www.leagueofgangstars.com",
     locale: "en_US",
     images: [
       {
-        url: "https://leagueofgangstars.com/opengraph-image",
-        secureUrl: "https://leagueofgangstars.com/opengraph-image",
+        url: "https://www.leagueofgangstars.com/opengraph-image",
+        secureUrl: "https://www.leagueofgangstars.com/opengraph-image",
         width: 1200,
         height: 630,
         type: "image/png",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: { card: "summary_large_image", title: meta.leagueName, description, images: ["https://leagueofgangstars.com/twitter-image"] },
+  twitter: { card: "summary_large_image", title: meta.leagueName, description, images: ["https://www.leagueofgangstars.com/twitter-image"] },
   appleWebApp: { title: meta.leagueName },
-  alternates: { canonical: "https://leagueofgangstars.com" },
+  alternates: { canonical: "https://www.leagueofgangstars.com" },
 };
 
 export const viewport: Viewport = {

@@ -9,8 +9,8 @@ const description = latestWrapUp?.headline ?? "The week that was, around the NFL
 export const metadata: Metadata = {
   title: "Weekly Wrap Up",
   description,
-  alternates: { canonical: "https://leagueofgangstars.com/wrap-up" },
-  openGraph: { title: `${title} · ${weekly.year}`, description, url: "https://leagueofgangstars.com/wrap-up", type: "article" },
+  alternates: { canonical: "https://www.leagueofgangstars.com/wrap-up" },
+  openGraph: { title: `${title} · ${weekly.year}`, description, url: "https://www.leagueofgangstars.com/wrap-up", type: "article" },
   twitter: { card: "summary_large_image", title: `${title} · ${weekly.year}`, description },
 };
 

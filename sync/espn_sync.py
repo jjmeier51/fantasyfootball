@@ -211,7 +211,9 @@ def download_logo(url: str, year: int, team_id: int) -> str | None:
     if existing and marker.exists() and marker.read_text().strip() == url:
         return f"/logos/{year}/{existing[0].name}"
     try:
-        r = requests.get(url, timeout=20)
+        # custom uploads live behind ESPN's fantasy image API, which wants the league cookies
+        cookies = {"espn_s2": ESPN_S2, "SWID": ESPN_SWID} if "fantasy.espn.com" in url and ESPN_S2 else None
+        r = requests.get(url, timeout=20, cookies=cookies, headers={"User-Agent": "Mozilla/5.0"})
         r.raise_for_status()
         ctype = r.headers.get("content-type", "").lower()
         ext = "png"

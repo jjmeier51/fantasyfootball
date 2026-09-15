@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, Trophy as TrophyIcon } from "lucide-react";
-import { completeSeasons, currentSeason, meta, ownerLite, ownerName, records, reigningTrophy, seasons, teamFor } from "@/lib/data";
+import { ArrowRight, ListOrdered, Newspaper, Trophy as TrophyIcon } from "lucide-react";
+import { completeSeasons, currentSeason, latestWrapUp, meta, ownerLite, ownerName, records, reigningTrophy, seasons, teamFor, weekly } from "@/lib/data";
 import { fmt, matchupTypeLabel, ordinal, record } from "@/lib/format";
 import Trophy from "@/components/Trophy";
 import FunFactTicker from "@/components/FunFactTicker";
@@ -53,6 +53,22 @@ export default function HomePage() {
           <p className="mt-4 text-text-2 text-[11.7px] leading-relaxed max-w-xl">
             Every championship, every blowout, every embarrassing week. The complete history of the league since our freshman year of college, pulled straight from ESPN and preserved forever.
           </p>
+          {latestWrapUp && (
+            <Link href="/wrap-up" className="mt-5 max-w-xl group">
+              <span className="eyebrow block mb-1">Week {latestWrapUp.week} headline</span>
+              <span className="block font-display text-lg sm:text-xl leading-snug text-text group-hover:text-gold transition-colors">{latestWrapUp.headline}</span>
+            </Link>
+          )}
+          {weekly.latestWeek != null && (
+            <div className="mt-4 flex flex-wrap gap-3 justify-center">
+              <Link href="/wrap-up" className="inline-flex items-center gap-2 rounded-full bg-surface border border-gold/40 text-text font-semibold px-4 py-2 text-sm hover:border-gold hover:text-gold transition-colors">
+                <Newspaper size={15} /> Weekly Wrap Up
+              </Link>
+              <Link href="/standings" className="inline-flex items-center gap-2 rounded-full bg-surface border border-gold/40 text-text font-semibold px-4 py-2 text-sm hover:border-gold hover:text-gold transition-colors">
+                <ListOrdered size={15} /> Standings
+              </Link>
+            </div>
+          )}
           <div className="mt-6 flex flex-wrap gap-3 justify-center">
             <Link href="/trophy-room" className="inline-flex items-center gap-2 rounded-full bg-linear-to-r from-[#1b2a48] via-[#128a5c] to-[#34d399] text-white font-semibold px-5 py-2.5 shadow-lg shadow-good/20 hover:brightness-110 transition">
               <TrophyIcon size={16} /> Enter the Trophy Room

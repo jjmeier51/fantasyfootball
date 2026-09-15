@@ -521,3 +521,137 @@ export interface OwnerLite {
   color: string | null;
   logo: string | null;
 }
+
+/* ---------- Weekly wrap-up, standings and playoff predictor (current season) ---------- */
+
+export interface WeekStarter {
+  name: string;
+  position: string;
+  proTeam: string;
+  slot: string;
+  points: number;
+  projected: number | null;
+  playerId: number | null;
+}
+
+export interface WeekSide {
+  ownerKey: string;
+  name: string;
+  teamName: string;
+  logo: string | null;
+  score: number;
+  projected: number | null;
+  starters: WeekStarter[];
+  benchPoints: number;
+  topPlayer: { name: string; position: string; points: number; playerId: number | null } | null;
+}
+
+export interface WeekGame {
+  matchupId: string;
+  week: number;
+  type: string;
+  isPlayoff: boolean;
+  home: WeekSide;
+  away: WeekSide;
+  winnerKey: string | null;
+  margin: number;
+}
+
+export interface WeekAward extends WeekStarter {
+  ownerKey: string;
+  ownerName: string;
+  teamName: string;
+  won: boolean;
+  surplus: number | null;
+  headshot?: string | null;
+}
+
+export interface WeekAwards {
+  playerOfWeek?: WeekAward | null;
+  qbOfWeek?: WeekAward | null;
+  dud?: WeekAward | null;
+  differenceMaker?: WeekAward | null;
+}
+
+export interface WeekSuperlatives {
+  highScore?: { ownerKey: string; score: number; matchupId: string };
+  lowScore?: { ownerKey: string; score: number; matchupId: string };
+  blowout?: { matchupId: string; margin: number; winnerKey: string | null };
+  closest?: { matchupId: string; margin: number; winnerKey: string | null };
+  totalPoints?: number;
+  avgScore?: number;
+}
+
+export interface StandingRow {
+  ownerKey: string;
+  name: string;
+  teamName: string;
+  logo: string | null;
+  wins: number;
+  losses: number;
+  ties: number;
+  pointsFor: number;
+  pointsAgainst: number;
+  games: number;
+  rank: number;
+}
+
+export interface PredictorRow {
+  ownerKey: string;
+  name: string;
+  teamName: string;
+  logo: string | null;
+  currentWins: number;
+  currentLosses: number;
+  currentRank: number;
+  projectedWins: number;
+  projectedLosses: number;
+  playoffOdds: number;
+  titleOddsProxy: number;
+  expectedFinish: number;
+  strength: number;
+  lineupValue: number;
+  injured: string[];
+  rank: number;
+  previousRank: number | null;
+  movement: number | null;
+}
+
+export interface Prediction {
+  week: number;
+  playoffTeamCount: number;
+  rows: PredictorRow[];
+  remainingGames: number;
+  method: string;
+}
+
+export interface WeekRecap {
+  week: number;
+  games: WeekGame[];
+  awards: WeekAwards;
+  superlatives: WeekSuperlatives;
+  standings: StandingRow[];
+}
+
+export interface Weekly {
+  year: number;
+  regSeasonWeeks: number;
+  playoffTeamCount: number | null;
+  weeks: WeekRecap[];
+  latestWeek: number | null;
+  standings: StandingRow[];
+  predictions: Record<string, Prediction>;
+}
+
+/** Hand-written editorial for a week: the NFL wrap, per-game blurbs and award write-ups. */
+export interface WrapUp {
+  year: number;
+  week: number;
+  headline: string;
+  dek: string;
+  published: string;
+  nfl: { paragraphs: string[]; bullets: { label: string; text: string }[]; sources: { name: string; url: string }[] };
+  games: Record<string, string>;
+  awards: Partial<Record<"playerOfWeek" | "qbOfWeek" | "dud" | "differenceMaker", string>>;
+  predictorNote?: string;
+}

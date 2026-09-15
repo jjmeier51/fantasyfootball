@@ -291,3 +291,40 @@ def test_override_can_force_a_matchup_winner_and_note(tmp_path, monkeypatch, lea
     assert final["winnerKey"] == "bob" and final["home"]["score"] == 150.0 and final["away"]["score"] == 149.5
     assert season["honorsNote"] == "Awarded off the field."
     assert {t["ownerKey"]: t["finalRank"] for t in season["teams"]} == {"bob": 1, "ann": 2}
+
+
+def test_weekly_standings_awards_and_predictor_memory(league):
+    from stats.weekly import build_standings, build_week_awards, build_week_games, build_weekly
+    seasons, owners, _ = league
+    s20 = seasons[1]
+    names = {o["key"]: o["name"] for o in owners}
+    # after week 1: Bob (110) and Dan (75) are 1-0; Bob ranks first on points for
+    st = build_standings(s20, 1, names)
+    assert [r["name"] for r in st[:2]] == ["Bob", "Dan"] and st[0]["wins"] == 1 and st[0]["pointsFor"] == 110.0
+    # after week 2: Bob is 2-0; Ann and Dan are 1-1 and Ann's 288 points for beats Dan's 179 -> tiebreaker is points for
+    st = build_standings(s20, 2, names)
+    assert [(r["name"], r["wins"], r["losses"]) for r in st[:3]] == [("Bob", 2, 0), ("Ann", 1, 1), ("Dan", 1, 1)]
+    # playoff games never count toward standings
+    assert all(r["games"] == 2 for r in st)
+
+    teams = {t["ownerKey"]: t for t in s20["teams"]}
+    games = build_week_games(s20, 2, names, teams)
+    assert len(games) == 2 and games[0]["margin"] == 140.0  # sorted by high score: Ann 200 - Cat 60
+    awards = build_week_awards(games)
+    assert awards["playerOfWeek"]["name"] == "Bench Guy" and awards["playerOfWeek"]["points"] == 40.0  # started at WR in week 2
+    assert awards["qbOfWeek"] is None  # no quarterbacks in the fixture
+
+    careers = build_careers(seasons, owners)
+    first = build_weekly(s20, owners, careers, prior_predictions={})
+    assert first["latestWeek"] == 2 and set(first["predictions"]) == {"1", "2"}
+    ranks = {r["ownerKey"]: r["rank"] for r in first["predictions"]["2"]["rows"]}
+    assert set(ranks.values()) == {1, 2, 3, 4}
+    assert all(r["movement"] is None for r in first["predictions"]["1"]["rows"])  # nothing to compare against
+    assert all(r["movement"] is not None for r in first["predictions"]["2"]["rows"])  # week 1 remembered
+    # stored history is frozen: re-running keeps week 1 exactly, even with a doctored prior
+    doctored = dict(first["predictions"])
+    doctored["1"] = {"week": 1, "rows": [dict(r, rank=5 - r["rank"]) for r in doctored["1"]["rows"]]}
+    again = build_weekly(s20, owners, careers, prior_predictions=doctored)
+    assert again["predictions"]["1"] is doctored["1"]
+    reversed_prev = {r["ownerKey"]: r["previousRank"] for r in again["predictions"]["2"]["rows"]}
+    assert reversed_prev == {r["ownerKey"]: r["rank"] for r in doctored["1"]["rows"]}

@@ -1,0 +1,81 @@
+{
+  "2026": {
+    "1": {
+      "year": 2026,
+      "week": 1,
+      "headline": "Caleb Williams drops 41 in a 59-37 track meet, and Conor's Love Doctor scores 48.6.",
+      "dek": "The highest-scoring Week 1 in NFL history, three-touchdown Sundays for King Henry and Swift, and one league team that forgot to show up. Week 1 is in the books.",
+      "published": "2026-09-15",
+      "nfl": {
+        "paragraphs": [
+          "If you had Bears–Panthers going 59–37 on your bingo card, congratulations, you are a liar. Caleb Williams put up 334 total yards and four touchdowns, D'Andre Swift scored three times, and the two teams combined for the highest-scoring Week 1 game the NFL has ever played. Sunday's slate as a whole averaged a record 53.3 points a game, which is great news if you started skill players and terrible news if you started a defense.",
+          "Elsewhere the ground game did the heavy lifting. Derrick Henry ran in three scores for Baltimore, Jahmyr Gibbs went for 186 yards and two touchdowns, and Bijan Robinson piled up 173 yards on the way to a 35-point fantasy day. Josh Allen threw four touchdowns and engineered a 96-yard drive to win it late, which is a very Josh Allen thing to do. Rookie Jaxson Dart threw three touchdowns to beat Dallas on Sunday night, and Tyler Shough threw for 410 yards in New Orleans and still lost 31–30 in overtime to Detroit, because of course he did.",
+          "Now the bad news. Ja'Marr Chase caught two passes for 12 yards. Drake London, Kyle Pitts and Colston Loveland (zero catches) were all invisible. Matthew Stafford and the Rams managed 7 points in Australia against the 49ers, and Christian McCaffrey got 32 touches without doing much with them. The injury report is already ugly: A.J. Brown's ankle is expected to cost him around six weeks, Brock Bowers is out with a knee injury, Zay Flowers went for 150 yards before pulling a hamstring, Isiah Pacheco landed on IR, and Kyler Murray left Sunday's game in Green Bay, handing the Vikings' offense to Carson Wentz."
+        ],
+        "bullets": [
+          {
+            "label": "Biggest blowout",
+            "text": "Raiders 27, Dolphins 13, with Ashton Jeanty running for 147 yards and two touchdowns. Cardinals over Chargers 26–14 was the upset of the weekend, and the 49ers held the Rams to 7 in Australia."
+          },
+          {
+            "label": "Closest call",
+            "text": "Lions 31, Saints 30 in overtime. Eagles 24, Commanders 22 and Seahawks 13, Patriots 10 in the Wednesday opener were the other one-score sweats."
+          },
+          {
+            "label": "Breakouts",
+            "text": "Keon Coleman went 8 for 112 and a score, Hollywood Brown saw 16 targets, and Caleb Williams looked like the QB1 everybody kept saying he could be."
+          },
+          {
+            "label": "Duds",
+            "text": "Chase (2–12), London, Pitts, Loveland, Stafford. Joe Burrow also looked out of sorts, which rarely lasts, but ask Shane how Week 1 felt."
+          },
+          {
+            "label": "Injuries to watch",
+            "text": "A.J. Brown (ankle, ~6 weeks), Brock Bowers (knee), Zay Flowers (hamstring), Isiah Pacheco (IR), Kyler Murray (left game). Patrick Mahomes returned from his ACL and looked fine, thanks for asking."
+          }
+        ],
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/"
+          },
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/"
+          },
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/nfl"
+          },
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/fantasy/"
+          },
+          {
+            "name": "FOX Sports",
+            "url": "https://www.foxsports.com/nfl"
+          },
+          {
+            "name": "Sleeper",
+            "url": "https://sleeper.com/"
+          }
+        ]
+      },
+      "games": {
+        "2026-w1-3": "Mike's Washington C-Words posted the week's high score, and did it the hard way: with Caleb Williams dropping 41.26 for the other side and the Chargers D/ST contributing a clean zero. David Montgomery (27.4), Zay Flowers (23.5) and a 21.7-point Dallas Goedert game carried the day. Ethan got the QB of the week and still lost by 28, thanks mostly to Ja'Marr Chase (2.2) and George Kittle (2.2) combining for fewer points than his kicker.",
+        "2026-w1-2": "The rookie is real. Jaxson Dart threw for 32.6 in his Sunday night win over Dallas and Nick's receivers (St. Brown 23.7, Olave 23.2, Moore 18.5) did the rest in a 137.4-point opener. Shane actually got the two best running back games in the matchup, with D'Andre Swift (31.9) and Ashton Jeanty (29.7), but Burrow's 16.16 and a combined 9.1 points from Pickens, Harrison Jr. and his kicker left Slim Pickens 15 short. Shane also left 60.2 points on the bench, which will sting.",
+        "2026-w1-5": "Nate opened as a slight underdog and won by 26. Trevor Lawrence (34.1) and Kenneth Walker III (32.6, on 13.3 projected) out-scored their projections by 33 points between them, and even Tyler Loop the kicker chipped in 14. Johnny got Jalen Hurts (30.72) and Justin Jefferson (27.2) and nothing else: his other seven starters combined for 48.2. Not the Week 1 the GOAT was hoping for.",
+        "2026-w1-0": "Josh Allen's four-touchdown comeback was worth 39.66 to Chase, and Jaxon Smith-Njigba and Chuba Hubbard added 22.2 apiece in a comfortable 31-point win. Smalls had the single best non-QB game of the week in Derrick Henry (34.8, three touchdowns) and it barely mattered: Drake Maye (11.82), Saquon Barkley (8.5), a 2-point kicker and a 1-point Rams D/ST sank T Smalls to 101.02.",
+        "2026-w1-1": "The closest game of the week, and one Caleb was projected to win by 8.5 anyway. Jahmyr Gibbs (31.1) and Javonte Williams (21.7) did the work while Justin Herbert (15.26) and a goose egg from Kyle Pitts kept it interesting. Drew's Lamar Jackson (26.96) and Jonathan Taylor (23.6) were great, but Courtland Sutton and Jake Ferguson combined for 3.7, and Off In Church came up 9.2 short.",
+        "2026-w1-4": "Kevin's God Hates Jags scored 104.6, which would have lost to eight of the other ten teams this week, and won by 56. Conor's The Love Doctor put up 48.6: Stafford 4.1, A.J. Brown 4.1, Loveland 0, and a Browns D/ST that finished at minus one. Bijan Robinson (27.3) and Trey McBride (20.0) were all Kevin needed. For context, that is the fourth-lowest regular-season score by anyone in this league since 2019, out of 1,164."
+      },
+      "awards": {
+        "playerOfWeek": "Three rushing touchdowns and 34.8 points for the 32-year-old who was supposed to be slowing down. It came in a loss, which is very on-brand for a Smalls team.",
+        "qbOfWeek": "334 total yards, four touchdowns and 41.26 fantasy points in the highest-scoring Week 1 game in NFL history. Ethan started him, and Ethan lost by 28. Fantasy football is a cruel game.",
+        "dud": "Projected for 21.65, delivered 4.1 as the Rams scored a single touchdown in Australia. He was one of six Love Doctor starters under 4.2 points, so the blame is shared, but he's the one wearing the badge.",
+        "differenceMaker": "Projected for 13.3, scored 32.6, and Nate won by 26 in a game he was projected to lose. Take Walker's surplus away and this one is a coin flip."
+      },
+      "predictorNote": "First-week projections lean heavily on ESPN's rest-of-season lineup values and each owner's era-adjusted history, so one big Sunday moves the needle less than you'd think. It'll trust the actual results more every week from here."
+    }
+  }
+}

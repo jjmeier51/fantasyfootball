@@ -9,6 +9,8 @@ import { SoundButton } from "./ThemePlayer";
 import FootballLogo from "./FootballLogo";
 
 const LINKS = [
+  { href: "/wrap-up", label: "Weekly Wrap Up" },
+  { href: "/standings", label: "Standings" },
   { href: "/trophy-room", label: "Trophy Room" },
   { href: "/records", label: "Records" },
   { href: "/owners", label: "Owners" },
@@ -33,15 +35,15 @@ export default function Nav({ leagueName, isSample }: { leagueName: string; isSa
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center gap-4">
         <Link href="/" className="flex items-center gap-3 shrink-0" aria-label="Home">
           <FootballLogo className="w-9 h-9" />
-          <span className="font-display text-xl gold-text hidden sm:inline">{leagueName}</span>
+          <span className="font-display text-xl gold-text hidden sm:inline xl:hidden">{leagueName}</span>
         </Link>
-        <nav className="hidden lg:flex items-center gap-1 ml-4">
+        <nav className="hidden xl:flex items-center gap-0.5 ml-2">
           {LINKS.map((l) => (
             <Link
               key={l.href}
               href={l.href}
               className={clsx(
-                "px-3 py-2 rounded-md text-sm font-medium transition-colors",
+                "px-2.5 py-2 rounded-md text-[13px] font-medium transition-colors whitespace-nowrap",
                 path.startsWith(l.href) ? "text-gold bg-gold/10" : "text-text-2 hover:text-text hover:bg-white/5",
               )}
             >
@@ -61,7 +63,7 @@ export default function Nav({ leagueName, isSample }: { leagueName: string; isSa
           <div className="hidden md:flex items-center"><SoundButton /></div>
           <button
             type="button"
-            className="lg:hidden p-2 rounded-md hover:bg-white/5"
+            className="xl:hidden p-2 rounded-md hover:bg-white/5"
             onClick={() => setOpen((v) => !v)}
             aria-label="Menu"
             aria-expanded={open}
@@ -71,7 +73,7 @@ export default function Nav({ leagueName, isSample }: { leagueName: string; isSa
         </div>
       </div>
       {open && (
-        <nav className="lg:hidden border-t border-border bg-bg-elev px-4 py-3 grid grid-cols-2 gap-1">
+        <nav className="xl:hidden border-t border-border bg-bg-elev px-4 py-3 grid grid-cols-2 sm:grid-cols-3 gap-1">
           {LINKS.map((l) => (
             <Link
               key={l.href}

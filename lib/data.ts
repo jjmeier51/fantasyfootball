@@ -2,7 +2,9 @@ import leagueJson from "@/data/league.json";
 import ownersJson from "@/data/owners.json";
 import recordsJson from "@/data/records.json";
 import metaJson from "@/data/meta.json";
-import type { League, Matchup, Meta, Owner, OwnerLite, Records, Season } from "./types";
+import weeklyJson from "@/data/weekly.json";
+import wrapupsJson from "@/data/wrapups.json";
+import type { League, Matchup, Meta, Owner, OwnerLite, Prediction, Records, Season, WeekRecap, Weekly, WrapUp } from "./types";
 
 export const league = leagueJson as unknown as League;
 export const owners = (ownersJson as unknown as { owners: Owner[] }).owners;
@@ -130,3 +132,26 @@ export function matchupDetail(id: string): MatchupDetail | undefined {
   };
   return { id: m.id, year: s.year, week: m.week, type: m.type, isPlayoff: m.isPlayoff, home: side(m.home), away: side(m.away) };
 }
+
+/* ---------- current-season weekly recap, standings and predictor ---------- */
+
+export const weekly = weeklyJson as unknown as Weekly;
+const wrapups = wrapupsJson as unknown as Record<string, Record<string, WrapUp>>;
+
+export const recapWeeks: number[] = weekly.weeks.map((w) => w.week);
+export const latestRecap: WeekRecap | undefined = weekly.weeks[weekly.weeks.length - 1];
+
+export function getRecap(week: number | string): WeekRecap | undefined {
+  return weekly.weeks.find((w) => w.week === Number(week));
+}
+
+export function getWrapUp(week: number | string): WrapUp | undefined {
+  return wrapups[String(weekly.year)]?.[String(week)];
+}
+
+export function getPrediction(week: number | string): Prediction | undefined {
+  return weekly.predictions[String(week)];
+}
+
+export const latestPrediction: Prediction | undefined = weekly.latestWeek != null ? getPrediction(weekly.latestWeek) : undefined;
+export const latestWrapUp: WrapUp | undefined = weekly.latestWeek != null ? getWrapUp(weekly.latestWeek) : undefined;

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Command } from "cmdk";
-import { Trophy, User, Calendar, BookOpen, Swords, BarChart3, ListOrdered, Sparkles, Search } from "lucide-react";
+import { Trophy, User, Calendar, BookOpen, Swords, BarChart3, ListOrdered, Sparkles, Search, Newspaper } from "lucide-react";
 import type { OwnerLite } from "@/lib/types";
 import OwnerAvatar from "./OwnerAvatar";
 
@@ -35,6 +35,8 @@ export default function CommandPalette({ owners, years }: { owners: OwnerLite[];
 
   if (!open) return null;
   const pages = [
+    { href: "/wrap-up", label: "Weekly Wrap Up", icon: Newspaper },
+    { href: "/standings", label: "Standings", icon: ListOrdered },
     { href: "/trophy-room", label: "Trophy Room", icon: Trophy },
     { href: "/records", label: "Records Book", icon: BookOpen },
     { href: "/head-to-head", label: "Head-to-Head", icon: Swords },

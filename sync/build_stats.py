@@ -20,6 +20,7 @@ from headshots import download_headshots, headshot_key
 from stats.rankings import build_goat, build_luck, build_team_seasons
 from stats.records import build_records
 from stats.trades import build_trades
+from stats.weekly import build_weekly
 
 
 def build_trophies(seasons: list[dict], owners: list[dict]) -> list[dict]:
@@ -109,6 +110,7 @@ def ensure_positive(facts: list[dict], pool: dict[str, list[dict]], hidden: set,
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-network", action="store_true", help="skip headshot downloads (tests/offline)")
+    ap.add_argument("--recompute-predictions", action="store_true", help="rebuild every week's playoff prediction instead of keeping frozen history")
     args = ap.parse_args(argv)
     league = json.loads((DATA_DIR / "league.json").read_text())
     owners = json.loads((DATA_DIR / "owners.json").read_text())["owners"]
@@ -136,7 +138,18 @@ def main(argv=None):
     trades = build_trades(seasons, owners)
     highlights, top_player_seasons, waiver = build_highlights(seasons, team_seasons)
     mvps = [p for h in highlights.values() for p in h["bestPlayers"].values() if p]
-    shot_rows = mvps + top_player_seasons + waiver["byYear"] + waiver["allTime"]
+
+    # Current-season weekly recap, standings and playoff predictor. Prior weeks' predictions
+    # are persisted in predictions.json so each owner's projected rank is remembered week to week.
+    current_season = max(seasons, key=lambda s: s["year"])
+    pred_path = DATA_DIR / "predictions.json"
+    stored = json.loads(pred_path.read_text()) if pred_path.exists() else {}
+    prior_predictions = stored.get(str(current_season["year"]), {}) if isinstance(stored, dict) else {}
+    weekly = build_weekly(current_season, owners, careers, prior_predictions, recompute=args.recompute_predictions)
+    stored[str(current_season["year"])] = weekly["predictions"]
+    pred_path.write_text(json.dumps(stored, separators=(",", ":")))
+    award_rows = [a for wk in weekly["weeks"] for a in wk["awards"].values() if a]
+    shot_rows = mvps + top_player_seasons + waiver["byYear"] + waiver["allTime"] + award_rows
     shots = download_headshots(shot_rows, enabled=not args.no_network)
     for row in shot_rows:
         key = headshot_key(row)
@@ -169,6 +182,7 @@ def main(argv=None):
         "ownerHighlights": highlights, "topPlayerSeasons": top_player_seasons, "waiver": waiver, "trades": trades,
     }
     (DATA_DIR / "records.json").write_text(json.dumps(records_out, separators=(",", ":")))
+    (DATA_DIR / "weekly.json").write_text(json.dumps(weekly, separators=(",", ":")))
 
     warnings = []
     for s in seasons:
@@ -192,6 +206,7 @@ def main(argv=None):
     (DATA_DIR / "meta.json").write_text(json.dumps(meta, indent=1))
     print(f"records.json: {len(records)} records, {len(facts)} fun facts, {len(team_seasons)} team-seasons, "
           f"{len(draft['profiles'])} draft profiles, {len(mvps)} best players ({sum(1 for m in mvps if m.get('headshot'))} headshots), {len(trades['all'])} trades; "
+          f"weekly.json: {len(weekly['weeks'])} weeks (latest {weekly['latestWeek']}); "
           f"meta.json written (sample={meta['isSample']})")
     return 0
 

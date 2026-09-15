@@ -258,14 +258,14 @@
  "2026": {
   "fields": {
    "settings": "full",
-   "teams": "n/a",
+   "teams": "full",
    "owners": "full",
-   "weeklyScores": "n/a",
+   "weeklyScores": "full",
    "finalStandings": "n/a",
    "champion": "n/a",
    "draft": "full",
    "logos": "partial",
-   "boxscores": "n/a"
+   "boxscores": "full"
   },
   "tier": "full",
   "screenshotsNeeded": [],

@@ -1294,8 +1294,8 @@
      "teamId": 11
     },
     "2026": {
-     "name": "Zay My Name",
-     "abbrev": "ZAY",
+     "name": "Loop There It Is",
+     "abbrev": "LOOP",
      "teamId": 11
     }
    },
@@ -1536,7 +1536,7 @@
      "teamId": 14
     },
     "2026": {
-     "name": "CNevs",
+     "name": "The Love Doctor",
      "abbrev": "CNEV",
      "teamId": 14
     }
@@ -1641,6 +1641,30 @@
     "2026": "/logos/2026/16.svg"
    },
    "currentLogo": "/logos/2026/16.svg",
+   "titles": []
+  },
+  {
+   "key": "tyler-small-2",
+   "name": "Tyler",
+   "color": null,
+   "swids": [
+    "{380726F9-B27E-4C6C-8760-227CD51D599E}"
+   ],
+   "active": true,
+   "seasons": [
+    2026
+   ],
+   "firstSeason": 2026,
+   "lastSeason": 2026,
+   "teamNames": {
+    "2026": {
+     "name": "T Smalls",
+     "abbrev": "T",
+     "teamId": 1
+    }
+   },
+   "logos": {},
+   "currentLogo": null,
    "titles": []
   }
  ]

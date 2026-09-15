@@ -103,3 +103,9 @@ owners:
   swids:
   - '{ADCC4B0E-CF21-4266-8DE5-F1F8006C614B}'
   active: true
+- key: tyler-small-2
+  name: Tyler
+  swids:
+  - '{380726F9-B27E-4C6C-8760-227CD51D599E}'
+  active: true
+  auto: true

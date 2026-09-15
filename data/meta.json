@@ -1,7 +1,7 @@
 {
  "leagueName": "League of Gangstars",
- "lastSynced": "2026-09-08T15:51:24.012195+00:00",
- "generatedAt": "2026-09-08T15:51:25.232056+00:00",
+ "lastSynced": "2026-09-15T12:49:08.112608+00:00",
+ "generatedAt": "2026-09-15T12:49:10.012157+00:00",
  "seasons": [
   2010,
   2011,
@@ -24,7 +24,7 @@
  "firstSeason": 2010,
  "currentSeason": 2026,
  "currentSeasonComplete": false,
- "currentWeek": 1,
+ "currentWeek": 2,
  "isSample": false,
  "coverage": {
   "2010": "full",
@@ -54,12 +54,16 @@
   {
    "year": 2026,
    "message": "trade history unavailable: transaction ledger returned no trades"
+  },
+  {
+   "year": 2026,
+   "message": "new owner stub 'tyler-small-2' created for Tyler; edit sync/owners.yml to rename/merge"
   }
  ],
  "counts": {
-  "owners": 19,
-  "games": 1415,
-  "facts": 150,
+  "owners": 20,
+  "games": 1421,
+  "facts": 154,
   "records": 38
  }
 }

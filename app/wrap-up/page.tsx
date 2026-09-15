@@ -3,9 +3,15 @@ import { latestRecap, latestWrapUp, weekly } from "@/lib/data";
 import { PageHero } from "@/components/ui";
 import WrapUpView from "@/components/weekly/WrapUpView";
 
+const title = latestRecap ? `Week ${latestRecap.week} Wrap Up` : "Weekly Wrap Up";
+const description = latestWrapUp?.headline ?? "The week that was, around the NFL and inside the league.";
+
 export const metadata: Metadata = {
   title: "Weekly Wrap Up",
-  description: latestWrapUp?.headline ?? "The week that was, around the NFL and inside the league.",
+  description,
+  alternates: { canonical: "https://leagueofgangstars.com/wrap-up" },
+  openGraph: { title: `${title} · ${weekly.year}`, description, url: "https://leagueofgangstars.com/wrap-up", type: "article" },
+  twitter: { card: "summary_large_image", title: `${title} · ${weekly.year}`, description },
 };
 
 export default function WrapUpPage() {

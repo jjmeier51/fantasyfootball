@@ -10,8 +10,20 @@ export default function AwardCard({ label, award, blurb, tone = "gold" }: { labe
   const isDst = award.position === "D/ST";
   return (
     <div className="card p-4 sm:p-5 flex flex-col gap-4">
+      <div>
+        <span
+          className={clsx(
+            "inline-block rounded-full text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 shadow",
+            tone === "gold" && "bg-gold text-bg",
+            tone === "bad" && "bg-bad text-white",
+            tone === "cool" && "bg-cool text-white",
+          )}
+        >
+          {label}
+        </span>
+      </div>
       <div className="flex gap-4 items-center">
-        <div className="relative shrink-0">
+        <div className="shrink-0">
           <div
             className={clsx(
               "w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden bg-linear-to-b from-surface-2 to-bg-elev ring-2 flex items-end justify-center",
@@ -26,16 +38,6 @@ export default function AwardCard({ label, award, blurb, tone = "gold" }: { labe
               <span className="font-display text-3xl text-text-2 mb-8">{initials}</span>
             )}
           </div>
-          <span
-            className={clsx(
-              "absolute -bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 shadow",
-              tone === "gold" && "bg-gold text-bg",
-              tone === "bad" && "bg-bad text-white",
-              tone === "cool" && "bg-cool text-white",
-            )}
-          >
-            {label}
-          </span>
         </div>
         <div className="min-w-0 flex-1">
           <div className="font-display text-xl sm:text-2xl leading-tight">{award.name}</div>

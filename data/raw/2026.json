@@ -2,7 +2,7 @@
  "year": 2026,
  "leagueId": 477497,
  "source": "espn",
- "fetchedAt": "2026-09-15T12:49:08.112608+00:00",
+ "fetchedAt": "2026-09-15T16:04:41.281565+00:00",
  "settings": {
   "name": "League of Gangstars Season 17",
   "teamCount": 12,
@@ -196,7 +196,7 @@
    "seed": 11,
    "finalRank": 0,
    "logoUrl": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/25a73ca0-814c-11f0-89de-d1ac062a5dc6",
-   "logo": null,
+   "logo": "/logos/2026/1.png",
    "roster": [
     {
      "playerId": 3929630,
@@ -722,7 +722,7 @@
      "proTeam": "LV",
      "seasonPoints": 0,
      "acquisitionType": "DRAFT",
-     "injuryStatus": "OUT",
+     "injuryStatus": "QUESTIONABLE",
      "projectedSeasonPoints": 178.74
     },
     {
@@ -1400,7 +1400,7 @@
    "seed": 3,
    "finalRank": 0,
    "logoUrl": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/fc537170-9f37-11f0-b1c3-bf61c28fbeb9",
-   "logo": null,
+   "logo": "/logos/2026/11.jpg",
    "roster": [
     {
      "playerId": 4379399,
@@ -1688,7 +1688,7 @@
      "proTeam": "NO",
      "seasonPoints": 0,
      "acquisitionType": "DRAFT",
-     "injuryStatus": "OUT",
+     "injuryStatus": "QUESTIONABLE",
      "projectedSeasonPoints": 103.71
     },
     {
@@ -1877,7 +1877,7 @@
      "proTeam": "TB",
      "seasonPoints": 0,
      "acquisitionType": "DRAFT",
-     "injuryStatus": "OUT",
+     "injuryStatus": "QUESTIONABLE",
      "projectedSeasonPoints": 94.89
     },
     {
@@ -2155,7 +2155,7 @@
      "proTeam": "NE",
      "seasonPoints": 0,
      "acquisitionType": "DRAFT",
-     "injuryStatus": "OUT",
+     "injuryStatus": "QUESTIONABLE",
      "projectedSeasonPoints": 137.65
     },
     {

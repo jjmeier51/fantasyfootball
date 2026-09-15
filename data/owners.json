@@ -118,9 +118,10 @@
    },
    "logos": {
     "2023": "/logos/2023/1.jpg",
-    "2024": "/logos/2024/1.jpg"
+    "2024": "/logos/2024/1.jpg",
+    "2026": "/logos/2026/1.png"
    },
-   "currentLogo": "/logos/2024/1.jpg",
+   "currentLogo": "/logos/2026/1.png",
    "titles": [
     2012
    ]
@@ -1310,9 +1311,10 @@
     "2021": "/logos/2021/11.gif",
     "2022": "/logos/2022/11.gif",
     "2023": "/logos/2023/11.svg",
-    "2024": "/logos/2024/11.svg"
+    "2024": "/logos/2024/11.svg",
+    "2026": "/logos/2026/11.jpg"
    },
-   "currentLogo": "/logos/2024/11.svg",
+   "currentLogo": "/logos/2026/11.jpg",
    "titles": []
   },
   {
@@ -1663,8 +1665,10 @@
      "teamId": 1
     }
    },
-   "logos": {},
-   "currentLogo": null,
+   "logos": {
+    "2026": "/logos/2026/1.png"
+   },
+   "currentLogo": "/logos/2026/1.png",
    "titles": []
   }
  ]

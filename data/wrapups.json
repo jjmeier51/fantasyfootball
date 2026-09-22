@@ -76,6 +76,87 @@
         "differenceMaker": "Projected for 13.3, scored 32.6, and Nate won by 26 in a game he was projected to lose. Take Walker's surplus away and this one is a coin flip."
       },
       "predictorNote": "First-week projections lean heavily on ESPN's rest-of-season lineup values and each owner's era-adjusted history, so one big Sunday moves the needle less than you'd think. It'll trust the actual results more every week from here."
+    },
+    "2": {
+      "year": 2026,
+      "week": 2,
+      "headline": "Chase drops 155 behind Josh Allen's five touchdowns, and the Bears go from 59 points to three.",
+      "dek": "Four teams are 2-0, the Panthers defense outscored Lamar Jackson, and the closest game of the week came down to a point and a half.",
+      "published": "2026-09-22",
+      "nfl": {
+        "paragraphs": [
+          "Last week the Bears scored 59. This week they scored 3, in the wind and rain against Brian Flores' Vikings defense, and the 56-point drop is the largest by any team since 1973. Caleb Williams was carted off with a hamstring injury in the fourth quarter (imaging was clean, and he hasn't been ruled out for Week 3), Colston Loveland caught one pass for three yards, and Rome Odunze and Luther Burden combined for 75 yards. Anybody who started Bears players had a bad Sunday, which in this league is a lot of people.",
+          "The good news came Thursday and Sunday night. Josh Allen opened the new Highmark Stadium with three passing touchdowns and two rushing scores in a 41–31 shootout with Detroit, where Jared Goff (327 yards, four touchdowns) and Amon-Ra St. Brown (9 for 142 and two scores) put up numbers in a loss. Jaxon Smith-Njigba caught nine passes for 155 yards and three touchdowns from Drew Lock, including an 82-yarder. Dak Prescott went 26 of 31 with four touchdowns and passed Tony Romo as the Cowboys' all-time leader, with CeeDee Lamb going for 153 and two. Davante Adams had 195 yards and two scores on Monday night with Puka Nacua out, Matthew Stafford threw four touchdowns, and Patrick Mahomes threw for 382 in an overtime win over the Colts in which Travis Kelce topped 100 yards for the first time since 2024.",
+          "Now the bad. Jaxson Dart hurt his knee on the Giants' opening drive and gave way to Jameis Winston. Jayden Daniels dislocated his left elbow again, the same injury that wrecked his 2025. DJ Moore left Thursday's game with a shoulder, Jayden Reed was carted off with a neck injury, Dallas Goedert hurt a knee, Saquon Barkley had a stinger, Nico Collins is out about two weeks with a hamstring, and Brock Bowers isn't expected back until Week 4. Ashton Jeanty managed 44 yards on 14 touches, Bijan Robinson had 81 total yards against a Carolina defense that gave up 59 points a week ago, Justin Jefferson caught three passes, and Justin Herbert fumbled three times and threw two picks to a fifth-round rookie."
+        ],
+        "bullets": [
+          {
+            "label": "Biggest blowouts",
+            "text": "Panthers 34, Falcons 3, a week after Carolina allowed 59. Bryce Young threw for 287 and three scores and Devin Lloyd had two picks, a sack and a pick-six. Seahawks 31–7, 49ers 35–13, Rams 28–6 and Patriots 20–3 rounded out the routs."
+          },
+          {
+            "label": "Closest calls",
+            "text": "Eagles 24, Titans 20 on a last-second Jalen Hurts drive. Packers 20, Jets 17 in overtime, the first team in the Super Bowl era to win with under 200 yards, 10-plus penalties and no turnovers. Chiefs 33, Colts 30 in overtime. Browns 23, Buccaneers 19."
+          },
+          {
+            "label": "Breakouts",
+            "text": "Smith-Njigba's hat trick. Dalton Schultz went 12 for 140 on 14 targets in Houston. Jalen Coker caught eight passes. TreVeyon Henderson ran for 76 and a score in his debut, and Kenneth Walker III has 175-plus scrimmage yards in both games, the first player to do that since 1980."
+          },
+          {
+            "label": "Duds",
+            "text": "The entire Bears offense. Jeanty (44 yards), Bijan (81 total yards), Jefferson (3 for 55), Herbert (five giveaways), Brian Thomas Jr. (4 for 49 on 12 targets) and Courtland Sutton (1 for 6)."
+          },
+          {
+            "label": "Injuries to watch",
+            "text": "Caleb Williams (hamstring), Jaxson Dart (knee), Jayden Daniels (elbow), DJ Moore (shoulder), Jayden Reed (neck), Dallas Goedert (knee), Nico Collins (hamstring, ~2 weeks), Brock Bowers (knee, back around Week 4)."
+          }
+        ],
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/"
+          },
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/2026-nfl-season-week-2-what-we-learned-from-sunday-s-games"
+          },
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/nfl"
+          },
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-2-booms-and-busts-bears-offense-does-a-complete-and-ugly-180-232804926.html"
+          },
+          {
+            "name": "FOX Sports",
+            "url": "https://www.foxsports.com/stories/nfl/nfl-week-2-defining-stats-record-setting-scoring-historic-performances"
+          },
+          {
+            "name": "NBC Sports",
+            "url": "https://www.nbcsports.com/fantasy/football/news/2026-nfl-week-2-injury-report-a-j-brown-to-ir-updates-on-ladd-mcconkey-zay-flowers"
+          },
+          {
+            "name": "Sleeper",
+            "url": "https://sleeper.com/"
+          }
+        ]
+      },
+      "games": {
+        "2026-w2-7": "Chase's 155.12 is the high score of the season so far, and his 287.28 points through two weeks is the fourth-best start by anyone in this league since 2019. Josh Allen (46.82) and Jaxon Smith-Njigba (38.0) combined for 84.82, which by itself would have beaten two full teams this week, and Christian McCaffrey added 20.6. Shane got a 37.78 from Jared Goff and still lost by 56.74: his other eight starters combined for 60.6, and Slim Pickens is 0-2 despite scoring the most points of any winless team.",
+        "2026-w2-9": "Dak Prescott (37.76, four touchdowns and the Cowboys' record) and Davante Adams (35.5 on a 195-yard Monday night) carried Kevin to 2-0 while Bijan Robinson managed 9.6. Nick actually put up a respectable 114.4 with Jaxson Dart (0.8) hurt on the Giants' first drive and DJ Moore (-0.1) done after one quarter on Thursday. Amon-Ra St. Brown's 30.7 and a 16-point Brandon Aubrey kept it interesting, but two zeroes at QB and flex is too much to overcome.",
+        "2026-w2-8": "The Panthers defense scored 24 for Drew on four takeaways and a Devin Lloyd pick-six, Jonathan Taylor went for 27.2 in a game the Colts lost in overtime, and Jake Ferguson chipped in 18.3 while Lamar Jackson (16.8) had a quiet day in Baltimore's loss. Mike got 66.3 from Patrick Mahomes and CeeDee Lamb and 46.2 from everyone else: David Montgomery scored 3.4, and Dallas Goedert left with a knee injury at 0.9. Off In Church evens up at 1-1.",
+        "2026-w2-10": "Ethan won by 29 with his quarterback carted off. Caleb Williams scored 7.72 before his hamstring gave out, but Ja'Marr Chase (23.0, two scores including the toe-tap catch of the year), DeVonta Smith (22.7) and George Kittle (16.0, 600th career catch) had it covered. Johnny's 82.06 was the week's low score: Dalton Schultz (20.0) and Harrison Butker's game-winning night (16.0) were the whole show, while Malik Nabers (0.6) lost his quarterback on the first drive and Jayden Reed (0.9) was carted off. Johnny Football Club is 0-2 for the first time since 2022.",
+        "2026-w2-11": "Kenneth Walker III (20.8) and James Cook (20.4) did the work for Nate, whose 2-0 start is his first since 2022. The worry: Jayden Daniels scored 16.74 and then dislocated his elbow, so Loop There It Is needs a quarterback. Conor got a 34.98 from Matthew Stafford, a week after a 4.1, and his other eight starters totaled 53.2. Colston Loveland (0.8) has 0.8 points through two weeks, and The Love Doctor's 136.78 through two games is the lowest two-week total in the league since 2019.",
+        "2026-w2-6": "Two teams projected for a combined 224 scored 168, and Caleb survived by a point and a half. Justin Herbert (9.88, three fumbles and two picks) and Rhamondre Stevenson (3.1) nearly sank Chef Cale, but Jahmyr Gibbs (20.3) and a 19-point Dalton Kincaid fill-in got him to 2-0. Smalls got Saquon Barkley (2.5) knocked out with a stinger, a 1-point kicker and 5.0 from a banged-up Ladd McConkey, and T Smalls is 0-2 with two losses by a combined 32.6."
+      },
+      "awards": {
+        "playerOfWeek": "Nine catches, 155 yards, three touchdowns and an 82-yard bomb, all from Drew Lock. Chase drafted him, started him, and is 2-0 because of him. Fifth receiver ever with 8-plus catches, 120-plus yards and a score in each of the first two games.",
+        "qbOfWeek": "Three passing touchdowns, two rushing touchdowns and 46.82 points to open the new stadium in Buffalo. Allen and Smith-Njigba scored 84.82 between them, more than Johnny's or Smalls' entire lineups.",
+        "dud": "Last week's Sunday night hero took a hit to the knee on the Giants' opening drive and finished with 0.8 points against a 20.79 projection. Nick lost by 20, so Dart alone didn't decide it, but it certainly didn't help.",
+        "differenceMaker": "195 yards and two touchdowns on Monday night with Puka Nacua sidelined, 22.4 points over projection. Kevin won by 20.06. Take away Adams' surplus and God Hates Jags loses to Nick."
+      },
+      "predictorNote": "Chase's 2-0, 287-point start moved him to the top, Caleb slid three spots after an 84-point win, and Drew is the week's big riser at four spots. The model now gives this season's results about a quarter of the weight, with ESPN's rest-of-season projections and career history covering the rest."
     }
   }
 }

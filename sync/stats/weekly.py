@@ -70,11 +70,17 @@ def build_week_awards(games: list[dict]) -> dict:
     duds = [r for r in rows if r.get("projected") and r["projected"] >= 8 and r["position"] not in ("K", "D/ST")]
     diff = [r for r in rows if r["won"] and r.get("surplus") is not None and r["position"] not in ("K", "D/ST")]
     pick = lambda pool, key: (max(pool, key=key) if pool else None)  # noqa: E731
+    player = pick(non_qb, lambda r: r["points"])
+    qb = pick(qbs, lambda r: r["points"])
+    # spread the hardware around: the difference maker should be a different player from the
+    # two top scorers whenever another winning-team starter beat his projection
+    taken = {(r["name"], r["ownerKey"]) for r in (player, qb) if r}
+    others = [r for r in diff if (r["name"], r["ownerKey"]) not in taken and r["surplus"] > 0]
     return {
-        "playerOfWeek": pick(non_qb, lambda r: r["points"]),
-        "qbOfWeek": pick(qbs, lambda r: r["points"]),
+        "playerOfWeek": player,
+        "qbOfWeek": qb,
         "dud": pick(duds, lambda r: -(r["surplus"] if r["surplus"] is not None else -999)),
-        "differenceMaker": pick(diff, lambda r: r["surplus"]),
+        "differenceMaker": pick(others or diff, lambda r: r["surplus"]),
     }
 
 

@@ -46,7 +46,7 @@ export default function StandingsPage() {
             id="predictor"
             eyebrow="Crystal ball"
             title="Playoff Predictor"
-            sub={`Projected final regular-season standings after week ${p.week}, based on this week&apos;s results, injuries, the draft (ESPN's rest-of-season projections for every rostered player), each owner&apos;s track record, and the remaining schedule.`}
+            sub={`Projected final regular-season standings after week ${p.week}, based on this week’s results, injuries, the draft (ESPN's rest-of-season projections for every rostered player), each owner’s track record, and the remaining schedule.`}
           />
           <div className="card p-2 sm:p-4"><PredictorTable prediction={p} /></div>
           <div className="text-xs text-muted mt-3 space-y-1">

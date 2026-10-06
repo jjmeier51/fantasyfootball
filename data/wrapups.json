@@ -238,6 +238,87 @@
         "differenceMaker": "Ten catches, 128 yards and two touchdowns in Seattle's loss to Washington, 13.17 points over projection. Chase won by 4.98. Take away the surplus and Kevin is 3-0 and Chase isn't."
       },
       "predictorNote": "Chase stays first at 94% playoff odds. Nate climbed two to second, Ethan jumped four spots to fifth, and Caleb fell four to seventh after his first loss. This season's results now carry about a third of the weight in the model."
+    },
+    "4": {
+      "year": 2026,
+      "week": 4,
+      "headline": "Nate beats Chase in the battle of unbeatens, and Tetairoa McMillan's 192-yard night carries Drew to the week's high score.",
+      "dek": "Nate is 4-0 with four teams a game back, three teams are 0-4, and Johnny's roster is running out of healthy bodies.",
+      "published": "2026-10-06",
+      "nfl": {
+        "paragraphs": [
+          "Primetime delivered all week. The Browns beat the Steelers 27–24 on Thursday on a 56-yard field goal with 10 seconds left and a Grant Delpit interception of Aaron Rodgers, Cleveland's first 3-1 start since 2001 and Deshaun Watson's third straight fourth-quarter game-winning drive. Sunday night, Bryce Young threw for 329 yards and Tetairoa McMillan caught 14 passes for 192 as Carolina scored on six straight possessions to beat Detroit 32–26, wasting Jared Goff's 412 yards. Monday night, Bijan Robinson ripped off a 59-yard run on Atlanta's third play and finished with 145 yards and two scores in a 45–24 rout of the Saints. The Falcons scored 16 points in their first two games and 80 in the last two.",
+          "Sunday had receivers going nuclear. CeeDee Lamb caught 17 passes for 189 yards on 21 targets in a 34–30 shootout with Houston, where Nico Collins returned from his hamstring with 118 yards and two touchdowns. Puka Nacua came back with 9 for 125 and a rushing score and Kyren Williams added 147 total yards and two touchdowns as the Rams held the Eagles to 172 yards and 0-for-12 on third down. Zay Flowers went for 118 before Lamar Jackson left at halftime with an ankle. Kenneth Walker III ran for 177 yards and two scores as Kansas City handed the Raiders their first loss, Kyle Monangai carried 30 times for 146 and two touchdowns while Tyson Bagent held the Jets to 157 yards, and Drake Maye, benched a week ago, threw three touchdowns and ran for 54 to beat Buffalo 29–26 on an Efton Chism one-handed catch.",
+          "The injury pile keeps growing. Saquon Barkley pulled a hamstring in the first half against the Rams. Ja'Marr Chase took a facemask and spent the rest of the first half in the concussion tent, so Tee Higgins caught 11 passes for 157 yards and then hurt his adductor on the final drive. Lamar Jackson's ankle handed the second half to Tyler Huntley, DJ Moore hurt the same shoulder again, Rashee Rice tweaked a hamstring, Marcus Mariota sprained an MCL in London, and Justin Jefferson didn't play. Every one of those players is on a roster in this league."
+        ],
+        "bullets": [
+          {
+            "label": "Biggest blowouts",
+            "text": "Falcons 45, Saints 24 on Monday night with four rushing touchdowns from the Robinsons. Colts 30–13 over Washington in London behind Jonathan Taylor's two scores. Bears 23–12 while allowing 157 yards. Giants 36–24 with a 98-yard pick-six."
+          },
+          {
+            "label": "Closest calls",
+            "text": "Browns 27–24 on the 56-yarder with 10 seconds left. Patriots 29–26 over the Bills. Chiefs 30–27 Raiders. Packers 17–14 over Jalon Daniels' first start. Rams 24–20 Eagles and Cowboys 34–30 Texans."
+          },
+          {
+            "label": "Breakouts",
+            "text": "McMillan's 14-192-2 career night. Lamb's 17 catches. Monangai's 30-146-2. Emanuel Wilson's 120 scrimmage yards and two scores in Seattle, Collins' 7-118-2 off the injury list, Keon Coleman's 116 and T.J. Hockenson's 13 catches for 119."
+          },
+          {
+            "label": "Duds",
+            "text": "Josh Allen's Bills lost to Drake Maye. Stafford had 9.68 while his receivers feasted. Smith-Njigba (10.1), Garrett Wilson in the Jets' 157-yard afternoon, Davante Adams (4 for 32), Bucky Irving (16 for 61), Marvin Harrison Jr. (one catch) and Jalon Daniels (two picks in his first start)."
+          },
+          {
+            "label": "Injuries to watch",
+            "text": "Saquon Barkley (hamstring), Ja'Marr Chase (concussion), Lamar Jackson (ankle), DJ Moore (shoulder), Rashee Rice (hamstring), Tee Higgins (adductor), Marcus Mariota (MCL), Kyle Monangai (thumb), Justin Jefferson (ankle, out)."
+          }
+        ],
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/50077236/week-4-sunday-games-takeaways-questions-2026"
+          },
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/2026-nfl-season-week-4-what-we-learned-from-sunday-s-games"
+          },
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/nfl"
+          },
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-4-booms-and-busts-comeback-kids-nico-collins-drake-maye-return-to-form-233634654.html"
+          },
+          {
+            "name": "FOX Sports",
+            "url": "https://www.foxsports.com/live-blog/nfl/falcons-vs-saints-live-updates-score-nfc-south-rivals-clash-monday-night"
+          },
+          {
+            "name": "CBS Sports",
+            "url": "https://www.cbssports.com/nfl/news/panthers-vs-lions-live-updates-score-highlights/live/"
+          },
+          {
+            "name": "Sleeper",
+            "url": "https://sleeper.com/"
+          }
+        ]
+      },
+      "games": {
+        "2026-w4-22": "Conor finally had the week: 134.08, fifty points better than anything he'd scored this season and 36.6 over projection, with Kyren Williams (31.7), a waiver-wire Emanuel Wilson (25.5) and a returning Puka Nacua (23.2). He ran into the week's high score. Drew got 38.2 from Tetairoa McMillan's 14-catch Sunday night, 22.88 from Lamar Jackson in one half, 22.2 from Jonathan Taylor in London and 19 from Will Reichard, and Off In Church won by 6.6. It's the second-highest losing score of the season. Conor is 0-4 for the first time ever, but four of the nine teams that started 0-4 in league history still made the playoffs, so there's that.",
+        "2026-w4-20": "Caleb got 28.8 from Javonte Williams, 27.3 from Nico Collins in his first game back and a 16.9 from Rhamondre Stevenson, which covered a quiet Jahmyr Gibbs (15.7) and a one-point Bills defense. Johnny actually had his second-best week: Malik Nabers (20.2) finally cracked double digits, Quinshon Judkins went for 18.6, Brock Bowers 17.6, and Jalen Hurts scraped together 17.52 in a game where the Eagles threw for 93 yards and went 0-for-12 on third down. It still wasn't close. Johnny Football Club is 0-4 for the first time in franchise history, and the reason is on the training table: 11 of the 15 players Johnny has rostered this year have picked up at least one injury. Justin Jefferson is out, Travis Etienne, Jayden Reed and Jordan Mason are on IR, and Jaylen Wright (0.7) is what passes for a healthy running back. Nine lineup spots, twelve upright bodies. He may not even be able to field a team next week against Mike.",
+        "2026-w4-21": "The battle of the unbeatens went to Nate, and he did it as the underdog. Kenneth Walker III (30.4) ran for 177 yards and two scores against the Raiders, Tee Higgins (21.2) caught 11 passes before his adductor gave out, and James Cook added 15.3. Chase got a 25.4 from Chuba Hubbard and 20.52 from Josh Allen in Buffalo's loss, but Jaxon Smith-Njigba managed 10.1 and Garrett Wilson 4.2 while the Jets gained 157 yards, and 55.22 points sat on the bench. Nate is 4-0 for the first time since 2022 and takes over the top spot in the predictor. Chase still leads the league in points.",
+        "2026-w4-18": "Mike rode CeeDee Lamb's 17-catch, 189-yard afternoon (32.8), Patrick Mahomes (21.0) and a 16-point Spencer Shrader to his third win, even with Parker Washington (1.5) and David Montgomery (4.3) along for the ride. Smalls got the QB of the week in Bryce Young (25.46) and almost nothing behind him: Saquon Barkley (1.5) pulled a hamstring in the first half, Josh Downs had 3.1, and T Smalls posted the week's low score of 86.66 while leaving 78.16 points on the bench, the most of anyone this week.",
+        "2026-w4-23": "Nick's team had seven starters between 10 and 18.4, led by Sam LaPorta's Sunday night touchdown, Tyler Shough (17.94) and Chris Olave (15.6), and that was enough. DJ Moore (2.2) hurt his shoulder again. Ethan's top scorer was his kicker: Jake Bates had 18, Jordan Love 17.08 and George Kittle 15.0 on a 56-yard catch-and-run, but Ja'Marr Chase (4.2) went into the concussion tent in the first half and Bucky Irving had 6.1. Ethan's bench scored 3.7, so there was no help coming. Both teams are 2-2, and Ethan drops three spots in the predictor with Breece Hall and DeVonta Smith on the injury list.",
+        "2026-w4-19": "The closest game of the week and the lowest winning score since Caleb's 84.88 in Week 2. Kevin's 91.3 held up because Bijan Robinson (27.2) had 145 yards and two touchdowns on Monday night and Dak Prescott threw for 335. Rashee Rice (hamstring) gave him a zero, Davante Adams 5.2 and Trey McBride 6.6. Shane got 22.48 from Jared Goff's 412-yard night, 15.6 from Ashton Jeanty and a Tucker Kraft touchdown (13.5), and lost by 2.82. Slim Pickens is 0-4 for the third time, with 394 points for, more than 1-3 Smalls has scored."
+      },
+      "awards": {
+        "playerOfWeek": "Fourteen catches, 192 yards and two touchdowns on Sunday night, a career high and a 24.7-point beat of his projection. Drew started him, scored the week's high, and needed most of it to get past Conor.",
+        "qbOfWeek": "29 of 41 for 329 yards and two touchdowns in the Panthers' upset of Detroit, 25.46 for Smalls. It's the first time this season the QB of the week played for the week's lowest-scoring team.",
+        "dud": "A facemask sent him to the concussion tent in the first half and he finished with 4.2 against a 16.54 projection. Ethan lost by 7.46, so a full Chase game flips it. Tee Higgins caught 11 passes in his absence, for Nate.",
+        "differenceMaker": "Seventeen catches on 21 targets, 189 yards and a score, 19.15 over projection. Mike won by 32, so he didn't strictly need it, but 17 catches is 17 catches."
+      },
+      "predictorNote": "Nate takes over first at 96% after beating Chase head to head, Chase drops to second and still has the best roster projection in the league, Caleb climbs two after his third win, and Ethan falls three with Hall and Smith hurt. The three 0-4 teams are all at 2% or less."
     }
   }
 }

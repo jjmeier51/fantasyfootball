@@ -87,13 +87,13 @@ export default async function OpenGraphImage() {
                     <div style={{ fontSize: 26, color: "#b8c2cf", marginBottom: 18 }}>{x.a.name.split(/\s+/).map((w) => w[0]).join("").slice(0, 2)}</div>
                   )}
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", fontFamily: "Helvetica, Arial, sans-serif" }}>
+                <div style={{ display: "flex", flexDirection: "column", fontFamily: "Helvetica, Arial, sans-serif", flex: 1, minWidth: 0 }}>
                   <div style={{ fontSize: 13, letterSpacing: 2, color: x.color, textTransform: "uppercase" }}>{x.label}</div>
                   <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginTop: 2 }}>
                     <div style={{ fontSize: 24, fontWeight: 700, color: "#f1f5f9", fontFamily: displayFont ? "Display" : "sans-serif" }}>{x.a.name}</div>
                     <div style={{ fontSize: 16, color: "#7f8a99" }}>{`${x.a.position} · ${x.a.proTeam}`}</div>
                   </div>
-                  <div style={{ fontSize: 17, color: "#b8c2cf", marginTop: 1 }}>
+                  <div style={{ fontSize: 17, color: "#b8c2cf", marginTop: 1, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
                     {`${x.a.points.toFixed(1)} pts · started by ${x.a.ownerName} (${x.a.teamName})`}
                   </div>
                 </div>

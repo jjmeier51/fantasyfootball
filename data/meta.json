@@ -1,7 +1,7 @@
 {
  "leagueName": "League of Gangstars",
- "lastSynced": "2026-09-29T17:29:30.256772+00:00",
- "generatedAt": "2026-09-29T17:29:31.628931+00:00",
+ "lastSynced": "2026-10-06T11:02:04.732201+00:00",
+ "generatedAt": "2026-10-06T11:02:07.235546+00:00",
  "seasons": [
   2010,
   2011,
@@ -24,7 +24,7 @@
  "firstSeason": 2010,
  "currentSeason": 2026,
  "currentSeasonComplete": false,
- "currentWeek": 4,
+ "currentWeek": 5,
  "isSample": false,
  "coverage": {
   "2010": "full",
@@ -58,8 +58,8 @@
  ],
  "counts": {
   "owners": 20,
-  "games": 1433,
-  "facts": 155,
+  "games": 1439,
+  "facts": 154,
   "records": 38
  }
 }

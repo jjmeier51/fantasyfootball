@@ -319,6 +319,87 @@
         "differenceMaker": "Seventeen catches on 21 targets, 189 yards and a score, 19.15 over projection. Mike won by 32, so he didn't strictly need it, but 17 catches is 17 catches."
       },
       "predictorNote": "Nate takes over first at 96% after beating Chase head to head, Chase drops to second and still has the best roster projection in the league, Caleb climbs two after his third win, and Ethan falls three with Hall and Smith hurt. The three 0-4 teams are all at 2% or less."
+    },
+    "5": {
+      "year": 2026,
+      "week": 5,
+      "headline": "Ethan drops 149.78, Drake Maye scores 47 for Smalls, and Johnny finally wins one.",
+      "dek": "Nate and Caleb sit at 4-1 above a six-team pileup at 3-2, Conor scored 128 and lost again, and the Bills and Rams played the game of the year on Monday night.",
+      "published": "2026-10-13",
+      "nfl": {
+        "paragraphs": [
+          "Monday night was the game of the season. Josh Allen ran for 121 yards and threw for 210, Matthew Stafford went 40 of 54 for 383, Puka Nacua caught 17 passes (the most anyone has ever caught against Buffalo), Kyren Williams tied it with five seconds left, Greg Rousseau blocked the Rams' overtime field goal, and Tyler Bass won it 37–34 for Allen's first overtime win of his career. The week opened with an upset too: Bucky Irving ran for 165 yards and scored twice as the 0-4 Buccaneers beat the Cowboys 24–16 as eight-point underdogs, and Dallas lost CeeDee Lamb to a quad injury. In London, Cam Little hit a 57-yarder as time expired to beat the Eagles 19–17, Parker Washington went for 124 yards and two scores with a one-handed fourth-down catch, and Philadelphia managed 22 rushing yards.",
+          "Sunday belonged to the quarterbacks. Drake Maye threw for 374 yards and four touchdowns and ran for a fifth in a 45–17 rout of the Raiders. Jordan Love went 25 of 31 for 367 as Green Bay beat Chicago 31–7 with five takeaways, with Christian Watson scoring from 53 and 43 yards out and Matthew Golden adding 123. Aaron Rodgers passed Peyton Manning for third on the all-time touchdown list while Jaylen Warren scored on an 80-yard catch and a 50-yard run. Jared Goff threw three more touchdowns (12 for the year, zero giveaways) and Jahmyr Gibbs went 25 for 151 and two scores in a 45–21 win, after which Arizona traded Marvin Harrison Jr. to Houston. Justin Jefferson came back with 79 yards and a touchdown, the Vikings and 49ers are both 5-0, and the Giants and Commanders played to a 27–27 tie in which Jayden Daniels ran for 109 yards, Malik Nabers caught 11 passes on 20 targets, Cam Skattebo fumbled in overtime and Washington couldn't get a play off at the end.",
+          "The injury list, as always: Lamar Jackson sat out with his ankle and Tyler Huntley went 11 for 11 on the tying drive and in overtime to beat Atlanta. Lamb's quad, Deebo Samuel's hamstring, David Montgomery's groin, TreVeyon Henderson's ankle, Tee Higgins' groin and Michael Penix's ribs all came out of the weekend. Quinshon Judkins left the Browns' loss in a walking boot and Will Shipley hurt his foot in London, both of which matter to exactly one owner in this league."
+        ],
+        "bullets": [
+          {
+            "label": "Biggest blowouts",
+            "text": "Patriots 45, Raiders 17 behind Maye's five touchdowns. Lions 45–21 over Arizona. Packers 31–7 over the Bears with five takeaways and Tyson Bagent benched. Texans 26–3 for Houston's first win."
+          },
+          {
+            "label": "Closest calls",
+            "text": "Bills 37–34 Rams in overtime. Ravens 30–23 Falcons in overtime. Jaguars 19–17 on the 57-yarder at the gun. 49ers 32–29 Seahawks. Giants 27, Commanders 27."
+          },
+          {
+            "label": "Breakouts",
+            "text": "Irving's 165 yards. Warren's 188 total yards and two long scores. Parker Washington's 6-124-2. Watson's 143 and two touchdowns, Golden's 123, Isaiah Likely's 11-94-2, and Malik Willis running for a Dolphins quarterback record 74 yards."
+          },
+          {
+            "label": "Duds",
+            "text": "Tyler Shough: 96 yards, two picks, negative fantasy points. Chase Brown fumbled and has 49 rushing yards over two weeks. Jonathan Taylor (45 rushing yards), DK Metcalf (3 for 12), Bo Nix (123 yards), Colston Loveland (five straight), and a Raiders rushing attack that totaled 38 yards."
+          },
+          {
+            "label": "Injuries to watch",
+            "text": "Lamar Jackson (ankle, out), CeeDee Lamb (quad), Deebo Samuel (hamstring), David Montgomery (groin), TreVeyon Henderson (ankle), Quinshon Judkins (foot), Will Shipley (foot), Tee Higgins (groin), Michael Penix Jr. (ribs), KC Concepcion (head)."
+          }
+        ],
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/recap/_/gameId/401872994"
+          },
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/2026-nfl-season-week-5-what-we-learned-from-sunday-s-games"
+          },
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/nfl"
+          },
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-booms--busts-packers-have-a-big-day-as-bears-blow-it-in-week-5-233554753.html"
+          },
+          {
+            "name": "FOX Sports",
+            "url": "https://www.foxsports.com/nfl"
+          },
+          {
+            "name": "NBC Sports",
+            "url": "https://www.nbcsports.com/fantasy/football/news/sunday-aftermath-jeremiyah-loves-struggles-the-packers-outburst-and-more"
+          },
+          {
+            "name": "Sleeper",
+            "url": "https://sleeper.com/"
+          }
+        ]
+      },
+      "games": {
+        "2026-w5-28": "Ethan's 149.78 is the second-highest score of the season and the biggest beat of a projection all year, 45.9 points over. Bucky Irving (30.5) ran for 165 on Thursday, Jordan Love (29.28) threw for 367, Mike Evans (22.8) went for 113 and a score, and the Vikings defense added 13. His bench scored 6.6, so he left nothing out there. Chase got 32.5 from Josh Allen's Monday night, 20.3 from Smith-Njigba and 19.9 from Garrett Wilson and still lost by 34, with Harold Fannin (0.9), Carnell Tate (1.1) and fill-in Isaiah Davis (2.2) doing him no favors. Both teams are 3-2, and Chase still leads the league in points.",
+        "2026-w5-27": "The closest game of the week, and Conor lost it with 128.12. Matthew Stafford (33.32) threw for 383 on Monday night, Puka Nacua (29.2) caught 17 passes, the Packers defense scored 19 off five Bears turnovers, and Kyren Williams added 16.6. Caleb survived on Jahmyr Gibbs (35.2), a 23-point Jason Myers and an 18-point Jets defense that sacked Deshaun Watson eight times, because Bo Nix (9.92), Rome Odunze (3.5) and Dalton Kincaid (3.2) gave him almost nothing. Conor has scored 134 and 128 the last two weeks and lost both. He is 0-5, and the one fact worth hanging on to is that two of the five previous 0-5 teams in league history still made the playoffs.",
+        "2026-w5-24": "Smalls got the single biggest fantasy game of the season: Drake Maye's 47.46 on 374 yards, four touchdown passes and a rushing score. Isaiah Likely (26.9) caught two touchdowns from Jameis Winston and Derrick Henry (20.5) had 102 yards and a receiving score in Baltimore's overtime win. Kevin came in projected for 124.58 and scored 100.44: Dak Prescott (14.64) lost CeeDee Lamb on Thursday, Bijan Robinson (13.8) had 118 scrimmage yards but no touchdown, and Chad Ryland kicked for two points. God Hates Jags drops two spots in the predictor.",
+        "2026-w5-25": "Johnny is finally in the win column, and he did it despite all six running backs he has rostered this year going down with an injury: Travis Etienne and Jordan Mason are on IR, Jonathon Brooks never got healthy, Will Shipley hurt his foot in London after scoring 7.8, and Quinshon Judkins left Sunday's game in a walking boot. The receivers carried him. Malik Nabers (23.6) caught 11 passes on 20 targets in the Giants' tie, Matthew Golden (17.3) went for 123 yards in Green Bay, Justin Jefferson (15.8) scored in his return, Brock Bowers had 19.0, and Kyler Murray (20.26) got the start over Jalen Hurts and delivered. Mike got 27.4 from Parker Washington's London breakout and 21 from Spencer Shrader's leg, but CeeDee Lamb (1.9, quad), David Montgomery (1.1, groin) and Chase Brown (5.5, fumble) sank The Washington C-Words. Johnny Football Club is 1-4 and plays Smalls next week.",
+        "2026-w5-26": "Shane's first win came at the expense of the last unbeaten team. Joe Burrow (32.6) threw four touchdowns in Miami, George Pickens (23.5) had 130 yards and a score on Thursday, and J.K. Dobbins chipped in 14.4, which covered a 2-point Harrison Mevis (whose overtime kick got blocked) and a 1-point Steelers defense. Nate had three starters over 22, Christian Watson (29.3), Trevor Lawrence (25.74) and James Cook (22.3), and six starters at 6.1 or less, including a Cowboys defense at minus two and a groin-limited Tee Higgins at 3.2. Loop There It Is takes its first loss and stays first in the predictor; Slim Pickens is 1-4.",
+        "2026-w5-29": "Nick won with a quarterback who scored negative points. Tyler Shough (minus 0.16) threw for 96 yards and two picks against Minnesota, and SHOUGH ME YOUR TDS won anyway because Jaylen Warren (33.8) scored on an 80-yard catch and a 50-yard run and Sam LaPorta had 17.3. The 92.34 is the lowest winning score since Caleb's 84.88 in Week 2. Drew got a garbage-time 30.78 from Jacoby Brissett filling in for Lamar Jackson and 16 from Will Reichard, who is 15 for 15 on the year, but Jonathan Taylor (9.7), Jeremiyah Love (2.2), a hamstrung Deebo Samuel (1.5) and a zero from Brian Thomas Jr. left Off In Church with the week's low score. Both teams are 3-2."
+      },
+      "awards": {
+        "playerOfWeek": "25 carries for 151 yards and two touchdowns in the Lions' 45-point afternoon. His second Player of the Week this season, and Caleb needed all 35.2 of it to beat Conor by 3.7.",
+        "qbOfWeek": "374 yards, four touchdown passes and a rushing score in a 45–17 rout: 47.46 points, the biggest single game by anyone in the league this year. Smalls started him over nobody in particular and won by 27.",
+        "dud": "96 passing yards, two interceptions, no touchdowns and a final line of minus 0.16 against a 19.45 projection. Nick won the game anyway. The team is still named after him, for now.",
+        "differenceMaker": "An 80-yard touchdown catch, a 50-yard touchdown run, 188 total yards and 17.94 points over projection. Nick won by 5.56, so take Warren's surplus away and Drew wins with the week's low score."
+      },
+      "predictorNote": "Nate keeps first at 93% even after his first loss, Caleb climbs two to third at 4-1, Ethan jumps three spots on the strength of his 149.78, and Kevin falls two. Conor's two straight 128-plus weeks haven't moved his odds off zero, which tells you how much ground 0-5 is."
     }
   }
 }

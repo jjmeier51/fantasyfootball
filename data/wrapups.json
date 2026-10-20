@@ -400,6 +400,87 @@
         "differenceMaker": "An 80-yard touchdown catch, a 50-yard touchdown run, 188 total yards and 17.94 points over projection. Nick won by 5.56, so take Warren's surplus away and Drew wins with the week's low score."
       },
       "predictorNote": "Nate keeps first at 93% even after his first loss, Caleb climbs two to third at 4-1, Ethan jumps three spots on the strength of his 149.78, and Kevin falls two. Conor's two straight 128-plus weeks haven't moved his odds off zero, which tells you how much ground 0-5 is."
+    },
+    "6": {
+      "year": 2026,
+      "week": 6,
+      "headline": "Chase posts the week's high score, Nate moves to 5-1, and Conor's Nacua Matata finally wins one.",
+      "dek": "A four-team bye dragged the league average under 100 for the first time this season, five teams are 3-3, and Johnny lost by 2.1 with a zero in his lineup.",
+      "published": "2026-10-20",
+      "nfl": {
+        "paragraphs": [
+          "Bye-week football was ugly and close. Thursday night, Sam Darnold threw 51 passes, got sacked five times and threw the overtime interception that set up Wil Lutz's 53-yarder in a 17–14 Broncos win, on a night Bo Nix threw for 107 yards and Jaxon Smith-Njigba caught 12 passes. In London, Ka'imi Fairbairn's 49-yarder beat the Jaguars 34–31 as time expired after C.J. Stroud threw for 312 and three scores and Travis Hunter did something nobody had done in 40 years: a receiving touchdown and an interception in the same game. Arizona beat the Rams 18–16 on six Chad Ryland field goals and zero touchdowns, Cleveland beat Baltimore 13–10 on Deshaun Watson's fourth game-winning drive of the year, and the 49ers held off Washington 23–17 on Monday night to stay 6-0, with Christian McCaffrey scoring twice.",
+          "Caleb Williams came back from his hamstring and went 30 of 36 for 305 in Chicago's 31–23 win in Atlanta, which finally produced a useful Colston Loveland game (6 for 65 and a score) while Bijan Robinson managed 61 yards on nine carries and minus eight receiving. Tyler Shough threw four touchdowns without a pick as the Saints scored 34 straight on the Giants, who benched Jameis Winston for J.J. McCarthy; Malik Nabers caught 12 passes for 165 in the loss. Kenneth Walker III ran for 128 and two scores in Kansas City's 22–6 win over the winless Chargers, James Cook had 153 scrimmage yards as the Bills beat the Raiders 33–30, Chuba Hubbard carried 28 times for 120 as Carolina handed the Eagles a fourth straight loss, and rookie Germie Bernard caught 11 passes and the overtime winner for Pittsburgh.",
+          "The big injury news is Jalen Hurts. The Eagles put him on injured reserve with what was first called a superficial blood clot in his calf, and further testing found clots in his lungs. He's on blood thinners, the team says the prognosis for a full recovery is very good, and he is expected to miss the rest of the season. Tanner McKee started in his place. Will Shipley partially tore his plantar fascia, Romeo Doubs hurt his shoulder on his own touchdown, Lamar Jackson and Rashee Rice sat out again, Rams kicker Blake Grupe hurt a knee, and Quinshon Judkins was ruled out, which one owner in this league found out the hard way."
+        ],
+        "bullets": [
+          {
+            "label": "Biggest blowouts",
+            "text": "Not many this week. Chiefs 22–6 over the 0-6 Chargers. Panthers 25–14 over an Eagles team that rushed for 35 yards. Packers 23–13 over Dallas. The Bears led the Falcons 31–7 before Atlanta scored 16 in the fourth."
+          },
+          {
+            "label": "Closest calls",
+            "text": "Broncos 17–14 in overtime. Texans 34–31 on the walk-off in London. Cardinals 18–16 with no touchdowns. Browns 13–10. Steelers 26–19 in overtime from 13 down. Bills 33–30, 49ers 23–17, Patriots 26–19."
+          },
+          {
+            "label": "Breakouts",
+            "text": "Travis Hunter's two-way game. Jaylin Noel's 4-107-1. Germie Bernard's 11 catches. Carnell Tate's first career touchdown. Colston Loveland's first real week, and Shough's four-touchdown road game."
+          },
+          {
+            "label": "Duds",
+            "text": "Bijan (61 yards, minus eight receiving). Mahomes in a 22–6 win. Winston, benched. A.J. Brown's 3 for 27 with drops on 10 targets. Derrick Henry's 4.5 with a fumble. Ashton Jeanty's 22 yards. Bo Nix's 107 in a win."
+          },
+          {
+            "label": "Injuries to watch",
+            "text": "Jalen Hurts (blood clots, likely out for the season), Will Shipley (plantar fascia), Romeo Doubs (shoulder), Lamar Jackson (ankle, out again), Rashee Rice (hamstring), Quinshon Judkins (out), Blake Grupe (knee)."
+          }
+        ],
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/50222471/mnf-49ers-commanders-brock-purdy"
+          },
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/2026-nfl-season-week-6-what-we-learned-from-sunday-s-games"
+          },
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/nfl"
+          },
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-6-booms--busts-caleb-williams-makes-triumphant-return-breathes-life-into-colston-loveland-luther-burden-iii-232553654.html"
+          },
+          {
+            "name": "FOX Sports",
+            "url": "https://www.foxsports.com/articles/nfl/eagles-qb-jalen-hurts-placed-on-injured-reserve-with-blood-clot-in-his-calf"
+          },
+          {
+            "name": "NBC Sports",
+            "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-broncos-beat-seahawks-17-14-in-overtime"
+          },
+          {
+            "name": "Sleeper",
+            "url": "https://sleeper.com/"
+          }
+        ]
+      },
+      "games": {
+        "2026-w6-35": "The week's high score belonged to Chase, who got 26.2 from Christian McCaffrey's two-touchdown Monday night, 22.3 from Josh Allen, 19.4 from Smith-Njigba's 12-catch Thursday, 18.6 from Chuba Hubbard's 120 yards and a 16-point Carnell Tate on his first career touchdown. Harold Fannin (1.4) was the only miss. Drew got 20.1 from Jonathan Taylor and a touchdown catch from Blake Corum, but Deshaun Watson threw for 9.46 in a 13-point win and Tyler Allgeier and Jake Ferguson combined for 7.6. Lickity Split is 4-2 and leads the league in points by 72; Off In Church is 3-3.",
+        "2026-w6-33": "Shane's second win came from the backfield: D'Andre Swift (21.0) scored twice in Atlanta, J.K. Dobbins (12.1) scored on Thursday, Aaron Rodgers (20.02) brought the Steelers back from 13 down, and the Steelers defense added 11. Ethan got 22.24 from Jordan Love and 17 apiece from DeVonta Smith and Tyler Bass, but Bucky Irving (5.9) and Denzel Boston (2.0) left him short by 7.58. Gimme Yo Change is 3-3 and slips a spot in the predictor.",
+        "2026-w6-31": "Nate had the QB of the week in Trevor Lawrence (35.34, in a loss), the Player of the Week in Kenneth Walker III (26.9 on 128 yards and two scores) and 22.8 from James Cook, and that covered a zero from Cam Skattebo, who played six snaps without a touch. Kevin ran into the bye week: his bench scored exactly 0.0, Bijan Robinson was the Dud of the Week at 6.3, Dak Prescott threw two picks (13.02), Davante Adams had 5.4 and the Jaguars defense finished at minus two. God Hates Jags posted a season-low 78.52. Loop There It Is is 5-1 for the third time in franchise history.",
+        "2026-w6-34": "The biggest margin of the week, 41.78, and the lowest score of the season. Nick got 32.96 from Tyler Shough (four touchdowns, no picks, the first Saints quarterback to do that on the road since Drew Brees in 2020), 20.2 from waiver pickup Germie Bernard's 11-catch day and 14 from the Chiefs defense. Caleb's 66.98 is his low mark of the year: Jameis Winston (8.48) was benched for J.J. McCarthy, Rhamondre Stevenson had 3.6, the Jets defense 3.0, and 57.94 points sat on the bench, nine of them Caleb's own fault. SHOUGH ME YOUR TDS is 4-2 and jumps four spots to third in the predictor.",
+        "2026-w6-30": "The closest game of the week, and it turned on a lineup slot. Johnny started Quinshon Judkins, who had been ruled out, and got a zero from the spot in a game he lost by 2.1. Everything else worked: Michael Penix Jr. (29.1), picked up after Jalen Hurts went on IR with blood clots, threw two touchdowns to Kyle Pitts; Malik Nabers (22.5) caught 12 passes for 165; Matthew Golden (19.4) went for 106 and a score; and Dameon Pierce added 13.0. Brock Bowers (9.0) was held to two catches and Justin Jefferson sat on the bench on a bye week. Smalls got 29.8 from Drake Maye's third straight three-touchdown game, 22.7 from Bhayshul Tuten and 20.9 from Isaiah Likely, and survived a 4.5 and a fumble from Derrick Henry. T Smalls is 3-3 after an 0-2 start. Johnny is 1-5 and plays Conor next week in the battle of the 1-5s; he leads the all-time series 13-4 but lost the last one.",
+        "2026-w6-32": "Conor renamed the team Nacua Matata and immediately won a game. Matthew Stafford (20.88), a 15.5 from Colston Loveland in his first useful week of the season, and DK Metcalf's 11 catches (14.8) were enough, even with Puka Nacua at 11.0 and Kyren Williams (8.2) now splitting work with Blake Corum. Mike had his worst week of the year at 73.28: Patrick Mahomes scored 10.48 in a 22–6 win, Juwan Johnson had a zero, Tyjae Spears 1.3, and nobody on The Washington C-Words cracked 12. Conor is 1-5, Mike is 3-3, and Conor's reward is a date with Johnny next week."
+      },
+      "awards": {
+        "playerOfWeek": "19 carries for 128 yards and two touchdowns against the Chargers. Walker has scored at least 20 points in all five games he's played this season, and Nate needed about none of it in a 33-point win.",
+        "qbOfWeek": "35.34 in a London game Jacksonville lost on a walk-off field goal, which tells you how fantasy works. Nate started him, and Nate is 3-1 this season when Lawrence clears 25.",
+        "dud": "Nine carries for 61 yards and minus eight receiving yards in a home loss to the Bears, 6.3 points against a 21.34 projection. Kevin's bench scored zero, so there was no one to swap in anyway.",
+        "differenceMaker": "Last week's Dud of the Week threw four touchdowns without an interception on the road, 32.96 points and 13 over projection. Nick won by 41.78, so it wasn't close, but the team name survives another week."
+      },
+      "predictorNote": "Nate (99%) and Chase (97%) are effectively locks. Nick jumped four spots to third after Caleb's 66.98, the five 3-3 teams are fighting for the last two spots, and Johnny and Conor sit at 1% each heading into their head-to-head."
     }
   }
 }

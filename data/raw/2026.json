@@ -2,7 +2,7 @@
  "year": 2026,
  "leagueId": 477497,
  "source": "espn",
- "fetchedAt": "2026-10-20T14:30:37.301064+00:00",
+ "fetchedAt": "2026-10-20T16:13:00.316894+00:00",
  "settings": {
   "name": "League of Gangstars Season 17",
   "teamCount": 12,
@@ -210,8 +210,8 @@
      "proTeam": "PHI",
      "seasonPoints": 21.0,
      "acquisitionType": "DRAFT",
-     "injuryStatus": "OUT",
-     "projectedSeasonPoints": 134.15
+     "injuryStatus": "QUESTIONABLE",
+     "projectedSeasonPoints": 134.26
     },
     {
      "playerId": 3043078,
@@ -221,7 +221,7 @@
      "seasonPoints": 112.3,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 197.65
+     "projectedSeasonPoints": 197.66
     },
     {
      "playerId": 4882093,
@@ -231,7 +231,7 @@
      "seasonPoints": 81.9,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 143.63
+     "projectedSeasonPoints": 143.72
     },
     {
      "playerId": 4612826,
@@ -241,7 +241,7 @@
      "seasonPoints": 32.5,
      "acquisitionType": "DRAFT",
      "injuryStatus": "QUESTIONABLE",
-     "projectedSeasonPoints": 94.6
+     "projectedSeasonPoints": 94.59
     },
     {
      "playerId": 4431459,
@@ -250,7 +250,7 @@
      "proTeam": "IND",
      "seasonPoints": 54.9,
      "acquisitionType": "DRAFT",
-     "injuryStatus": "OUT",
+     "injuryStatus": "QUESTIONABLE",
      "projectedSeasonPoints": 100.81
     },
     {
@@ -261,7 +261,7 @@
      "seasonPoints": 54.78,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 118.25
+     "projectedSeasonPoints": 118.18
     },
     {
      "playerId": 4371733,
@@ -271,7 +271,7 @@
      "seasonPoints": 24.2,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 62.6
+     "projectedSeasonPoints": 62.59
     },
     {
      "playerId": 4710714,
@@ -291,7 +291,7 @@
      "seasonPoints": 89.8,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 129.01
+     "projectedSeasonPoints": 128.84
     },
     {
      "playerId": 4431452,
@@ -301,7 +301,7 @@
      "seasonPoints": 133.02,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 275.16
+     "projectedSeasonPoints": 275.13
     },
     {
      "playerId": -16014,
@@ -311,7 +311,7 @@
      "seasonPoints": 25.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "NORMAL",
-     "projectedSeasonPoints": 66.69
+     "projectedSeasonPoints": 68.33
     },
     {
      "playerId": 4688813,
@@ -321,7 +321,7 @@
      "seasonPoints": 41.6,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 78.22
+     "projectedSeasonPoints": 78.24
     },
     {
      "playerId": 4032473,
@@ -331,7 +331,7 @@
      "seasonPoints": 33.1,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 77.36
+     "projectedSeasonPoints": 77.35
     },
     {
      "playerId": 4569559,
@@ -341,7 +341,7 @@
      "seasonPoints": 55.4,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 75.69
+     "projectedSeasonPoints": 75.7
     },
     {
      "playerId": 4685720,
@@ -351,7 +351,7 @@
      "seasonPoints": 132.46,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 267.27
+     "projectedSeasonPoints": 267.25
     },
     {
      "playerId": 5082424,
@@ -361,7 +361,7 @@
      "seasonPoints": 56.0,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 122.55
+     "projectedSeasonPoints": 122.58
     }
    ]
   },
@@ -390,7 +390,7 @@
      "seasonPoints": 108.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 194.97
+     "projectedSeasonPoints": 198.05
     },
     {
      "playerId": 4430878,
@@ -400,7 +400,7 @@
      "seasonPoints": 140.36,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 186.94
+     "projectedSeasonPoints": 186.95
     },
     {
      "playerId": 3918298,
@@ -410,7 +410,7 @@
      "seasonPoints": 178.76,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 285.76
+     "projectedSeasonPoints": 285.68
     },
     {
      "playerId": 4569618,
@@ -420,7 +420,7 @@
      "seasonPoints": 77.3,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 128.53
+     "projectedSeasonPoints": 128.57
     },
     {
      "playerId": 4871023,
@@ -440,7 +440,7 @@
      "seasonPoints": 44.1,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 75.56
+     "projectedSeasonPoints": 75.57
     },
     {
      "playerId": 4241416,
@@ -470,7 +470,7 @@
      "seasonPoints": 27.7,
      "acquisitionType": "DRAFT",
      "injuryStatus": "QUESTIONABLE",
-     "projectedSeasonPoints": 106.73
+     "projectedSeasonPoints": 106.66
     },
     {
      "playerId": 4361741,
@@ -480,7 +480,7 @@
      "seasonPoints": 162.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 265.82
+     "projectedSeasonPoints": 265.5
     },
     {
      "playerId": 15847,
@@ -490,7 +490,7 @@
      "seasonPoints": 51.9,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 100.04
+     "projectedSeasonPoints": 100.05
     },
     {
      "playerId": 2971573,
@@ -500,7 +500,7 @@
      "seasonPoints": 64.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 118.19
+     "projectedSeasonPoints": 118.24
     },
     {
      "playerId": 4426385,
@@ -510,7 +510,7 @@
      "seasonPoints": 0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "OUT",
-     "projectedSeasonPoints": 137.34
+     "projectedSeasonPoints": 137.32
     },
     {
      "playerId": -16027,
@@ -520,7 +520,7 @@
      "seasonPoints": 39.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "NORMAL",
-     "projectedSeasonPoints": 64.07
+     "projectedSeasonPoints": 63.93
     },
     {
      "playerId": 4695404,
@@ -559,7 +559,7 @@
      "seasonPoints": 111.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 181.73
+     "projectedSeasonPoints": 181.72
     },
     {
      "playerId": 4870808,
@@ -568,8 +568,8 @@
      "proTeam": "ARI",
      "seasonPoints": 45.6,
      "acquisitionType": "DRAFT",
-     "injuryStatus": "OUT",
-     "projectedSeasonPoints": 119.57
+     "injuryStatus": "QUESTIONABLE",
+     "projectedSeasonPoints": 119.65
     },
     {
      "playerId": 4685472,
@@ -579,7 +579,7 @@
      "seasonPoints": 73.1,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 160.8
+     "projectedSeasonPoints": 160.82
     },
     {
      "playerId": 3916387,
@@ -588,8 +588,8 @@
      "proTeam": "BAL",
      "seasonPoints": 91.08,
      "acquisitionType": "DRAFT",
-     "injuryStatus": "OUT",
-     "projectedSeasonPoints": 239.01
+     "injuryStatus": "QUESTIONABLE",
+     "projectedSeasonPoints": 238.96
     },
     {
      "playerId": 3128429,
@@ -599,7 +599,7 @@
      "seasonPoints": 24.8,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 78.72
+     "projectedSeasonPoints": 78.68
     },
     {
      "playerId": 4567750,
@@ -609,7 +609,7 @@
      "seasonPoints": 57.1,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 131.81
+     "projectedSeasonPoints": 131.84
     },
     {
      "playerId": 4360078,
@@ -619,7 +619,7 @@
      "seasonPoints": 9.7,
      "acquisitionType": "DRAFT",
      "injuryStatus": "INJURY_RESERVE",
-     "projectedSeasonPoints": 69.77
+     "projectedSeasonPoints": 69.73
     },
     {
      "playerId": 4429096,
@@ -629,7 +629,7 @@
      "seasonPoints": 47.9,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 93.18
+     "projectedSeasonPoints": 93.26
     },
     {
      "playerId": 4242355,
@@ -639,7 +639,7 @@
      "seasonPoints": 36.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 51.19
+     "projectedSeasonPoints": 51.17
     },
     {
      "playerId": 3126486,
@@ -649,7 +649,7 @@
      "seasonPoints": 52.4,
      "acquisitionType": "DRAFT",
      "injuryStatus": "OUT",
-     "projectedSeasonPoints": 98.58
+     "projectedSeasonPoints": 96.69
     },
     {
      "playerId": -16026,
@@ -659,7 +659,7 @@
      "seasonPoints": 57.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "NORMAL",
-     "projectedSeasonPoints": 80.07
+     "projectedSeasonPoints": 80.02
     },
     {
      "playerId": 4567104,
@@ -669,7 +669,7 @@
      "seasonPoints": 68.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 134.0
+     "projectedSeasonPoints": 134.03
     },
     {
      "playerId": 4373626,
@@ -679,7 +679,7 @@
      "seasonPoints": 33.6,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 71.74
+     "projectedSeasonPoints": 71.77
     },
     {
      "playerId": 4568263,
@@ -689,7 +689,7 @@
      "seasonPoints": 52.0,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 114.76
+     "projectedSeasonPoints": 114.81
     },
     {
      "playerId": -16029,
@@ -699,7 +699,7 @@
      "seasonPoints": 24.0,
      "acquisitionType": "ADD",
      "injuryStatus": "NORMAL",
-     "projectedSeasonPoints": 53.2
+     "projectedSeasonPoints": 52.47
     },
     {
      "playerId": 3122840,
@@ -709,7 +709,7 @@
      "seasonPoints": 102.56,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 190.07
+     "projectedSeasonPoints": 190.08
     }
    ]
   },
@@ -738,7 +738,7 @@
      "seasonPoints": 54.2,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 181.26
+     "projectedSeasonPoints": 181.19
     },
     {
      "playerId": 4432665,
@@ -748,7 +748,7 @@
      "seasonPoints": 68.2,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 158.97
+     "projectedSeasonPoints": 158.95
     },
     {
      "playerId": 4595348,
@@ -758,7 +758,7 @@
      "seasonPoints": 81.9,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 163.64
+     "projectedSeasonPoints": 163.41
     },
     {
      "playerId": 4685702,
@@ -767,8 +767,8 @@
      "proTeam": "CLE",
      "seasonPoints": 47.3,
      "acquisitionType": "DRAFT",
-     "injuryStatus": "OUT",
-     "projectedSeasonPoints": 140.73
+     "injuryStatus": "QUESTIONABLE",
+     "projectedSeasonPoints": 140.75
     },
     {
      "playerId": 4040715,
@@ -788,7 +788,7 @@
      "seasonPoints": 25.4,
      "acquisitionType": "DRAFT",
      "injuryStatus": "INJURY_RESERVE",
-     "projectedSeasonPoints": 122.43
+     "projectedSeasonPoints": 122.42
     },
     {
      "playerId": 4362249,
@@ -808,7 +808,7 @@
      "seasonPoints": 11.9,
      "acquisitionType": "DRAFT",
      "injuryStatus": "INJURY_RESERVE",
-     "projectedSeasonPoints": 105.49
+     "projectedSeasonPoints": 105.56
     },
     {
      "playerId": 4701936,
@@ -818,7 +818,7 @@
      "seasonPoints": 85.7,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 148.42
+     "projectedSeasonPoints": 148.46
     },
     {
      "playerId": 3917315,
@@ -828,7 +828,7 @@
      "seasonPoints": 43.78,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 234.82
+     "projectedSeasonPoints": 234.75
     },
     {
      "playerId": -16021,
@@ -838,7 +838,7 @@
      "seasonPoints": 12.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "NORMAL",
-     "projectedSeasonPoints": 55.18
+     "projectedSeasonPoints": 55.88
     },
     {
      "playerId": 4428850,
@@ -848,7 +848,7 @@
      "seasonPoints": 43.9,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 76.17
+     "projectedSeasonPoints": 76.14
     },
     {
      "playerId": 4696044,
@@ -858,7 +858,7 @@
      "seasonPoints": 18.8,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 51.66
+     "projectedSeasonPoints": 57.26
     },
     {
      "playerId": 4362081,
@@ -868,7 +868,7 @@
      "seasonPoints": 36.0,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 84.76
+     "projectedSeasonPoints": 84.8
     },
     {
      "playerId": 4360238,
@@ -878,7 +878,7 @@
      "seasonPoints": 15.2,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 54.25
+     "projectedSeasonPoints": 54.27
     },
     {
      "playerId": 4360423,
@@ -888,7 +888,7 @@
      "seasonPoints": 76.26,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 195.6
+     "projectedSeasonPoints": 195.49
     }
    ]
   },
@@ -917,7 +917,7 @@
      "seasonPoints": 118.5,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 204.56
+     "projectedSeasonPoints": 204.69
     },
     {
      "playerId": 4361307,
@@ -927,7 +927,7 @@
      "seasonPoints": 78.6,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 143.62
+     "projectedSeasonPoints": 143.54
     },
     {
      "playerId": 4428331,
@@ -936,8 +936,8 @@
      "proTeam": "KC",
      "seasonPoints": 31.5,
      "acquisitionType": "DRAFT",
-     "injuryStatus": "OUT",
-     "projectedSeasonPoints": 136.59
+     "injuryStatus": "QUESTIONABLE",
+     "projectedSeasonPoints": 136.55
     },
     {
      "playerId": 16800,
@@ -977,7 +977,7 @@
      "seasonPoints": 0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "DAY_TO_DAY",
-     "projectedSeasonPoints": 130.1
+     "projectedSeasonPoints": 130.06
     },
     {
      "playerId": 3042519,
@@ -987,7 +987,7 @@
      "seasonPoints": 64.2,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 121.02
+     "projectedSeasonPoints": 121.05
     },
     {
      "playerId": 2577417,
@@ -997,7 +997,7 @@
      "seasonPoints": 124.86,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 220.39
+     "projectedSeasonPoints": 220.31
     },
     {
      "playerId": -16034,
@@ -1007,7 +1007,7 @@
      "seasonPoints": 29.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "NORMAL",
-     "projectedSeasonPoints": 78.36
+     "projectedSeasonPoints": 79.05
     },
     {
      "playerId": 3916148,
@@ -1017,7 +1017,7 @@
      "seasonPoints": 47.3,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 133.79
+     "projectedSeasonPoints": 133.9
     },
     {
      "playerId": 4241474,
@@ -1027,7 +1027,7 @@
      "seasonPoints": 50.6,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 68.37
+     "projectedSeasonPoints": 68.39
     },
     {
      "playerId": 4880281,
@@ -1037,7 +1037,7 @@
      "seasonPoints": 0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "INJURY_RESERVE",
-     "projectedSeasonPoints": 74.33
+     "projectedSeasonPoints": 74.28
     },
     {
      "playerId": -16030,
@@ -1047,7 +1047,7 @@
      "seasonPoints": 34.0,
      "acquisitionType": "ADD",
      "injuryStatus": "NORMAL",
-     "projectedSeasonPoints": 79.13
+     "projectedSeasonPoints": 79.85
     },
     {
      "playerId": 4249087,
@@ -1057,7 +1057,7 @@
      "seasonPoints": 63.0,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 104.14
+     "projectedSeasonPoints": 104.17
     },
     {
      "playerId": 3054850,
@@ -1067,7 +1067,7 @@
      "seasonPoints": 45.1,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 71.97
+     "projectedSeasonPoints": 71.96
     }
    ]
   },
@@ -1097,7 +1097,7 @@
      "seasonPoints": 66.4,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 218.39
+     "projectedSeasonPoints": 218.32
     },
     {
      "playerId": 4427366,
@@ -1106,8 +1106,8 @@
      "proTeam": "NYJ",
      "seasonPoints": 37.5,
      "acquisitionType": "DRAFT",
-     "injuryStatus": "OUT",
-     "projectedSeasonPoints": 143.62
+     "injuryStatus": "QUESTIONABLE",
+     "projectedSeasonPoints": 143.6
     },
     {
      "playerId": 4241478,
@@ -1117,7 +1117,7 @@
      "seasonPoints": 56.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 138.09
+     "projectedSeasonPoints": 138.03
     },
     {
      "playerId": 4596448,
@@ -1137,7 +1137,7 @@
      "seasonPoints": 12.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "INJURY_RESERVE",
-     "projectedSeasonPoints": 103.1
+     "projectedSeasonPoints": 103.09
     },
     {
      "playerId": 3040151,
@@ -1147,7 +1147,7 @@
      "seasonPoints": 76.7,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 125.15
+     "projectedSeasonPoints": 139.79
     },
     {
      "playerId": 4431611,
@@ -1157,7 +1157,7 @@
      "seasonPoints": 67.48,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 229.22
+     "projectedSeasonPoints": 229.17
     },
     {
      "playerId": 4429059,
@@ -1167,7 +1167,7 @@
      "seasonPoints": 46.9,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 82.67
+     "projectedSeasonPoints": 82.7
     },
     {
      "playerId": 16737,
@@ -1177,7 +1177,7 @@
      "seasonPoints": 75.5,
      "acquisitionType": "DRAFT",
      "injuryStatus": "QUESTIONABLE",
-     "projectedSeasonPoints": 149.33
+     "projectedSeasonPoints": 131.12
     },
     {
      "playerId": 4832800,
@@ -1197,7 +1197,7 @@
      "seasonPoints": 63.0,
      "acquisitionType": "ADD",
      "injuryStatus": "NORMAL",
-     "projectedSeasonPoints": 70.71
+     "projectedSeasonPoints": 71.46
     },
     {
      "playerId": 4036378,
@@ -1227,7 +1227,7 @@
      "seasonPoints": 18.9,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 61.06
+     "projectedSeasonPoints": 61.03
     },
     {
      "playerId": 3917232,
@@ -1237,7 +1237,7 @@
      "seasonPoints": 62.0,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 120.84
+     "projectedSeasonPoints": 120.89
     },
     {
      "playerId": -16011,
@@ -1276,7 +1276,7 @@
      "seasonPoints": 140.2,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 282.13
+     "projectedSeasonPoints": 282.12
     },
     {
      "playerId": 4258173,
@@ -1286,7 +1286,7 @@
      "seasonPoints": 62.5,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 149.09
+     "projectedSeasonPoints": 149.03
     },
     {
      "playerId": 4361579,
@@ -1296,7 +1296,7 @@
      "seasonPoints": 99.5,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 167.49
+     "projectedSeasonPoints": 167.62
     },
     {
      "playerId": 4431299,
@@ -1306,7 +1306,7 @@
      "seasonPoints": 39.2,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 94.64
+     "projectedSeasonPoints": 94.65
     },
     {
      "playerId": 4426388,
@@ -1316,7 +1316,7 @@
      "seasonPoints": 48.6,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 107.86
+     "projectedSeasonPoints": 107.85
     },
     {
      "playerId": 4360248,
@@ -1326,7 +1326,7 @@
      "seasonPoints": 42.4,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 87.52
+     "projectedSeasonPoints": 87.47
     },
     {
      "playerId": 4038941,
@@ -1336,7 +1336,7 @@
      "seasonPoints": 72.44,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 146.85
+     "projectedSeasonPoints": 146.82
     },
     {
      "playerId": 4575131,
@@ -1356,7 +1356,7 @@
      "seasonPoints": 56.9,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 112.55
+     "projectedSeasonPoints": 112.54
     },
     {
      "playerId": 2473037,
@@ -1366,7 +1366,7 @@
      "seasonPoints": 59.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 108.65
+     "projectedSeasonPoints": 108.69
     },
     {
      "playerId": 4385690,
@@ -1376,7 +1376,7 @@
      "seasonPoints": 49.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 75.43
+     "projectedSeasonPoints": 75.44
     },
     {
      "playerId": 4426338,
@@ -1386,7 +1386,7 @@
      "seasonPoints": 81.66,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 184.44
+     "projectedSeasonPoints": 184.43
     },
     {
      "playerId": 4683062,
@@ -1396,7 +1396,7 @@
      "seasonPoints": 37.1,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 97.01
+     "projectedSeasonPoints": 97.02
     },
     {
      "playerId": -16020,
@@ -1406,7 +1406,7 @@
      "seasonPoints": 40.0,
      "acquisitionType": "ADD",
      "injuryStatus": "NORMAL",
-     "projectedSeasonPoints": 72.12
+     "projectedSeasonPoints": 71.19
     },
     {
      "playerId": 2969939,
@@ -1426,7 +1426,7 @@
      "seasonPoints": 66.5,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 90.22
+     "projectedSeasonPoints": 90.21
     }
    ]
   },
@@ -1465,7 +1465,7 @@
      "seasonPoints": 131.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 245.88
+     "projectedSeasonPoints": 245.9
     },
     {
      "playerId": 4239993,
@@ -1475,7 +1475,7 @@
      "seasonPoints": 61.8,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 142.65
+     "projectedSeasonPoints": 142.56
     },
     {
      "playerId": 4372016,
@@ -1485,7 +1485,7 @@
      "seasonPoints": 44.1,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 92.44
+     "projectedSeasonPoints": 92.47
     },
     {
      "playerId": 4248528,
@@ -1495,7 +1495,7 @@
      "seasonPoints": 104.3,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 144.15
+     "projectedSeasonPoints": 144.18
     },
     {
      "playerId": 4426348,
@@ -1505,7 +1505,7 @@
      "seasonPoints": 95.66,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 279.1
+     "projectedSeasonPoints": 270.22
     },
     {
      "playerId": 2976212,
@@ -1515,7 +1515,7 @@
      "seasonPoints": 57.4,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 107.78
+     "projectedSeasonPoints": 111.27
     },
     {
      "playerId": 4568490,
@@ -1525,7 +1525,7 @@
      "seasonPoints": 41.9,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 97.87
+     "projectedSeasonPoints": 97.88
     },
     {
      "playerId": 4360310,
@@ -1535,7 +1535,7 @@
      "seasonPoints": 142.2,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 276.08
+     "projectedSeasonPoints": 276.0
     },
     {
      "playerId": 3116365,
@@ -1545,7 +1545,7 @@
      "seasonPoints": 33.6,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 75.56
+     "projectedSeasonPoints": 75.59
     },
     {
      "playerId": 4696981,
@@ -1555,7 +1555,7 @@
      "seasonPoints": 46.3,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 50.92
+     "projectedSeasonPoints": 74.6
     },
     {
      "playerId": 4697745,
@@ -1565,7 +1565,7 @@
      "seasonPoints": 55.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 102.53
+     "projectedSeasonPoints": 102.58
     },
     {
      "playerId": 3912547,
@@ -1575,7 +1575,7 @@
      "seasonPoints": 74.82,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 195.35
+     "projectedSeasonPoints": 195.34
     },
     {
      "playerId": 4711533,
@@ -1585,7 +1585,7 @@
      "seasonPoints": 45.5,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 139.6
+     "projectedSeasonPoints": 139.59
     },
     {
      "playerId": -16033,
@@ -1624,7 +1624,7 @@
      "seasonPoints": 85.7,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 192.41
+     "projectedSeasonPoints": 192.39
     },
     {
      "playerId": 4685382,
@@ -1634,7 +1634,7 @@
      "seasonPoints": 53.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 84.31
+     "projectedSeasonPoints": 84.29
     },
     {
      "playerId": 4361370,
@@ -1644,7 +1644,7 @@
      "seasonPoints": 91.5,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 133.28
+     "projectedSeasonPoints": 133.29
     },
     {
      "playerId": 3915416,
@@ -1653,8 +1653,8 @@
      "proTeam": "BUF",
      "seasonPoints": 30.3,
      "acquisitionType": "DRAFT",
-     "injuryStatus": "OUT",
-     "projectedSeasonPoints": 121.08
+     "injuryStatus": "QUESTIONABLE",
+     "projectedSeasonPoints": 121.06
     },
     {
      "playerId": 4569987,
@@ -1664,7 +1664,7 @@
      "seasonPoints": 92.3,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 156.27
+     "projectedSeasonPoints": 156.25
     },
     {
      "playerId": 4430027,
@@ -1684,7 +1684,7 @@
      "seasonPoints": 44.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 90.89
+     "projectedSeasonPoints": 90.92
     },
     {
      "playerId": 4608686,
@@ -1693,8 +1693,8 @@
      "proTeam": "CHI",
      "seasonPoints": 56.8,
      "acquisitionType": "DRAFT",
-     "injuryStatus": "OUT",
-     "projectedSeasonPoints": 112.83
+     "injuryStatus": "QUESTIONABLE",
+     "projectedSeasonPoints": 112.79
     },
     {
      "playerId": 4366031,
@@ -1704,7 +1704,7 @@
      "seasonPoints": 0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "INJURY_RESERVE",
-     "projectedSeasonPoints": 15.17
+     "projectedSeasonPoints": 15.15
     },
     {
      "playerId": -16017,
@@ -1714,7 +1714,7 @@
      "seasonPoints": 43.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "NORMAL",
-     "projectedSeasonPoints": 68.53
+     "projectedSeasonPoints": 68.52
     },
     {
      "playerId": -16025,
@@ -1724,7 +1724,7 @@
      "seasonPoints": 48.0,
      "acquisitionType": "ADD",
      "injuryStatus": "NORMAL",
-     "projectedSeasonPoints": 84.7
+     "projectedSeasonPoints": 81.46
     },
     {
      "playerId": 4360689,
@@ -1734,7 +1734,7 @@
      "seasonPoints": 136.12,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 219.88
+     "projectedSeasonPoints": 219.85
     },
     {
      "playerId": -16012,
@@ -1744,7 +1744,7 @@
      "seasonPoints": 37.0,
      "acquisitionType": "ADD",
      "injuryStatus": "NORMAL",
-     "projectedSeasonPoints": 70.31
+     "projectedSeasonPoints": 70.26
     },
     {
      "playerId": 4373678,
@@ -1754,7 +1754,7 @@
      "seasonPoints": 44.0,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 80.21
+     "projectedSeasonPoints": 80.22
     },
     {
      "playerId": 2573401,
@@ -1764,7 +1764,7 @@
      "seasonPoints": 38.6,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 58.89
+     "projectedSeasonPoints": 58.82
     },
     {
      "playerId": 4685261,
@@ -1774,7 +1774,7 @@
      "seasonPoints": 41.1,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 104.44
+     "projectedSeasonPoints": 104.43
     }
    ]
   },
@@ -1803,7 +1803,7 @@
      "seasonPoints": 73.3,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 214.7
+     "projectedSeasonPoints": 214.49
     },
     {
      "playerId": 4047646,
@@ -1813,7 +1813,7 @@
      "seasonPoints": 8.3,
      "acquisitionType": "DRAFT",
      "injuryStatus": "QUESTIONABLE",
-     "projectedSeasonPoints": 145.89
+     "projectedSeasonPoints": 145.86
     },
     {
      "playerId": 4430737,
@@ -1823,7 +1823,7 @@
      "seasonPoints": 104.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 178.21
+     "projectedSeasonPoints": 178.37
     },
     {
      "playerId": 3121422,
@@ -1853,7 +1853,7 @@
      "seasonPoints": 14.9,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 67.57
+     "projectedSeasonPoints": 67.54
     },
     {
      "playerId": 4429023,
@@ -1873,7 +1873,7 @@
      "seasonPoints": 33.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 104.45
+     "projectedSeasonPoints": 104.46
     },
     {
      "playerId": 12483,
@@ -1883,7 +1883,7 @@
      "seasonPoints": 127.86,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 228.49
+     "projectedSeasonPoints": 228.37
     },
     {
      "playerId": 4361432,
@@ -1903,7 +1903,7 @@
      "seasonPoints": 55.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 97.99
+     "projectedSeasonPoints": 98.03
     },
     {
      "playerId": -16009,
@@ -1933,7 +1933,7 @@
      "seasonPoints": 139.08,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 74.82
+     "projectedSeasonPoints": 74.8
     },
     {
      "playerId": 4361411,
@@ -1943,7 +1943,7 @@
      "seasonPoints": 52.9,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 83.41
+     "projectedSeasonPoints": 83.42
     },
     {
      "playerId": 4599739,
@@ -2002,7 +2002,7 @@
      "seasonPoints": 65.3,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 119.58
+     "projectedSeasonPoints": 119.51
     },
     {
      "playerId": 4432708,
@@ -2012,7 +2012,7 @@
      "seasonPoints": 21.9,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 66.32
+     "projectedSeasonPoints": 66.28
     },
     {
      "playerId": 3915511,
@@ -2022,7 +2022,7 @@
      "seasonPoints": 123.24,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 299.34
+     "projectedSeasonPoints": 299.26
     },
     {
      "playerId": 4572680,
@@ -2032,7 +2032,7 @@
      "seasonPoints": 43.9,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 99.39
+     "projectedSeasonPoints": 99.41
     },
     {
      "playerId": 4697815,
@@ -2042,7 +2042,7 @@
      "seasonPoints": 41.8,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 106.69
+     "projectedSeasonPoints": 113.68
     },
     {
      "playerId": 3916433,
@@ -2052,7 +2052,7 @@
      "seasonPoints": 50.7,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 100.19
+     "projectedSeasonPoints": 100.15
     },
     {
      "playerId": 4695883,
@@ -2072,7 +2072,7 @@
      "seasonPoints": 48.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "NORMAL",
-     "projectedSeasonPoints": 80.21
+     "projectedSeasonPoints": 80.87
     },
     {
      "playerId": 4361529,
@@ -2092,7 +2092,7 @@
      "seasonPoints": 37.7,
      "acquisitionType": "ADD",
      "injuryStatus": "QUESTIONABLE",
-     "projectedSeasonPoints": 95.91
+     "projectedSeasonPoints": 95.87
     },
     {
      "playerId": 3046779,
@@ -2102,7 +2102,7 @@
      "seasonPoints": 139.0,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 272.04
+     "projectedSeasonPoints": 272.0
     },
     {
      "playerId": 4241985,
@@ -2112,7 +2112,7 @@
      "seasonPoints": 45.7,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 126.21
+     "projectedSeasonPoints": 126.22
     },
     {
      "playerId": 8439,
@@ -2122,7 +2122,7 @@
      "seasonPoints": 123.18,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 217.88
+     "projectedSeasonPoints": 217.86
     },
     {
      "playerId": 4034949,
@@ -2132,7 +2132,7 @@
      "seasonPoints": 39.0,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 93.09
+     "projectedSeasonPoints": 90.28
     }
    ]
   },
@@ -2161,7 +2161,7 @@
      "seasonPoints": 107.1,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 168.08
+     "projectedSeasonPoints": 167.98
     },
     {
      "playerId": 4426502,
@@ -2171,7 +2171,7 @@
      "seasonPoints": 72.9,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 155.97
+     "projectedSeasonPoints": 155.85
     },
     {
      "playerId": 4035538,
@@ -2180,8 +2180,8 @@
      "proTeam": "HOU",
      "seasonPoints": 42.0,
      "acquisitionType": "DRAFT",
-     "injuryStatus": "OUT",
-     "projectedSeasonPoints": 122.18
+     "injuryStatus": "QUESTIONABLE",
+     "projectedSeasonPoints": 122.25
     },
     {
      "playerId": 4429615,
@@ -2201,7 +2201,7 @@
      "seasonPoints": 78.9,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 154.93
+     "projectedSeasonPoints": 154.88
     },
     {
      "playerId": 4432710,
@@ -2211,7 +2211,7 @@
      "seasonPoints": 28.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 74.52
+     "projectedSeasonPoints": 74.49
     },
     {
      "playerId": 4362238,
@@ -2221,7 +2221,7 @@
      "seasonPoints": 53.0,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 158.51
+     "projectedSeasonPoints": 158.58
     },
     {
      "playerId": 4429025,
@@ -2231,7 +2231,7 @@
      "seasonPoints": 20.8,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 58.43
+     "projectedSeasonPoints": 58.42
     },
     {
      "playerId": 4870795,
@@ -2241,7 +2241,7 @@
      "seasonPoints": 21.2,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 49.62
+     "projectedSeasonPoints": 49.59
     },
     {
      "playerId": 3139477,
@@ -2251,7 +2251,7 @@
      "seasonPoints": 112.06,
      "acquisitionType": "DRAFT",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 251.6
+     "projectedSeasonPoints": 251.56
     },
     {
      "playerId": 3929645,
@@ -2261,7 +2261,7 @@
      "seasonPoints": 53.3,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 78.29
+     "projectedSeasonPoints": 78.3
     },
     {
      "playerId": 4685247,
@@ -2271,7 +2271,7 @@
      "seasonPoints": 52.4,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 71.78
+     "projectedSeasonPoints": 71.77
     },
     {
      "playerId": 4571557,
@@ -2281,7 +2281,7 @@
      "seasonPoints": 84.0,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 116.17
+     "projectedSeasonPoints": 116.21
     },
     {
      "playerId": -16007,
@@ -2291,7 +2291,7 @@
      "seasonPoints": 46.0,
      "acquisitionType": "ADD",
      "injuryStatus": "NORMAL",
-     "projectedSeasonPoints": 68.47
+     "projectedSeasonPoints": 68.5
     },
     {
      "playerId": 4428557,
@@ -2301,7 +2301,7 @@
      "seasonPoints": 19.6,
      "acquisitionType": "ADD",
      "injuryStatus": "ACTIVE",
-     "projectedSeasonPoints": 61.14
+     "projectedSeasonPoints": 61.13
     }
    ]
   }

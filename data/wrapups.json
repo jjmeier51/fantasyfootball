@@ -481,6 +481,87 @@
         "differenceMaker": "Last week's Dud of the Week threw four touchdowns without an interception on the road, 32.96 points and 13 over projection. Nick won by 41.78, so it wasn't close, but the team name survives another week."
       },
       "predictorNote": "Nate (99%) and Chase (97%) are effectively locks. Nick jumped four spots to third after Caleb's 66.98, the five 3-3 teams are fighting for the last two spots, and Johnny and Conor sit at 1% each heading into their head-to-head."
+    },
+    "7": {
+      "year": 2026,
+      "week": 7,
+      "headline": "Kevin drops 140 on Ethan behind Tony Pollard's three touchdowns, and the 49ers finally lose.",
+      "dek": "Nate is 6-1, four teams are tied at 4-3, Shane has won three straight, and Johnny is 1-6 for the first time in franchise history.",
+      "published": "2026-10-27",
+      "nfl": {
+        "paragraphs": [
+          "The undefeated list got shorter. The 49ers went to Atlanta at 6-0, outgained the Falcons by 105 yards, reached Falcons territory on all nine drives and lost 29–20, because Brock Purdy threw two picks, Kaelon Black lost a fumble, Jessie Bates stripped George Kittle, and Michael Penix threw three touchdowns without a mistake. Christian McCaffrey left with a thigh injury and came back. Minnesota is the last unbeaten team at 6-0 after blitzing Daniel Jones on 85 percent of his dropbacks in a 16–10 win, the highest rate anyone has tracked. The week opened with Cairo Santos hitting a career-long 58-yarder to beat the Patriots 30–24 on Thursday, went to Paris for a 16–10 Steelers win over the Saints, and ended with the Cowboys running past the Eagles 38–21 on Monday night behind Javonte Williams' career-high 155 yards, a fifth straight Eagles loss.",
+          "Everything else was a rout. Cincinnati was tied 0–0 at halftime and won 35–13, with Joe Burrow going 16 of 18 for 249 yards and four touchdowns after the break and Tee Higgins going for 148. Tampa Bay ran for 258 yards in a 43–13 win over Carolina in which Bryce Young threw two picks, lost a fumble for a touchdown and got pulled, and Baker Mayfield returned to throw his 200th career touchdown on 11 attempts. Seattle held the Chiefs to 213 yards and beat them 20–3: Patrick Mahomes went 6 of 13 for 44 yards and a 22.6 rating, Harrison Butker missed from 58 and 45, and Jaxon Smith-Njigba went for 150 and a score, his sixth 100-yard game in seven. Tony Pollard ran for 129 and three touchdowns in a loss, J.J. McCarthy won his first Giants start in overtime on Devin Singletary's 30-yard run after Cam Skattebo went for 124, Bo Nix had the longest quarterback scramble touchdown in the tracking era at 62 yards, Matthew Stafford became the Rams' all-time touchdown passer, and Miami won its first game of the year.",
+          "Injury report: Davante Adams ruptured a hamstring tendon in Week 6, had surgery and is out six to ten weeks. Saquon Barkley came back from his hamstring on Monday night, aggravated it on his second carry, then left with a back injury. Mike Evans and Deebo Samuel were both out for San Francisco, which is why Purdy was throwing to Jordan Watkins and Jacob Cowing. Tyrone Tracy pulled a hamstring, Rashid Shaheed hurt a knee, Aaron Jones is getting a knee MRI, and Jalen Hurts' season is over."
+        ],
+        "bullets": [
+          {
+            "label": "Biggest blowouts",
+            "text": "Buccaneers 43, Panthers 13 on 258 rushing yards. Bengals 35–13 after a scoreless first half. Seahawks 20–3 over Kansas City. Cowboys 38–21 on Monday night, Rams 35–21 over the Raiders, Broncos 30–16."
+          },
+          {
+            "label": "Closest calls",
+            "text": "Giants 27–21 Texans in overtime. Lions 20–17 on Jake Bates' walk-off after Green Bay's rookie kicker missed from 26 and had a 35-yarder blocked. Browns 27–24 at the gun. Dolphins 28–25 for their first win. Steelers 16–10 in Paris. Bears 30–24 on the 58-yarder."
+          },
+          {
+            "label": "Breakouts",
+            "text": "Pollard's 129 and three scores. Omar Cooper's 5-115-1, his second straight 100-yard game. Ollie Gordon's 103 and a touchdown. Luther Burden's 4-130-1 on Thursday. Skattebo's 124 and the 42-yard overtime run. Higgins' 148."
+          },
+          {
+            "label": "Duds",
+            "text": "Mahomes' 44 yards. Bryce Young, benched. Purdy's two picks in the first loss. Derrick Henry's 17 for 45. Nico Collins' two catches for six yards on six targets. Garrett Wilson's 2 for 26. Kenneth Walker's 36 yards. Kickers everywhere: Butker, Trey Smack and Dominic Zvada all missed multiple times."
+          },
+          {
+            "label": "Injuries to watch",
+            "text": "Davante Adams (hamstring surgery, 6–10 weeks), Christian McCaffrey (thigh), Saquon Barkley (hamstring and back), Mike Evans (Achilles), Deebo Samuel (hamstring), Tyrone Tracy Jr. (hamstring), Rashid Shaheed (knee), Aaron Jones (knee), Jalen Hurts (out for the season)."
+          }
+        ],
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/recap?gameId=401873009"
+          },
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/2026-nfl-season-week-7-what-we-learned-from-sunday-s-games"
+          },
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/onsi/fantasy/news/christian-mccaffrey-cam-skattebo-notable-week-7-fantasy-football-injuries"
+          },
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-booms-and-busts-high-scoring-panthers-49ers-offenses-fail-to-take-off-in-week-7-235939913.html"
+          },
+          {
+            "name": "FOX Sports",
+            "url": "https://www.foxsports.com/stories/nfl/cowboys-eagles-monday-night-football-takeaways"
+          },
+          {
+            "name": "NBC Sports",
+            "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-10-19/mcvay-davante-adams-knee-to-miss-6-10-weeks"
+          },
+          {
+            "name": "Sleeper",
+            "url": "https://sleeper.com/"
+          }
+        ]
+      },
+      "games": {
+        "2026-w7-38": "Kevin's 140.68 is the high score of the week and his best of the season, and it came without Davante Adams. Tony Pollard (35.0) ran for 129 yards and three touchdowns, Dak Prescott (29.28) threw three on Monday night, Trey McBride had 22.1 and Luther Burden (21.7) caught a 130-yard Thursday, which was plenty to cover a zero from the Texans defense and 3.1 from a banged-up Aaron Jones. Ethan scored 125.76 and lost: Bucky Irving (23.5) ran for 106 and two scores, Jordan Love had 20.96, and waiver pickup Omar Cooper Jr. (20.0) went for 115. Gimme Yo Change has the second-most points in the league and a 3-4 record, the most points by a losing team through seven weeks since Kevin's own 2021 team. Kevin is 4-3 and jumps three spots in the predictor.",
+        "2026-w7-41": "Chase won behind a defense. The Buccaneers D/ST scored 26, the best defensive score in the league this season, on five sacks, a strip-sack touchdown and a blocked extra point returned for two, and Jaxon Smith-Njigba (26.8) added his sixth 100-yard game. Christian McCaffrey (19.0) scored before leaving with a thigh injury and returning, and Brock Purdy (14.02) threw two picks in the 49ers' first loss. Caleb got 28.18 from Bo Nix's 62-yard touchdown run, 21.5 from Javonte Williams' 155-yard Monday night and 20.0 from Rhamondre Stevenson, but Nico Collins (1.6), Xavier Worthy (2.6) and a zero from the Jets defense sank him, and he left 80.78 on the bench, the second-highest bench total of the season. Lickity Split is 5-2; Chef Cale is 4-3.",
+        "2026-w7-37": "Conor's second win of the year came against Johnny, and it wasn't close. Matthew Stafford (23.5) threw three touchdowns to become the Rams' all-time leader, Emanuel Wilson (18.0) ran for 100, Puka Nacua had 17.8, Kyren Williams (17.1) scored, and Colston Loveland (16.4) had his second straight useful week. Johnny got 22.9 from Quinshon Judkins, back from the walking boot with 96 yards and two scores, and a fourth straight 100-yard game from Malik Nabers (14.6), but the Vikings pieces did nothing: Kyler Murray 15.9, Justin Jefferson 6.4 and Jordan Mason 6.8 on a day no Minnesota pass-catcher reached 45 yards. Harrison Butker (3.0) missed twice and the Titans defense scored zero. Johnny Football Club is 1-6, the worst start in franchise history. Eleven teams in league history have started 1-6; only one of them, Nick in 2018, finished with a winning record. Conor has now beaten Johnny two years running, something he last managed in 2017 and 2018.",
+        "2026-w7-36": "The biggest margin of the week. Nate rebuilt his lineup around the bye and it worked: Tee Higgins (23.8) went for 148 and a score in Cincinnati's 35-point second half, C.J. Stroud filled in for Trevor Lawrence with 20.52, waiver pickup Ollie Gordon (16.8) ran for 103 in Miami's first win, and RJ Harvey (13.0) scored on a 52-yard screen. Kenneth Walker (7.7) finally had a quiet week against Seattle. Smalls got the QB of the week in Drake Maye (31.44) and then 36.2 points from the other eight slots: Derrick Henry 5.4, Isaiah Likely 2.2, Roschon Johnson 1.3, and a 1-point kicker in Dominic Zvada, who missed twice. T Smalls' 67.64 is the low score of the week. Loop There It Is is 6-1 and the predictor now has it at 100 percent.",
+        "2026-w7-39": "Mike won with his quarterback scoring 6.0. Patrick Mahomes went 6 of 13 for 44 yards in Seattle, and The Washington C-Words won anyway because Zay Flowers (23.7), CeeDee Lamb (21.9, two Monday night touchdowns), Braelon Allen (16.4) and Drake London (16.1) all showed up. Nick's new quarterback didn't: J.J. McCarthy scored 10.18 in his first Giants start, Sam LaPorta had 2.3, Germie Bernard 4.2 and the Chiefs defense minus one, and Amon-Ra St. Brown's 19.7 and a 14-point Brandon Aubrey weren't enough. Both teams are 4-3.",
+        "2026-w7-40": "Shane has won three in a row. Ashton Jeanty (17.6) caught eight passes and a touchdown, D'Andre Swift (17.0) scored on Thursday, Tucker Kraft had 12.8 and George Pickens 13.7, and that covered Aaron Rodgers' one-touchdown day in Paris (15.08), Jalen Coker (1.4) and a 1-point kicker. Slim Pickens also left 77.5 points on the bench. Drew, still without Lamar Jackson, got 17.12 from Tyler Huntley, 18.0 from Jonathan Taylor and 16.6 from Blake Corum's 93 yards and a score, but Tetairoa McMillan (6.0) and a zero from Jake Ferguson left Off In Church at 84.72. The 11.16-point margin was the closest game of the week, which tells you about the week. Shane is 3-4 and up two spots; Drew is 3-4."
+      },
+      "awards": {
+        "playerOfWeek": "25 carries for 129 yards and three touchdowns, plus three catches, with Tyjae Spears out. 35.0 points, 22 over projection, for Kevin in the week's high score.",
+        "qbOfWeek": "31.44 on Thursday night, end-zone interception included. Smalls started him and scored 67.64, which means Maye was 46 percent of the team.",
+        "dud": "Two catches for six yards on six targets, 1.6 points against a 14-point projection, in a game Caleb lost by 14.44 with 80.78 points sitting on his bench.",
+        "differenceMaker": "Six catches for 148 yards and a touchdown in a 35-point second half, 23.8 points and 12 over projection. Nate won by 38, so the margin didn't need him, but a bye-week lineup usually doesn't score 105."
+      },
+      "predictorNote": "Nate is at 100 percent and Chase at 99. Kevin jumped three spots to third on the week's high score, Ethan fell two to sixth despite having the second-most points in the league, Shane climbed two on a three-game winning streak, and Johnny's odds rounded down to zero for the first time."
     }
   }
 }

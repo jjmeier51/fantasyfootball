@@ -654,4 +654,11 @@ export interface WrapUp {
   games: Record<string, string>;
   awards: Partial<Record<"playerOfWeek" | "qbOfWeek" | "dud" | "differenceMaker", string>>;
   predictorNote?: string;
+  /** Optional override for the link-preview card only; the page itself never reads it. */
+  preview?: {
+    eyebrow?: string;
+    headline: string;
+    sub?: string;
+    cards: { label: string; color?: string; name: string; meta: string; line: string; image?: string }[];
+  };
 }

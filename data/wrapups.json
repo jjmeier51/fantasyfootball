@@ -681,6 +681,87 @@
           }
         ]
       }
+    },
+    "9": {
+      "year": 2026,
+      "week": 9,
+      "headline": "Johnny takes down first-place Chase by 3.12, and Kenneth Walker's three touchdowns put Nate back on top.",
+      "dek": "Five teams are 5-4, Puka Nacua carried Conor to a win and then hurt his knee on the final snap, and Shane's four-game winning streak is over.",
+      "published": "2026-11-10",
+      "nfl": {
+        "paragraphs": [
+          "The Packers put on the passing show of the week, beating New England 45–27 behind Jordan Love's 372 yards and three touchdowns on 29 attempts, with Christian Watson going for 171 and Matthew Golden catching 10 for 164 while Xavier McKinney picked off Drake Maye twice. C.J. Stroud threw five touchdowns as Houston dropped the winless Chargers to 0-8, 44–22, with Kayshon Boutte and Tank Dell both topping 100 yards. Kenneth Walker III scored three times in Kansas City's 35–12 win over the Jets, CeeDee Lamb went for 195 yards as Dallas beat the Colts on Javonte Williams' go-ahead touchdown with a minute left, and Ja'Marr Chase had 155 yards in the Bengals' 34–17 win over Atlanta in Madrid.",
+          "The primetime games were strange. On Thursday, Jacksonville beat Baltimore 33–10 behind a 50-yard Trevor Lawrence touchdown to Parker Washington while undrafted rookie Joe Fagnano started for the Ravens. Sunday night, Caleb Williams threw four interceptions and the Bears still beat Tampa Bay 27–24 on a Jaylon Johnson pick-six and a Cairo Santos field goal at the gun, with Bucky Irving scoring twice in the loss. On Monday night the Bills held Minnesota to 178 yards in a 23–6 win: James Cook carried 31 times for 107, Carson Wentz finished with an 8.9 passer rating after Kyler Murray's hamstring kept him out, and Buffalo is 7-1 for the first time since 1993. The Giants won in Philadelphia for the first time since 2013, handing the Eagles their seventh straight loss.",
+          "The big injury is Puka Nacua, who caught 14 passes for 150 yards and a touchdown and then hurt his right knee on the final snap of the Rams' 20–13 win; the early word is no ACL tear, but he is expected to miss several weeks. Josh Jacobs fractured a finger in the first quarter in Green Bay, Patrick Mahomes had his elbow checked after a strip-sack and returned, Justin Herbert hurt a finger on his non-throwing hand, Rhamondre Stevenson left with a knee injury, Luther Burden and Jaylen Waddle both left with concussions, Xavier Worthy tweaked a hamstring, and J.J. McCarthy hurt his hip and gave way to Jameis Winston for a stretch."
+        ],
+        "bullets": [
+          {
+            "label": "Biggest blowouts",
+            "text": "Packers 45–27 over the Patriots. Texans 44–22 over the 0-8 Chargers. Chiefs 35–12, Jaguars 33–10 on Thursday, Bengals 34–17 in Madrid, 49ers 38–17 over the Raiders, Bills 23–6 on Monday night."
+          },
+          {
+            "label": "Closest calls",
+            "text": "Saints 23–22 over Cleveland in overtime after the Browns' two-point try failed. Bears 27–24 on a walk-off field goal despite five turnovers. Cowboys 27–23. Broncos 26–21. Rams 20–13."
+          },
+          {
+            "label": "Breakouts",
+            "text": "Stroud's five touchdowns. Watson's 171 and Golden's 164. Kayshon Boutte's 4-125-2. Walker's three scores. Lamb's 195. Nacua's 14 catches. Arvell Reese's three sacks for the Giants."
+          },
+          {
+            "label": "Duds",
+            "text": "Caleb Williams' four picks. Josh Jacobs' four carries for five yards. Saquon Barkley's 13 for 22. Devin Singletary's 39 yards on 23 touches. Adonai Mitchell's zero catches on seven targets. Carson Wentz's 81 passing yards. D'Andre Swift's 3.1."
+          },
+          {
+            "label": "Injuries to watch",
+            "text": "Puka Nacua (knee), Josh Jacobs (fractured finger), Patrick Mahomes (elbow), Justin Herbert (finger), Rhamondre Stevenson (knee), Luther Burden and Jaylen Waddle (concussions), Xavier Worthy (hamstring), Kyler Murray (hamstring), Drew Lock (oblique)."
+          }
+        ],
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/"
+          },
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/2026-nfl-season-week-9-what-we-learned-from-sunday-s-games"
+          },
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/nfl"
+          },
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-booms-and-busts-mega-star-wrs-show-out-in-otherwise-wonky-week-9-004718347.html"
+          },
+          {
+            "name": "FOX Sports",
+            "url": "https://www.foxsports.com/nfl"
+          },
+          {
+            "name": "NBC Sports",
+            "url": "https://www.nbcsports.com/fantasy/football"
+          },
+          {
+            "name": "Sleeper",
+            "url": "https://sleeper.com/"
+          }
+        ]
+      },
+      "games": {
+        "2026-w9-51": "Johnny beat the first-place team. Matthew Golden (27.4) caught 10 passes for 164 yards against New England, Brock Bowers had 18.8, Michael Penix Jr. (15.48) ran for a career-high 50 yards in Madrid, the Bears defense scored 13 on Jaylon Johnson's pick-six, and waiver kicker Andre Szmyt added 13. Chase got 21.7 from Christian McCaffrey's two touchdowns and 17 from Ka'imi Fairbairn, but Josh Allen (14.86) needed a Monday night touchdown to Keleki Latu, the first of the tight end's career, Jaxon Smith-Njigba was held to 8.6 by Arizona, and Jordan Addison had 3.8. The closest game of the week, 111.98 to 108.86. Johnny is 2-7 and plays Shane next; Lickity Split falls to 6-3 and second place.",
+        "2026-w9-50": "The high score of the week belongs to Nate. Kenneth Walker III (34.3) scored three times against the Jets, Christian Watson (26.6) went for 171 and a touchdown, Tee Higgins (17.7) caught two more scores, and the Bills defense scored 15 holding Minnesota to six on Monday night. Drew got the QB of the week in Jordan Love's 42.18, the fourth-best quarterback game in the league this season, and lost by 36.6 anyway, because Jonathan Taylor (6.9), Tyler Allgeier (5.6) and Keenan Allen (4.6) did nothing. Loop There It Is is 7-2 and back in first place; Off In Church is 3-6.",
+        "2026-w9-48": "The biggest margin of the week. Ja'Marr Chase (26.5) had 155 yards in Madrid, Bucky Irving (26.5) scored twice on Sunday night, Jonah Coleman added 16.8, and Caleb Williams somehow scored 16.76 in a four-interception game. Smalls got 24.26 from Drake Maye in a loss to Green Bay and very little else: Ladd McConkey sat out with back spasms for a zero, Derrick Henry had 5.58 on Thursday night, and Saquon Barkley ran 13 times for 22 yards. Gimme Yo Change is 5-4 and up to third in the predictor; T Smalls is 4-5.",
+        "2026-w9-53": "CeeDee Lamb (28.5) caught 10 passes for 195 yards and a touchdown in Indianapolis, Patrick Mahomes (20.48) came back from an elbow scare to throw two touchdowns, Spencer Shrader kicked for 16 and Parker Washington (13.1) scored from 50 on Thursday. That ended Shane's four-game winning streak, even with Joe Burrow throwing for 35.54 in Madrid and KC Concepcion's 64-yard touchdown (16.8). D'Andre Swift (3.1), Tucker Kraft (1.4) and Ashton Jeanty (4.5) left Slim Pickens 17.44 short. Mike is 5-4; Shane is 4-5.",
+        "2026-w9-52": "Caleb snapped a three-game losing streak. Javonte Williams (20.4) scored the go-ahead touchdown in Indianapolis with a minute left, Bo Nix (19.68) threw two touchdowns, the Giants defense scored 14 on Arvell Reese's three sacks, and Nico Collins (13.5) made a one-handed touchdown catch. Kevin got 23.7 from Bijan Robinson's 147 scrimmage yards, 23.5 from Dak and 17.2 from Luther Burden's 56-yard touchdown, but Josh Jacobs broke a finger in the first quarter and finished with 0.5, and Jaylen Waddle left with a concussion at 2.7. God Hates Jags lost by 5.68. Both teams are 5-4.",
+        "2026-w9-49": "The team is called Nacua Matata, and Puka Nacua won the game: 14 catches, 150 yards and a touchdown for 28.0, plus 17 from Cam Little. Then he hurt his knee on the Rams' final snap, so the name may need to wait a few weeks. Nick's 75.38 is the low score of the week: J.J. McCarthy (7.28) left with a hip injury, Devin Singletary needed 23 touches to gain 39 yards, and DJ Moore had 5.1. Conor is 3-6 and has won three of four; SHOUGH ME YOUR TDS is 5-4."
+      },
+      "awards": {
+        "playerOfWeek": "102 rushing yards, two touchdown catches and a rushing score against the Jets, 34.3 points. Walker has five multi-touchdown games this season, the most in the NFL, and Nate is back in first.",
+        "qbOfWeek": "23 of 29 for 372 yards and three touchdowns before sitting the final quarter of a 45–27 rout. 42.18 points, and Drew lost by 36.6.",
+        "dud": "Four carries for five yards and a fractured finger in the first quarter, 0.5 points against a 14.64 projection. Kevin lost by 5.68.",
+        "differenceMaker": "Seven catches for 171 yards and a touchdown against the Patriots, 13.75 over projection. One of four Nate starters to clear 17 points."
+      },
+      "predictorNote": "Nate is back in first at 100 percent and Chase drops to second at 98. Ethan climbs to third, Caleb is up two after snapping his skid, and five 5-4 teams are fighting over the last four spots. Johnny's win didn't move his odds off zero, but it did cost Chase the top seed for now."
     }
   }
 }

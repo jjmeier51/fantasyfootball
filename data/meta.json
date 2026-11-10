@@ -1,7 +1,7 @@
 {
  "leagueName": "League of Gangstars",
- "lastSynced": "2026-11-03T18:56:49.606754+00:00",
- "generatedAt": "2026-11-03T18:56:51.106251+00:00",
+ "lastSynced": "2026-11-10T11:11:10.185796+00:00",
+ "generatedAt": "2026-11-10T11:11:12.104939+00:00",
  "seasons": [
   2010,
   2011,
@@ -24,7 +24,7 @@
  "firstSeason": 2010,
  "currentSeason": 2026,
  "currentSeasonComplete": false,
- "currentWeek": 9,
+ "currentWeek": 10,
  "isSample": false,
  "coverage": {
   "2010": "full",
@@ -50,16 +50,12 @@
   {
    "year": 2020,
    "message": "trade history unavailable: transaction ledger returned no trades; activity feed unavailable: League 477497 does not exist"
-  },
-  {
-   "year": 2026,
-   "message": "trade history unavailable: transaction ledger returned no trades"
   }
  ],
  "counts": {
   "owners": 20,
-  "games": 1463,
-  "facts": 155,
+  "games": 1469,
+  "facts": 157,
   "records": 38
  }
 }

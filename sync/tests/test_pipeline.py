@@ -328,3 +328,17 @@ def test_weekly_standings_awards_and_predictor_memory(league):
     assert again["predictions"]["1"] is doctored["1"]
     reversed_prev = {r["ownerKey"]: r["previousRank"] for r in again["predictions"]["2"]["rows"]}
     assert reversed_prev == {r["ownerKey"]: r["rank"] for r in doctored["1"]["rows"]}
+
+
+def test_award_override_picks_named_starter(league):
+    from stats.weekly import build_week_awards, build_week_games
+    seasons, owners, _ = league
+    s20 = seasons[1]
+    names = {o["key"]: o["name"] for o in owners}
+    teams = {t["ownerKey"]: t for t in s20["teams"]}
+    games = build_week_games(s20, 2, names, teams)
+    assert build_week_awards(games)["playerOfWeek"]["name"] == "Bench Guy"
+    forced = build_week_awards(games, {"playerOfWeek": "some guy"})
+    assert forced["playerOfWeek"]["name"] == "Some Guy" and forced["playerOfWeek"]["points"] == 25.5
+    # an unknown name leaves the computed award alone
+    assert build_week_awards(games, {"playerOfWeek": "Nobody"})["playerOfWeek"]["name"] == "Bench Guy"

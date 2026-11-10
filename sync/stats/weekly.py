@@ -54,7 +54,7 @@ def build_week_games(season: dict, week: int, names: dict, teams: dict) -> list[
     return games
 
 
-def build_week_awards(games: list[dict]) -> dict:
+def _award_rows(games: list[dict]) -> list[dict]:
     rows = []
     for g in games:
         for side in ("home", "away"):
@@ -63,6 +63,13 @@ def build_week_awards(games: list[dict]) -> dict:
             for p in s["starters"]:
                 rows.append(dict(p, ownerKey=s["ownerKey"], ownerName=s["name"], teamName=s["teamName"], won=won,
                                  surplus=round((p.get("points") or 0) - (p.get("projected") or 0), 2) if p.get("projected") is not None else None))
+    return rows
+
+
+def build_week_awards(games: list[dict], overrides: dict | None = None) -> dict:
+    """Pick the week's awards. `overrides` maps an award key to a starter's name to hand that
+    award to a specific player (the commissioner's call), e.g. {"differenceMaker": "Matthew Golden"}."""
+    rows = _award_rows(games)
     if not rows:
         return {}
     non_qb = [r for r in rows if r["position"] not in ("QB", "K", "D/ST", "")]
@@ -76,12 +83,17 @@ def build_week_awards(games: list[dict]) -> dict:
     # two top scorers whenever another winning-team starter beat his projection
     taken = {(r["name"], r["ownerKey"]) for r in (player, qb) if r}
     others = [r for r in diff if (r["name"], r["ownerKey"]) not in taken and r["surplus"] > 0]
-    return {
+    awards = {
         "playerOfWeek": player,
         "qbOfWeek": qb,
         "dud": pick(duds, lambda r: -(r["surplus"] if r["surplus"] is not None else -999)),
         "differenceMaker": pick(others or diff, lambda r: r["surplus"]),
     }
+    for key, name in (overrides or {}).items():
+        match = [r for r in rows if r["name"].lower() == str(name).lower()]
+        if key in awards and match:
+            awards[key] = max(match, key=lambda r: r["points"])
+    return awards
 
 
 def build_superlatives(games: list[dict]) -> dict:
@@ -231,7 +243,8 @@ def build_predictor(season: dict, careers: dict, names: dict, through_week: int,
             "method": "3,000 simulated seasons over the remaining schedule. Team strength blends ESPN's rest-of-season projection for each team's best healthy lineup (injured players removed), this season's scoring so far, and the owner's era-adjusted career scoring. The weight on this season's results grows every week."}
 
 
-def build_weekly(season: dict, owners: list[dict], careers: list[dict], prior_predictions: dict, recompute: bool = False) -> dict:
+def build_weekly(season: dict, owners: list[dict], careers: list[dict], prior_predictions: dict, recompute: bool = False,
+                 award_overrides: dict | None = None) -> dict:
     names = {o["key"]: o["name"] for o in owners}
     teams = {t["ownerKey"]: t for t in season["teams"]}
     car = {c["ownerKey"]: c for c in careers}
@@ -245,7 +258,7 @@ def build_weekly(season: dict, owners: list[dict], careers: list[dict], prior_pr
         # reflects what was actually predicted at the time, not a re-run on today's rosters.
         if str(w) not in predictions or w == weeks[-1] or recompute:
             predictions[str(w)] = build_predictor(season, car, names, w, prior)
-        out_weeks.append({"week": w, "games": games, "awards": build_week_awards(games), "superlatives": build_superlatives(games),
+        out_weeks.append({"week": w, "games": games, "awards": build_week_awards(games, (award_overrides or {}).get(w) or (award_overrides or {}).get(str(w))), "superlatives": build_superlatives(games),
                           "standings": build_standings(season, w, names)})
     return {"year": season["year"], "regSeasonWeeks": season["regSeasonWeeks"], "playoffTeamCount": season.get("playoffTeamCount"),
             "weeks": out_weeks, "latestWeek": weeks[-1] if weeks else None,

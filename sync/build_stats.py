@@ -145,7 +145,9 @@ def main(argv=None):
     pred_path = DATA_DIR / "predictions.json"
     stored = json.loads(pred_path.read_text()) if pred_path.exists() else {}
     prior_predictions = stored.get(str(current_season["year"]), {}) if isinstance(stored, dict) else {}
-    weekly = build_weekly(current_season, owners, careers, prior_predictions, recompute=args.recompute_predictions)
+    award_overrides = (adjustments.get("award_overrides") or {}).get(current_season["year"]) or {}
+    weekly = build_weekly(current_season, owners, careers, prior_predictions, recompute=args.recompute_predictions,
+                          award_overrides=award_overrides)
     stored[str(current_season["year"])] = weekly["predictions"]
     pred_path.write_text(json.dumps(stored, separators=(",", ":")))
     award_rows = [a for wk in weekly["weeks"] for a in wk["awards"].values() if a]
